@@ -1,0 +1,26 @@
+case_id,claim,design,scale,estimate,ci_low,ci_high,n_cases,n_controls,population,source,provenance,verdict,best_tier,gap_reason,extracted_by,extract_date
+MS-001,EBV seroconversion -> MS risk,genetic/cohort,hazard/rate ratio,32.0,,,955.0,~10M US military,White-majority,Bjornevik 2022 Science,catalog_ms web704/711,SUPPORTED,T3,,MechVal auto-extract,2026-07-02
+MS-002,Iron-rim lesion burden vs disability,observational,assoc,,,,,,,PMC 2024 review,catalog_ms web699,SUGGESTIVE,T2-T3,"narrative correlation, no pooled effect reported",MechVal auto-extract,2026-07-02
+MS-003,Tolebrutinib HERCULES: delay CDP (SPMS),RCT,pct_slowing,31.0,,,,,,HERCULES trial,catalog_ms web700/705,SUPPORTED,T4,,MechVal auto-extract,2026-07-02
+MS-005a,Low baseline sNfL: less likely EDSS4,observational,risk ratio,4.3,,,,,,long-term cohort,catalog_ms web721,SUPPORTED,T3,baseline 7.62 pg/mL; direction=protective,MechVal auto-extract,2026-07-02
+MS-005b,Baseline sNfL >10.2 -> progression (PMS),observational,odds ratio,7.8,,,,,,JNNP prog-MS cohort,catalog_ms web723,SUPPORTED,T3,adjusted OR,MechVal auto-extract,2026-07-02
+MS-005c,Rising sNfL baseline->6yr -> progression,observational,odds ratio,49.0,,,,,,JNNP prog-MS cohort,catalog_ms web723,SUPPORTED,T3,,MechVal auto-extract,2026-07-02
+MS-007,Genetically-lowered 25(OH)D -> MS (MR),MR,odds ratio,2.0,,,14498.0,,European,IMSGC MR,catalog_ms web727/724,SUPPORTED,T3,per 1-SD decrease log-25OHD,MechVal auto-extract,2026-07-02
+MS-010,Deep GM volume -> time-to-EDSS-prog,observational,hazard ratio,0.73,,,1417.0,7-center,multi,MAGNIMS,catalog_ms web742,SUPPORTED,T3,HR per SD; protective direction,MechVal auto-extract,2026-07-02
+MS-011,Ocrelizumab PPMS progression benefit,RCT,assoc,,,,,,,ORATORIO-class,catalog_ms web750/754,SUPPORTED,T3-T4,"modest effect, magnitude not numerically given",MechVal auto-extract,2026-07-02
+MS-013a,"Childhood BMI -> MS (MR, unadjusted)",MR,odds ratio,1.26,,,14802.0,26703,European,MR UKB,catalog_ms web745,SUPPORTED,T3,per SD; drops to 1.03 adj adult BMI,MechVal auto-extract,2026-07-02
+MS-013b,Adult BMI -> MS (MR),MR,odds ratio,1.43,,,14802.0,26703,European,MR UKB/IMSGC,catalog_ms web745/718,SUPPORTED,T3,"per SD, pleiotropy-robust",MechVal auto-extract,2026-07-02
+MS-015,EDSS effect size in progressive MS (2yr),observational,effect size,0.25,,,,,,prog-MS trials review,catalog_ms web768,DISCONFIRMED,T1-T2,reported 0.2-0.3; midpoint used,MechVal auto-extract,2026-07-02
+MS-016,Early-HET vs late: EDSS diff @10yr,observational,mean diff,-0.98,,,300.0,,,retrospective cohort,catalog_ms web760/764,SUGGESTIVE,T2-T3,confounding-by-indication live; p<0.0001,MechVal auto-extract,2026-07-02
+MS-017,HLA-DRB1*15:01 -> MS,genetic,odds ratio,3.06,,,,,multi (Cauc/Asian/AfAm),meta-analysis,catalog_ms web780/787/785,SUPPORTED,T3,,MechVal auto-extract,2026-07-02
+AD-002a,APOE4 heterozygous -> AD,genetic,odds ratio,3.4,,,,,multi,meta,catalog_ad web946/952/949,SUPPORTED,T4,reported 3.1-3.65; midpoint,MechVal auto-extract,2026-07-02
+AD-002b,APOE4 homozygous -> AD,genetic,odds ratio,23.5,,,,,multi,meta,catalog_ad web946/952/949,SUPPORTED,T4,reported 13-34; midpoint,MechVal auto-extract,2026-07-02
+AD-002c,APOE4/4 women -> AD,genetic,odds ratio,13.5,,,,,multi,meta,catalog_ad web956,SUPPORTED,T4,reported 12-15; midpoint,MechVal auto-extract,2026-07-02
+AD-003,sTREM2 microglial -> AD (proteomic MR),MR,z-score,9.1,,,,,,plasma-proteomic MR,catalog_ad web930/927,SUPPORTED,T3,"z=9.1, p~1e-19",MechVal auto-extract,2026-07-02
+AD-004,"IL-6 signaling -> AD (MR, NEG control)",MR,odds ratio,1.0,,,,,,MR IL-6/IL-18/ESR,catalog_ad web942/945,DISCONFIRMED,T1,well-powered NULL; negative control,MechVal auto-extract,2026-07-02
+AD-006,Amyloid-PET Centiloid harmonization,diagnostic,r2,0.9,,,,,,Centiloid,catalog_ad web958,SUPPORTED,T3-T4,cross-tracer r2~0.9,MechVal auto-extract,2026-07-02
+AD-009a,Plasma p-tau217 sensitivity,diagnostic,proportion,0.825,,,,,,meta p-tau217,catalog_ad web959,SUPPORTED,T3-T4,82-83% sens,MechVal auto-extract,2026-07-02
+AD-009b,Plasma p-tau217 specificity,diagnostic,proportion,0.845,,,,,,meta p-tau217,catalog_ad web959,SUPPORTED,T3-T4,83-86% spec,MechVal auto-extract,2026-07-02
+AD-009c,Abnormal p-tau217 CU -> impairment,observational,hazard ratio,6.6,,,,,,CU cohort,catalog_ad web961,SUPPORTED,T3-T4,AT HR up to 6.6,MechVal auto-extract,2026-07-02
+AD-C1,Lecanemab: CDR-SB slowing vs placebo,RCT,pct_slowing,27.0,,,,,,CLARITY-AD,catalog_ad web972/980,SUPPORTED,T3,magnitude near/below MCID debated,MechVal auto-extract,2026-07-02
+AD-C2,Anti-tau CSF target engagement,RCT,proportion,0.99,,,,,,QSP / anti-tau trials,catalog_ad web983/979,DISCONFIRMED,T2-T3,"99% CSF engagement, 0 clinical benefit",MechVal auto-extract,2026-07-02
