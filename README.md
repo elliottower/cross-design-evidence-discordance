@@ -37,7 +37,7 @@ Geometric and sheaf-cohomological experiments validating the catalog structure:
 ## Related
 
 - [epidemiology-boundary-conditions](https://github.com/elliottower/epidemiology-boundary-conditions) — Methods paper characterizing when geometric tools (sheaf cohomology, Grassmannian holonomy, discrete curvature) outperform standard statistics. The MS/AD catalogs here provided the domain expertise that informed its simulation parameters.
-- [MechVal](https://github.com/mechanistic-validity) — The original validity audit framework for psychiatric neuroscience, which this catalog ports into clinical neuroepidemiology.
+- [Mechanistic Validity](https://github.com/mechanistic-validity) — The original validity audit framework for psychiatric neuroscience, which this catalog ports into clinical neuroepidemiology.
 
 ## Status
 
