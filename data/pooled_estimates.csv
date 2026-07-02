@@ -1,0 +1,4 @@
+cluster,k,pooled_est,ci_low,ci_high,I2_pct,note
+MS MR risk (ratio),3,,,,,lacks CIs -> cannot weight; not pooled
+MS genetic risk (OR),1,,,,,"n<2: reported separately, not pooled"
+AD genetic risk (OR),3,,,,,lacks CIs -> cannot weight; not pooled
