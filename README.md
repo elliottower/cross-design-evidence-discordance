@@ -34,11 +34,10 @@ Geometric and sheaf-cohomological experiments validating the catalog structure:
 | Sheaf DAG adjudication | Per-edge Q detects infl/degen heterogeneity (Q > 1500) |
 | H1 effect-modifier | 7/7 pairs correctly classified (100%) |
 
-## Framework
+## Related
 
-This catalog uses the MechVal framework for scoring mechanism claims: each claim is decomposed into independently testable causal legs, assigned a View (Object, Role, Subspace, Structural, Process), and scored on the T1-T4 tier scale. Claims that exceed their evidence undergo Levi contraction (preserve hard core, discard protective belt).
-
-The geometric experiments (holonomy, sheaf DAG, H1 classifier) apply methods from [epidemiology-boundary-conditions](https://github.com/elliottower/epidemiology-boundary-conditions), which characterizes when these geometric tools outperform standard statistics. The MS/AD catalogs here provided the domain expertise that informed the simulation parameters in that paper.
+- [epidemiology-boundary-conditions](https://github.com/elliottower/epidemiology-boundary-conditions) — Methods paper characterizing when geometric tools (sheaf cohomology, Grassmannian holonomy, discrete curvature) outperform standard statistics. The MS/AD catalogs here provided the domain expertise that informed its simulation parameters.
+- [MechVal](https://github.com/mechanistic-validity) — The original validity audit framework for psychiatric neuroscience, which this catalog ports into clinical neuroepidemiology.
 
 ## Status
 
