@@ -34,11 +34,6 @@ Geometric and sheaf-cohomological experiments validating the catalog structure:
 | Sheaf DAG adjudication | Per-edge Q detects infl/degen heterogeneity (Q > 1500) |
 | H1 effect-modifier | 7/7 pairs correctly classified (100%) |
 
-## Companion repos
-
-- [epidemiology-boundary-conditions](https://github.com/elliottower/epidemiology-boundary-conditions) — the methods paper that uses these catalogs as domain expertise for simulation parameters
-- [chemistry-validity-audit](https://github.com/elliottower/chemistry-validity-audit) — same audit framework applied to ML-for-chemistry
-
 ## Status
 
 MS catalog is substantive (52 cases scored). AD catalog is partial (~13 cases). Extension spec describes phases 1-5 for scaling to real data (MR re-analysis, ADNI access, cross-domain meta-analysis).
