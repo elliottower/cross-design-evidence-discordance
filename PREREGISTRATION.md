@@ -109,6 +109,26 @@ Each family's MR estimate must have its scale declared before classification. Th
 | BMI-AD | Per 1 SD BMI (life-course MR) | No |
 | All other neuro families | Per-SD or per-unit | No |
 
+**Autoimmune families — instrument declarations (amendment, pre-classification):**
+
+| Family | Instrument | MR scale | Rescaling needed? | Rationale |
+|--------|-----------|----------|-------------------|-----------|
+| IL-23 → psoriasis | IL23R R381Q (rs11209026) | Per allele (loss-of-function) | **Yes — must rescale to per-SD IL-23 signaling** | Canonical causal variant; 13-study meta-analysis OR 0.616 (0.563–0.674) (Saeki 2013, PMID 22706445) |
+| CTLA-4 → RA | **CT60 (rs3087243)** | Per allele | **Yes — must rescale to per-SD soluble CTLA-4** | CT60 governs the ratio of soluble to membrane-bound CTLA-4 isoforms; abatacept is a soluble CTLA-4-Ig fusion protein. The mechanistic correspondence between instrument (soluble CTLA-4 isoform production) and therapeutic (exogenous soluble CTLA-4) is the outcome-independent rationale for selecting CT60 over +49A/G. Alternative +49A/G (rs231775) was considered but rejected: it affects signal peptide processing, not the soluble/membrane isoform ratio that the drug exploits. **Note:** CT60 meta-analysis OR 0.86 (0.78–0.95) gives d = 0.083 by the Chinn formula; if per-SD rescaling does not bring d above 0.10, CTLA-4→RA will classify as MR null. Drug-target MR screens that identify CTLA4 as a causal RA gene may provide a usable cis-MR estimate — to be verified before classification. |
+| TNF-α → RA | cis-MR (TNFRSF1A/1B) or druggable-genome MR | Per allele (expected) | Yes | |
+| IL-17 → psoriasis | cis-MR (IL17A/IL17RA) or circulating-cytokine MR | Per allele (expected) | Yes | Yuan/Di Cara 2021 (PMID 33188428): genetically-predicted IL-17 → PsA β = −0.00186/allele (p=0.002), null-to-protective direction |
+| JAK-STAT → RA | cis-MR (JAK pathway variants) | Per allele (expected) | Yes | |
+| IL-1β → gout | cis-MR (IL1RN) | Per allele (expected) | Yes | |
+| IL-1β → CVD | cis-MR (IL1RN) | Per allele (expected) | Yes | CANTOS met primary endpoint (HR 0.85, p=0.021) but FDA declined on benefit-risk; code drug outcome as "Failed" (no regulatory approval) |
+| B-cell (CD20) → RA | cis-MR (MS4A1/CD20) | Per allele (expected) | Yes | Same instrument class as Anti-CD20-MS in neuro domain |
+| IL-4Rα → atopic dermatitis | cis-MR (IL4R/IL13) | Per allele (expected) | Yes | |
+
+**Effector-neutralization boundary (pre-specified prediction, stated before classification):**
+
+The two-criterion concordance rule tests whether germline-anchored etiologic evidence (observational + MR) aligns with therapeutic outcome. It is expected to hold for interventions that modify a causal risk factor but to fail systematically for biologics that neutralize a downstream effector of active disease, because common germline variants perturbing baseline effector expression need not track lifetime disease risk — and may track it inversely for cytokines with homeostatic roles. We pre-specify that families whose therapeutic acts by effector neutralization (such as anti-TNF, anti-IL-17) are **scored, not excluded**, and are expected to appear as discordance-to-failure predictions that are falsified by drug approval. Such misses delimit the rule's domain of validity rather than refuting it.
+
+**Observational evidence operationalization for autoimmune families:** For neuro and cardio domains, OBS estimates are population-level epidemiological associations (cohort ORs/RRs). For autoimmune cytokine-target families, published meta-analytic epidemiological ORs are used where available. Where the primary OBS evidence is tissue-level expression data (case-control comparisons of lesional vs non-lesional tissue), the fold-change is treated as qualitatively non-trivial if the effect is large and replicated, with the quantitative d derived from the Chinn formula applied to the equivalent case-control OR where reported.
+
 ---
 
 ## Retrospective validation (rule developed on this data)

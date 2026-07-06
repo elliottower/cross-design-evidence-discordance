@@ -177,6 +177,22 @@ CARDIO_FAMILIES = [
 ]
 
 
+AUTOIMMUNE_FAMILIES = [
+    {"family": "IL-23-psoriasis", "domain": "autoimmune", "obs_OR": 3.00,
+     "gen_OR": 0.616, "gen_CI_lower": 0.563, "gen_CI_upper": 0.674,
+     "drug_outcome": "Approved"},
+    {"family": "CTLA-4-RA", "domain": "autoimmune", "obs_OR": 1.50,
+     "gen_OR": 0.86, "gen_CI_lower": 0.78, "gen_CI_upper": 0.95,
+     "drug_outcome": "Approved"},
+    {"family": "TNF-a-RA", "domain": "autoimmune", "obs_OR": 2.00,
+     "gen_OR": 1.00,
+     "drug_outcome": "Approved"},
+    {"family": "IL-17-psoriasis", "domain": "autoimmune", "obs_OR": 2.00,
+     "gen_OR": 1.00,
+     "drug_outcome": "Approved"},
+]
+
+
 def print_results(results: list[dict]) -> None:
     header = f"{'Family':<20} {'OBS d':>7} {'OBS':>12} {'GEN d':>7} {'MR':>8} {'Class':<25} {'Pred':>8} {'Actual':>12} {'OK?':>5}"
     print(header)
@@ -190,7 +206,7 @@ def print_results(results: list[dict]) -> None:
 
 def main():
     thresholds = [0.08, 0.10, 0.12, 0.15] if "--sensitivity" in sys.argv else [0.10]
-    all_families = NEURO_FAMILIES + CARDIO_FAMILIES
+    all_families = NEURO_FAMILIES + CARDIO_FAMILIES + AUTOIMMUNE_FAMILIES
 
     for t in thresholds:
         print(f"\n{'='*80}")
@@ -202,6 +218,8 @@ def main():
         print_results([r for r in results if r["domain"] == "neuro"])
         print(f"\n--- Cardio ---")
         print_results([r for r in results if r["domain"] == "cardio"])
+        print(f"\n--- Autoimmune ---")
+        print_results([r for r in results if r["domain"] == "autoimmune"])
 
         known = [r for r in results if r["correct"] is not None]
         correct = sum(1 for r in known if r["correct"])
