@@ -6,7 +6,7 @@
 
 **Integrity protocol:** This document, the classification rule, the family pre-specifications, and the decision criteria will be committed together in a single commit before any autoimmune estimates are pulled or any prospective trial readouts are examined. The commit SHA will be recorded here after freeze. No placeholder functions, no TODO blocks, no data-peeking in commented code. The same protocol was used in Tower (2026) for the direction instability paper (commit SHAs: 1dc20a2, 8d74bd0).
 
-**Commit SHA:** _(to be filled at commit time)_
+**Commit SHA:** b96d10a
 
 ---
 
