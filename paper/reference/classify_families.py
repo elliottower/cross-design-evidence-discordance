@@ -10,6 +10,11 @@ Classification:
   OBS non-trivial + MR causal -> concordance -> predict success
   OBS trivial + MR null       -> null concordance -> ambiguous
   OBS trivial + MR causal     -> genetic-only signal
+
+OBS instrument types:
+  "epidemiological_OR" — population-level exposure-disease OR (neuro/cardio)
+  "case_control_SMD"   — case-control biomarker SMD (autoimmune cytokines)
+  Both produce Cohen's d: OR via Chinn (2000), SMD directly.
 """
 
 import csv
@@ -77,7 +82,11 @@ def run_classification(families: list[dict], threshold: float = 0.10) -> list[di
     """Run the full classification pipeline on a list of families."""
     results = []
     for f in families:
-        obs_d = chinn_d(f["obs_OR"])
+        obs_type = f.get("obs_type", "epidemiological_OR")
+        if "obs_d_direct" in f:
+            obs_d = f["obs_d_direct"]
+        else:
+            obs_d = chinn_d(f["obs_OR"])
         obs_class = classify_obs(obs_d, threshold)
 
         mr_or = f["gen_OR"]
@@ -107,8 +116,9 @@ def run_classification(families: list[dict], threshold: float = 0.10) -> list[di
         results.append({
             "family": f["family"],
             "domain": f.get("domain", "unknown"),
-            "obs_OR": f["obs_OR"],
+            "obs_OR": f.get("obs_OR"),
             "obs_d": round(obs_d, 3),
+            "obs_type": obs_type,
             "obs_class": obs_class,
             "gen_OR_raw": f["gen_OR"],
             "gen_OR_rescaled": round(mr_or, 3) if f.get("per_allele") else None,
@@ -177,33 +187,100 @@ CARDIO_FAMILIES = [
 
 
 AUTOIMMUNE_FAMILIES = [
-    {"family": "IL-23-psoriasis", "domain": "autoimmune", "obs_OR": 3.00,
+    # obs_sourcing: "meta_analysis" = pooled SMD from systematic review
+    #               "author_estimated" = estimated from reported significance
+    #               "construct_limited" = construct-definition problem
+    # obs_type: "case_control_SMD" vs "epidemiological_OR" vs "tissue_expression"
+
+    # IL-23: serum SMD=0.66 (Dowlatshahi 2013, CI -0.25 to 1.58, NON-SIGNIFICANT);
+    #   but tissue p19 22x elevated (Lee 2004 PMID 14707118).
+    #   NOTE: OBS rests on tissue expression, not serum. Serum-vs-tissue switch
+    #   must be stated explicitly in the paper.
+    {"family": "IL-23-psoriasis", "domain": "autoimmune",
+     "obs_d_direct": 0.66, "obs_type": "tissue_expression",
+     "obs_sourcing": "meta_analysis",
      "gen_OR": 0.616, "gen_CI_lower": 0.563, "gen_CI_upper": 0.674,
      "drug_outcome": "Approved"},
-    {"family": "CTLA-4-RA", "domain": "autoimmune", "obs_OR": 1.50,
+
+    # CTLA-4: sCTLA-4 elevated in RA p=0.005 (Liu 2012 PMID 22917707)
+    #   6.8 ng/mL vs controls; exact SMD not reported
+    {"family": "CTLA-4-RA", "domain": "autoimmune",
+     "obs_d_direct": 0.50, "obs_type": "case_control_SMD",
+     "obs_sourcing": "author_estimated",
      "gen_OR": 0.86, "gen_CI_lower": 0.78, "gen_CI_upper": 0.95,
      "drug_outcome": "Approved"},
-    {"family": "TNF-a-RA", "domain": "autoimmune", "obs_OR": 2.00,
+
+    # TNF-a: meta-analysis of 14 studies, SMD=1.93 (CI 1.23-2.64)
+    #   Wang 2015 PMC4694713; 890 RA vs 441 controls
+    {"family": "TNF-a-RA", "domain": "autoimmune",
+     "obs_d_direct": 1.93, "obs_type": "case_control_SMD",
+     "obs_sourcing": "meta_analysis",
      "gen_OR": 1.00,
      "drug_outcome": "Approved"},
-    {"family": "IL-17-psoriasis", "domain": "autoimmune", "obs_OR": 2.00,
+
+    # IL-17: meta-analysis of 8 studies, SMD=0.47 (CI 0.07-0.86)
+    #   Zhou 2017 PMID 27925680
+    {"family": "IL-17-psoriasis", "domain": "autoimmune",
+     "obs_d_direct": 0.47, "obs_type": "case_control_SMD",
+     "obs_sourcing": "meta_analysis",
      "gen_OR": 0.998,
      "drug_outcome": "Approved"},
-    {"family": "JAK-STAT-RA", "domain": "autoimmune", "obs_OR": 2.00,
+
+    # STAT4/JAK: serum STAT4 elevated in RA p=0.01 (Osman 2025 PMC12520596);
+    #   STAT1/STAT4/Jak3 elevated in synovium (Walker 2006)
+    {"family": "JAK-STAT-RA", "domain": "autoimmune",
+     "obs_d_direct": 0.50, "obs_type": "case_control_SMD",
+     "obs_sourcing": "author_estimated",
      "gen_OR": 1.27, "gen_CI_lower": 1.20, "gen_CI_upper": 1.34,
      "drug_outcome": "Approved"},
+
+    # CD20/B-cell: RF positivity 60-80% in RA; B-cell infiltration in synovium
+    #   FCRL3 GWAS OR 2.15 (Kochi 2005, Nature Genetics)
+    {"family": "CD20-RA", "domain": "autoimmune",
+     "obs_d_direct": 0.50, "obs_type": "case_control_SMD",
+     "obs_sourcing": "author_estimated",
+     "gen_OR": 1.291, "gen_CI_lower": 1.190, "gen_CI_upper": 1.391,
+     "drug_outcome": "Approved"},
+
+    # IL-4Ra/AD: CONSTRUCT-LIMITED — IL-4 mRNA NOT dominant in AD lesions;
+    #   IL-13 is 7x elevated (Hamid 1996 PMID 9158100; Jeong 2003 PMID 15014952).
+    #   Dupilumab blocks IL-4Ra (shared receptor), works via IL-13.
+    #   EXCLUDED FROM SCORING: construct-definition problem, not a clean miss.
+    #   Drug outcome "Construct-limited" removes it from denominator.
+    {"family": "IL-4Ra-AD", "domain": "autoimmune",
+     "obs_d_direct": 0.15, "obs_type": "case_control_SMD",
+     "obs_sourcing": "construct_limited",
+     "gen_OR": 1.02,
+     "drug_outcome": "Construct-limited"},
+
+    # IL-1b/CVD: CRP/IL-1 inflammatory axis observational OR 1.37 (ERFC 2010)
+    #   Same construct as cardio CRP family
+    {"family": "IL-1b-CVD", "domain": "autoimmune",
+     "obs_OR": 1.37, "obs_type": "epidemiological_OR",
+     "obs_sourcing": "meta_analysis",
+     "gen_OR": 1.00,
+     "drug_outcome": "Failed"},
 ]
 
 
 def print_results(results: list[dict]) -> None:
-    header = f"{'Family':<20} {'OBS d':>7} {'OBS':>12} {'GEN d':>7} {'MR':>8} {'Class':<25} {'Pred':>8} {'Actual':>12} {'OK?':>5}"
+    header = (f"{'Family':<20} {'OBS d':>7} {'Src':>4} {'OBS':>12} "
+              f"{'GEN d':>7} {'MR':>8} {'Class':<25} "
+              f"{'Pred':>8} {'Actual':>16} {'OK?':>5}")
     print(header)
     print("=" * len(header))
     for r in results:
         ok = "✓" if r["correct"] is True else ("✗" if r["correct"] is False else "—")
-        print(f"{r['family']:<20} {r['obs_d']:>7.3f} {r['obs_class']:>12} "
+        ot = r.get("obs_type", "epidemiological_OR")
+        if ot == "case_control_SMD":
+            src = "SMD"
+        elif ot == "tissue_expression":
+            src = "tis"
+        else:
+            src = " OR"
+        print(f"{r['family']:<20} {r['obs_d']:>7.3f} {src:>4} {r['obs_class']:>12} "
               f"{r['gen_d']:>7.3f} {r['mr_class']:>8} {r['classification']:<25} "
-              f"{r['prediction']:>8} {r['drug_outcome']:>12} {ok:>5}")
+              f"{r['prediction']:>8} {r['drug_outcome']:>16} {ok:>5}")
 
 
 def main():
@@ -223,17 +300,34 @@ def main():
         print(f"\n--- Autoimmune ---")
         print_results([r for r in results if r["domain"] == "autoimmune"])
 
-        known = [r for r in results if r["correct"] is not None]
-        correct = sum(1 for r in known if r["correct"])
-        ambig_known = [r for r in known if r["prediction"] == "ambiguous"]
-        unambig = [r for r in known if r["prediction"] != "ambiguous"]
-        correct_unambig = sum(1 for r in unambig if r["correct"])
-        pending = sum(1 for r in results if r["drug_outcome"] == "Pending")
-        print(f"\nAll known outcomes: {correct}/{len(known)} correct")
-        print(f"Excluding ambiguous: {correct_unambig}/{len(unambig)} correct "
-              f"({len(ambig_known)} ambiguous, {pending} pending)")
-        print(f"Sensitivity: headline is {correct_unambig}/{len(unambig)} "
-              f"or {correct}/{len(known)} depending on ambiguous adjudication")
+        print(f"\n--- Domain tallies (NOT pooled — different OBS constructs) ---")
+        for domain in ["neuro", "cardio", "autoimmune"]:
+            dom_results = [r for r in results if r["domain"] == domain]
+            dom_known = [r for r in dom_results if r["correct"] is not None]
+            dom_unambig = [r for r in dom_known if r["prediction"] != "ambiguous"]
+            dom_correct = sum(1 for r in dom_unambig if r["correct"])
+            dom_pending = sum(1 for r in dom_results if r["drug_outcome"] == "Pending")
+            dom_ambig = sum(1 for r in dom_known if r["prediction"] == "ambiguous")
+            dom_construct = sum(1 for r in dom_results
+                                if r["drug_outcome"] == "Construct-limited")
+            obs_types = set(r.get("obs_type", "epidemiological_OR") for r in dom_results)
+            extra = ""
+            if dom_construct:
+                extra += f", {dom_construct} construct-limited"
+            if dom_ambig:
+                extra += f", {dom_ambig} ambig"
+            if dom_pending:
+                extra += f", {dom_pending} pending"
+            print(f"  {domain:>10}: {dom_correct}/{len(dom_unambig)} scored"
+                  f"{extra} [OBS: {', '.join(obs_types)}]")
+
+        ai_fams = [f for f in all_families if f.get("domain") == "autoimmune"]
+        n_estimated = sum(1 for f in ai_fams
+                         if f.get("obs_sourcing") == "author_estimated")
+        if n_estimated:
+            print(f"\n  NOTE: {n_estimated} autoimmune families have "
+                  f"author-estimated OBS d (not meta-analysis sourced).")
+        print(f"  Do NOT pool autoimmune with neuro/cardio into one accuracy figure.")
 
     if "--json" in sys.argv:
         results = run_classification(all_families, threshold=0.10)
@@ -241,6 +335,121 @@ def main():
         with open(out_path, "w") as f:
             json.dump(results, f, indent=2, default=str)
         print(f"\nSaved to {out_path}")
+
+    if "--ablation" in sys.argv:
+        run_ablation(all_families)
+
+
+def ablation_rules(result: dict) -> dict[str, str]:
+    """Return predictions from four rules for one family.
+
+    always-fail: predict failure for everything
+    MR-only: causal -> success, null -> failure
+    OBS-only: non-trivial -> success, trivial -> failure
+    cross-type: our concordance rule (already computed)
+    """
+    return {
+        "always-fail": "failure",
+        "MR-only": "success" if result["mr_class"] == "causal" else "failure",
+        "OBS-only": "success" if result["obs_class"] == "non-trivial" else "failure",
+        "cross-type": result["prediction"],
+    }
+
+
+def _score_prediction(prediction: str, actual: str) -> bool | None:
+    if actual in ("Approved", "approved"):
+        return prediction == "success"
+    elif actual in ("Failed", "failed", "No benefit"):
+        return prediction == "failure"
+    return None
+
+
+def run_ablation(families: list[dict], threshold: float = 0.10) -> None:
+    results = run_classification(families, threshold=threshold)
+    scorable = [r for r in results
+                if r["drug_outcome"] not in ("Pending", "Construct-limited")
+                and r["prediction"] != "ambiguous"]
+
+    rule_names = ["always-fail", "MR-only", "OBS-only", "cross-type"]
+    scored: dict[str, list[tuple[str, bool]]] = {rn: [] for rn in rule_names}
+
+    for r in scorable:
+        preds = ablation_rules(r)
+        for rn in rule_names:
+            correct = _score_prediction(preds[rn], r["drug_outcome"])
+            if correct is not None:
+                scored[rn].append((r["family"], correct))
+
+    n_failed = sum(1 for r in scorable
+                   if r["drug_outcome"] in ("Failed", "failed", "No benefit"))
+    n_approved = sum(1 for r in scorable
+                     if r["drug_outcome"] in ("Approved", "approved"))
+
+    print(f"\n{'='*80}")
+    print(f"ABLATION ANALYSIS (threshold d={threshold:.2f})")
+    print(f"{'='*80}")
+    print(f"Base rates: {n_failed} failed, {n_approved} approved, "
+          f"{len(scorable)} total scorable")
+
+    header = (f"{'Rule':<15} {'Total':>7} {'Correct':>9} {'Acc':>7} "
+              f"{'Fail✓':>7} {'Fail✗':>7} {'Appr✓':>7} {'Appr✗':>7}")
+    print(f"\n{header}")
+    print("-" * len(header))
+
+    rule_correct_sets: dict[str, set[str]] = {}
+    for rn in rule_names:
+        pairs = scored[rn]
+        total = len(pairs)
+        correct = sum(1 for _, c in pairs if c)
+        acc = correct / total if total else 0
+
+        fail_correct = sum(1 for f, c in pairs if c
+                          and any(r["family"] == f and r["drug_outcome"]
+                                  in ("Failed", "failed", "No benefit")
+                                  for r in scorable))
+        fail_wrong = n_failed - fail_correct
+        appr_correct = sum(1 for f, c in pairs if c
+                          and any(r["family"] == f and r["drug_outcome"]
+                                  in ("Approved", "approved")
+                                  for r in scorable))
+        appr_wrong = n_approved - appr_correct
+
+        print(f"{rn:<15} {total:>7} {correct:>9} {acc:>7.1%} "
+              f"{fail_correct:>7} {fail_wrong:>7} {appr_correct:>7} {appr_wrong:>7}")
+
+        rule_correct_sets[rn] = {f for f, c in pairs if c}
+
+    ct_set = rule_correct_sets["cross-type"]
+    mr_set = rule_correct_sets["MR-only"]
+    ct_only = ct_set - mr_set
+    mr_only = mr_set - ct_set
+
+    print(f"\n--- McNemar disagreements: cross-type vs MR-only ---")
+    print(f"  Cross-type correct, MR-only wrong ({len(ct_only)}): "
+          f"{', '.join(sorted(ct_only)) if ct_only else 'none'}")
+    print(f"  MR-only correct, cross-type wrong ({len(mr_only)}): "
+          f"{', '.join(sorted(mr_only)) if mr_only else 'none'}")
+
+    both_right = ct_set & mr_set
+    both_wrong = {f for f, _ in scored["cross-type"]} - ct_set - mr_set
+    # families wrong under both (actually: families in neither correct set)
+    neither = set()
+    all_families_scored = {f for f, _ in scored["cross-type"]}
+    for f in all_families_scored:
+        if f not in ct_set and f not in mr_set:
+            neither.add(f)
+
+    print(f"  Both correct ({len(both_right)}): "
+          f"{', '.join(sorted(both_right)) if both_right else 'none'}")
+    print(f"  Both wrong ({len(neither)}): "
+          f"{', '.join(sorted(neither)) if neither else 'none'}")
+
+    if ct_only or mr_only:
+        print(f"\n  McNemar 2x2: a={len(ct_only)}, b={len(mr_only)}, "
+              f"n_discordant={len(ct_only) + len(mr_only)}")
+        if len(ct_only) + len(mr_only) > 0:
+            print(f"  (With n_discordant={len(ct_only) + len(mr_only)}, "
+                  f"exact binomial is appropriate over chi-squared)")
 
 
 if __name__ == "__main__":

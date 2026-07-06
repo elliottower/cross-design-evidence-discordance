@@ -1,0 +1,69 @@
+
+================================================================================
+THRESHOLD d = 0.10
+================================================================================
+
+--- Neuro ---
+Family                 OBS d  Src          OBS   GEN d       MR Class                         Pred           Actual   OK?
+=========================================================================================================================
+Metabolic-AD           0.234   OR  non-trivial   0.005     null qualitative discordance    failure           Failed     ✓
+ModRisk-AD             0.209   OR  non-trivial   0.053     null qualitative discordance    failure           Failed     ✓
+Anti-CD20-MS           0.442   OR  non-trivial   0.103   causal concordance                success         Approved     ✓
+Smoking-MS/AD          0.209   OR  non-trivial   0.016     null qualitative discordance    failure           Failed     ✓
+HRT-AD                 0.221   OR  non-trivial   0.000     null qualitative discordance    failure           Failed     ✓
+BMI-MS                 0.360   OR  non-trivial   0.189   causal concordance                success          Pending     —
+BMI-AD                 0.393   OR  non-trivial   0.016     null qualitative discordance    failure           Failed     ✓
+VitaminD-MS            0.186   OR  non-trivial   0.382   causal concordance                success           Failed     ✗
+EBV-MS                 0.293   OR  non-trivial   0.887   causal concordance                success         Approved     ✓
+
+--- Cardio ---
+Family                 OBS d  Src          OBS   GEN d       MR Class                         Pred           Actual   OK?
+=========================================================================================================================
+HDL/CETP               0.264   OR  non-trivial   0.040     null qualitative discordance    failure           Failed     ✓
+Niacin/HDL             0.264   OR  non-trivial   0.040     null qualitative discordance    failure           Failed     ✓
+Homocysteine           0.153   OR  non-trivial   0.011     null qualitative discordance    failure           Failed     ✓
+CRP                    0.174   OR  non-trivial   0.000     null qualitative discordance    failure       No benefit     ✓
+Uric acid              0.037   OR      trivial   0.027     null null concordance          ambiguous           Failed     ✗
+LDL/PCSK9              0.231   OR  non-trivial   0.318   causal concordance                success         Approved     ✓
+Blood pressure         0.189   OR  non-trivial   0.201   causal concordance                success         Approved     ✓
+Triglycerides          0.299   OR  non-trivial   0.266   causal concordance                success         Approved     ✓
+Lp(a)                  0.067   OR      trivial   0.034     null null concordance          ambiguous          Pending     —
+IL-6R                  0.123   OR  non-trivial   0.083     null qualitative discordance    failure          Pending     —
+
+--- Autoimmune ---
+Family                 OBS d  Src          OBS   GEN d       MR Class                         Pred           Actual   OK?
+=========================================================================================================================
+IL-23-psoriasis        0.660  tis  non-trivial   0.267   causal concordance                success         Approved     ✓
+CTLA-4-RA              0.500  SMD  non-trivial   0.083     null qualitative discordance    failure         Approved     ✗
+TNF-a-RA               1.930  SMD  non-trivial   0.000     null qualitative discordance    failure         Approved     ✗
+IL-17-psoriasis        0.470  SMD  non-trivial   0.001     null qualitative discordance    failure         Approved     ✗
+JAK-STAT-RA            0.500  SMD  non-trivial   0.132   causal concordance                success         Approved     ✓
+CD20-RA                0.500  SMD  non-trivial   0.141   causal concordance                success         Approved     ✓
+IL-4Ra-AD              0.150  SMD  non-trivial   0.011     null qualitative discordance    failure Construct-limited     —
+IL-1b-CVD              0.174   OR  non-trivial   0.000     null qualitative discordance    failure           Failed     ✓
+
+--- Domain tallies (NOT pooled — different OBS constructs) ---
+       neuro: 7/8 scored, 1 pending [OBS: epidemiological_OR]
+      cardio: 7/7 scored, 1 ambig, 2 pending [OBS: epidemiological_OR]
+  autoimmune: 4/7 scored, 1 construct-limited [OBS: case_control_SMD, tissue_expression, epidemiological_OR]
+
+  NOTE: 3 autoimmune families have author-estimated OBS d (not meta-analysis sourced).
+  Do NOT pool autoimmune with neuro/cardio into one accuracy figure.
+
+================================================================================
+ABLATION ANALYSIS (threshold d=0.10)
+================================================================================
+Base rates: 11 failed, 11 approved, 22 total scorable
+
+Rule              Total   Correct     Acc   Fail✓   Fail✗   Appr✓   Appr✗
+-------------------------------------------------------------------------
+always-fail          22        11   50.0%      11       0       0      11
+MR-only              22        18   81.8%      10       1       8       3
+OBS-only             22        11   50.0%       0      11      11       0
+cross-type           22        18   81.8%      10       1       8       3
+
+--- McNemar disagreements: cross-type vs MR-only ---
+  Cross-type correct, MR-only wrong (0): none
+  MR-only correct, cross-type wrong (0): none
+  Both correct (18): Anti-CD20-MS, BMI-AD, Blood pressure, CD20-RA, CRP, EBV-MS, HDL/CETP, HRT-AD, Homocysteine, IL-1b-CVD, IL-23-psoriasis, JAK-STAT-RA, LDL/PCSK9, Metabolic-AD, ModRisk-AD, Niacin/HDL, Smoking-MS/AD, Triglycerides
+  Both wrong (4): CTLA-4-RA, IL-17-psoriasis, TNF-a-RA, VitaminD-MS

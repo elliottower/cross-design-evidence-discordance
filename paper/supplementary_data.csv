@@ -3,7 +3,7 @@ Metabolic-AD,AD,neuro,GEN,MR,1.01,OR,,,0.006,Failed,Qual. disc.,MR of T2D and AD
 Metabolic-AD,AD,neuro,OBS,observational,1.53,RR,,,0.234,Failed,Qual. disc.,Observational cohorts T2D-AD
 ModRisk-AD,AD,neuro,GEN,MR,1.10,OR,,,0.053,Failed,Qual. disc.,MR of modifiable risk factors
 ModRisk-AD,AD,neuro,OBS,observational,1.46,RR,,,0.209,Failed,Qual. disc.,Observational cohorts
-Anti-CD20-MS,MS,neuro,GEN,MR,0.83,OR,0.79,0.89,0.103,Approved,Concordant,Lin 2023 FCRL3-CD20
+Anti-CD20-MS,MS,neuro,GEN,MR,0.83,OR,0.79,0.89,0.103,Approved,Concordant,"Lin 2023 per-SD circulating FCRL3 protein on MS risk (PMC10393411)"
 Anti-CD20-MS,MS,neuro,OBS,observational,,,,,Approved,Concordant,Hu 2019 B-cell depletion efficacy (d~0.80)
 Smoking-MS/AD,MS/AD,neuro,GEN,MR,1.03,OR,,,0.016,Failed,Qual. disc.,MR of smoking and MS/AD
 Smoking-MS/AD,MS/AD,neuro,OBS,observational,1.46,RR,1.33,1.59,0.209,Failed,Qual. disc.,Poorolajal 2017 meta-analysis ever vs never smoking and MS (PMID 27160862)
@@ -37,3 +37,19 @@ Lp(a),CVD,cardio,GEN,MR,0.94,OR,0.93,0.95,0.034,Pending,Concordant,Burgess 2018 
 Lp(a),CVD,cardio,OBS,observational,1.13,OR,1.09,1.18,0.067,Pending,Concordant,Erqou/ERFC 2009 per 1 SD Lp(a)
 IL-6R,CVD,cardio,GEN,MR,0.95,OR,0.93,0.97,0.028,Pending,Concordant,IL6R MR Consortium 2012 per allele
 IL-6R,CVD,cardio,OBS,observational,1.25,RR,,,0.123,Pending,Concordant,Danesh 2008/ERFC per 1 SD log IL-6
+IL-23-psoriasis,Psoriasis,autoimmune,GEN,MR,0.616,OR,0.563,0.674,0.267,Approved,Concordant,Zhu 2012 IL23R R381Q meta-analysis (PMID 22706445)
+IL-23-psoriasis,Psoriasis,autoimmune,OBS,tissue_expression,,SMD,,,0.660,Approved,Concordant,"Serum meta-analysis SMD=0.66 (Dowlatshahi 2013); tissue p19 22x (Lee 2004 PMID 14707118)"
+CTLA-4-RA,RA,autoimmune,GEN,MR,0.86,OR,0.78,0.95,0.083,Approved,Qual. disc.,Barton 2009 CT60 (PMID 19404967)
+CTLA-4-RA,RA,autoimmune,OBS,case_control_SMD,,SMD,,,0.500,Approved,Qual. disc.,"sCTLA-4 elevated p=0.005 (Liu 2012 PMID 22917707); author-estimated SMD"
+TNF-a-RA,RA,autoimmune,GEN,MR,1.00,OR,,,0.000,Approved,Qual. disc.,Li 2025 druggable-genome MR null (PMID 40618325)
+TNF-a-RA,RA,autoimmune,OBS,case_control_SMD,,SMD,,,1.930,Approved,Qual. disc.,"Serum TNF-a meta-analysis 14 studies SMD=1.93 CI 1.23-2.64 (Wang 2015 PMC4694713)"
+IL-17-psoriasis,Psoriasis,autoimmune,GEN,MR,0.998,OR,,,0.001,Approved,Qual. disc.,Wu 2021 IL-17 protective (PMID 33188428)
+IL-17-psoriasis,Psoriasis,autoimmune,OBS,case_control_SMD,,SMD,,,0.470,Approved,Qual. disc.,"Serum IL-17 meta-analysis 8 studies SMD=0.47 CI 0.07-0.86 (Zhou 2017 PMID 27925680)"
+JAK-STAT-RA,RA,autoimmune,GEN,MR,1.27,OR,1.20,1.34,0.132,Approved,Concordant,STAT4 rs7574865 meta-analysis (PMID 19479340)
+JAK-STAT-RA,RA,autoimmune,OBS,case_control_SMD,,SMD,,,0.500,Approved,Concordant,"Serum STAT4 elevated p=0.01 (Osman 2025 PMC12520596); author-estimated SMD"
+CD20-RA,RA,autoimmune,GEN,MR,1.291,OR,1.190,1.391,0.141,Approved,Concordant,FCRL3 proteomics MR (SSRN 4709115)
+CD20-RA,RA,autoimmune,OBS,case_control_SMD,,SMD,,,0.500,Approved,Concordant,"RF positivity 60-80% in RA; B-cell synovial infiltration; author-estimated SMD"
+IL-4Ra-AD,AD,autoimmune,GEN,MR,1.02,OR,,,0.011,Approved,Construct-limited,"Weak/null IL4R MR for AD (systematic review PMID 37977498)"
+IL-4Ra-AD,AD,autoimmune,OBS,case_control_SMD,,SMD,,,0.150,Approved,Construct-limited,"CONSTRUCT ISSUE: IL-4 not dominant in AD; IL-13 is 7x elevated (Hamid 1996 PMID 9158100; Jeong 2003 PMID 15014952)"
+IL-1b-CVD,CVD,autoimmune,GEN,MR,1.00,OR,,,0.000,Failed,Qual. disc.,"IL-1Ra MR: genetically higher IL-1Ra -> increased CAD OR 1.36 (PMID 32223966); null/adverse for IL-1 blockade"
+IL-1b-CVD,CVD,autoimmune,OBS,observational,1.37,OR,,,0.174,Failed,Qual. disc.,"CRP/IL-1 inflammatory axis (ERFC 2010); same construct as cardio CRP family"
