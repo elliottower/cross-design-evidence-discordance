@@ -1,0 +1,39 @@
+family,disease,domain,evidence_type,study_design,effect_size_original,effect_size_unit,CI_lower,CI_upper,cohen_d,drug_outcome,classification,source
+Metabolic-AD,AD,neuro,GEN,MR,1.01,OR,,,0.006,Failed,Qual. disc.,MR of T2D and AD
+Metabolic-AD,AD,neuro,OBS,observational,1.53,RR,,,0.234,Failed,Qual. disc.,Observational cohorts T2D-AD
+ModRisk-AD,AD,neuro,GEN,MR,1.10,OR,,,0.053,Failed,Qual. disc.,MR of modifiable risk factors
+ModRisk-AD,AD,neuro,OBS,observational,1.46,RR,,,0.209,Failed,Qual. disc.,Observational cohorts
+Anti-CD20-MS,MS,neuro,GEN,MR,0.83,OR,0.79,0.89,0.103,Approved,Concordant,Lin 2023 FCRL3-CD20
+Anti-CD20-MS,MS,neuro,OBS,observational,,,,,Approved,Concordant,Hu 2019 B-cell depletion efficacy (d~0.80)
+Smoking-MS/AD,MS/AD,neuro,GEN,MR,1.03,OR,,,0.016,Failed,Qual. disc.,MR of smoking and MS/AD
+Smoking-MS/AD,MS/AD,neuro,OBS,observational,1.46,RR,1.33,1.59,0.209,Failed,Qual. disc.,Poorolajal 2017 meta-analysis ever vs never smoking and MS (PMID 27160862)
+HRT-AD,AD,neuro,GEN,MR,1.00,OR,0.85,1.18,0.000,Failed,Qual. disc.,Barth 2025 estradiol MR
+HRT-AD,AD,neuro,OBS,observational,0.67,OR,0.58,0.78,0.220,Failed,Qual. disc.,Song 2020 meta-analysis
+BMI-MS,MS,neuro,GEN,MR,1.41,OR,1.20,1.66,0.189,Pending,Prediction pending,Mokry 2016 IVW per 1 SD BMI
+BMI-MS,MS,neuro,OBS,observational,1.92,RR,,,0.361,Pending,Prediction pending,Observational cohorts obesity-MS
+BMI-AD,AD,neuro,GEN,MR,1.03,OR,1.01,1.05,0.016,Failed,Qual. disc.,Life-course MR BMI-AD (near null)
+BMI-AD,AD,neuro,OBS,observational,2.04,RR,1.59,2.62,0.393,Failed,Qual. disc.,Anstey 2011 midlife obese vs normal BMI meta-analysis (PMID 21348917)
+VitaminD-MS,MS,neuro,GEN,MR,2.00,OR,,,0.382,Failed,Concordant,MR of vitamin D and MS
+VitaminD-MS,MS,neuro,OBS,observational,1.40,OR,1.19,1.64,0.186,Failed,Concordant,Munger 2006
+EBV-MS,MS,neuro,GEN,MR,,,,,Approved,Concordant,MR of EBV and MS (d~1.92)
+EBV-MS,MS,neuro,OBS,observational,,,,,Approved,Concordant,Observational EBV-MS (d~0.53)
+HDL/CETP,CVD,cardio,GEN,MR,0.93,OR,0.68,1.26,0.040,Failed,Qual. disc.,Voight 2012 14-SNP score per 1 SD HDL-C
+HDL/CETP,CVD,cardio,OBS,observational,0.62,OR,,,0.264,Failed,Qual. disc.,Voight 2012 observational per 1 SD HDL-C
+Niacin/HDL,CVD,cardio,GEN,MR,0.93,OR,0.68,1.26,0.040,Failed,Qual. disc.,Voight 2012 (shared with HDL/CETP)
+Niacin/HDL,CVD,cardio,OBS,observational,0.62,OR,,,0.264,Failed,Qual. disc.,Voight 2012 observational per 1 SD HDL-C
+Homocysteine,CVD,cardio,GEN,MR,1.02,OR,0.98,1.07,0.011,Failed,Qual. disc.,Clarke 2012 MTHFR TT vs CC unpublished
+Homocysteine,CVD,cardio,OBS,observational,1.32,OR,,,0.153,Failed,Qual. disc.,Homocysteine Studies Collaboration 2002 per 5 umol/L
+CRP,CVD,cardio,GEN,MR,1.00,OR,0.97,1.02,0.000,No benefit,Qual. disc.,Elliott 2009 per 20% lower CRP
+CRP,CVD,cardio,OBS,observational,1.37,RR,,,0.173,No benefit,Qual. disc.,ERFC 2010 per 1 SD log CRP
+Uric acid,CVD,cardio,GEN,MR,1.05,OR,0.92,1.20,0.027,Failed,Ambiguous,White 2016 Egger MR per 1 SD urate
+Uric acid,CVD,cardio,OBS,observational,1.07,OR,,,0.037,Failed,Ambiguous,White 2016 observational per 1 SD urate
+LDL/PCSK9,CVD,cardio,GEN,MR,1.78,OR,1.58,2.01,0.318,Approved,Concordant,Holmes 2015 unrestricted MR per 1 mmol/L LDL
+LDL/PCSK9,CVD,cardio,OBS,observational,1.52,OR,,,0.231,Approved,Concordant,Lewington 2007 PSC / Ference 2017 per 1 mmol/L LDL
+Blood pressure,Stroke,cardio,GEN,MR,1.44,OR,1.35,1.55,0.201,Approved,Concordant,Georgakis 2020 per 10 mmHg SBP any stroke
+Blood pressure,Stroke,cardio,OBS,observational,1.41,RR,,,0.189,Approved,Concordant,Lewington 2002 PSC per 10 mmHg SBP stroke mortality
+Triglycerides,CVD,cardio,GEN,MR,1.62,OR,1.24,2.11,0.266,Approved,Concordant,Holmes 2015 unrestricted MR per 1 log-unit TG
+Triglycerides,CVD,cardio,OBS,observational,1.72,OR,1.56,1.90,0.299,Approved,Concordant,Sarwar 2007 top vs bottom tertile TG
+Lp(a),CVD,cardio,GEN,MR,0.94,OR,0.93,0.95,0.034,Pending,Concordant,Burgess 2018 per 10 mg/dL lower Lp(a)
+Lp(a),CVD,cardio,OBS,observational,1.13,OR,1.09,1.18,0.067,Pending,Concordant,Erqou/ERFC 2009 per 1 SD Lp(a)
+IL-6R,CVD,cardio,GEN,MR,0.95,OR,0.93,0.97,0.028,Pending,Concordant,IL6R MR Consortium 2012 per allele
+IL-6R,CVD,cardio,OBS,observational,1.25,RR,,,0.123,Pending,Concordant,Danesh 2008/ERFC per 1 SD log IL-6
