@@ -104,7 +104,7 @@ Each family's MR estimate must have its scale declared before classification. Th
 | Triglycerides | Per 1 log-unit TG | No |
 | Lp(a) | Per 10 mg/dL Lp(a) | No |
 | IL-6R | Per allele (Asp358Ala) | **Yes — must rescale to per-SD sIL-6R** |
-| Anti-CD20/MS | Per allele (FCRL3) | **Yes — must rescale to per-SD CD20 expression** |
+| Anti-CD20/MS | Per SD circulating FCRL3 (Lin 2023, PMID 36864689) | No (already per-SD; proteomics MR) |
 | BMI-MS | Per 1 SD BMI (Mokry 2016) | No |
 | BMI-AD | Per 1 SD BMI (life-course MR) | No |
 | All other neuro families | Per-SD or per-unit | No |
@@ -143,7 +143,7 @@ Nine mechanism families with both observational and MR/genetic evidence (after s
 |--------|-------|------|----------|----------------|------------|---------|----------|
 | Metabolic-AD | 0.234 | 0.005 | Null | Qual. discordance | Failure | Failed | ✓ |
 | ModRisk-AD | 0.209 | 0.053 | Null | Qual. discordance | Failure | Failed | ✓ |
-| Anti-CD20-MS | 0.442 | 0.257 | Causal | Concordance | Success | Approved | ✓ |
+| Anti-CD20-MS | 0.442 | 0.103 | Causal | Concordance | Success | Approved | ✓ |
 | Smoking-MS/AD | 0.209 | 0.016 | Null | Qual. discordance | Failure | Failed | ✓ |
 | HRT-AD | 0.221 | 0.000 | Null | Qual. discordance | Failure | Failed | ✓ |
 | BMI-AD | 0.393 | 0.016 | Null | Qual. discordance | Failure | Failed | ✓ |
@@ -160,7 +160,7 @@ Ten mechanism families applied as a cross-domain replication, using the identica
 
 **Pre-existing result:** 7/7 unambiguous families correctly classified. Uric acid is ambiguous (both OBS and MR d < 0.10 → null concordance). Combined across domains: **14/15 unambiguous family-level outcomes correctly classified.**
 
-**Sensitivity analysis:** Classification repeated at d thresholds of 0.08, 0.10, 0.12, and 0.15. Result: 14/15 (or 14/16 including uric acid as a miss) at all tested thresholds. The rule is insensitive to threshold choice in the [0.08, 0.15] range for all scored families. Anti-CD20-MS (GEN d = 0.257 after per-allele rescaling) and IL-6R (GEN d = 0.083 after per-allele rescaling) are the boundary-sensitive families, but both are either safely above threshold (Anti-CD20) or pending (IL-6R).
+**Sensitivity analysis:** Classification repeated at d thresholds of 0.08, 0.10, 0.12, and 0.15. Result: 14/15 (or 14/16 including uric acid as a miss) at all tested thresholds. The rule is insensitive to threshold choice in the [0.08, 0.15] range for all scored families. Anti-CD20-MS (GEN d = 0.103, per-SD proteomics MR, borderline above threshold) and IL-6R (GEN d = 0.083 after per-allele rescaling) are the boundary-sensitive families. Anti-CD20-MS is the most threshold-sensitive scored family: at d ≥ 0.12 it would reclassify as MR null. IL-6R is pending.
 
 ---
 

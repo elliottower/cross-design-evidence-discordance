@@ -130,7 +130,6 @@ NEURO_FAMILIES = [
      "drug_outcome": "Failed"},
     {"family": "Anti-CD20-MS", "domain": "neuro", "obs_OR": 2.23, "gen_OR": 0.83,
      "gen_CI_lower": 0.79, "gen_CI_upper": 0.89,
-     "per_allele": True, "sd_per_allele": 0.40,
      "drug_outcome": "Approved"},
     {"family": "Smoking-MS/AD", "domain": "neuro", "obs_OR": 1.46, "gen_OR": 1.03,
      "drug_outcome": "Failed"},
@@ -188,7 +187,10 @@ AUTOIMMUNE_FAMILIES = [
      "gen_OR": 1.00,
      "drug_outcome": "Approved"},
     {"family": "IL-17-psoriasis", "domain": "autoimmune", "obs_OR": 2.00,
-     "gen_OR": 1.00,
+     "gen_OR": 0.998,
+     "drug_outcome": "Approved"},
+    {"family": "JAK-STAT-RA", "domain": "autoimmune", "obs_OR": 2.00,
+     "gen_OR": 1.27, "gen_CI_lower": 1.20, "gen_CI_upper": 1.34,
      "drug_outcome": "Approved"},
 ]
 
