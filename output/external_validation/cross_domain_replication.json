@@ -1,0 +1,595 @@
+{
+  "generated": "2026-07-02T22:59:11.891744",
+  "method": "Cross-domain Q-based discordance prediction",
+  "key_finding": "Family resolution determines predictive power: mechanism-level (neuro) > disorder-level (psych)",
+  "neuro": {
+    "n_families": 8,
+    "family_type": "mechanism-specific",
+    "domain": "Neuroepidemiology (MS/AD)",
+    "n_total": 20,
+    "n_predictable": 12,
+    "n_unpredictable": 8,
+    "metrics": {
+      "basic": {
+        "tp": 6,
+        "fp": 5,
+        "tn": 0,
+        "fn": 1,
+        "accuracy": 0.5,
+        "sensitivity": 0.8571428571428571,
+        "specificity": 0.0,
+        "ppv": 0.5454545454545454,
+        "npv": 0.0,
+        "odds_ratio": 0.0,
+        "p_fisher": 1.0,
+        "n": 12
+      },
+      "refined": {
+        "tp": 6,
+        "fp": 2,
+        "tn": 3,
+        "fn": 1,
+        "accuracy": 0.75,
+        "sensitivity": 0.8571428571428571,
+        "specificity": 0.6,
+        "ppv": 0.75,
+        "npv": 0.75,
+        "odds_ratio": 9.0,
+        "p_fisher": 0.22222222222222227,
+        "n": 12
+      }
+    }
+  },
+  "psych": {
+    "n_families": 6,
+    "family_type": "disorder-level",
+    "domain": "Psychiatry",
+    "n_total": 31,
+    "n_predictable": 24,
+    "n_unpredictable": 7,
+    "metrics": {
+      "basic": {
+        "tp": 14,
+        "fp": 10,
+        "tn": 0,
+        "fn": 0,
+        "accuracy": 0.5833333333333334,
+        "sensitivity": 1.0,
+        "specificity": 0.0,
+        "ppv": 0.5833333333333334,
+        "npv": 0,
+        "odds_ratio": NaN,
+        "p_fisher": 1.0,
+        "n": 24
+      },
+      "refined": {
+        "tp": 14,
+        "fp": 10,
+        "tn": 0,
+        "fn": 0,
+        "accuracy": 0.5833333333333334,
+        "sensitivity": 1.0,
+        "specificity": 0.0,
+        "ppv": 0.5833333333333334,
+        "npv": 0,
+        "odds_ratio": NaN,
+        "p_fisher": 1.0,
+        "n": 24
+      }
+    }
+  },
+  "per_drug_neuro": [
+    {
+      "drug": "lecanemab",
+      "indication": "Alzheimer's disease (early)",
+      "family": "Amyloid_AD",
+      "actual": "Approved",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "donanemab",
+      "indication": "Alzheimer's disease (early)",
+      "family": "Amyloid_AD",
+      "actual": "Approved",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "aducanumab",
+      "indication": "Alzheimer's disease (early)",
+      "family": "Amyloid_AD",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "solanezumab",
+      "indication": "Alzheimer's disease (preclinical)",
+      "family": "Amyloid_AD",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "solanezumab",
+      "indication": "Alzheimer's disease (mild)",
+      "family": "Amyloid_AD",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "verubecestat",
+      "indication": "Alzheimer's disease (mild-moderate)",
+      "family": "Amyloid_AD",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "semagacestat",
+      "indication": "Alzheimer's disease (mild-moderate)",
+      "family": "Amyloid_AD",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "semaglutide",
+      "indication": "Alzheimer's disease (early)",
+      "family": "Metabolic_AD",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "ginkgo_biloba",
+      "indication": "Dementia prevention",
+      "family": "FailedAD_RCT",
+      "actual": "Failed",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null
+    },
+    {
+      "drug": "CEE_MPA_HRT",
+      "indication": "Dementia prevention in postmenopausal women",
+      "family": "HRT_AD",
+      "actual": "Failed",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null
+    },
+    {
+      "drug": "ocrelizumab",
+      "indication": "PPMS (progressive MS)",
+      "family": "AntiCD20_MS",
+      "actual": "Approved",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null
+    },
+    {
+      "drug": "ocrelizumab",
+      "indication": "RRMS (relapsing MS)",
+      "family": "AntiCD20_MS",
+      "actual": "Approved",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null
+    },
+    {
+      "drug": "natalizumab",
+      "indication": "RRMS (relapsing MS)",
+      "family": "OtherDMT_MS",
+      "actual": "Approved",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "quantitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Approve"
+    },
+    {
+      "drug": "cladribine",
+      "indication": "RRMS (relapsing MS)",
+      "family": "OtherDMT_MS",
+      "actual": "Approved",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "quantitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Approve"
+    },
+    {
+      "drug": "fingolimod",
+      "indication": "RRMS (relapse reduction)",
+      "family": "Fingolimod_MS",
+      "actual": "Approved",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null
+    },
+    {
+      "drug": "fingolimod",
+      "indication": "RRMS (disability progression)",
+      "family": "Fingolimod_MS",
+      "actual": "Failed",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null
+    },
+    {
+      "drug": "dimethyl_fumarate",
+      "indication": "RRMS (relapsing MS)",
+      "family": "OtherDMT_MS",
+      "actual": "Approved",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "quantitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Approve"
+    },
+    {
+      "drug": "simvastatin",
+      "indication": "SPMS (progressive MS)",
+      "family": "FailedNeuro_MS",
+      "actual": "Failed",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null
+    },
+    {
+      "drug": "high_dose_biotin",
+      "indication": "Progressive MS",
+      "family": "FailedNeuro_MS",
+      "actual": "Failed",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null
+    },
+    {
+      "drug": "vit_d_supplementation",
+      "indication": "MS disease activity (CIS/early RRMS)",
+      "family": "VitD_MS",
+      "actual": "Failed",
+      "q_classification": "TRANSPORT",
+      "discordance_type": "concordant",
+      "pred_basic": "Approve",
+      "pred_refined": "Approve"
+    }
+  ],
+  "per_drug_psych": [
+    {
+      "drug": "esketamine",
+      "indication": "Treatment-resistant depression",
+      "family": "Depression",
+      "actual": "Approved",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "brexanolone",
+      "indication": "Postpartum depression",
+      "family": "Depression",
+      "actual": "Approved",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "brexpiprazole",
+      "indication": "Schizophrenia and adjunctive MDD",
+      "family": "Depression",
+      "actual": "Approved",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "cariprazine",
+      "indication": "Schizophrenia and bipolar I disorder",
+      "family": "Schizophrenia",
+      "actual": "Approved",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "pimavanserin",
+      "indication": "Parkinson's disease psychosis",
+      "family": NaN,
+      "actual": "Approved",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null
+    },
+    {
+      "drug": "pimavanserin",
+      "indication": "Schizophrenia negative symptoms",
+      "family": "Schizophrenia",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "pimavanserin",
+      "indication": "Dementia-related psychosis (broad)",
+      "family": "Schizophrenia",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "valbenazine",
+      "indication": "Tardive dyskinesia",
+      "family": NaN,
+      "actual": "Approved",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null
+    },
+    {
+      "drug": "deutetrabenazine",
+      "indication": "Tardive dyskinesia",
+      "family": NaN,
+      "actual": "Approved",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null
+    },
+    {
+      "drug": "lumateperone",
+      "indication": "Schizophrenia",
+      "family": "Schizophrenia",
+      "actual": "Approved",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "dextromethorphan/bupropion",
+      "indication": "Major depressive disorder",
+      "family": "Depression",
+      "actual": "Approved",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "gepirone",
+      "indication": "Major depressive disorder",
+      "family": "Depression",
+      "actual": "Approved",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "zuranolone",
+      "indication": "Postpartum depression",
+      "family": "Depression",
+      "actual": "Approved",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "zuranolone",
+      "indication": "Major depressive disorder (broader indication)",
+      "family": "Depression",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "xanomeline/trospium (KarXT)",
+      "indication": "Schizophrenia",
+      "family": "Schizophrenia",
+      "actual": "Approved",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "rapastinel (GLYX-13)",
+      "indication": "Treatment-resistant depression (adjunctive)",
+      "family": "Depression",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "ALKS-5461 (buprenorphine/samidorphan)",
+      "indication": "Major depressive disorder (adjunctive)",
+      "family": "Depression",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "roluperidone (MIN-101)",
+      "indication": "Schizophrenia negative symptoms",
+      "family": "Schizophrenia",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "ulotaront (SEP-363856)",
+      "indication": "Schizophrenia (acute)",
+      "family": "Schizophrenia",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "emraclidine",
+      "indication": "Schizophrenia",
+      "family": "Schizophrenia",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "MDMA (midomafetamine)",
+      "indication": "PTSD (with psychotherapy)",
+      "family": NaN,
+      "actual": "Failed",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null
+    },
+    {
+      "drug": "navacaprant",
+      "indication": "Major depressive disorder",
+      "family": "Depression",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "aticaprant",
+      "indication": "Major depressive disorder with anhedonia (adjunctive)",
+      "family": "Depression",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "iclepertin",
+      "indication": "Cognitive impairment associated with schizophrenia (CIAS)",
+      "family": "Schizophrenia",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "esmethadone (REL-1017)",
+      "indication": "Major depressive disorder (adjunctive)",
+      "family": "Depression",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "troriluzole (BHV-4157)",
+      "indication": "Generalized anxiety disorder",
+      "family": NaN,
+      "actual": "Failed",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null
+    },
+    {
+      "drug": "encenicline (EVP-6124)",
+      "indication": "Cognitive impairment in schizophrenia",
+      "family": "Schizophrenia",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "olanzapine/samidorphan",
+      "indication": "Schizophrenia and bipolar I disorder",
+      "family": "Schizophrenia",
+      "actual": "Approved",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "pitolisant",
+      "indication": "Narcolepsy (excessive daytime sleepiness)",
+      "family": NaN,
+      "actual": "Approved",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null
+    },
+    {
+      "drug": "solriamfetol",
+      "indication": "Narcolepsy and obstructive sleep apnea (excessive daytime sleepiness)",
+      "family": NaN,
+      "actual": "Approved",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null
+    },
+    {
+      "drug": "sirukumab",
+      "indication": "Treatment-resistant depression",
+      "family": "Depression",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    }
+  ]
+}

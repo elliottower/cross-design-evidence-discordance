@@ -4,7 +4,7 @@ Metabolic-AD,AD,neuro,OBS,observational,1.53,RR,,,0.234,Failed,Qual. disc.,Obser
 ModRisk-AD,AD,neuro,GEN,MR,1.10,OR,,,0.053,Failed,Qual. disc.,MR of modifiable risk factors
 ModRisk-AD,AD,neuro,OBS,observational,1.46,RR,,,0.209,Failed,Qual. disc.,Observational cohorts
 Anti-CD20-MS,MS,neuro,GEN,MR,0.83,OR,0.79,0.89,0.103,Approved,Concordant,"Lin 2023 per-SD circulating FCRL3 protein on MS risk (PMC10393411)"
-Anti-CD20-MS,MS,neuro,OBS,observational,,,,,Approved,Concordant,Hu 2019 B-cell depletion efficacy (d~0.80)
+Anti-CD20-MS,MS,neuro,OBS,observational,2.23,OR,,,0.442,Approved,Concordant,Hu 2019 B-cell count OR for MS (classifier uses OR=2.23 d=0.44)
 Smoking-MS/AD,MS/AD,neuro,GEN,MR,1.03,OR,,,0.016,Failed,Qual. disc.,MR of smoking and MS/AD
 Smoking-MS/AD,MS/AD,neuro,OBS,observational,1.46,RR,1.33,1.59,0.209,Failed,Qual. disc.,Poorolajal 2017 meta-analysis ever vs never smoking and MS (PMID 27160862)
 HRT-AD,AD,neuro,GEN,MR,1.00,OR,0.85,1.18,0.000,Failed,Qual. disc.,Barth 2025 estradiol MR

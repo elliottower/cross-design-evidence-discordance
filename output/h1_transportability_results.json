@@ -1,0 +1,780 @@
+{
+  "metadata": {
+    "timestamp": "2026-07-02T22:25:08.643223",
+    "domain": "neuroepidemiology (MS / AD)",
+    "method": "H^1 effect-modifier classification (transportability)",
+    "data_source": "/Users/elliottower/Documents/GitHub/neuroepidemiology-validity-audit/data/effect_sizes_v12.csv",
+    "n_total_entries": 76,
+    "n_usable": 64,
+    "n_qualifying_families": 8,
+    "alpha": 0.05,
+    "alpha_bonferroni": 0.00625
+  },
+  "per_family": {
+    "Amyloid_AD": {
+      "family": "Amyloid_AD",
+      "n_entries": 7,
+      "n_evidence_types": 2,
+      "evidence_types": [
+        "OBS",
+        "RCT"
+      ],
+      "Q": 8.717491022391828,
+      "df": 1,
+      "p": 0.0031517148094032388,
+      "I2": 88.5288095229305,
+      "tau2": 0.2995003795328386,
+      "beta_pooled": 0.036180176137383155,
+      "alpha_bonferroni": 0.00625,
+      "classification": "NON-TRANSPORT",
+      "mean_tier": 1.0,
+      "modal_tier": "Disconfirmed",
+      "type_details": {
+        "OBS": {
+          "beta": 0.8562,
+          "se": 0.2782,
+          "k": 2,
+          "entries": [
+            {
+              "case_id": "AD-001",
+              "claim": "Amyloid-PET+ -> conversion to AD (aMCI)",
+              "d_magnitude": 0.7273,
+              "d_se": 0.3177,
+              "original_scale": "hazard ratio",
+              "original_estimate": 3.74
+            },
+            {
+              "case_id": "AD-001b",
+              "claim": "Amyloid-PET+ (PiB) -> MCI-AD conversion",
+              "d_magnitude": 1.2804,
+              "d_se": 0.576,
+              "original_scale": "hazard ratio",
+              "original_estimate": 10.2
+            }
+          ]
+        },
+        "RCT": {
+          "beta": 0.0337,
+          "se": 0.0154,
+          "k": 5,
+          "entries": [
+            {
+              "case_id": "AD-032",
+              "claim": "Solanezumab -> progression to AD dementia (A4, preclinical)",
+              "d_magnitude": 0.0424,
+              "d_se": 0.0634,
+              "original_scale": "hazard ratio",
+              "original_estimate": 1.08
+            },
+            {
+              "case_id": "AD-033",
+              "claim": "Solanezumab -> ADAS/CDR decline (EXPEDITION3)",
+              "d_magnitude": 0.0283,
+              "d_se": 0.0281,
+              "original_scale": "risk ratio",
+              "original_estimate": 0.95
+            },
+            {
+              "case_id": "AD-035",
+              "claim": "Semagacestat -> functional/cog decline",
+              "d_magnitude": 0.0525,
+              "d_se": 0.0268,
+              "original_scale": "risk ratio",
+              "original_estimate": 1.1
+            },
+            {
+              "case_id": "AD-036",
+              "claim": "Aducanumab high-dose -> CDR-SB (ENGAGE, null study)",
+              "d_magnitude": 0.0109,
+              "d_se": 0.0357,
+              "original_scale": "risk ratio",
+              "original_estimate": 1.02
+            },
+            {
+              "case_id": "AD-037",
+              "claim": "Verubecestat -> progression (EPOCH, mild-mod)",
+              "d_magnitude": 0.0269,
+              "d_se": 0.0428,
+              "original_scale": "hazard ratio",
+              "original_estimate": 1.05
+            }
+          ]
+        }
+      },
+      "pairwise_q": {
+        "OBS vs RCT": {
+          "Q": 8.7175,
+          "p": 0.0031517148094032388,
+          "significant": true,
+          "delta_d": 0.8226,
+          "types": [
+            "OBS",
+            "RCT"
+          ],
+          "type_betas": [
+            0.8562,
+            0.0337
+          ]
+        }
+      },
+      "discordant_pairs": [
+        "OBS vs RCT"
+      ],
+      "obstruction_taxonomy": "MIMIC_MECHANISM"
+    },
+    "EBV_MS": {
+      "family": "EBV_MS",
+      "n_entries": 2,
+      "n_evidence_types": 2,
+      "evidence_types": [
+        "GEN",
+        "OBS"
+      ],
+      "Q": 5.548557476076905,
+      "df": 1,
+      "p": 0.018495924129384167,
+      "I2": 81.97729762534519,
+      "tau2": 0.7928628506047186,
+      "beta_pooled": 0.6278963131863573,
+      "alpha_bonferroni": 0.00625,
+      "classification": "TRANSPORT",
+      "mean_tier": 4.0,
+      "modal_tier": "Mechanistically Supported",
+      "type_details": {
+        "GEN": {
+          "beta": 1.9176,
+          "se": 0.5686,
+          "k": 1,
+          "entries": [
+            {
+              "case_id": "MS-001",
+              "claim": "EBV seroconversion -> MS risk",
+              "d_magnitude": 1.9176,
+              "d_se": 0.5686,
+              "original_scale": "hazard/rate ratio",
+              "original_estimate": 32.4
+            }
+          ]
+        },
+        "OBS": {
+          "beta": 0.5268,
+          "se": 0.1592,
+          "k": 1,
+          "entries": [
+            {
+              "case_id": "MS-018b",
+              "claim": "EBV seropositivity alone -> MS",
+              "d_magnitude": 0.5268,
+              "d_se": 0.1592,
+              "original_scale": "odds ratio",
+              "original_estimate": 2.6
+            }
+          ]
+        }
+      }
+    },
+    "Metabolic_AD": {
+      "family": "Metabolic_AD",
+      "n_entries": 4,
+      "n_evidence_types": 3,
+      "evidence_types": [
+        "GEN",
+        "OBS",
+        "RCT"
+      ],
+      "Q": 109.35360208002768,
+      "df": 2,
+      "p": 0.0,
+      "I2": 98.17107076314106,
+      "tau2": 0.022257201317447697,
+      "beta_pooled": 0.08347924567555606,
+      "alpha_bonferroni": 0.00625,
+      "classification": "NON-TRANSPORT",
+      "mean_tier": 2.0,
+      "modal_tier": "Disconfirmed",
+      "type_details": {
+        "GEN": {
+          "beta": 0.0055,
+          "se": 0.0139,
+          "k": 1,
+          "entries": [
+            {
+              "case_id": "AD-020",
+              "claim": "T2D liability -> AD (MR, IVW)",
+              "d_magnitude": 0.0055,
+              "d_se": 0.0139,
+              "original_scale": "odds ratio",
+              "original_estimate": 1.01
+            }
+          ]
+        },
+        "OBS": {
+          "beta": 0.2401,
+          "se": 0.0184,
+          "k": 2,
+          "entries": [
+            {
+              "case_id": "AD-005b",
+              "claim": "T2D -> AD (updated cohort meta)",
+              "d_magnitude": 0.2345,
+              "d_se": 0.0194,
+              "original_scale": "risk ratio",
+              "original_estimate": 1.53
+            },
+            {
+              "case_id": "AD-005l",
+              "claim": "Diabetes (midlife) -> dementia (Deng)",
+              "d_magnitude": 0.2893,
+              "d_se": 0.057,
+              "original_scale": "risk ratio",
+              "original_estimate": 1.69
+            }
+          ]
+        },
+        "RCT": {
+          "beta": 0.0,
+          "se": 0.0364,
+          "k": 1,
+          "entries": [
+            {
+              "case_id": "AD-034",
+              "claim": "Semaglutide -> cognitive decline (EVOKE/EVOKE+)",
+              "d_magnitude": 0.0,
+              "d_se": 0.0364,
+              "original_scale": "hazard ratio",
+              "original_estimate": 1.0
+            }
+          ]
+        }
+      },
+      "pairwise_q": {
+        "GEN vs OBS": {
+          "Q": 103.6073,
+          "p": 0.0,
+          "significant": true,
+          "delta_d": 0.2347,
+          "types": [
+            "GEN",
+            "OBS"
+          ],
+          "type_betas": [
+            0.0055,
+            0.2401
+          ]
+        },
+        "GEN vs RCT": {
+          "Q": 0.0198,
+          "p": 0.8880893522195565,
+          "significant": false,
+          "delta_d": 0.0055,
+          "types": [
+            "GEN",
+            "RCT"
+          ],
+          "type_betas": [
+            0.0055,
+            0.0
+          ]
+        },
+        "OBS vs RCT": {
+          "Q": 34.6839,
+          "p": 3.8783075639869935e-09,
+          "significant": true,
+          "delta_d": 0.2401,
+          "types": [
+            "OBS",
+            "RCT"
+          ],
+          "type_betas": [
+            0.2401,
+            0.0
+          ]
+        }
+      },
+      "discordant_pairs": [
+        "GEN vs OBS",
+        "OBS vs RCT"
+      ],
+      "obstruction_taxonomy": "UNCLASSIFIED"
+    },
+    "ModRisk_AD": {
+      "family": "ModRisk_AD",
+      "n_entries": 8,
+      "n_evidence_types": 2,
+      "evidence_types": [
+        "GEN",
+        "OBS"
+      ],
+      "Q": 63.96491085076941,
+      "df": 1,
+      "p": 1.2212453270876722e-15,
+      "I2": 98.43664286137597,
+      "tau2": 0.010418420460366675,
+      "beta_pooled": 0.12036569863844604,
+      "alpha_bonferroni": 0.00625,
+      "classification": "NON-TRANSPORT",
+      "mean_tier": 4.0,
+      "modal_tier": "Mechanistically Supported",
+      "type_details": {
+        "GEN": {
+          "beta": 0.0533,
+          "se": 0.0123,
+          "k": 2,
+          "entries": [
+            {
+              "case_id": "AD-021",
+              "claim": "Educational attainment -> AD (MR, IVW)",
+              "d_magnitude": 0.0642,
+              "d_se": 0.0143,
+              "original_scale": "odds ratio",
+              "original_estimate": 0.89
+            },
+            {
+              "case_id": "AD-022",
+              "claim": "Systolic BP (10mmHg) -> AD (MR, IVW)",
+              "d_magnitude": 0.0216,
+              "d_se": 0.0244,
+              "original_scale": "odds ratio",
+              "original_estimate": 1.04
+            }
+          ]
+        },
+        "OBS": {
+          "beta": 0.1988,
+          "se": 0.0134,
+          "k": 6,
+          "entries": [
+            {
+              "case_id": "AD-005j",
+              "claim": "Hypercholesterolemia -> dementia",
+              "d_magnitude": 0.2487,
+              "d_se": 0.0779,
+              "original_scale": "risk ratio",
+              "original_estimate": 1.57
+            },
+            {
+              "case_id": "AD-005k",
+              "claim": "Midlife hypertension -> dementia",
+              "d_magnitude": 0.299,
+              "d_se": 0.09,
+              "original_scale": "risk ratio",
+              "original_estimate": 1.72
+            },
+            {
+              "case_id": "AD-005m",
+              "claim": "TBI -> dementia",
+              "d_magnitude": 0.3271,
+              "d_se": 0.0472,
+              "original_scale": "odds ratio",
+              "original_estimate": 1.81
+            },
+            {
+              "case_id": "AD-005m2",
+              "claim": "Mild TBI -> dementia",
+              "d_magnitude": 0.371,
+              "d_se": 0.04,
+              "original_scale": "odds ratio",
+              "original_estimate": 1.96
+            },
+            {
+              "case_id": "AD-005a",
+              "claim": "Hearing loss -> dementia",
+              "d_magnitude": 0.2557,
+              "d_se": 0.043,
+              "original_scale": "hazard ratio",
+              "original_estimate": 1.59
+            },
+            {
+              "case_id": "AD-005p",
+              "claim": "Heavy alcohol -> AD",
+              "d_magnitude": 0.1404,
+              "d_se": 0.0164,
+              "original_scale": "relative risk",
+              "original_estimate": 1.29
+            }
+          ]
+        }
+      },
+      "pairwise_q": {
+        "GEN vs OBS": {
+          "Q": 63.9649,
+          "p": 1.2212453270876722e-15,
+          "significant": true,
+          "delta_d": 0.1455,
+          "types": [
+            "GEN",
+            "OBS"
+          ],
+          "type_betas": [
+            0.0533,
+            0.1988
+          ]
+        }
+      },
+      "discordant_pairs": [
+        "GEN vs OBS"
+      ],
+      "obstruction_taxonomy": "UNCLASSIFIED"
+    },
+    "Obesity_MSAD": {
+      "family": "Obesity_MSAD",
+      "n_entries": 4,
+      "n_evidence_types": 2,
+      "evidence_types": [
+        "GEN",
+        "OBS"
+      ],
+      "Q": 9.278083612945176,
+      "df": 1,
+      "p": 0.00231911935670448,
+      "I2": 89.22191217801964,
+      "tau2": 0.012318787016755779,
+      "beta_pooled": 0.1980360564480267,
+      "alpha_bonferroni": 0.00625,
+      "classification": "NON-TRANSPORT",
+      "mean_tier": 3.5,
+      "modal_tier": "Mechanistically Supported",
+      "type_details": {
+        "GEN": {
+          "beta": 0.1967,
+          "se": 0.0049,
+          "k": 2,
+          "entries": [
+            {
+              "case_id": "MS-013a",
+              "claim": "Childhood BMI -> MS (MR, unadjusted)",
+              "d_magnitude": 0.1274,
+              "d_se": 0.0582,
+              "original_scale": "odds ratio",
+              "original_estimate": 1.26
+            },
+            {
+              "case_id": "MS-013b",
+              "claim": "Adult BMI -> MS (MR)",
+              "d_magnitude": 0.1972,
+              "d_se": 0.0049,
+              "original_scale": "odds ratio",
+              "original_estimate": 1.43
+            }
+          ]
+        },
+        "OBS": {
+          "beta": 0.3629,
+          "se": 0.0543,
+          "k": 2,
+          "entries": [
+            {
+              "case_id": "AD-005h",
+              "claim": "Midlife obesity -> AD",
+              "d_magnitude": 0.3931,
+              "d_se": 0.0702,
+              "original_scale": "risk ratio",
+              "original_estimate": 2.04
+            },
+            {
+              "case_id": "AD-005h2",
+              "claim": "Midlife obesity -> dementia (Deng)",
+              "d_magnitude": 0.3179,
+              "d_se": 0.0857,
+              "original_scale": "risk ratio",
+              "original_estimate": 1.78
+            }
+          ]
+        }
+      },
+      "pairwise_q": {
+        "GEN vs OBS": {
+          "Q": 9.2781,
+          "p": 0.00231911935670448,
+          "significant": true,
+          "delta_d": 0.1662,
+          "types": [
+            "GEN",
+            "OBS"
+          ],
+          "type_betas": [
+            0.1967,
+            0.3629
+          ]
+        }
+      },
+      "discordant_pairs": [
+        "GEN vs OBS"
+      ],
+      "obstruction_taxonomy": "UNCLASSIFIED"
+    },
+    "OtherDMT_MS": {
+      "family": "OtherDMT_MS",
+      "n_entries": 4,
+      "n_evidence_types": 2,
+      "evidence_types": [
+        "OBS",
+        "RCT"
+      ],
+      "Q": 27.49908153965415,
+      "df": 1,
+      "p": 1.5716912615815204e-07,
+      "I2": 96.36351491027807,
+      "tau2": 0.23252054839057823,
+      "beta_pooled": 0.38884007545354604,
+      "alpha_bonferroni": 0.00625,
+      "classification": "NON-TRANSPORT",
+      "mean_tier": 3.2,
+      "modal_tier": "Mechanistically Supported",
+      "type_details": {
+        "OBS": {
+          "beta": 0.98,
+          "se": 0.1222,
+          "k": 1,
+          "entries": [
+            {
+              "case_id": "MS-016",
+              "claim": "Early-HET vs late: EDSS diff @10yr",
+              "d_magnitude": 0.98,
+              "d_se": 0.1222,
+              "original_scale": "mean diff",
+              "original_estimate": -0.98
+            }
+          ]
+        },
+        "RCT": {
+          "beta": 0.2853,
+          "se": 0.0511,
+          "k": 3,
+          "entries": [
+            {
+              "case_id": "MS-028",
+              "claim": "Cladribine 3.5mg -> 3mo CDP (CLARITY)",
+              "d_magnitude": 0.2208,
+              "d_se": 0.093,
+              "original_scale": "hazard ratio",
+              "original_estimate": 0.67
+            },
+            {
+              "case_id": "MS-029",
+              "claim": "Natalizumab -> sustained CDP (AFFIRM)",
+              "d_magnitude": 0.3003,
+              "d_se": 0.0819,
+              "original_scale": "hazard ratio",
+              "original_estimate": 0.58
+            },
+            {
+              "case_id": "MS-034",
+              "claim": "Dimethyl fumarate -> ARR (DEFINE/CONFIRM)",
+              "d_magnitude": 0.3296,
+              "d_se": 0.0921,
+              "original_scale": "rate ratio",
+              "original_estimate": 0.55
+            }
+          ]
+        }
+      },
+      "pairwise_q": {
+        "OBS vs RCT": {
+          "Q": 27.4991,
+          "p": 1.5716912615815204e-07,
+          "significant": true,
+          "delta_d": 0.6947,
+          "types": [
+            "OBS",
+            "RCT"
+          ],
+          "type_betas": [
+            0.98,
+            0.2853
+          ]
+        }
+      },
+      "discordant_pairs": [
+        "OBS vs RCT"
+      ],
+      "obstruction_taxonomy": "UNCLASSIFIED"
+    },
+    "Smoking_MSAD": {
+      "family": "Smoking_MSAD",
+      "n_entries": 2,
+      "n_evidence_types": 2,
+      "evidence_types": [
+        "GEN",
+        "OBS"
+      ],
+      "Q": 12.956078600873788,
+      "df": 1,
+      "p": 0.00031888441569483117,
+      "I2": 92.28161521085124,
+      "tau2": 0.027982771480451713,
+      "beta_pooled": 0.10411268303645418,
+      "alpha_bonferroni": 0.00625,
+      "classification": "NON-TRANSPORT",
+      "mean_tier": 2.0,
+      "modal_tier": "Disconfirmed",
+      "type_details": {
+        "GEN": {
+          "beta": 0.0163,
+          "se": 0.0409,
+          "k": 1,
+          "entries": [
+            {
+              "case_id": "MS-021",
+              "claim": "Smoking -> MS (MR negative control)",
+              "d_magnitude": 0.0163,
+              "d_se": 0.0409,
+              "original_scale": "odds ratio",
+              "original_estimate": 1.03
+            }
+          ]
+        },
+        "OBS": {
+          "beta": 0.2626,
+          "se": 0.0549,
+          "k": 1,
+          "entries": [
+            {
+              "case_id": "AD-005i",
+              "claim": "Current smoking -> dementia",
+              "d_magnitude": 0.2626,
+              "d_se": 0.0549,
+              "original_scale": "risk ratio",
+              "original_estimate": 1.61
+            }
+          ]
+        }
+      },
+      "pairwise_q": {
+        "GEN vs OBS": {
+          "Q": 12.9561,
+          "p": 0.00031888441569483117,
+          "significant": true,
+          "delta_d": 0.2463,
+          "types": [
+            "GEN",
+            "OBS"
+          ],
+          "type_betas": [
+            0.0163,
+            0.2626
+          ]
+        }
+      },
+      "discordant_pairs": [
+        "GEN vs OBS"
+      ],
+      "obstruction_taxonomy": "UNCLASSIFIED"
+    },
+    "VitD_MS": {
+      "family": "VitD_MS",
+      "n_entries": 5,
+      "n_evidence_types": 2,
+      "evidence_types": [
+        "GEN",
+        "RCT"
+      ],
+      "Q": 7.307379272508629,
+      "df": 1,
+      "p": 0.00686720076582803,
+      "I2": 86.31520326634559,
+      "tau2": 0.010754543672203534,
+      "beta_pooled": 0.24595791658036298,
+      "alpha_bonferroni": 0.00625,
+      "classification": "TRANSPORT",
+      "mean_tier": 1.6,
+      "modal_tier": "Causally Suggestive",
+      "type_details": {
+        "GEN": {
+          "beta": 0.3822,
+          "se": 0.0542,
+          "k": 1,
+          "entries": [
+            {
+              "case_id": "MS-007",
+              "claim": "Genetically-lowered 25(OH)D -> MS (MR)",
+              "d_magnitude": 0.3822,
+              "d_se": 0.0542,
+              "original_scale": "odds ratio",
+              "original_estimate": 2.0
+            }
+          ]
+        },
+        "RCT": {
+          "beta": 0.2243,
+          "se": 0.0216,
+          "k": 4,
+          "entries": [
+            {
+              "case_id": "MS-007b",
+              "claim": "Vit-D suppl -> MS disease activity (CIS RCT)",
+              "d_magnitude": 0.2291,
+              "d_se": 0.0779,
+              "original_scale": "hazard ratio",
+              "original_estimate": 0.66
+            },
+            {
+              "case_id": "MS-007c",
+              "claim": "Vit-D suppl -> MS relapse (meta OR)",
+              "d_magnitude": 0.2291,
+              "d_se": 0.0229,
+              "original_scale": "odds ratio",
+              "original_estimate": 0.66
+            },
+            {
+              "case_id": "MS-007d",
+              "claim": "High-dose vit-D -> RRMS relapse (VIDAMS RCT)",
+              "d_magnitude": 0.0866,
+              "d_se": 0.1573,
+              "original_scale": "hazard ratio",
+              "original_estimate": 1.17
+            },
+            {
+              "case_id": "MS-030",
+              "claim": "Vit-D suppl -> MS relapse (early meta)",
+              "d_magnitude": 0.0111,
+              "d_se": 0.2206,
+              "original_scale": "odds ratio",
+              "original_estimate": 0.98
+            }
+          ]
+        }
+      }
+    }
+  },
+  "summary": {
+    "n_transport": 2,
+    "n_non_transport": 6,
+    "transport_families": [
+      "EBV_MS",
+      "VitD_MS"
+    ],
+    "non_transport_families": [
+      "Amyloid_AD",
+      "Metabolic_AD",
+      "ModRisk_AD",
+      "Obesity_MSAD",
+      "OtherDMT_MS",
+      "Smoking_MSAD"
+    ]
+  },
+  "tier_hypothesis_test": {
+    "transport_mean_tier": 2.8,
+    "transport_tier_name": "Triangulated",
+    "non_transport_mean_tier": 2.6166666666666667,
+    "non_transport_tier_name": "Triangulated",
+    "transport_n": 2,
+    "non_transport_n": 6,
+    "U_statistic": 6.5,
+    "p_value": 0.5,
+    "rank_biserial_r": -0.08333333333333326,
+    "hypothesis_supported": "False",
+    "transport_families": [
+      "EBV_MS",
+      "VitD_MS"
+    ],
+    "non_transport_families": [
+      "Amyloid_AD",
+      "Metabolic_AD",
+      "ModRisk_AD",
+      "Obesity_MSAD",
+      "OtherDMT_MS",
+      "Smoking_MSAD"
+    ]
+  }
+}

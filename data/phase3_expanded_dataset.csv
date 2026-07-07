@@ -1,0 +1,39 @@
+drug_name,target_mechanism,mechanism_class,indication,family,phase3_year,fda_outcome,nct_number,notes
+lecanemab,Anti-amyloid protofibril,Amyloid immunotherapy,Early AD,Amyloid_AD,2022,Approved,NCT03887455,CLARITY-AD 27% CDR-SB slowing
+donanemab,Anti-amyloid N3pG,Amyloid immunotherapy,Early AD,Amyloid_AD,2023,Approved,NCT04437511,TRAILBLAZER-ALZ 2
+aducanumab,Anti-amyloid aggregate,Amyloid immunotherapy,Early AD,Amyloid_AD,2019,Failed,NCT02477800,EMERGE/ENGAGE split; withdrawn 2024
+solanezumab,Anti-amyloid soluble monomer,Amyloid immunotherapy,Preclinical AD,Amyloid_AD,2023,Failed,NCT02008357,A4 prevention trial null
+solanezumab,Anti-amyloid soluble monomer,Amyloid immunotherapy,Mild AD,Amyloid_AD,2016,Failed,NCT01900665,EXPEDITION3 null
+verubecestat,BACE1 inhibitor,Amyloid production,Mild-moderate AD,Amyloid_AD,2018,Failed,NCT01739348,EPOCH futility stop
+semagacestat,Gamma-secretase inhibitor,Amyloid production,Mild-moderate AD,Amyloid_AD,2011,Failed,NCT00594568,Worse than placebo
+bapineuzumab,Anti-amyloid plaque,Amyloid immunotherapy,Mild-moderate AD,Amyloid_AD,2012,Failed,NCT00575055,301/302 both null
+crenezumab,Anti-amyloid oligomer,Amyloid immunotherapy,Prodromal-mild AD,Amyloid_AD,2022,Failed,NCT02670083,CREAD 1/2 futility stop
+gantenerumab,Anti-amyloid plaque,Amyloid immunotherapy,Early AD,Amyloid_AD,2022,Failed,NCT03444870,GRADUATE 1/2 null; high-dose
+lanabecestat,BACE1 inhibitor,Amyloid production,Early AD,Amyloid_AD,2018,Failed,NCT02245737,AMARANTH futility stop
+atabecestat,BACE1 inhibitor,Amyloid production,Preclinical AD,Amyloid_AD,2018,Failed,NCT02569398,Stopped for liver toxicity
+tarenflurbil,Gamma-secretase modulator,Amyloid production,Mild AD,Amyloid_AD,2008,Failed,NCT00322036,Flurizan; completely null
+tramiprosate,Anti-amyloid aggregation,Amyloid aggregation,Mild-moderate AD,Amyloid_AD,2007,Failed,NCT00088673,Null; later reformulated as ALZ-801
+semaglutide,GLP-1 receptor agonist,Metabolic/GLP-1,Early AD,Metabolic_AD,2025,Failed,NCT04777396,EVOKE/EVOKE+ both null
+pioglitazone,PPAR-gamma agonist,Metabolic/insulin,AD prevention,Metabolic_AD,2013,Failed,NCT01931566,TOMORROW trial terminated early
+ginkgo_biloba,Antioxidant,Antioxidant,Dementia prevention,FailedAD_RCT,2008,Failed,NCT00010803,GEM trial null
+CEE_MPA_HRT,Hormone replacement,Hormone,Dementia prevention,HRT_AD,2003,Failed,NCT00000611,WHIMS harmful HR 2.05
+simvastatin,Statin neuroprotection,Neuroprotection,SPMS,FailedNeuro_MS,2026,Failed,NCT03387670,MS-STAT2 null
+high_dose_biotin,Biotin MD1003,Neuroprotection,Progressive MS,FailedNeuro_MS,2020,Failed,NCT02936037,SPI2 all endpoints null
+laquinimod,Quinoline-3-carboxamide,Immunomodulation,RRMS,FailedNeuro_MS,2016,Failed,NCT01707992,CONCERTO null for relapse
+ibudilast,PDE inhibitor,Neuroprotection,Progressive MS,FailedNeuro_MS,2021,Failed,NCT01982942,SPRINT-MS brain atrophy borderline
+ocrelizumab,Anti-CD20 B-cell depletion,Anti-CD20,PPMS,AntiCD20_MS,2017,Approved,NCT01194570,ORATORIO first PPMS DMT
+ocrelizumab,Anti-CD20 B-cell depletion,Anti-CD20,RRMS,AntiCD20_MS,2017,Approved,NCT01247324,OPERA superiority vs IFN
+ofatumumab,Anti-CD20 B-cell depletion,Anti-CD20,RRMS,AntiCD20_MS,2020,Approved,NCT02792218,ASCLEPIOS subcutaneous
+ublituximab,Anti-CD20 B-cell depletion,Anti-CD20,RRMS,AntiCD20_MS,2022,Approved,NCT03277261,ULTIMATE 1/2
+natalizumab,Anti-VLA-4 integrin,Anti-adhesion,RRMS,OtherDMT_MS,2006,Approved,NCT00027300,AFFIRM 42% CDP reduction
+cladribine,Purine analog lymphocyte depletion,Immune reconstitution,RRMS,OtherDMT_MS,2019,Approved,NCT00213135,CLARITY
+fingolimod,S1P receptor modulator,S1P modulation,RRMS relapse,Fingolimod_MS,2010,Approved,NCT00289978,FREEDOMS 48% ARR reduction
+fingolimod,S1P receptor modulator,S1P modulation,RRMS disability,Fingolimod_MS,2014,Failed,NCT01281657,FREEDOMS II CDP null p=0.227
+siponimod,S1P receptor modulator,S1P modulation,SPMS,S1P_MS,2019,Approved,NCT01665144,EXPAND
+ozanimod,S1P receptor modulator,S1P modulation,RRMS,S1P_MS,2020,Approved,NCT02047734,RADIANCE/SUNBEAM
+ponesimod,S1P receptor modulator,S1P modulation,RRMS,S1P_MS,2021,Approved,NCT02425644,OPTIMUM
+dimethyl_fumarate,Nrf2 pathway activator,Nrf2/antioxidant,RRMS,OtherDMT_MS,2013,Approved,NCT00420212,DEFINE/CONFIRM
+diroximel_fumarate,Nrf2 pathway activator,Nrf2/antioxidant,RRMS,OtherDMT_MS,2019,Approved,NCT02634307,EVOLVE-MS DMF prodrug
+teriflunomide,DHODH inhibitor,Immunomodulation,RRMS,OtherDMT_MS,2012,Approved,NCT00134563,TEMSO/TOWER
+alemtuzumab,Anti-CD52 lymphocyte depletion,Immune reconstitution,RRMS,OtherDMT_MS,2014,Approved,NCT00530348,CARE-MS superiority vs IFN
+vit_d_supplementation,Vitamin D3,Immunomodulation,MS disease activity,VitD_MS,2025,Failed,,VIDAMS null; D-Lay mixed; meta mixed

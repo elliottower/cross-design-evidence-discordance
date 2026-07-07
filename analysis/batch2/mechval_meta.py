@@ -23,7 +23,7 @@ def egger(yi, vi):
     se=np.sqrt(vi); res=linregress(1/se, yi/se)   # precision vs standardized effect
     return {"intercept":res.intercept,"p":res.pvalue}
 
-def pool(df, ratio_scales=("odds ratio","risk ratio","hazard ratio","hazard/rate ratio")):
+def pool(df, ratio_scales=("odds ratio","risk ratio","hazard ratio","hazard/rate ratio","rate ratio","relative risk")):
     df=df.copy(); df["domain"]=np.where(df.case_id.str.startswith("AD"),"AD","MS")
     out=[]
     for (dom,design,scale),sub in df.groupby(["domain","design","scale"]):
@@ -45,5 +45,9 @@ def pool(df, ratio_scales=("odds ratio","risk ratio","hazard ratio","hazard/rate
     return pd.DataFrame(out)
 
 if __name__=="__main__":
-    df=pd.read_csv("mechval_effect_sizes_v3.csv")   # use post-fill file with CIs
-    res=pool(df); res.to_csv("mechval_pooled_estimates.csv",index=False); print(res.to_string(index=False))
+    import sys
+    csv_in = sys.argv[1] if len(sys.argv) > 1 else "data/effect_sizes_v3.csv"
+    csv_out = sys.argv[2] if len(sys.argv) > 2 else "data/pooled_estimates_v3.csv"
+    df=pd.read_csv(csv_in)
+    res=pool(df); res.to_csv(csv_out,index=False); print(res.to_string(index=False))
+    print(f"\nSaved {csv_out}")

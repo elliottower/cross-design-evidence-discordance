@@ -1,0 +1,36 @@
+case_id,claim,family,best_tier,fda_approval,grade_certainty,guideline_endorsement,textbook_status,replication_status,independent_total
+MS-001,EBV seroconversion -> MS risk,EBV_MS,Mechanistically Supported,0,3,2,3,3,11
+MS-007,Genetically-lowered 25(OH)D -> MS (MR),VitD_MS,Mechanistically Supported,0,2,1,2,3,8
+MS-007d,High-dose vit-D -> RRMS relapse (VIDAMS null),VitD_MS,Disconfirmed,0,1,0,2,2,5
+MS-030,Vit-D suppl -> MS relapse (early meta null),VitD_MS,Disconfirmed,0,1,0,2,1,4
+MS-017,HLA-DRB1*15:01 -> MS,HLA_MS,Mechanistically Supported,0,3,2,3,3,11
+MS-021,Smoking -> MS (MR null),Smoking_MSAD,Disconfirmed,0,1,1,2,2,6
+MS-011,Ocrelizumab PPMS progression,AntiCD20_MS,Triangulated,2,3,3,3,3,14
+MS-031,Ocrelizumab -> CDP (OPERA),AntiCD20_MS,Mechanistically Supported,2,3,3,3,3,14
+MS-029,Natalizumab -> sustained CDP,OtherDMT_MS,Triangulated,2,3,3,3,3,14
+MS-028,Cladribine -> CDP (CLARITY),OtherDMT_MS,Mechanistically Supported,2,2,3,2,2,11
+MS-033,Fingolimod -> ARR (FREEDOMS II),Fingolimod_MS,Mechanistically Supported,2,3,3,3,3,14
+MS-033b,Fingolimod -> disability (FREEDOMS II null),Fingolimod_MS,Disconfirmed,2,1,3,3,1,10
+MS-034,Dimethyl fumarate -> ARR,OtherDMT_MS,Mechanistically Supported,2,2,3,2,2,11
+MS-035,High-dose biotin (SPI2 null),FailedNeuro_MS,Disconfirmed,0,1,0,0,1,2
+MS-036,Simvastatin -> SPMS (MS-STAT2 null),FailedNeuro_MS,Disconfirmed,0,1,0,1,1,3
+AD-002a,APOE4 heterozygous -> AD,APOE_AD,Mechanistically Supported,0,4,3,3,3,13
+AD-003,sTREM2 microglial -> AD (MR),Inflammation_AD,Mechanistically Supported,0,2,1,1,2,6
+AD-004,IL-6 signaling -> AD (MR null),Inflammation_AD,Disconfirmed,0,1,0,1,1,3
+AD-005b,T2D -> AD (cohort meta),Metabolic_AD,Mechanistically Supported,0,3,2,3,3,11
+AD-005h,Midlife obesity -> AD,Obesity_MSAD,Mechanistically Supported,0,3,2,3,3,11
+AD-005i,Current smoking -> dementia,Smoking_MSAD,Mechanistically Supported,0,3,2,3,2,10
+AD-005k,Midlife hypertension -> dementia,ModRisk_AD,Mechanistically Supported,0,3,3,3,3,12
+AD-005m,TBI -> dementia,ModRisk_AD,Mechanistically Supported,0,2,1,2,2,7
+AD-005a,Hearing loss -> dementia,ModRisk_AD,Mechanistically Supported,0,3,3,3,3,12
+AD-005n,Loneliness -> dementia,Social_AD,Mechanistically Supported,0,2,2,2,3,9
+AD-C1,Lecanemab: CDR-SB slowing,Amyloid_AD,Mechanistically Supported,2,2,2,2,2,10
+AD-032,Solanezumab -> AD progression (A4 null),Amyloid_AD,Disconfirmed,0,2,0,2,2,6
+AD-033,Solanezumab -> ADAS/CDR (EXP3 null),Amyloid_AD,Disconfirmed,0,2,0,2,2,6
+AD-035,Semagacestat -> decline (harmful),Amyloid_AD,Disconfirmed,0,2,0,1,1,4
+AD-036,Aducanumab (ENGAGE null),Amyloid_AD,Disconfirmed,1,1,0,1,1,4
+AD-037,Verubecestat -> progression (EPOCH null),Amyloid_AD,Disconfirmed,0,2,0,1,1,4
+AD-030,Ginkgo biloba (GEM null),FailedAD_RCT,Disconfirmed,0,2,0,2,1,5
+AD-031,HRT -> incident dementia (WHIMS harmful),HRT_AD,Mechanistically Supported,0,3,2,3,2,10
+AD-034,Semaglutide -> cognitive (EVOKE null),Metabolic_AD,Disconfirmed,0,1,0,0,0,1
+AD-023,GLP-1 semaglutide CDR-SB (EVOKE null),Metabolic_AD,Disconfirmed,0,1,0,0,0,1

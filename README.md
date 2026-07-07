@@ -4,18 +4,18 @@ Claim-level validity audit of mechanism claims in MS and AD neuroepidemiology, s
 
 ## What this is
 
-The MS and AD literatures contain hundreds of mechanism claims at different levels of evidential support. Most are observationally consistent (T2) but lack the instruments, temporal ordering, or perturbation evidence needed for causal claims (T3-T4). The dominant failure mode is conflating mechanism-of-treatment with mechanism-of-disease, and mechanism-of-relapse with mechanism-of-progression.
+The MS and AD literatures contain hundreds of mechanism claims at different levels of evidential support. Most have observational associations but lack the instruments, temporal ordering, or perturbation evidence needed for causal claims. The dominant failure mode is conflating mechanism-of-treatment with mechanism-of-disease, and mechanism-of-relapse with mechanism-of-progression.
 
-This catalog audits 52 MS cases and ~13 AD cases, decomposing each claim into causal legs and scoring on a four-tier system:
+This catalog audits 76 claims across MS and AD, decomposing each into causal legs and scoring on the Mechanistic Validity tier system:
 
-| Tier | Name | What it requires |
-|---|---|---|
-| T1 | Descriptive | A reproducible phenomenon or association |
-| T2 | Observationally Consistent | Survives covariate adjustment, replicates across cohorts |
-| T3 | Causally Suggestive | Temporal order + instrument (MR/genetics) or negative-control design |
-| T4 | Mechanistically Supported | Direct perturbation / treatment engagement changes the target as predicted |
-
-Verdict tags: SUPPORTED, SUGGESTIVE, UNDERDETERMINED, CONTESTED, DISCONFIRMED, REFERENCE-DEBT.
+| Tier | What it requires |
+|---|---|
+| Proposed | Construct defined; at least one measurement conducted |
+| Causally Suggestive | Necessity via causal intervention; baseline separation |
+| Mechanistically Supported | Sufficiency established; intervention reach across 2+ methods; specificity tested |
+| Triangulated | Convergent evidence from 2+ independent evidence families; cross-distribution replication |
+| Validated | All five validity dimensions addressed; measurement calibration audited |
+| Disconfirmed | Negative result on a key criterion |
 
 ## Catalogs
 
@@ -37,7 +37,7 @@ Geometric and sheaf-cohomological experiments validating the catalog structure:
 ## Related
 
 - [epidemiology-boundary-conditions](https://github.com/elliottower/epidemiology-boundary-conditions) — Methods paper characterizing when geometric tools (sheaf cohomology, Grassmannian holonomy, discrete curvature) outperform standard statistics. The MS/AD catalogs here provided the domain expertise that informed its simulation parameters.
-- [Mechanistic Validity](https://github.com/mechanistic-validity) — The original validity audit framework for psychiatric neuroscience, which this catalog ports into clinical neuroepidemiology.
+- [Mechanistic Validity](https://github.com/mechanistic-validity) — The validity audit framework, which this catalog applies to clinical neuroepidemiology.
 
 ## Status
 

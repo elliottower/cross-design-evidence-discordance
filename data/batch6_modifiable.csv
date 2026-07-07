@@ -1,0 +1,9 @@
+case_id,claim,design,scale,estimate,ci_low,ci_high,n_cases,n_controls,population,PMID,source_paper,verdict_suggestion,notes,extracted_by,extract_date
+AD-005h,Midlife obesity -> AD,observational,risk ratio,2.04,1.59,2.62,,,multi,21348917,Anstey 2011 meta,SUPPORTED,VERIFIED; any-dementia 1.64(1.34-2.00); U-shaped (low BMI also up),Perplexity sweep6,2026-07-02
+AD-005h2,Midlife obesity -> dementia (Deng),observational,risk ratio,1.78,1.31,2.41,,,multi,31902364,Deng 2019 meta 34 cohorts,SUPPORTED,VERIFIED,Perplexity sweep6,2026-07-02
+AD-005i,Current smoking -> dementia,observational,risk ratio,1.61,1.32,1.95,,,multi,31902364,Deng 2019 meta,SUPPORTED,VERIFIED — note: smoking MR NULL in MS (MS-021); confound signature,Perplexity sweep6,2026-07-02
+AD-005j,Hypercholesterolemia -> dementia,observational,risk ratio,1.57,1.19,2.07,,,multi,31902364,Deng 2019 meta,SUPPORTED,VERIFIED,Perplexity sweep6,2026-07-02
+AD-005k,Midlife hypertension (high SBP) -> dementia,observational,risk ratio,1.72,1.25,2.37,,,multi,31902364,Deng 2019 meta,SUPPORTED,VERIFIED; borderline BP 1.41(1.23-1.62),Perplexity sweep6,2026-07-02
+AD-005l,Diabetes (midlife) -> dementia (Deng),observational,risk ratio,1.69,1.38,2.07,,,multi,31902364,Deng 2019 meta,SUPPORTED,VERIFIED — concordant with AD-005b/c T2D cluster,Perplexity sweep6,2026-07-02
+AD-005m,TBI -> dementia,observational,odds ratio,1.81,1.53,2.14,,,multi,34818648,2021 TBI meta 25 studies,SUPPORTED,VERIFIED; BUT TBI->AD specifically NULL 1.02(0.91-1.15) — outcome-specificity flag,Perplexity sweep6,2026-07-02
+AD-005m2,mild TBI -> dementia,observational,odds ratio,1.96,1.7,2.26,,,multi,33044182,mTBI meta,SUPPORTED,VERIFIED,Perplexity sweep6,2026-07-02

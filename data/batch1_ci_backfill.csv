@@ -1,0 +1,11 @@
+case_id,claim,estimate_type,estimate,ci_low,ci_high,n_cases,n_controls,population,PMID,source_paper,notes,design,extracted_by,extract_date
+MS-005a,Baseline sNfL predicts EDSS4,risk ratio,4.3,,,,,MS cohort,,Barro/Disanto (context),CI not found in this pass — needs primary Barro/Disanto lookup,observational,Perplexity batch1,2026-07-02
+MS-005b,Baseline sNfL>10.2 -> progression (PMS),odds ratio,7.8,,,,,JNNP prog-MS,,JNNP prog-MS cohort,CI not found in this pass,observational,Perplexity batch1,2026-07-02
+MS-005c,Rising sNfL -> progression (PMS),odds ratio,49.0,,,,,JNNP prog-MS,,JNNP prog-MS cohort,CI not found in this pass — very wide CI expected,observational,Perplexity batch1,2026-07-02
+MS-007,Genetically-lowered 25OHD -> MS (MR),odds ratio,2.0,1.7,2.5,14498.0,24091.0,European,26305103,Mokry 2015 PLoS Med,"VERIFIED. Per 1-SD decrease log-25OHD, IVW fixed. Sensitivity OR 1.7 (1.3-2.2)",MR,Perplexity batch1,2026-07-02
+MS-010,Deep GM volume -> time-to-EDSS-prog,hazard ratio,0.73,,,1417.0,,7-center,,MAGNIMS,point est confirmed in catalog; CI not found in this pass,observational,Perplexity batch1,2026-07-02
+MS-013b,Adult BMI -> MS (MR),odds ratio,1.43,,,14802.0,26703.0,European,,MR UKB/IMSGC,CI not found in this pass — needs primary MR lookup,MR,Perplexity batch1,2026-07-02
+MS-017,HLA-DRB1*15:01 -> MS,odds ratio,3.06,,,,,multi,,meta-analysis,"catalog value 3.06; a single Spanish cohort reports OR 1.364 (1.107-1.681) PMID 22127897 — DISCREPANCY: that is a haplotype/population-specific estimate, not the pooled meta-OR. Needs Moutsianas/IMSGC primary",genetic,Perplexity batch1,2026-07-02
+AD-002b,APOE4 homozygous -> AD,odds ratio,23.5,,,,,multi,,Belloy 2023 / Farrer 1997,CI not found in this pass — Belloy 2023 JAMA Neurol primary needed,genetic,Perplexity batch1,2026-07-02
+AD-002c,APOE4/4 women -> AD,odds ratio,13.5,,,,,multi,,sex-stratified APOE,CI not found in this pass,genetic,Perplexity batch1,2026-07-02
+AD-009c,Abnormal plasma p-tau217 (A+T+) CU -> impairment,hazard ratio,7.81,3.92,15.59,,,CU cohort,,UTSW p-tau217 (2025),VERIFIED. A+T+ plasma vs A-T- Cox HR=7.81 (3.92-15.59); PET HR=9.30 (3.67-23.55),observational,Perplexity batch1,2026-07-02

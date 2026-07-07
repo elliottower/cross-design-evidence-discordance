@@ -1,0 +1,453 @@
+{
+  "generated": "2026-07-02T22:58:36.867314",
+  "method": "Mechanical Q-based discordance prediction",
+  "q_results_path": "output/h1_transportability_results.json",
+  "holdout_path": "data/phase3_holdout_dataset.csv",
+  "beta_threshold": 0.1,
+  "n_holdout": 20,
+  "n_predictable": 12,
+  "n_unpredictable": 8,
+  "family_classifications": {
+    "Amyloid_AD": {
+      "classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "Q": 8.717491022391828,
+      "p": 0.0031517148094032388,
+      "evidence_types": [
+        "OBS",
+        "RCT"
+      ],
+      "type_betas": {
+        "OBS": 0.8562,
+        "RCT": 0.0337
+      }
+    },
+    "EBV_MS": {
+      "classification": "TRANSPORT",
+      "discordance_type": "concordant",
+      "Q": 5.548557476076905,
+      "p": 0.018495924129384167,
+      "evidence_types": [
+        "GEN",
+        "OBS"
+      ],
+      "type_betas": {
+        "GEN": 1.9176,
+        "OBS": 0.5268
+      }
+    },
+    "Metabolic_AD": {
+      "classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "Q": 109.35360208002768,
+      "p": 0.0,
+      "evidence_types": [
+        "GEN",
+        "OBS",
+        "RCT"
+      ],
+      "type_betas": {
+        "GEN": 0.0055,
+        "OBS": 0.2401,
+        "RCT": 0.0
+      }
+    },
+    "ModRisk_AD": {
+      "classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "Q": 63.96491085076941,
+      "p": 1.2212453270876722e-15,
+      "evidence_types": [
+        "GEN",
+        "OBS"
+      ],
+      "type_betas": {
+        "GEN": 0.0533,
+        "OBS": 0.1988
+      }
+    },
+    "Obesity_MSAD": {
+      "classification": "NON-TRANSPORT",
+      "discordance_type": "quantitative",
+      "Q": 9.278083612945176,
+      "p": 0.00231911935670448,
+      "evidence_types": [
+        "GEN",
+        "OBS"
+      ],
+      "type_betas": {
+        "GEN": 0.1967,
+        "OBS": 0.3629
+      }
+    },
+    "OtherDMT_MS": {
+      "classification": "NON-TRANSPORT",
+      "discordance_type": "quantitative",
+      "Q": 27.49908153965415,
+      "p": 1.5716912615815204e-07,
+      "evidence_types": [
+        "OBS",
+        "RCT"
+      ],
+      "type_betas": {
+        "OBS": 0.98,
+        "RCT": 0.2853
+      }
+    },
+    "Smoking_MSAD": {
+      "classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "Q": 12.956078600873788,
+      "p": 0.00031888441569483117,
+      "evidence_types": [
+        "GEN",
+        "OBS"
+      ],
+      "type_betas": {
+        "GEN": 0.0163,
+        "OBS": 0.2626
+      }
+    },
+    "VitD_MS": {
+      "classification": "TRANSPORT",
+      "discordance_type": "concordant",
+      "Q": 7.307379272508629,
+      "p": 0.00686720076582803,
+      "evidence_types": [
+        "GEN",
+        "RCT"
+      ],
+      "type_betas": {
+        "GEN": 0.3822,
+        "RCT": 0.2243
+      }
+    }
+  },
+  "basic_prediction": {
+    "tp": 6,
+    "fp": 5,
+    "tn": 0,
+    "fn": 1,
+    "accuracy": 0.5,
+    "sensitivity": 0.8571428571428571,
+    "specificity": 0.0,
+    "ppv": 0.5454545454545454,
+    "npv": 0.0,
+    "odds_ratio": 0.0,
+    "p_fisher": 1.0,
+    "n": 12
+  },
+  "refined_prediction": {
+    "tp": 6,
+    "fp": 2,
+    "tn": 3,
+    "fn": 1,
+    "accuracy": 0.75,
+    "sensitivity": 0.8571428571428571,
+    "specificity": 0.6,
+    "ppv": 0.75,
+    "npv": 0.75,
+    "odds_ratio": 9.0,
+    "p_fisher": 0.22222222222222227,
+    "n": 12
+  },
+  "per_drug": [
+    {
+      "drug": "lecanemab",
+      "indication": "Alzheimer's disease (early)",
+      "family": "Amyloid_AD",
+      "actual": "Approved",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail",
+      "Q": 8.717491022391828,
+      "evidence_types": [
+        "OBS",
+        "RCT"
+      ],
+      "hand_label": "OBS\u2191 RCT_marginal"
+    },
+    {
+      "drug": "donanemab",
+      "indication": "Alzheimer's disease (early)",
+      "family": "Amyloid_AD",
+      "actual": "Approved",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail",
+      "Q": 8.717491022391828,
+      "evidence_types": [
+        "OBS",
+        "RCT"
+      ],
+      "hand_label": "OBS\u2191 RCT_marginal"
+    },
+    {
+      "drug": "aducanumab",
+      "indication": "Alzheimer's disease (early)",
+      "family": "Amyloid_AD",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail",
+      "Q": 8.717491022391828,
+      "evidence_types": [
+        "OBS",
+        "RCT"
+      ],
+      "hand_label": "OBS\u2191 RCT_null"
+    },
+    {
+      "drug": "solanezumab",
+      "indication": "Alzheimer's disease (preclinical)",
+      "family": "Amyloid_AD",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail",
+      "Q": 8.717491022391828,
+      "evidence_types": [
+        "OBS",
+        "RCT"
+      ],
+      "hand_label": "OBS\u2191 RCT_null"
+    },
+    {
+      "drug": "solanezumab",
+      "indication": "Alzheimer's disease (mild)",
+      "family": "Amyloid_AD",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail",
+      "Q": 8.717491022391828,
+      "evidence_types": [
+        "OBS",
+        "RCT"
+      ],
+      "hand_label": "OBS\u2191 RCT_null"
+    },
+    {
+      "drug": "verubecestat",
+      "indication": "Alzheimer's disease (mild-moderate)",
+      "family": "Amyloid_AD",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail",
+      "Q": 8.717491022391828,
+      "evidence_types": [
+        "OBS",
+        "RCT"
+      ],
+      "hand_label": "OBS\u2191 RCT_null"
+    },
+    {
+      "drug": "semagacestat",
+      "indication": "Alzheimer's disease (mild-moderate)",
+      "family": "Amyloid_AD",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail",
+      "Q": 8.717491022391828,
+      "evidence_types": [
+        "OBS",
+        "RCT"
+      ],
+      "hand_label": "OBS\u2191 RCT_harmful"
+    },
+    {
+      "drug": "semaglutide",
+      "indication": "Alzheimer's disease (early)",
+      "family": "Metabolic_AD",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail",
+      "Q": 109.35360208002768,
+      "evidence_types": [
+        "GEN",
+        "OBS",
+        "RCT"
+      ],
+      "hand_label": "OBS\u2191 MR_null"
+    },
+    {
+      "drug": "ginkgo_biloba",
+      "indication": "Dementia prevention",
+      "family": "FailedAD_RCT",
+      "actual": "Failed",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null,
+      "Q": null,
+      "evidence_types": null,
+      "hand_label": "none"
+    },
+    {
+      "drug": "CEE_MPA_HRT",
+      "indication": "Dementia prevention in postmenopausal women",
+      "family": "HRT_AD",
+      "actual": "Failed",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null,
+      "Q": null,
+      "evidence_types": null,
+      "hand_label": "OBS\u2191 RCT_harmful"
+    },
+    {
+      "drug": "ocrelizumab",
+      "indication": "PPMS (progressive MS)",
+      "family": "AntiCD20_MS",
+      "actual": "Approved",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null,
+      "Q": null,
+      "evidence_types": null,
+      "hand_label": "GEN\u2191 RCT\u2191"
+    },
+    {
+      "drug": "ocrelizumab",
+      "indication": "RRMS (relapsing MS)",
+      "family": "AntiCD20_MS",
+      "actual": "Approved",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null,
+      "Q": null,
+      "evidence_types": null,
+      "hand_label": "GEN\u2191 RCT\u2191"
+    },
+    {
+      "drug": "natalizumab",
+      "indication": "RRMS (relapsing MS)",
+      "family": "OtherDMT_MS",
+      "actual": "Approved",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "quantitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Approve",
+      "Q": 27.49908153965415,
+      "evidence_types": [
+        "OBS",
+        "RCT"
+      ],
+      "hand_label": "GEN_partial RCT\u2191"
+    },
+    {
+      "drug": "cladribine",
+      "indication": "RRMS (relapsing MS)",
+      "family": "OtherDMT_MS",
+      "actual": "Approved",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "quantitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Approve",
+      "Q": 27.49908153965415,
+      "evidence_types": [
+        "OBS",
+        "RCT"
+      ],
+      "hand_label": "RCT\u2191"
+    },
+    {
+      "drug": "fingolimod",
+      "indication": "RRMS (relapse reduction)",
+      "family": "Fingolimod_MS",
+      "actual": "Approved",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null,
+      "Q": null,
+      "evidence_types": null,
+      "hand_label": "RCT\u2191"
+    },
+    {
+      "drug": "fingolimod",
+      "indication": "RRMS (disability progression)",
+      "family": "Fingolimod_MS",
+      "actual": "Failed",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null,
+      "Q": null,
+      "evidence_types": null,
+      "hand_label": "RCT_relapse\u2191 RCT_disability_null"
+    },
+    {
+      "drug": "dimethyl_fumarate",
+      "indication": "RRMS (relapsing MS)",
+      "family": "OtherDMT_MS",
+      "actual": "Approved",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "quantitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Approve",
+      "Q": 27.49908153965415,
+      "evidence_types": [
+        "OBS",
+        "RCT"
+      ],
+      "hand_label": "RCT\u2191"
+    },
+    {
+      "drug": "simvastatin",
+      "indication": "SPMS (progressive MS)",
+      "family": "FailedNeuro_MS",
+      "actual": "Failed",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null,
+      "Q": null,
+      "evidence_types": null,
+      "hand_label": "OBS\u2191 RCT_null"
+    },
+    {
+      "drug": "high_dose_biotin",
+      "indication": "Progressive MS",
+      "family": "FailedNeuro_MS",
+      "actual": "Failed",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null,
+      "Q": null,
+      "evidence_types": null,
+      "hand_label": "OBS_pilot\u2191 RCT_null"
+    },
+    {
+      "drug": "vit_d_supplementation",
+      "indication": "MS disease activity (CIS/early RRMS)",
+      "family": "VitD_MS",
+      "actual": "Failed",
+      "q_classification": "TRANSPORT",
+      "discordance_type": "concordant",
+      "pred_basic": "Approve",
+      "pred_refined": "Approve",
+      "Q": 7.307379272508629,
+      "evidence_types": [
+        "GEN",
+        "RCT"
+      ],
+      "hand_label": "MR\u2191 RCT_mixed"
+    }
+  ]
+}

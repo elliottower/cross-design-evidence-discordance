@@ -1,0 +1,7 @@
+case_id,claim,design,scale,estimate,ci_low,ci_high,n_cases,n_controls,population,PMID,source_paper,verdict_suggestion,notes,stratum,extracted_by,extract_date
+MS-035,High-dose biotin MD1003 -> disability improvement (SPI2),RCT,odds ratio,1.35,0.81,2.26,326.0,316.0,progressive MS,32949547,Cree 2020 SPI2 Lancet Neuro,DISCONFIRMED,VERIFIED null; all endpoints negative incl sNfL,therapeutic,Perplexity sweep10,2026-07-02
+MS-036,Simvastatin -> SPMS disability progression (MS-STAT2),RCT,hazard ratio,1.01,0.82,1.25,511.0,509.0,SPMS,,MS-STAT2 2026 HTA,DISCONFIRMED,VERIFIED null — high-profile neuroprotection failure,therapeutic,Perplexity sweep10,2026-07-02
+AD-030,Ginkgo biloba -> incident dementia (GEM),RCT,hazard ratio,1.12,0.94,1.33,1545.0,1524.0,elderly,19017911,DeKosky 2008 GEM JAMA,DISCONFIRMED,VERIFIED null p=0.21; large prevention RCT,therapeutic,Perplexity sweep10,2026-07-02
+AD-031,CEE+MPA (HRT) -> incident dementia (WHIMS),RCT,hazard ratio,2.05,1.21,3.48,2229.0,2303.0,women 65+,12771112,Shumaker 2003 WHIMS JAMA,SUPPORTED,VERIFIED — therapy that INCREASES risk; HR2.05 harmful,therapeutic,Perplexity sweep10,2026-07-02
+AD-031b,Pooled HRT -> probable dementia (WHIMS),RCT,hazard ratio,1.76,1.19,2.6,,,women 65+,15213206,WHIMS pooled 2004,SUPPORTED,VERIFIED pooled estrogen+/-progestin,therapeutic,Perplexity sweep10,2026-07-02
+MS-037,Vitamin D (early meta) -> MS relapse,RCT,risk ratio,0.98,0.45,2.16,129.0,125.0,RRMS,23698130,2013 vitD meta,DISCONFIRMED,null anchor (dup-safe of MS-030),therapeutic,Perplexity sweep10,2026-07-02

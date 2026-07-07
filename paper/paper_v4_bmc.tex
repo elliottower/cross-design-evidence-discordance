@@ -5,7 +5,7 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage[margin=1in]{geometry}
-\usepackage{natbib}
+\usepackage[numbers,square,sort&compress]{natbib}
 \usepackage{algorithm}
 \usepackage{algorithmic}
 \usepackage{multirow}
@@ -16,7 +16,7 @@
 
 \renewcommand{\arraystretch}{1.3}
 
-\title{Cross-Design Evidence Discordance Diagnoses Phase~III Drug Failure Modes Across Neurodegenerative and Cardiometabolic Disease}
+\title{Cross-Design Evidence Discordance Diagnoses Phase~III Drug Failure Modes Across Neurodegenerative, Cardiometabolic, and Autoimmune Disease}
 
 \author{Elliot Tower}
 \affil{Independent researcher \\ \texttt{elliot@elliottower.ai}}
@@ -27,20 +27,26 @@
 \maketitle
 
 \begin{abstract}
-The overall failure rate for AD drug development exceeds 99\% \citep{cummings2014}, yet evidence synthesis tools assess consistency within a single study design rather than across designs. We define a cross-design concordance rule: for each mechanism family, we standardize effect sizes from observational and Mendelian randomization (MR) evidence onto Cohen's $d$ and classify a family as \emph{discordant} when a non-trivial observational association ($d \geq 0.10$) coincides with a null MR signal ($d < 0.10$ or confidence interval spanning the null). No interventional data enter the classification.
+\textbf{Background:}
+The overall failure rate for Alzheimer's disease drug development exceeds 99\%, yet evidence synthesis tools assess consistency within a single study design rather than across designs. We developed a cross-design concordance rule that compares standardized observational and Mendelian randomization (MR) effect sizes to classify mechanism families and diagnose drug failure modes.
 
-An ablation analysis shows that MR-null status alone accounts for all predictive power. Across 22 scored families in three domains---8 neuroepidemiology (AD, MS), 7 cardiometabolic, 7 autoimmune---MR-only achieves 18/22 correct classifications (vs.\ 11/22 for an always-predict-failure baseline); the cross-design rule matches MR-only exactly (zero McNemar disagreements). Observational evidence is non-trivial ($d \geq 0.10$) for every scored family and adds no discriminative information. This has a structural explanation: mechanisms that reach Phase~III have strong observational evidence by construction---the pharmaceutical industry does not invest in targets lacking epidemiological support. The 18/22 total combines domains with different observational constructs (epidemiological ORs for neuro/cardio, case-control SMDs for autoimmune); domain-specific accuracies are 7/8, 7/7, and 4/7 respectively and are not pooled for inference.
+\textbf{Methods:}
+We assembled 27 mechanism families across three disease domains (neuroepidemiology, cardiometabolic, autoimmune). For each family, observational and MR effect sizes were standardized to Cohen's $d$ using the Chinn formula. A family was classified as discordant when a non-trivial observational association ($d \geq 0.10$) coincided with a null MR signal. We compared four classification rules in an ablation analysis and applied a two-stage design---etiologic evidence only, then adding RCT outcomes---to diagnose failure modes without circularity.
 
-The cross-design framework contributes something MR alone cannot: \emph{failure-mode diagnosis}. A two-stage analysis---first etiologic evidence only, then adding RCT outcomes---reveals three failure modes. \emph{Zombie mechanisms} (null MR, confounded observational signal) indicate the target was never causal; drugs fail because there is nothing to intervene on (e.g., metabolic risk factors for AD, HRT for AD, HDL-raising for CVD). \emph{Translation-gap mechanisms} (concordant etiologic evidence, but RCT null) indicate the target is genuinely causal but the intervention cannot reverse established pathology (e.g., amyloid immunotherapy in AD). \emph{Exposure mismatch} (concordant etiologic evidence, but the MR instrument captures a different exposure window than the drug) accounts for the single concordance miss (vitamin~D supplementation for MS). MR-only predicts all three will fail; only the cross-design framework distinguishes \emph{why}, and each demands a different response: zombies should be retired from pipelines, translation gaps call for different therapeutic strategies, and exposure mismatches signal that the target is real but the intervention does not recapitulate the causal exposure.
+\textbf{Results:}
+The rule correctly classified 18 of 22 scored families (7/8 neuroepidemiology, 7/7 cardiometabolic, 4/7 autoimmune). MR-null status alone accounted for all predictive power; MR-only and the cross-design rule produced identical classifications with zero McNemar disagreements. The observational leg was non-trivial ($d \geq 0.10$) for every scored family and added no discriminative information. The two-stage analysis revealed three failure modes: zombie mechanisms (null MR, confounded observational signal), translation gaps (concordant etiologic evidence but null RCT effect), and exposure mismatches (concordant evidence but MR instrument captures a different exposure than the drug). In the autoimmune domain, three approved effector-neutralization drugs (anti-TNF, anti-IL-17, abatacept) showed null MR because their targets are disease consequences rather than causes, defining a mechanistically predictable boundary where MR-based screening is expected to misclassify.
 
-The autoimmune domain reveals a mechanistically predictable boundary: three approved effector-neutralization drugs (anti-TNF, anti-IL-17, abatacept) show null MR because their targets are elevated as a \emph{consequence} of disease, not a cause. This defines where MR-based screening is expected to misclassify---soluble disease effectors vs.\ germline risk-encoding loci. Two cardiometabolic families with concordant etiologic evidence and pending Phase~III readouts (Lp(a)-lowering, IL-6 pathway inhibition) constitute pre-registered prospective predictions.
+\textbf{Conclusions:}
+MR-null status is a strong negative indicator for risk-encoding drug targets. The cross-design framework's contribution is diagnostic rather than predictive: it separates zombie mechanisms, translation gaps, and exposure mismatches that each demand different pipeline responses. For effector-neutralization targets, MR is uninformative and should not be used as a negative screen. This is the first deterministic, parameter-free operationalization of cross-design triangulation validated across three independent disease domains.
 \end{abstract}
 
-\section{Introduction}
+\paragraph{Keywords:} Mendelian randomization, drug development, evidence synthesis, cross-design concordance, triangulation, Alzheimer's disease, multiple sclerosis, cardiometabolic disease, Phase~III trials, failure-mode diagnosis
 
-Drug development for Alzheimer's disease and multiple sclerosis consumes billions of dollars annually, with an overall AD drug failure rate exceeding 99\% \citep{cummings2014}. Standard tools for evaluating mechanistic evidence---GRADE for rating certainty, $I^2$ for measuring heterogeneity---operate within a single study design. They assess whether twelve RCTs agree, leaving cross-design consistency untested: whether RCT evidence agrees with genetic evidence, or whether observational signals survive Mendelian randomization.
+\section{Background}
 
-Several independent findings establish that genetic evidence carries information about drug success. \citet{nelson2015} found that drugs with genetic support for their target are twice as likely to reach approval, a finding refined by \citet{minikel2024} with larger datasets. \citet{gill2021} showed that MR concordance with RCTs predicts drug approval. \citet{ference2019} demonstrated that MR-derived causal estimates for cardiovascular targets match RCT efficacy. Triangulation \citep{lawlor2016} captures the intuition that multiple evidence types with different biases should converge on a true effect, but provides no standard quantitative test and does not distinguish \emph{types} of convergence failure.
+Drug development for Alzheimer's disease and multiple sclerosis consumes billions of dollars annually, with an overall AD drug failure rate exceeding 99\% \cite{cummings2014}. Standard tools for evaluating mechanistic evidence---GRADE for rating certainty, $I^2$ for measuring heterogeneity---operate within a single study design. They assess whether twelve RCTs agree, leaving cross-design consistency untested: whether RCT evidence agrees with genetic evidence, or whether observational signals survive Mendelian randomization.
+
+Several independent findings establish that genetic evidence carries information about drug success. \citet{nelson2015} found that drugs with genetic support for their target are twice as likely to reach approval, a finding refined by \citet{minikel2024} with larger datasets. \citet{gill2021} showed that MR concordance with RCTs predicts drug approval. \citet{ference2019} demonstrated that MR-derived causal estimates for cardiovascular targets match RCT efficacy. Triangulation \cite{lawlor2016} captures the intuition that multiple evidence types with different biases should converge on a true effect, but provides no standard quantitative test and does not distinguish \emph{types} of convergence failure.
 
 We operationalized triangulation with an explicit decision rule and tested it across three disease domains. The results are clarifying: an ablation analysis shows that MR evidence alone accounts for all outcome-predictive power---the observational leg adds zero classifications beyond what MR provides. This negative result has a structural explanation: every mechanism family that reaches Phase~III trials has non-trivial observational support, so the observational variable is constant among scored families and carries no discriminative information.
 
@@ -68,11 +74,11 @@ Hazard ratios were treated as odds ratios for conversion, an approximation that 
 
 We supplemented the original catalog with etiologic evidence for three families identified through systematic literature search:
 
-\textbf{Anti-CD20-MS.} MR evidence shows that per-SD higher circulating FCRL3 protein is protective against MS (OR~0.83, 95\% CI 0.79--0.89; \citealp{lin2023}). Observational B-cell depletion efficacy data from \citet{hu2019}. A CD40 genetic association (OR~1.16; \citealp{sokolova2013}) provides corroborating GWAS evidence.
+\textbf{Anti-CD20-MS.} MR evidence shows that per-SD higher circulating FCRL3 protein is protective against MS (OR~0.83, 95\% CI 0.79--0.89; \cite{lin2023}). Observational B-cell depletion efficacy data from \citet{hu2019}. A CD40 genetic association (OR~1.16; \cite{sokolova2013}) provides corroborating GWAS evidence.
 
-\textbf{HRT-AD.} Observational meta-analysis (protective, OR~0.67, 95\% CI 0.58--0.78; \citealp{song2020}) and MR for estradiol (null, OR~1.00, 95\% CI 0.85--1.18; \citealp{barth2025}). An ESR1 genetic association (OR~1.14; \citealp{cheng2014}) provides corroborating GWAS evidence.
+\textbf{HRT-AD.} Observational meta-analysis (protective, OR~0.67, 95\% CI 0.58--0.78; \cite{song2020}) and MR for estradiol (null, OR~1.00, 95\% CI 0.85--1.18; \cite{barth2025}). An ESR1 genetic association (OR~1.14; \cite{cheng2014}) provides corroborating GWAS evidence.
 
-\textbf{Vitamin~D-MS (supplemented).} Observational cohort evidence for low vitamin~D and MS risk (OR~1.40, 95\% CI 1.19--1.64; \citealp{munger2006}), added to the existing MR entry.
+\textbf{Vitamin~D-MS (supplemented).} Observational cohort evidence for low vitamin~D and MS risk (OR~1.40, 95\% CI 1.19--1.64; \cite{munger2006}), added to the existing MR entry.
 
 \subsection{Evidence classification: etiologic versus interventional}
 
@@ -102,7 +108,7 @@ The family-level classification follows from the combination:
 
 \textbf{Genetic-only signal.} OBS trivial, MR causal. Genetic support without observational confirmation.
 
-This rule operationalizes triangulation \citep{lawlor2016} with an explicit, deterministic decision procedure. Unlike Cochran's $Q$, which assumes all estimates target the same parameter, the concordance rule treats observational and MR estimates as addressing different questions (``is this mechanism associated with disease?'' vs.\ ``is this mechanism causal for disease?'') and classifies their \emph{agreement pattern} rather than testing whether their magnitudes are statistically distinguishable.
+This rule operationalizes triangulation \cite{lawlor2016} with an explicit, deterministic decision procedure. Unlike Cochran's $Q$, which assumes all estimates target the same parameter, the concordance rule treats observational and MR estimates as addressing different questions (``is this mechanism associated with disease?'' vs.\ ``is this mechanism causal for disease?'') and classifies their \emph{agreement pattern} rather than testing whether their magnitudes are statistically distinguishable.
 
 \subsection{MR effect-size scaling}
 
@@ -242,7 +248,7 @@ EBV-MS & 0.887 & Yes & 0.293 & Non-triv. & Causal & Concordance \\
 
 \vspace{1mm}
 {\footnotesize $^*$BMI-AD: CI excludes null (1.01--1.05) but $d = 0.016 < 0.10$, so MR is classified as null under the two-criterion rule.\\
-$^\dagger$BMI~$\to$~MS: MR evidence addresses MS susceptibility \citep{mokry2016obesity}; no trial tests a matching clinical endpoint. Excluded from scored count.}
+$^\dagger$BMI~$\to$~MS: MR evidence addresses MS susceptibility \cite{mokry2016obesity}; no trial tests a matching clinical endpoint. Excluded from scored count.}
 \end{table}
 
 \subsection{Etiologic-only drug classification}
@@ -270,17 +276,17 @@ The sample is underpowered for frequentist significance at $n = 8$ (Fisher's exa
 The single miss exemplifies \emph{exposure mismatch}: the MR instrument measures the causal effect of one exposure (lifelong genetically determined vitamin~D status), while the drug delivers a different one (adult oral supplementation). These are different interventions on the same pathway, and concordance between MR and observational evidence does not guarantee that the drug recapitulates the exposure the instrument captures. For vitamin~D-MS, MR supports a causal role for lifelong status (OR~2.0, $d = 0.38$) and observational evidence agrees (OR~1.40, $d = 0.19$), producing concordance and predicting approval. The trial failed because adult supplementation does not recapitulate lifelong exposure. This failure mode is predictable a priori whenever the MR instrument's exposure window diverges from the drug's mechanism of action---it is a structural property of the instrument-intervention mapping, not a quirk of one family.
 
 \paragraph{Prediction pending: BMI and MS.}
-BMI~$\to$~MS occupies a distinct category: the etiologic evidence supports causation, but no randomized trial has tested the corresponding clinical endpoint. Two-sample MR estimates a causal effect on MS \emph{susceptibility} (inverse-variance-weighted OR 1.41 per SD BMI, 95\% CI 1.20--1.66; \citealp{mokry2016obesity}), though the pleiotropy-robust weighted-median estimate attenuates toward null (OR 1.26, 0.98--1.62). The interventional literature does not close this gap: behavioral weight-loss trials achieve substantial weight reduction (8.6\% vs.\ 0.7\% in MoDEMS) but measure mobility, fatigue, and quality of life rather than relapse rate, disability accrual, or incidence \citep{bruce2023modems}, and calorie-restriction RCTs are powered on biomarkers such as serum leptin \citep{ghezzi2025icr}. Because the etiologic claim (onset) and the trial endpoints (symptoms, surrogates) address different constructs, BMI~$\to$~MS is excluded from the scored concordance count.
+BMI~$\to$~MS occupies a distinct category: the etiologic evidence supports causation, but no randomized trial has tested the corresponding clinical endpoint. Two-sample MR estimates a causal effect on MS \emph{susceptibility} (inverse-variance-weighted OR 1.41 per SD BMI, 95\% CI 1.20--1.66; \cite{mokry2016obesity}), though the pleiotropy-robust weighted-median estimate attenuates toward null (OR 1.26, 0.98--1.62). The interventional literature does not close this gap: behavioral weight-loss trials achieve substantial weight reduction (8.6\% vs.\ 0.7\% in MoDEMS) but measure mobility, fatigue, and quality of life rather than relapse rate, disability accrual, or incidence \cite{bruce2023modems}, and calorie-restriction RCTs are powered on biomarkers such as serum leptin \cite{ghezzi2025icr}. Because the etiologic claim (onset) and the trial endpoints (symptoms, surrogates) address different constructs, BMI~$\to$~MS is excluded from the scored concordance count.
 
-By contrast, BMI~$\to$~AD enters as a scored family: MR evidence shows a near-null causal effect (OR 1.03, 95\% CI 1.01--1.05; $d = 0.016$) against a strong observational association (midlife obese vs.\ normal BMI: RR 2.04, 95\% CI 1.59--2.62, $d = 0.39$; \citealp{anstey2011}), producing qualitative discordance and correctly predicting that weight-loss interventions would not prevent AD.
+By contrast, BMI~$\to$~AD enters as a scored family: MR evidence shows a near-null causal effect (OR 1.03, 95\% CI 1.01--1.05; $d = 0.016$) against a strong observational association (midlife obese vs.\ normal BMI: RR 2.04, 95\% CI 1.59--2.62, $d = 0.39$; \cite{anstey2011}), producing qualitative discordance and correctly predicting that weight-loss interventions would not prevent AD.
 
 \subsection{Cases etiologic evidence diagnoses}
 
 \paragraph{Metabolic-AD (zombie mechanism).} T2D associates with AD in observational cohorts (RR~1.53, $d = 0.24$). MR finds no causal effect (OR~1.01, $d = 0.006$). The 40-fold gap diagnoses confounding: shared risk factors (obesity, inflammation, vascular disease) explain the association without a causal metabolic pathway. Semaglutide's null results in EVOKE/EVOKE+ confirmed this classification. Pioglitazone also failed.
 
-\paragraph{HRT-AD (zombie mechanism).} A meta-analysis of 16 observational studies shows HRT is protective against AD (OR~0.67, $d = 0.22$; \citealp{song2020}). MR for estradiol finds no causal effect (OR~1.00; \citealp{barth2025}). The WHIMS trial found HRT \emph{increased} dementia risk (HR~1.76; \citealp{shumaker2003}). The observational protective signal reflects healthy-user bias. The concordance rule correctly identifies this discordance before any RCT data enters the classification.
+\paragraph{HRT-AD (zombie mechanism).} A meta-analysis of 16 observational studies shows HRT is protective against AD (OR~0.67, $d = 0.22$; \cite{song2020}). MR for estradiol finds no causal effect (OR~1.00; \cite{barth2025}). The WHIMS trial found HRT \emph{increased} dementia risk (HR~1.76; \cite{shumaker2003}). The observational protective signal reflects healthy-user bias. The concordance rule correctly identifies this discordance before any RCT data enters the classification.
 
-\paragraph{Anti-CD20-MS (concordance, real mechanism).} MR evidence shows that per-SD higher circulating FCRL3 protein is protective against MS (OR~0.83, $d = 0.103$; \citealp{lin2023}). Observational B-cell depletion efficacy data shows a large effect ($d = 0.44$; \citealp{hu2019}). Both types exceed the 0.10 threshold---the mechanism is supported across evidence types. GWAS evidence (CD40, OR~1.16; \citealp{sokolova2013}) corroborates B-cell involvement. All four Anti-CD20 drugs in the holdout were approved. A caveat on instrument-target alignment: the MR instrument captures circulating FCRL3-mediated B-cell biology, while ocrelizumab depletes CD20$^+$ B cells via antibody-dependent cellular cytotoxicity---a related but distinct mechanism. This family's MR $d = 0.103$ clears the threshold by 0.003; at $d = 0.099$ the classification would flip to discordance and predict failure for all four approved drugs. This threshold sensitivity is discussed in the Limitations (\S\ref{sec:limitations}).
+\paragraph{Anti-CD20-MS (concordance, real mechanism).} MR evidence shows that per-SD higher circulating FCRL3 protein is protective against MS (OR~0.83, $d = 0.103$; \cite{lin2023}). Observational B-cell depletion efficacy data shows a large effect ($d = 0.44$; \cite{hu2019}). Both types exceed the 0.10 threshold---the mechanism is supported across evidence types. GWAS evidence (CD40, OR~1.16; \cite{sokolova2013}) corroborates B-cell involvement. All four Anti-CD20 drugs in the holdout were approved. A caveat on instrument-target alignment: the MR instrument captures circulating FCRL3-mediated B-cell biology, while ocrelizumab depletes CD20$^+$ B cells via antibody-dependent cellular cytotoxicity---a related but distinct mechanism. This family's MR $d = 0.103$ clears the threshold by 0.003; at $d = 0.099$ the classification would flip to discordance and predict failure for all four approved drugs. This threshold sensitivity is discussed in the Limitations (\S\ref{sec:limitations}).
 
 \subsection{The case etiologic evidence cannot diagnose: amyloid}
 \label{sec:amyloid}
@@ -400,20 +406,20 @@ IL-6R$^\text{h}$ & 1.25 & 0.95 (0.93--0.97) & Causal & \emph{Pending} & Concorda
 
 \vspace{1mm}
 {\footnotesize
-$^\text{a}$Per 1 SD HDL-C \citep{voight2012}. Niacin and CETP inhibitors share the same HDL-raising MR evidence.
-$^\text{b}$OBS per 5 $\mu$mol/L; MR is MTHFR TT vs CC \citep{clarke2012}.
-$^\text{c}$OBS per 1 SD log CRP (ERFC); MR per 20\% lower CRP \citep{elliott2009}.
-$^\text{d}$Per 1 SD urate \citep{white2016}. $^*$Egger MR (pleiotropy-robust) is null; conventional MR is borderline significant (1.18, 1.08--1.29). OBS association is weak ($d = 0.04$). See text.
-$^\text{e}$Per 1 mmol/L. LDL OBS from prospective meta-analyses \citep{ference2019ldl}; LDL MR from \citet{holmes2015}. TG OBS from Sarwar 2007 (top vs.\ bottom tertile); TG MR from \citet{holmes2015} unrestricted score.
+$^\text{a}$Per 1 SD HDL-C \cite{voight2012}. Niacin and CETP inhibitors share the same HDL-raising MR evidence.
+$^\text{b}$OBS per 5 $\mu$mol/L; MR is MTHFR TT vs CC \cite{clarke2012}.
+$^\text{c}$OBS per 1 SD log CRP (ERFC); MR per 20\% lower CRP \cite{elliott2009}.
+$^\text{d}$Per 1 SD urate \cite{white2016}. $^*$Egger MR (pleiotropy-robust) is null; conventional MR is borderline significant (1.18, 1.08--1.29). OBS association is weak ($d = 0.04$). See text.
+$^\text{e}$Per 1 mmol/L. LDL OBS from prospective meta-analyses \cite{ference2019ldl}; LDL MR from \citet{holmes2015}. TG OBS from Sarwar 2007 (top vs.\ bottom tertile); TG MR from \citet{holmes2015} unrestricted score.
 $^\text{f}$Per 10 mmHg SBP for stroke; OBS from Lewington 2002 (PSC); MR from \citet{georgakis2020}.
-$^\text{g}$OBS per 1 SD (ERFC); MR per 10 mg/dL lower \citep{burgess2018lpa}.
-$^\text{h}$OBS per 1 SD log IL-6 (ERFC); MR per allele \citep{interleukin2012}.
+$^\text{g}$OBS per 1 SD (ERFC); MR per 10 mg/dL lower \cite{burgess2018lpa}.
+$^\text{h}$OBS per 1 SD log IL-6 (ERFC); MR per allele \cite{interleukin2012}.
 }
 \end{table}
 
-Four zombie mechanisms---HDL/CETP, niacin/HDL, homocysteine/B-vitamins, and CRP---each have moderate-to-strong observational associations with cardiovascular risk and null MR causal estimates (CI includes 1). All four produced drug failures: torcetrapib, dalcetrapib, and evacetrapib (CETP inhibitors); AIM-HIGH and HPS2-THRIVE (niacin); B-vitamin supplementation trials; and canakinumab's null primary endpoint in CANTOS despite reducing CRP. Note that niacin/HDL and HDL/CETP share the same underlying MR evidence \citep{voight2012}; they appear as separate families because the drug classes differ, but the genetic evidence is not independent.
+Four zombie mechanisms---HDL/CETP, niacin/HDL, homocysteine/B-vitamins, and CRP---each have moderate-to-strong observational associations with cardiovascular risk and null MR causal estimates (CI includes 1). All four produced drug failures: torcetrapib, dalcetrapib, and evacetrapib (CETP inhibitors); AIM-HIGH and HPS2-THRIVE (niacin); B-vitamin supplementation trials; and canakinumab's null primary endpoint in CANTOS despite reducing CRP. Note that niacin/HDL and HDL/CETP share the same underlying MR evidence \cite{voight2012}; they appear as separate families because the drug classes differ, but the genetic evidence is not independent.
 
-Uric acid is ambiguous. The observational association is weak (OR 1.07 per 1 SD), and the MR evidence depends on method: conventional MR suggests a causal effect (OR 1.18, 95\% CI 1.08--1.29) while Egger MR, which accounts for pleiotropic instruments, does not (OR 1.05, 95\% CI 0.92--1.20; \citealp{white2016}). The allopurinol trial (ALL-HEART) found no cardiovascular benefit. Under our framework, the weak observational association ($d = 0.04$) and null Egger MR ($d = 0.03$) yield concordance at a near-null level---the evidence agrees that uric acid has little causal relevance for CHD. The concordance-to-approve mapping produces the wrong prediction; a ``null concordance'' rule (both types negligible $\to$ no target $\to$ predict failure) would handle this case correctly.
+Uric acid is ambiguous. The observational association is weak (OR 1.07 per 1 SD), and the MR evidence depends on method: conventional MR suggests a causal effect (OR 1.18, 95\% CI 1.08--1.29) while Egger MR, which accounts for pleiotropic instruments, does not (OR 1.05, 95\% CI 0.92--1.20; \cite{white2016}). The allopurinol trial (ALL-HEART) found no cardiovascular benefit. Under our framework, the weak observational association ($d = 0.04$) and null Egger MR ($d = 0.03$) yield concordance at a near-null level---the evidence agrees that uric acid has little causal relevance for CHD. The concordance-to-approve mapping produces the wrong prediction; a ``null concordance'' rule (both types negligible $\to$ no target $\to$ predict failure) would handle this case correctly.
 
 Three true positives---LDL/PCSK9, blood pressure, and triglycerides---have causal MR signals (CIs excluding 1) and approved drug classes.
 
@@ -492,7 +498,7 @@ This boundary is mechanistically predictable a priori: soluble effector targets 
 
 \subsection{MR predicts outcomes; cross-design evidence diagnoses failure modes}
 
-The ablation result is the central methodological finding: MR-null status alone accounts for all outcome-predictive power. The observational leg adds no classifications. This finding is consistent with prior work showing that genetic support predicts drug success \citep{nelson2015,minikel2024}---our rule, stripped to its predictive core, recovers the same result on a different family set.
+The ablation result is the central methodological finding: MR-null status alone accounts for all outcome-predictive power. The observational leg adds no classifications. This finding is consistent with prior work showing that genetic support predicts drug success \cite{nelson2015,minikel2024}---our rule, stripped to its predictive core, recovers the same result on a different family set. The natural objection follows: if MR-null status does all the predictive work, does the cross-design framework add anything beyond what Nelson et al.\ and Minikel et al.\ already established? It does, but the contribution is diagnostic rather than predictive.
 
 The cross-design framework's contribution is therefore diagnostic, not predictive. MR-only says ``this target will fail''; it cannot say \emph{why}. The observational leg, combined with RCT evidence in Stage~2, separates zombie mechanisms (confounded OBS, null MR---the target was never real) from translation-gap mechanisms (concordant OBS and MR, but RCT null---the target is real, the drug is insufficient) and exposure mismatches (concordant evidence, but the drug does not recapitulate the causal exposure). Each has direct practical consequences: zombies should be retired from pipelines, translation gaps call for different therapeutic strategies, and exposure mismatches call for interventions that recapitulate the causal exposure window.
 
@@ -500,7 +506,7 @@ The cross-design framework's contribution is therefore diagnostic, not predictiv
 
 GRADE's five dimensions operate within a single study design. Cross-design concordance adds a sixth: does the evidence hold up across designs? When MR finds no causal pathway (OR~1.01 for T2D-AD) while observational evidence shows a moderate association (RR~1.53), that discrepancy contains information GRADE cannot capture. The direction of the discrepancy diagnoses confounding.
 
-Triangulation \citep{lawlor2016} captures the right intuition---multiple evidence types with different biases should converge on a true effect---but provides no quantitative decision rule. Our contribution is complementary: triangulation is about \emph{convergence} boosting credibility; the concordance rule is about \emph{divergence} diagnosing failure mode.
+Triangulation \cite{lawlor2016} captures the right intuition---multiple evidence types with different biases should converge on a true effect---but provides no quantitative decision rule. Our contribution is complementary: triangulation is about \emph{convergence} boosting credibility; the concordance rule is about \emph{divergence} diagnosing failure mode.
 
 \subsection{MR as a screening tool}
 
@@ -518,7 +524,7 @@ This is a one-sided screen: a null MR signal is a strong negative indicator for 
 
 The amyloid case illustrates a general principle. APOE4 is one of the strongest known genetic risk factors for any common disease (OR~3.46 per allele). Amyloid PET positivity robustly predicts AD conversion. The etiologic evidence is concordant. Drugs targeting amyloid clearance mostly fail.
 
-The gap between etiologic concordance and interventional success reflects the difference between ``the mechanism is involved in pathogenesis'' and ``intervening on the mechanism at this stage reverses pathology.'' Amyloid accumulation may be an upstream causal factor in AD, but by the time clinical disease manifests, the downstream cascade (tau tangles, synaptic loss, neuroinflammation) may have become self-sustaining---though this mechanistic explanation remains a hypothesis rather than an established fact. The recent FDA approvals of lecanemab and donanemab via accelerated and traditional pathways remain controversial, with debate over whether statistically significant slowing on CDR-SB (27--35\%) constitutes clinical benefit. An estimated \$40 billion in failed trials \citep{cummings_zhong2014} targeted a mechanism that was etiologically valid but therapeutically insufficient.
+The gap between etiologic concordance and interventional success reflects the difference between ``the mechanism is involved in pathogenesis'' and ``intervening on the mechanism at this stage reverses pathology.'' Amyloid accumulation may be an upstream causal factor in AD, but by the time clinical disease manifests, the downstream cascade (tau tangles, synaptic loss, neuroinflammation) may have become self-sustaining---though this mechanistic explanation remains a hypothesis rather than an established fact. The recent FDA approvals of lecanemab and donanemab via accelerated and traditional pathways remain controversial, with debate over whether statistically significant slowing on CDR-SB (27--35\%) constitutes clinical benefit. An estimated \$40 billion in failed trials \cite{cummings_zhong2014} targeted a mechanism that was etiologically valid but therapeutically insufficient.
 
 The method performs more cleanly on MS than on AD. MS mechanism families map to specific biological pathways (B-cell depletion, vitamin~D, EBV) with relatively homogeneous drug targets within each family. AD families are more heterogeneous: ``amyloid'' encompasses production-pathway inhibitors, passive immunotherapy, and active immunotherapy, which may have distinct mechanisms of failure.
 
@@ -541,13 +547,75 @@ Anti-CD20-MS is threshold-sensitive and contrast-dependent: its MR $d = 0.103$ (
 
 Prospective validation---pre-registering classifications for mechanisms entering Phase~III and evaluating at trial readout---is the definitive test.
 
-\section{Conclusion}
+\section{Conclusions}
 
 Four findings emerge from this analysis. First, MR-null status alone accounts for all outcome-predictive power; the observational leg adds zero classifications beyond MR (ablation: 18/22 correct for both rules, zero McNemar disagreements). Second, the cross-design framework's value is diagnostic: it separates zombie mechanisms (confounded OBS, null MR---the target was never real), translation-gap mechanisms (concordant OBS and MR, but RCT null---the target is real, the drug is insufficient), and exposure mismatches (concordant evidence, but the drug does not recapitulate the causal exposure). MR alone cannot make these distinctions. Third, etiologic concordance is necessary but insufficient for drug success---amyloid-AD shows that a mechanism can be etiologically valid and therapeutically insufficient. Fourth, the effector-neutralization boundary in autoimmune disease defines a mechanistically predictable class where MR-based screening is expected to misclassify, because the drug target is a disease consequence rather than a disease cause.
 
 The practical recommendation: a null MR signal for a drug target is a strong negative indicator---the mechanism is likely a zombie. A positive MR signal is necessary but insufficient. For effector-neutralization targets (soluble cytokines elevated in active disease), MR is uninformative and should not be used as a negative screen.
 
-\bibliographystyle{plainnat}
+\section*{Abbreviations}
+AD: Alzheimer's disease;
+ADCC: Antibody-dependent cellular cytotoxicity;
+BACE: Beta-site amyloid precursor protein cleaving enzyme;
+BMI: Body mass index;
+CDR-SB: Clinical Dementia Rating Sum of Boxes;
+CETP: Cholesteryl ester transfer protein;
+CI: Confidence interval;
+CRP: C-reactive protein;
+CVD: Cardiovascular disease;
+EBV: Epstein-Barr virus;
+FCRL3: Fc receptor-like 3;
+GEN: Genetic/causal evidence;
+GRADE: Grading of Recommendations, Assessment, Development and Evaluations;
+GWAS: Genome-wide association study;
+HDL: High-density lipoprotein;
+HR: Hazard ratio;
+HRT: Hormone replacement therapy;
+IL: Interleukin;
+LDL: Low-density lipoprotein;
+MR: Mendelian randomization;
+MS: Multiple sclerosis;
+OBS: Observational evidence;
+OR: Odds ratio;
+PCSK9: Proprotein convertase subtilisin/kexin type 9;
+PET: Positron emission tomography;
+RA: Rheumatoid arthritis;
+RCT: Randomized controlled trial;
+RR: Relative risk;
+SBP: Systolic blood pressure;
+SD: Standard deviation;
+SMD: Standardized mean difference;
+TG: Triglycerides;
+TNF: Tumor necrosis factor;
+WHIMS: Women's Health Initiative Memory Study
+
+\section*{Declarations}
+
+\subsection*{Ethics approval and consent to participate}
+Not applicable. This study uses only published aggregate data from previously published studies and requires no ethics approval.
+
+\subsection*{Consent for publication}
+Not applicable.
+
+\subsection*{Availability of data and materials}
+All data used in this analysis are from published studies cited in the references. The complete classification dataset (27 mechanism families with effect sizes, confidence intervals, and sources) is provided in the supplementary materials. The frozen classifier code, classification script, and all input data are available at \url{https://github.com/elliottower/cross-design-evidence-discordance} (commit \texttt{bf7f175}). A permanent archive is deposited at Zenodo (DOI: \url{https://doi.org/10.5281/zenodo.21227354}).
+
+\subsection*{Competing interests}
+The author declares no competing interests.
+
+\subsection*{Funding}
+This research received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors.
+
+\subsection*{Authors' contributions}
+ET conceived the study, assembled the evidence catalog, designed and implemented the classification rule, performed all analyses, and wrote the manuscript. The author read and approved the final manuscript.
+
+\subsection*{Use of AI-assisted technologies}
+Claude (Anthropic) was used as a writing and analysis assistant during manuscript preparation. The author directed all analytical decisions, verified all numerical results against source data, and takes full responsibility for the content. The classification rule, effect-size data, and all reported results were independently validated by the author. No AI tool is listed as an author.
+
+\subsection*{Acknowledgements}
+Not applicable.
+
+\bibliographystyle{unsrtnat}
 \bibliography{references}
 
 \end{document}

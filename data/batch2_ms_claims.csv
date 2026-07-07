@@ -1,0 +1,11 @@
+case_id,claim,design,scale,estimate,ci_low,ci_high,n_cases,n_controls,population,PMID,source_paper,verdict_suggestion,notes,extracted_by,extract_date
+MS-006a,OCB+ -> disability outcome (MS),observational,odds ratio,1.96,,,12253.0,,multi,23431079,Dobson 2013 JNNP meta,SUGGESTIVE,VERIFIED est; CI not in abstract,Perplexity batch2,2026-07-02
+MS-006b,OCB+ -> CIS-to-MS conversion,observational,odds ratio,9.88,,,2685.0,,multi,23431079,Dobson 2013 JNNP meta,SUPPORTED,VERIFIED est; CI not in abstract,Perplexity batch2,2026-07-02
+MS-018a,EBV+HLA additive interaction (S),observational,synergy index,1.43,1.05,1.95,,,multi,26656273,Xiao 2015 SciRep,SUPPORTED,VERIFIED additive S; multiplicative NULL 0.86 (0.59-1.26),Perplexity batch2,2026-07-02
+MS-018b,EBV alone -> MS,observational,odds ratio,2.6,1.48,4.59,,,multi,26656273,Xiao 2015 SciRep,SUPPORTED,VERIFIED,Perplexity batch2,2026-07-02
+MS-018c,HLA-DRB1*1501 alone -> MS,observational,odds ratio,3.06,2.3,4.08,,,multi,26656273,Xiao 2015 SciRep,SUPPORTED,VERIFIED pooled meta-OR — resolves MS-017 batch1 discrepancy,Perplexity batch2,2026-07-02
+MS-020,Female sex -> MS incidence,observational,odds ratio,,,,,,global,,Atlas of MS,SUPPORTED,~3:1 F:M reported; no pooled OR this pass,Perplexity batch2,2026-07-02
+MS-021,Smoking -> MS (MR NEG control),MR,odds ratio,,,,,,European,,Bristol MR,DISCONFIRMED,'little evidence' null; exact IVW OR/CI needs primary,Perplexity batch2,2026-07-02
+MS-022,Spinal cord atrophy -> progression,observational,hazard ratio,,,,,,cohort,,Kearney/Eshaghi,SUGGESTIVE,no ratio-scale HR this pass,Perplexity batch2,2026-07-02
+MS-028,Cladribine -> 3mo CDP (CLARITY),RCT,hazard ratio,,,,437.0,437.0,multi,20089960,Giovannoni 2010 NEJM,SUPPORTED,31-33% risk reduction; HR/CI needs primary table,Perplexity batch2,2026-07-02
+MS-029,Natalizumab -> sustained CDP (AFFIRM),RCT,hazard ratio,0.58,0.43,0.77,942.0,,multi,16510744,Polman 2006 NEJM,SUPPORTED,VERIFIED 42% reduction HR 0.58 (0.43-0.77),Perplexity batch2,2026-07-02

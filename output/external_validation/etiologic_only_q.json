@@ -1,0 +1,984 @@
+{
+  "generated": "2026-07-03T02:21:03.599356",
+  "method": "Etiologic-only vs full Q analysis",
+  "beta_threshold": 0.1,
+  "new_evidence_added": [
+    "NEW-ANTICD20-OBS",
+    "NEW-ANTICD20-MR",
+    "NEW-HRT-OBS",
+    "NEW-HRT-MR",
+    "NEW-VITD-OBS"
+  ],
+  "etiologic_only": {
+    "n_families": 8,
+    "families": {
+      "AntiCD20_MS": {
+        "Q": 15.113637324106655,
+        "df": 1,
+        "p": 0.00010122936704903829,
+        "k": 2,
+        "type_means": {
+          "OBS": 0.8,
+          "GEN": 0.10272888052872454
+        },
+        "type_ses": {
+          "OBS": 0.17857142857142858,
+          "GEN": 0.01676328407416808
+        },
+        "classification": "DISCORDANT",
+        "discordance_type": "quantitative",
+        "bonferroni_alpha": 0.00625
+      },
+      "EBV_MS": {
+        "Q": 5.5485574760769065,
+        "df": 1,
+        "p": 0.018495924129384167,
+        "k": 2,
+        "type_means": {
+          "GEN": 1.91760924134338,
+          "OBS": 0.5268010695498568
+        },
+        "type_ses": {
+          "GEN": 0.5685780620763092,
+          "OBS": 0.15918748959561008
+        },
+        "classification": "CONCORDANT",
+        "discordance_type": "concordant",
+        "bonferroni_alpha": 0.00625
+      },
+      "HRT_AD": {
+        "Q": 12.613915503462934,
+        "df": 1,
+        "p": 0.0003828856178511586,
+        "k": 2,
+        "type_means": {
+          "OBS": 0.22079485443320024,
+          "GEN": 0.0
+        },
+        "type_ses": {
+          "OBS": 0.0416683431544518,
+          "GEN": 0.04613629449677017
+        },
+        "classification": "DISCORDANT",
+        "discordance_type": "qualitative",
+        "bonferroni_alpha": 0.00625
+      },
+      "Metabolic_AD": {
+        "Q": 103.60733543326548,
+        "df": 1,
+        "p": 0.0,
+        "k": 2,
+        "type_means": {
+          "OBS": 0.24014933593516966,
+          "GEN": 0.005485904918358543
+        },
+        "type_ses": {
+          "OBS": 0.01836480647749483,
+          "GEN": 0.01393665252581434
+        },
+        "classification": "DISCORDANT",
+        "discordance_type": "qualitative",
+        "bonferroni_alpha": 0.00625
+      },
+      "ModRisk_AD": {
+        "Q": 63.96491085076943,
+        "df": 1,
+        "p": 1.2212453270876722e-15,
+        "k": 2,
+        "type_means": {
+          "GEN": 0.05333596518590763,
+          "OBS": 0.1988274382848069
+        },
+        "type_ses": {
+          "GEN": 0.01234757342259443,
+          "OBS": 0.013359088828509773
+        },
+        "classification": "DISCORDANT",
+        "discordance_type": "qualitative",
+        "bonferroni_alpha": 0.00625
+      },
+      "Obesity_MSAD": {
+        "Q": 8.704889607830676,
+        "df": 1,
+        "p": 0.0031735763409254103,
+        "k": 2,
+        "type_means": {
+          "GEN": 0.132870198011308,
+          "OBS": 0.36287992761814036
+        },
+        "type_ses": {
+          "GEN": 0.05590296289239557,
+          "OBS": 0.05433615027562659
+        },
+        "classification": "DISCORDANT",
+        "discordance_type": "quantitative",
+        "bonferroni_alpha": 0.00625
+      },
+      "Smoking_MSAD": {
+        "Q": 12.956078600873791,
+        "df": 1,
+        "p": 0.00031888441569483117,
+        "k": 2,
+        "type_means": {
+          "GEN": 0.016296621789821882,
+          "OBS": 0.26256166386817364
+        },
+        "type_ses": {
+          "GEN": 0.04085559818036037,
+          "OBS": 0.05487939582642888
+        },
+        "classification": "DISCORDANT",
+        "discordance_type": "qualitative",
+        "bonferroni_alpha": 0.00625
+      },
+      "VitD_MS": {
+        "Q": 7.769386268601256,
+        "df": 1,
+        "p": 0.005313910081600759,
+        "k": 2,
+        "type_means": {
+          "GEN": 0.3821520694228442,
+          "OBS": 0.18550686655647317
+        },
+        "type_ses": {
+          "GEN": 0.054241548355025405,
+          "OBS": 0.04511093058915301
+        },
+        "classification": "DISCORDANT",
+        "discordance_type": "quantitative",
+        "bonferroni_alpha": 0.00625
+      }
+    },
+    "holdout_metrics": {
+      "n": 38,
+      "n_predictable": 8,
+      "n_unpredictable": 30,
+      "tp": 3,
+      "fp": 0,
+      "tn": 4,
+      "fn": 1,
+      "accuracy": 0.875,
+      "accuracy_ci": [
+        0.5291051942301386,
+        0.9775830911367038
+      ],
+      "or_fisher": Infinity,
+      "or_haldane": 21.0,
+      "p_fisher": 0.14285714285714288,
+      "p_permutation": 0.07254
+    },
+    "per_drug": [
+      {
+        "drug": "lecanemab",
+        "family": "Amyloid_AD",
+        "actual": "Approved",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "donanemab",
+        "family": "Amyloid_AD",
+        "actual": "Approved",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "aducanumab",
+        "family": "Amyloid_AD",
+        "actual": "Failed",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "solanezumab",
+        "family": "Amyloid_AD",
+        "actual": "Failed",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "solanezumab",
+        "family": "Amyloid_AD",
+        "actual": "Failed",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "verubecestat",
+        "family": "Amyloid_AD",
+        "actual": "Failed",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "semagacestat",
+        "family": "Amyloid_AD",
+        "actual": "Failed",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "bapineuzumab",
+        "family": "Amyloid_AD",
+        "actual": "Failed",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "crenezumab",
+        "family": "Amyloid_AD",
+        "actual": "Failed",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "gantenerumab",
+        "family": "Amyloid_AD",
+        "actual": "Failed",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "lanabecestat",
+        "family": "Amyloid_AD",
+        "actual": "Failed",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "atabecestat",
+        "family": "Amyloid_AD",
+        "actual": "Failed",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "tarenflurbil",
+        "family": "Amyloid_AD",
+        "actual": "Failed",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "tramiprosate",
+        "family": "Amyloid_AD",
+        "actual": "Failed",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "semaglutide",
+        "family": "Metabolic_AD",
+        "actual": "Failed",
+        "prediction": "Fail",
+        "classification": "DISCORDANT",
+        "discordance_type": "qualitative"
+      },
+      {
+        "drug": "pioglitazone",
+        "family": "Metabolic_AD",
+        "actual": "Failed",
+        "prediction": "Fail",
+        "classification": "DISCORDANT",
+        "discordance_type": "qualitative"
+      },
+      {
+        "drug": "ginkgo_biloba",
+        "family": "FailedAD_RCT",
+        "actual": "Failed",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "CEE_MPA_HRT",
+        "family": "HRT_AD",
+        "actual": "Failed",
+        "prediction": "Fail",
+        "classification": "DISCORDANT",
+        "discordance_type": "qualitative"
+      },
+      {
+        "drug": "simvastatin",
+        "family": "FailedNeuro_MS",
+        "actual": "Failed",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "high_dose_biotin",
+        "family": "FailedNeuro_MS",
+        "actual": "Failed",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "laquinimod",
+        "family": "FailedNeuro_MS",
+        "actual": "Failed",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "ibudilast",
+        "family": "FailedNeuro_MS",
+        "actual": "Failed",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "ocrelizumab",
+        "family": "AntiCD20_MS",
+        "actual": "Approved",
+        "prediction": "Approve",
+        "classification": "DISCORDANT",
+        "discordance_type": "quantitative"
+      },
+      {
+        "drug": "ocrelizumab",
+        "family": "AntiCD20_MS",
+        "actual": "Approved",
+        "prediction": "Approve",
+        "classification": "DISCORDANT",
+        "discordance_type": "quantitative"
+      },
+      {
+        "drug": "ofatumumab",
+        "family": "AntiCD20_MS",
+        "actual": "Approved",
+        "prediction": "Approve",
+        "classification": "DISCORDANT",
+        "discordance_type": "quantitative"
+      },
+      {
+        "drug": "ublituximab",
+        "family": "AntiCD20_MS",
+        "actual": "Approved",
+        "prediction": "Approve",
+        "classification": "DISCORDANT",
+        "discordance_type": "quantitative"
+      },
+      {
+        "drug": "natalizumab",
+        "family": "OtherDMT_MS",
+        "actual": "Approved",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "cladribine",
+        "family": "OtherDMT_MS",
+        "actual": "Approved",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "fingolimod",
+        "family": "Fingolimod_MS",
+        "actual": "Approved",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "fingolimod",
+        "family": "Fingolimod_MS",
+        "actual": "Failed",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "siponimod",
+        "family": "S1P_MS",
+        "actual": "Approved",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "ozanimod",
+        "family": "S1P_MS",
+        "actual": "Approved",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "ponesimod",
+        "family": "S1P_MS",
+        "actual": "Approved",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "dimethyl_fumarate",
+        "family": "OtherDMT_MS",
+        "actual": "Approved",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "diroximel_fumarate",
+        "family": "OtherDMT_MS",
+        "actual": "Approved",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "teriflunomide",
+        "family": "OtherDMT_MS",
+        "actual": "Approved",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "alemtuzumab",
+        "family": "OtherDMT_MS",
+        "actual": "Approved",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "vit_d_supplementation",
+        "family": "VitD_MS",
+        "actual": "Failed",
+        "prediction": "Approve",
+        "classification": "DISCORDANT",
+        "discordance_type": "quantitative"
+      }
+    ]
+  },
+  "full_q": {
+    "n_families": 10,
+    "families": {
+      "Amyloid_AD": {
+        "Q": 8.688308356341915,
+        "df": 1,
+        "p": 0.0032025772595379864,
+        "k": 2,
+        "type_means": {
+          "OBS": 0.8562477429609019,
+          "RCT": 0.03506584962195411
+        },
+        "type_ses": {
+          "OBS": 0.2781728568894546,
+          "RCT": 0.015312608670490375
+        },
+        "classification": "DISCORDANT",
+        "discordance_type": "qualitative",
+        "bonferroni_alpha": 0.005
+      },
+      "AntiCD20_MS": {
+        "Q": 19.854694594802098,
+        "df": 2,
+        "p": 4.882113242221653e-05,
+        "k": 3,
+        "type_means": {
+          "RCT": 0.20215374809668255,
+          "OBS": 0.8,
+          "GEN": 0.10272888052872454
+        },
+        "type_ses": {
+          "RCT": 0.03948223751884283,
+          "OBS": 0.17857142857142858,
+          "GEN": 0.01676328407416808
+        },
+        "classification": "DISCORDANT",
+        "discordance_type": "quantitative",
+        "bonferroni_alpha": 0.005
+      },
+      "EBV_MS": {
+        "Q": 5.5485574760769065,
+        "df": 1,
+        "p": 0.018495924129384167,
+        "k": 2,
+        "type_means": {
+          "GEN": 1.91760924134338,
+          "OBS": 0.5268010695498568
+        },
+        "type_ses": {
+          "GEN": 0.5685780620763092,
+          "OBS": 0.15918748959561008
+        },
+        "classification": "CONCORDANT",
+        "discordance_type": "concordant",
+        "bonferroni_alpha": 0.005
+      },
+      "HRT_AD": {
+        "Q": 18.126590417533038,
+        "df": 2,
+        "p": 0.00011584062791936134,
+        "k": 3,
+        "type_means": {
+          "RCT": 0.3414196100011061,
+          "OBS": 0.22079485443320024,
+          "GEN": 0.0
+        },
+        "type_ses": {
+          "RCT": 0.08836765172273149,
+          "OBS": 0.0416683431544518,
+          "GEN": 0.04613629449677017
+        },
+        "classification": "DISCORDANT",
+        "discordance_type": "qualitative",
+        "bonferroni_alpha": 0.005
+      },
+      "Metabolic_AD": {
+        "Q": 109.5273319236426,
+        "df": 2,
+        "p": 0.0,
+        "k": 3,
+        "type_means": {
+          "OBS": 0.24014933593516966,
+          "GEN": 0.005485904918358543,
+          "RCT": 0.0
+        },
+        "type_ses": {
+          "OBS": 0.01836480647749483,
+          "GEN": 0.01393665252581434,
+          "RCT": 0.03581898148327687
+        },
+        "classification": "DISCORDANT",
+        "discordance_type": "qualitative",
+        "bonferroni_alpha": 0.005
+      },
+      "ModRisk_AD": {
+        "Q": 63.96491085076943,
+        "df": 1,
+        "p": 1.2212453270876722e-15,
+        "k": 2,
+        "type_means": {
+          "GEN": 0.05333596518590763,
+          "OBS": 0.1988274382848069
+        },
+        "type_ses": {
+          "GEN": 0.01234757342259443,
+          "OBS": 0.013359088828509773
+        },
+        "classification": "DISCORDANT",
+        "discordance_type": "qualitative",
+        "bonferroni_alpha": 0.005
+      },
+      "Obesity_MSAD": {
+        "Q": 8.704889607830676,
+        "df": 1,
+        "p": 0.0031735763409254103,
+        "k": 2,
+        "type_means": {
+          "GEN": 0.132870198011308,
+          "OBS": 0.36287992761814036
+        },
+        "type_ses": {
+          "GEN": 0.05590296289239557,
+          "OBS": 0.05433615027562659
+        },
+        "classification": "DISCORDANT",
+        "discordance_type": "quantitative",
+        "bonferroni_alpha": 0.005
+      },
+      "OtherDMT_MS": {
+        "Q": 11.317623407985614,
+        "df": 1,
+        "p": 0.0007677491422966032,
+        "k": 2,
+        "type_means": {
+          "RCT": 0.28682778766588984,
+          "OBS": 0.98
+        },
+        "type_ses": {
+          "RCT": 0.0495461858889478,
+          "OBS": 0.2
+        },
+        "classification": "DISCORDANT",
+        "discordance_type": "quantitative",
+        "bonferroni_alpha": 0.005
+      },
+      "Smoking_MSAD": {
+        "Q": 12.956078600873791,
+        "df": 1,
+        "p": 0.00031888441569483117,
+        "k": 2,
+        "type_means": {
+          "GEN": 0.016296621789821882,
+          "OBS": 0.26256166386817364
+        },
+        "type_ses": {
+          "GEN": 0.04085559818036037,
+          "OBS": 0.05487939582642888
+        },
+        "classification": "DISCORDANT",
+        "discordance_type": "qualitative",
+        "bonferroni_alpha": 0.005
+      },
+      "VitD_MS": {
+        "Q": 8.931126382497768,
+        "df": 2,
+        "p": 0.011498218240229896,
+        "k": 3,
+        "type_means": {
+          "GEN": 0.3821520694228442,
+          "RCT": 0.18825213142181813,
+          "OBS": 0.18550686655647317
+        },
+        "type_ses": {
+          "GEN": 0.054241548355025405,
+          "RCT": 0.06315085495694886,
+          "OBS": 0.04511093058915301
+        },
+        "classification": "CONCORDANT",
+        "discordance_type": "concordant",
+        "bonferroni_alpha": 0.005
+      }
+    },
+    "holdout_metrics": {
+      "n": 38,
+      "n_predictable": 28,
+      "n_unpredictable": 10,
+      "tp": 15,
+      "fp": 2,
+      "tn": 10,
+      "fn": 1,
+      "accuracy": 0.8928571428571429,
+      "accuracy_ci": [
+        0.7280377463234293,
+        0.9628823079452005
+      ],
+      "or_fisher": 75.0,
+      "or_haldane": 43.4,
+      "p_fisher": 4.9734145843985646e-05,
+      "p_permutation": 4e-05
+    },
+    "per_drug": [
+      {
+        "drug": "lecanemab",
+        "family": "Amyloid_AD",
+        "actual": "Approved",
+        "prediction": "Fail",
+        "classification": "DISCORDANT",
+        "discordance_type": "qualitative"
+      },
+      {
+        "drug": "donanemab",
+        "family": "Amyloid_AD",
+        "actual": "Approved",
+        "prediction": "Fail",
+        "classification": "DISCORDANT",
+        "discordance_type": "qualitative"
+      },
+      {
+        "drug": "aducanumab",
+        "family": "Amyloid_AD",
+        "actual": "Failed",
+        "prediction": "Fail",
+        "classification": "DISCORDANT",
+        "discordance_type": "qualitative"
+      },
+      {
+        "drug": "solanezumab",
+        "family": "Amyloid_AD",
+        "actual": "Failed",
+        "prediction": "Fail",
+        "classification": "DISCORDANT",
+        "discordance_type": "qualitative"
+      },
+      {
+        "drug": "solanezumab",
+        "family": "Amyloid_AD",
+        "actual": "Failed",
+        "prediction": "Fail",
+        "classification": "DISCORDANT",
+        "discordance_type": "qualitative"
+      },
+      {
+        "drug": "verubecestat",
+        "family": "Amyloid_AD",
+        "actual": "Failed",
+        "prediction": "Fail",
+        "classification": "DISCORDANT",
+        "discordance_type": "qualitative"
+      },
+      {
+        "drug": "semagacestat",
+        "family": "Amyloid_AD",
+        "actual": "Failed",
+        "prediction": "Fail",
+        "classification": "DISCORDANT",
+        "discordance_type": "qualitative"
+      },
+      {
+        "drug": "bapineuzumab",
+        "family": "Amyloid_AD",
+        "actual": "Failed",
+        "prediction": "Fail",
+        "classification": "DISCORDANT",
+        "discordance_type": "qualitative"
+      },
+      {
+        "drug": "crenezumab",
+        "family": "Amyloid_AD",
+        "actual": "Failed",
+        "prediction": "Fail",
+        "classification": "DISCORDANT",
+        "discordance_type": "qualitative"
+      },
+      {
+        "drug": "gantenerumab",
+        "family": "Amyloid_AD",
+        "actual": "Failed",
+        "prediction": "Fail",
+        "classification": "DISCORDANT",
+        "discordance_type": "qualitative"
+      },
+      {
+        "drug": "lanabecestat",
+        "family": "Amyloid_AD",
+        "actual": "Failed",
+        "prediction": "Fail",
+        "classification": "DISCORDANT",
+        "discordance_type": "qualitative"
+      },
+      {
+        "drug": "atabecestat",
+        "family": "Amyloid_AD",
+        "actual": "Failed",
+        "prediction": "Fail",
+        "classification": "DISCORDANT",
+        "discordance_type": "qualitative"
+      },
+      {
+        "drug": "tarenflurbil",
+        "family": "Amyloid_AD",
+        "actual": "Failed",
+        "prediction": "Fail",
+        "classification": "DISCORDANT",
+        "discordance_type": "qualitative"
+      },
+      {
+        "drug": "tramiprosate",
+        "family": "Amyloid_AD",
+        "actual": "Failed",
+        "prediction": "Fail",
+        "classification": "DISCORDANT",
+        "discordance_type": "qualitative"
+      },
+      {
+        "drug": "semaglutide",
+        "family": "Metabolic_AD",
+        "actual": "Failed",
+        "prediction": "Fail",
+        "classification": "DISCORDANT",
+        "discordance_type": "qualitative"
+      },
+      {
+        "drug": "pioglitazone",
+        "family": "Metabolic_AD",
+        "actual": "Failed",
+        "prediction": "Fail",
+        "classification": "DISCORDANT",
+        "discordance_type": "qualitative"
+      },
+      {
+        "drug": "ginkgo_biloba",
+        "family": "FailedAD_RCT",
+        "actual": "Failed",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "CEE_MPA_HRT",
+        "family": "HRT_AD",
+        "actual": "Failed",
+        "prediction": "Fail",
+        "classification": "DISCORDANT",
+        "discordance_type": "qualitative"
+      },
+      {
+        "drug": "simvastatin",
+        "family": "FailedNeuro_MS",
+        "actual": "Failed",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "high_dose_biotin",
+        "family": "FailedNeuro_MS",
+        "actual": "Failed",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "laquinimod",
+        "family": "FailedNeuro_MS",
+        "actual": "Failed",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "ibudilast",
+        "family": "FailedNeuro_MS",
+        "actual": "Failed",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "ocrelizumab",
+        "family": "AntiCD20_MS",
+        "actual": "Approved",
+        "prediction": "Approve",
+        "classification": "DISCORDANT",
+        "discordance_type": "quantitative"
+      },
+      {
+        "drug": "ocrelizumab",
+        "family": "AntiCD20_MS",
+        "actual": "Approved",
+        "prediction": "Approve",
+        "classification": "DISCORDANT",
+        "discordance_type": "quantitative"
+      },
+      {
+        "drug": "ofatumumab",
+        "family": "AntiCD20_MS",
+        "actual": "Approved",
+        "prediction": "Approve",
+        "classification": "DISCORDANT",
+        "discordance_type": "quantitative"
+      },
+      {
+        "drug": "ublituximab",
+        "family": "AntiCD20_MS",
+        "actual": "Approved",
+        "prediction": "Approve",
+        "classification": "DISCORDANT",
+        "discordance_type": "quantitative"
+      },
+      {
+        "drug": "natalizumab",
+        "family": "OtherDMT_MS",
+        "actual": "Approved",
+        "prediction": "Approve",
+        "classification": "DISCORDANT",
+        "discordance_type": "quantitative"
+      },
+      {
+        "drug": "cladribine",
+        "family": "OtherDMT_MS",
+        "actual": "Approved",
+        "prediction": "Approve",
+        "classification": "DISCORDANT",
+        "discordance_type": "quantitative"
+      },
+      {
+        "drug": "fingolimod",
+        "family": "Fingolimod_MS",
+        "actual": "Approved",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "fingolimod",
+        "family": "Fingolimod_MS",
+        "actual": "Failed",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "siponimod",
+        "family": "S1P_MS",
+        "actual": "Approved",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "ozanimod",
+        "family": "S1P_MS",
+        "actual": "Approved",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "ponesimod",
+        "family": "S1P_MS",
+        "actual": "Approved",
+        "prediction": null,
+        "classification": "NOT_IN_Q",
+        "discordance_type": "n/a"
+      },
+      {
+        "drug": "dimethyl_fumarate",
+        "family": "OtherDMT_MS",
+        "actual": "Approved",
+        "prediction": "Approve",
+        "classification": "DISCORDANT",
+        "discordance_type": "quantitative"
+      },
+      {
+        "drug": "diroximel_fumarate",
+        "family": "OtherDMT_MS",
+        "actual": "Approved",
+        "prediction": "Approve",
+        "classification": "DISCORDANT",
+        "discordance_type": "quantitative"
+      },
+      {
+        "drug": "teriflunomide",
+        "family": "OtherDMT_MS",
+        "actual": "Approved",
+        "prediction": "Approve",
+        "classification": "DISCORDANT",
+        "discordance_type": "quantitative"
+      },
+      {
+        "drug": "alemtuzumab",
+        "family": "OtherDMT_MS",
+        "actual": "Approved",
+        "prediction": "Approve",
+        "classification": "DISCORDANT",
+        "discordance_type": "quantitative"
+      },
+      {
+        "drug": "vit_d_supplementation",
+        "family": "VitD_MS",
+        "actual": "Failed",
+        "prediction": "Approve",
+        "classification": "CONCORDANT",
+        "discordance_type": "concordant"
+      }
+    ]
+  }
+}

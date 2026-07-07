@@ -1,0 +1,233 @@
+{
+  "generated": "2026-07-02T23:36:56.679601",
+  "method": "Robustness experiments for Q-based discordance prediction",
+  "dataset": "data/phase3_expanded_dataset.csv",
+  "experiment_1_threshold_sensitivity": {
+    "thresholds_tested": [
+      0.05,
+      0.075,
+      0.1,
+      0.125,
+      0.15,
+      0.2,
+      0.25
+    ],
+    "results": [
+      {
+        "threshold": 0.05,
+        "accuracy": 0.8695652173913043,
+        "accuracy_ci": [
+          0.678721020269818,
+          0.954624234856553
+        ],
+        "odds_ratio": 42.0,
+        "p_fisher": 0.0017458200255346572,
+        "tp": 14,
+        "fp": 2,
+        "tn": 6,
+        "fn": 1,
+        "n": 23,
+        "n_qualitative_families": 2,
+        "n_quantitative_families": 1,
+        "changed_from_baseline": [
+          "ModRisk_AD: qualitative->quantitative"
+        ]
+      },
+      {
+        "threshold": 0.075,
+        "accuracy": 0.8695652173913043,
+        "accuracy_ci": [
+          0.678721020269818,
+          0.954624234856553
+        ],
+        "odds_ratio": 42.0,
+        "p_fisher": 0.0017458200255346572,
+        "tp": 14,
+        "fp": 2,
+        "tn": 6,
+        "fn": 1,
+        "n": 23,
+        "n_qualitative_families": 2,
+        "n_quantitative_families": 1,
+        "changed_from_baseline": []
+      },
+      {
+        "threshold": 0.1,
+        "accuracy": 0.8695652173913043,
+        "accuracy_ci": [
+          0.678721020269818,
+          0.954624234856553
+        ],
+        "odds_ratio": 42.0,
+        "p_fisher": 0.0017458200255346572,
+        "tp": 14,
+        "fp": 2,
+        "tn": 6,
+        "fn": 1,
+        "n": 23,
+        "n_qualitative_families": 2,
+        "n_quantitative_families": 1,
+        "changed_from_baseline": []
+      },
+      {
+        "threshold": 0.125,
+        "accuracy": 0.8695652173913043,
+        "accuracy_ci": [
+          0.678721020269818,
+          0.954624234856553
+        ],
+        "odds_ratio": 42.0,
+        "p_fisher": 0.0017458200255346572,
+        "tp": 14,
+        "fp": 2,
+        "tn": 6,
+        "fn": 1,
+        "n": 23,
+        "n_qualitative_families": 2,
+        "n_quantitative_families": 1,
+        "changed_from_baseline": []
+      },
+      {
+        "threshold": 0.15,
+        "accuracy": 0.8695652173913043,
+        "accuracy_ci": [
+          0.678721020269818,
+          0.954624234856553
+        ],
+        "odds_ratio": 42.0,
+        "p_fisher": 0.0017458200255346572,
+        "tp": 14,
+        "fp": 2,
+        "tn": 6,
+        "fn": 1,
+        "n": 23,
+        "n_qualitative_families": 2,
+        "n_quantitative_families": 1,
+        "changed_from_baseline": []
+      },
+      {
+        "threshold": 0.2,
+        "accuracy": 0.8695652173913043,
+        "accuracy_ci": [
+          0.678721020269818,
+          0.954624234856553
+        ],
+        "odds_ratio": 42.0,
+        "p_fisher": 0.0017458200255346572,
+        "tp": 14,
+        "fp": 2,
+        "tn": 6,
+        "fn": 1,
+        "n": 23,
+        "n_qualitative_families": 2,
+        "n_quantitative_families": 1,
+        "changed_from_baseline": [
+          "Obesity_MSAD: quantitative->qualitative"
+        ]
+      },
+      {
+        "threshold": 0.25,
+        "accuracy": 0.8695652173913043,
+        "accuracy_ci": [
+          0.678721020269818,
+          0.954624234856553
+        ],
+        "odds_ratio": 42.0,
+        "p_fisher": 0.0017458200255346572,
+        "tp": 14,
+        "fp": 2,
+        "tn": 6,
+        "fn": 1,
+        "n": 23,
+        "n_qualitative_families": 2,
+        "n_quantitative_families": 1,
+        "changed_from_baseline": [
+          "Obesity_MSAD: quantitative->qualitative"
+        ]
+      }
+    ],
+    "n_significant": 7,
+    "accuracy_range": [
+      0.8695652173913043,
+      0.8695652173913043
+    ]
+  },
+  "experiment_2_lofo_cv": {
+    "n_folds": 4,
+    "summary": {
+      "n_folds": 4,
+      "mean_accuracy": 0.8696630167218402,
+      "min_accuracy": 0.8235294117647058,
+      "max_accuracy": 0.9090909090909091
+    },
+    "per_fold": [
+      {
+        "left_out": "Amyloid_AD",
+        "n_removed": 14,
+        "n_remaining": 9,
+        "accuracy": 0.8888888888888888,
+        "odds_ratio": Infinity,
+        "p_fisher": 0.08333333333333334,
+        "tp": 2,
+        "fp": 0,
+        "tn": 6,
+        "fn": 1
+      },
+      {
+        "left_out": "Metabolic_AD",
+        "n_removed": 2,
+        "n_remaining": 21,
+        "accuracy": 0.8571428571428571,
+        "odds_ratio": 36.0,
+        "p_fisher": 0.0031991744066047476,
+        "tp": 12,
+        "fp": 2,
+        "tn": 6,
+        "fn": 1
+      },
+      {
+        "left_out": "OtherDMT_MS",
+        "n_removed": 6,
+        "n_remaining": 17,
+        "accuracy": 0.8235294117647058,
+        "odds_ratio": 0.0,
+        "p_fisher": 1.0,
+        "tp": 14,
+        "fp": 2,
+        "tn": 0,
+        "fn": 1
+      },
+      {
+        "left_out": "VitD_MS",
+        "n_removed": 1,
+        "n_remaining": 22,
+        "accuracy": 0.9090909090909091,
+        "odds_ratio": Infinity,
+        "p_fisher": 0.00037526972511492645,
+        "tp": 14,
+        "fp": 2,
+        "tn": 6,
+        "fn": 0
+      }
+    ]
+  },
+  "experiment_3_bootstrap": {
+    "n_drugs": 23,
+    "n_bootstrap": 10000,
+    "or_median": 26.0,
+    "or_ci_95": [
+      4.5,
+      108.0
+    ],
+    "or_mean_finite": 36.14039858018826,
+    "n_or_inf": 4431,
+    "frac_or_gt1": 0.9985,
+    "frac_p_lt_05": 0.9171,
+    "accuracy_median": 0.8695652173913043,
+    "accuracy_ci_95": [
+      0.7391304347826086,
+      1.0
+    ],
+    "accuracy_mean": 0.8695782608695652
+  }
+}

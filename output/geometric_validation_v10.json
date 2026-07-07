@@ -1,0 +1,217 @@
+{
+  "meta_regression": {
+    "R2": 0.37748516052663983,
+    "interaction_p": 0.032178962351348143,
+    "tier_coef": 0.7225505912166622,
+    "stratum_coef": 0.996996237282493,
+    "interaction_coef": -0.5117806458462127
+  },
+  "jackknife": {
+    "full_tau": 0.5421527124965017,
+    "range": [
+      0.5235782134917766,
+      0.5748982779532087
+    ],
+    "mean": 0.5421435906074825,
+    "std": 0.010892702464567281,
+    "all_significant": true
+  },
+  "frechet": [
+    {
+      "family": "vitD_MS",
+      "label": "Vitamin D \u2192 MS",
+      "F": 5,
+      "n_evidence_types": 2,
+      "Var_F": 0.09317090115564344,
+      "T_stat": 0.15787149075143003,
+      "p_convergence": 0.02492340759207886,
+      "verdict": "REALISM",
+      "frechet_mean_exp": 0.7576941995609182
+    },
+    {
+      "family": "APOE4_AD",
+      "label": "APOE4 \u2192 AD",
+      "F": 3,
+      "n_evidence_types": 1,
+      "Var_F": 0.6478618050910323,
+      "T_stat": 1.0977559270332178,
+      "p_convergence": 1.0,
+      "verdict": "FRAGMENTED",
+      "frechet_mean_exp": 10.315554467106603
+    },
+    {
+      "family": "social_dementia",
+      "label": "Social isolation \u2192 dementia",
+      "F": 4,
+      "n_evidence_types": 1,
+      "Var_F": 0.006679671592129835,
+      "T_stat": 0.011318230251072776,
+      "p_convergence": 0.001204114502334709,
+      "verdict": "REALISM",
+      "frechet_mean_exp": 1.46014410074031
+    },
+    {
+      "family": "ocrelizumab_MS",
+      "label": "Ocrelizumab \u2192 MS progression",
+      "F": 3,
+      "n_evidence_types": 1,
+      "Var_F": 0.00960057680972664,
+      "T_stat": 0.01626749719306915,
+      "p_convergence": 0.01626749719306915,
+      "verdict": "REALISM",
+      "frechet_mean_exp": 0.6834199110343202
+    },
+    {
+      "family": "failed_AD_RCT",
+      "label": "Failed AD therapeutics (null cluster)",
+      "F": 6,
+      "n_evidence_types": 1,
+      "Var_F": 0.0024035248203421998,
+      "T_stat": 0.0040726025157963456,
+      "p_convergence": 1.0584736792367748e-06,
+      "verdict": "REALISM",
+      "frechet_mean_exp": 1.0320995438944707
+    },
+    {
+      "family": "amyloid_conversion",
+      "label": "Amyloid-PET+ \u2192 AD conversion",
+      "F": 3,
+      "n_evidence_types": 2,
+      "Var_F": 0.18000678918243165,
+      "T_stat": 0.3050087505983898,
+      "p_convergence": 0.3050087505983898,
+      "verdict": "PARTIAL",
+      "frechet_mean_exp": 6.678940931937173
+    }
+  ],
+  "invariance_depth": [
+    {
+      "group": "EBV_MS",
+      "delta": 2.0,
+      "n_members": 2,
+      "n_families": 2,
+      "best_tier": 3.0
+    },
+    {
+      "group": "HLA_MS",
+      "delta": 2.0,
+      "n_members": 2,
+      "n_families": 2,
+      "best_tier": 3.0
+    },
+    {
+      "group": "vitD_MS",
+      "delta": 3.0833333333333335,
+      "n_members": 5,
+      "n_families": 2,
+      "best_tier": 3.0
+    },
+    {
+      "group": "BMI_MS",
+      "delta": 1.5,
+      "n_members": 2,
+      "n_families": 1,
+      "best_tier": 3.0
+    },
+    {
+      "group": "sNfL_MS",
+      "delta": 1.8333333333333333,
+      "n_members": 3,
+      "n_families": 1,
+      "best_tier": 3.0
+    },
+    {
+      "group": "OCB_MS",
+      "delta": 1.5,
+      "n_members": 2,
+      "n_families": 1,
+      "best_tier": 3.0
+    },
+    {
+      "group": "DMT_MS",
+      "delta": 2.9289682539682538,
+      "n_members": 10,
+      "n_families": 1,
+      "best_tier": 4.0
+    },
+    {
+      "group": "APOE_AD",
+      "delta": 1.8333333333333333,
+      "n_members": 3,
+      "n_families": 1,
+      "best_tier": 4.0
+    },
+    {
+      "group": "amyloid_AD",
+      "delta": 1.8333333333333333,
+      "n_members": 3,
+      "n_families": 1,
+      "best_tier": 3.5
+    },
+    {
+      "group": "T2D_AD",
+      "delta": 1.5,
+      "n_members": 2,
+      "n_families": 1,
+      "best_tier": 3.0
+    },
+    {
+      "group": "social_AD",
+      "delta": 2.083333333333333,
+      "n_members": 4,
+      "n_families": 1,
+      "best_tier": 3.0
+    },
+    {
+      "group": "obesity_AD",
+      "delta": 1.5,
+      "n_members": 2,
+      "n_families": 1,
+      "best_tier": 3.0
+    },
+    {
+      "group": "failed_AD",
+      "delta": 2.5928571428571425,
+      "n_members": 7,
+      "n_families": 1,
+      "best_tier": 1.5
+    },
+    {
+      "group": "WHIMS",
+      "delta": 1.5,
+      "n_members": 2,
+      "n_families": 1,
+      "best_tier": 3.0
+    },
+    {
+      "group": "TBI_AD",
+      "delta": 1.5,
+      "n_members": 2,
+      "n_families": 1,
+      "best_tier": 3.0
+    },
+    {
+      "group": "smoking_MS",
+      "delta": 1.0,
+      "n_members": 1,
+      "n_families": 1,
+      "best_tier": 1.0
+    },
+    {
+      "group": "IL6_AD",
+      "delta": 1.0,
+      "n_members": 1,
+      "n_families": 1,
+      "best_tier": 1.0
+    },
+    {
+      "group": "iron_MS",
+      "delta": 1.0,
+      "n_members": 1,
+      "n_families": 1,
+      "best_tier": 2.5
+    }
+  ],
+  "n_rows": 59,
+  "n_with_ci": 51
+}

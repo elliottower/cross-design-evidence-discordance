@@ -1,0 +1,11 @@
+case_id,claim,design,scale,estimate,ci_low,ci_high,n_cases,n_controls,population,PMID,source_paper,verdict_suggestion,notes,extracted_by,extract_date
+AD-001,Amyloid-PET+ -> conversion to AD (aMCI),observational,hazard ratio,3.74,1.21,11.58,47.0,,cohort,29625056,Sci Rep 2018 PiB aMCI,SUPPORTED,"VERIFIED PiB+ aMCI HR; small n, wide CI",Perplexity batch3,2026-07-02
+AD-001b,Amyloid-PET+ (PiB) -> MCI-AD conversion,observational,hazard ratio,10.2,1.3,78.1,,,memory clinic,29546632,memory-clinic PIB study,SUPPORTED,"VERIFIED; very wide CI, small sample",Perplexity batch3,2026-07-02
+AD-002b,APOE*34 (het) -> AD [White],genetic,odds ratio,3.46,3.27,3.65,,,White,36622685,Belloy 2023 JAMA Neurol,SUPPORTED,"VERIFIED. Ancestry-stratified: EAsian 4.54(3.99-5.17), Black 2.18(1.90-2.49), Hisp 1.90(1.65-2.18)",Perplexity batch3,2026-07-02
+AD-005b1,T2D -> AD (RR meta),observational,risk ratio,1.46,1.2,1.77,6184.0,38530.0,multi,22672144,Cheng 2012 meta,SUPPORTED,VERIFIED,Perplexity batch3,2026-07-02
+AD-005b2,"T2D -> AD (HR meta, APOE-adj NULL)",observational,hazard ratio,1.36,1.19,1.55,,,multi,,2026 DM-AD meta,SUPPORTED,VERIFIED; APOE4-adjusted HR 1.07(0.97-1.19) = NULL — confound note,Perplexity batch3,2026-07-02
+AD-005c,T2D -> AD (RR updated meta),observational,risk ratio,1.53,1.42,1.63,,,multi,28088029,2017 updated cohort meta,SUPPORTED,"VERIFIED; Eastern 1.62, Western 1.36",Perplexity batch3,2026-07-02
+AD-005a,Hearing loss -> dementia,observational,risk ratio,,,,,,multi,,Livingston Lancet,SUPPORTED,no exact pooled RR/CI extracted this pass,Perplexity batch3,2026-07-02
+AD-007,Tau-PET -> cognitive decline,observational,correlation,,,,,,multi,,Ossenkoppele 2021,SUPPORTED,regional r only (-0.45 to -0.002); no single HR — heterogeneous,Perplexity batch3,2026-07-02
+AD-010,sTREM2/GFAP -> progression,observational,hazard ratio,,,,,,cohort,,Benedet/Morenas-Rodriguez,SUGGESTIVE,no ratio-scale HR extracted this pass,Perplexity batch3,2026-07-02
+AD-C3,Semaglutide (EVOKE) -> cognition,RCT,hazard ratio,1.0,,,3808.0,,multi,,EVOKE,DISCONFIRMED,null: no CDR-SB separation; exact HR/CI pending,Perplexity batch3,2026-07-02

@@ -1,0 +1,46 @@
+case_id,claim,family,best_tier,rct_verdict,gwas_support,animal_causal,external_score
+MS-001,EBV seroconversion -> MS risk,EBV_MS,Mechanistically Supported,no_rct,strong,yes,2
+MS-018a,HLA-DRB1*15:01 x EBV interaction,EBV_MS,Mechanistically Supported,no_rct,strong,partial,2
+MS-018b,EBV seropositivity alone -> MS,EBV_MS,Mechanistically Supported,no_rct,strong,yes,2
+MS-007,Genetically-lowered 25(OH)D -> MS (MR),VitD_MS,Mechanistically Supported,mixed,strong,yes,2
+MS-007b,Vit-D suppl -> MS disease activity (RCT),VitD_MS,Causally Suggestive,mixed,strong,yes,2
+MS-007d,High-dose vit-D -> RRMS relapse (VIDAMS),VitD_MS,Disconfirmed,null,strong,yes,1
+MS-030,Vit-D suppl -> MS relapse (early meta),VitD_MS,Disconfirmed,null,strong,yes,1
+MS-005b,sNfL high -> CDP (SPMS),NfL_MS,Mechanistically Supported,no_rct,na,partial,1
+MS-017,HLA-DRB1*15:01 -> MS,HLA_MS,Mechanistically Supported,no_rct,strong,partial,2
+MS-021,Smoking -> MS (MR null),Smoking_MSAD,Disconfirmed,no_rct,null,partial,0
+MS-013a,Childhood BMI -> MS (MR),Obesity_MSAD,Causally Suggestive,no_rct,moderate,partial,1
+MS-011,Ocrelizumab PPMS progression,AntiCD20_MS,Triangulated,positive,na,yes,2
+MS-031,Ocrelizumab -> CDP (OPERA),AntiCD20_MS,Mechanistically Supported,positive,na,yes,2
+MS-032b,Ocrelizumab -> CDP (ORATORIO),AntiCD20_MS,Mechanistically Supported,positive,na,yes,2
+MS-029,Natalizumab -> sustained CDP,OtherDMT_MS,Triangulated,positive,na,yes,2
+MS-028,Cladribine -> CDP (CLARITY),OtherDMT_MS,Mechanistically Supported,positive,na,partial,2
+MS-033,Fingolimod -> ARR (FREEDOMS II),Fingolimod_MS,Mechanistically Supported,positive,na,yes,2
+MS-033b,Fingolimod -> disability (FREEDOMS II),Fingolimod_MS,Disconfirmed,null,na,yes,1
+MS-034,Dimethyl fumarate -> ARR,OtherDMT_MS,Mechanistically Supported,positive,na,partial,2
+MS-035,High-dose biotin (SPI2),FailedNeuro_MS,Disconfirmed,null,na,no,0
+MS-036,Simvastatin -> SPMS (MS-STAT2),FailedNeuro_MS,Disconfirmed,null,na,partial,0
+AD-002a,APOE4 heterozygous -> AD,APOE_AD,Mechanistically Supported,no_rct,strong,yes,2
+AD-002b,APOE4 homozygous -> AD,APOE_AD,Mechanistically Supported,no_rct,strong,yes,2
+AD-003,sTREM2 microglial -> AD (MR),Inflammation_AD,Mechanistically Supported,no_rct,moderate,yes,2
+AD-004,IL-6 signaling -> AD (MR null),Inflammation_AD,Disconfirmed,no_rct,null,partial,0
+AD-005b,T2D -> AD (cohort meta),Metabolic_AD,Mechanistically Supported,no_rct,moderate,yes,2
+AD-005h,Midlife obesity -> AD,Obesity_MSAD,Mechanistically Supported,no_rct,moderate,yes,2
+AD-005i,Current smoking -> dementia,Smoking_MSAD,Mechanistically Supported,no_rct,na,partial,1
+AD-005k,Midlife hypertension -> dementia,ModRisk_AD,Mechanistically Supported,no_rct,moderate,partial,1
+AD-020,T2D liability -> AD (MR null),Metabolic_AD,Disconfirmed,no_rct,null,partial,0
+AD-021,Educational attainment -> AD (MR protective),ModRisk_AD,Mechanistically Supported,no_rct,moderate,partial,1
+AD-022,Systolic BP -> AD (MR null),ModRisk_AD,Disconfirmed,no_rct,null,partial,0
+AD-005m,TBI -> dementia,ModRisk_AD,Mechanistically Supported,no_rct,na,yes,1
+AD-005a,Hearing loss -> dementia,ModRisk_AD,Mechanistically Supported,partial,na,partial,1
+AD-005n,Loneliness -> dementia,Social_AD,Mechanistically Supported,no_rct,na,partial,1
+AD-C1,Lecanemab: CDR-SB slowing,Amyloid_AD,Mechanistically Supported,positive,na,yes,2
+AD-032,Solanezumab -> AD progression (A4),Amyloid_AD,Disconfirmed,null,na,yes,1
+AD-033,Solanezumab -> ADAS/CDR (EXPEDITION3),Amyloid_AD,Disconfirmed,null,na,yes,1
+AD-035,Semagacestat -> decline (harmful),Amyloid_AD,Disconfirmed,harmful,na,yes,0
+AD-036,Aducanumab (ENGAGE null),Amyloid_AD,Disconfirmed,null,na,yes,1
+AD-037,Verubecestat -> progression (EPOCH),Amyloid_AD,Disconfirmed,null,na,yes,1
+AD-030,Ginkgo biloba (GEM),FailedAD_RCT,Disconfirmed,null,na,no,0
+AD-031,HRT -> incident dementia (WHIMS),HRT_AD,Mechanistically Supported,harmful,na,partial,1
+AD-034,Semaglutide -> cognitive (EVOKE),Metabolic_AD,Disconfirmed,null,na,partial,0
+AD-023,GLP-1 semaglutide CDR-SB (EVOKE),Metabolic_AD,Disconfirmed,null,na,partial,0

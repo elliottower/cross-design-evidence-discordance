@@ -1,0 +1,9 @@
+case_id,claim,design,scale,estimate,ci_low,ci_high,n_cases,n_controls,population,PMID,source_paper,verdict_suggestion,notes,extracted_by,extract_date
+AD-005a,Hearing loss -> dementia,observational,hazard ratio,1.59,1.37,1.86,,,multi,34255721,2021 hearing meta PMC8295986,SUPPORTED,VERIFIED — completes the panel; adjusted pooled HR,Perplexity sweep7,2026-07-02
+AD-005n,Loneliness -> all-cause dementia,observational,hazard ratio,1.31,1.2,1.43,608561.0,,multi,39385020,2024 loneliness meta k=21,SUPPORTED,VERIFIED n=608k; AD 1.39(1.29-1.50); persists adj for isolation+depression,Perplexity sweep7,2026-07-02
+AD-005n2,Loneliness -> AD specifically,observational,hazard ratio,1.39,1.29,1.5,,,multi,39385020,2024 loneliness meta,SUPPORTED,VERIFIED,Perplexity sweep7,2026-07-02
+AD-005o,Less frequent social contact -> dementia,observational,relative risk,1.57,1.32,1.85,,,multi,25956016,Kuiper 2015 meta,SUPPORTED,VERIFIED; low social participation 1.41(1.13-1.75),Perplexity sweep7,2026-07-02
+AD-005o2,Poor social network -> dementia,observational,relative risk,1.59,1.31,1.96,2370452.0,,multi,30452410,Penninkilampi 2018 meta,SUPPORTED,VERIFIED I2=0; n=2.37M,Perplexity sweep7,2026-07-02
+AD-005p,Heavy alcohol -> AD,observational,relative risk,1.29,1.21,1.36,,,multi,,2026 alcohol meta,SUPPORTED,VERIFIED; overall alcohol NULL 0.97(0.86-1.08); light-mod PROTECTIVE 0.88 — J-curve,Perplexity sweep7,2026-07-02
+MS-022,Spinal cord atrophy rate -> SPMS conversion,observational,na,,,,,,cohort,34664728,2022 cord atrophy PMC8916838,SUPPORTED,faster cord atrophy in converters; no single ratio-scale HR extractable,Perplexity sweep7,2026-07-02
+AD-007,Tau-PET (Braak) -> cognitive decline,observational,na,,,,,,multi,,Ossenkoppele,SUPPORTED,"regional correlations only; no pooled HR — heterogeneous, held descriptive",Perplexity sweep7,2026-07-02

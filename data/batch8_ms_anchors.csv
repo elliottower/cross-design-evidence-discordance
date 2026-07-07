@@ -1,0 +1,7 @@
+case_id,claim,design,scale,estimate,ci_low,ci_high,n_cases,n_controls,population,PMID,source_paper,verdict_suggestion,notes,extracted_by,extract_date
+MS-001,EBV infection -> MS (temporal necessity),observational,hazard ratio,32.4,4.3,245.0,955,,US military 10M,35025605,Bjornevik 2022 Science,SUPPORTED,VERIFIED flagship. HR 32.4(4.3-245); MS near-absent in EBV-negative — necessity,Perplexity sweep8,2026-07-02
+MS-013b,Adult BMI -> MS (MR),MR,odds ratio,1.43,,,14802,26703.0,European,,MR UKB/IMSGC,SUGGESTIVE,point est only; CI still not located — persistent gap,Perplexity sweep8,2026-07-02
+MS-007b,Vit-D suppl -> MS disease activity (CIS RCT),RCT,hazard ratio,0.66,0.5,0.87,303,,CIS/early RRMS,40254930,D-Lay MS JAMA 2025,CONFLICTED,VERIFIED. Activity HR 0.66(0.50-0.87) BUT relapse alone NULL 0.69(0.42-1.16),Perplexity sweep8,2026-07-02
+MS-007c,Vit-D suppl -> MS relapse (meta OR),RCT,odds ratio,0.66,,,1903,,RRMS,40797337,2025 vitD meta 21 studies,CONFLICTED,VERIFIED est OR 0.66 p=0.02; but ANNUAL relapse rate NULL p=0.81 — outcome-dependent,Perplexity sweep8,2026-07-02
+MS-007d,High-dose vit-D -> RRMS relapse (VIDAMS RCT),RCT,hazard ratio,1.17,0.67,2.05,165,,RRMS,36759000,VIDAMS 2023,DISCONFIRMED,VERIFIED null: HR 1.17(0.67-2.05) — the etiology-treatment gap in one trial,Perplexity sweep8,2026-07-02
+MS-030,Vit-D suppl -> MS relapse (early meta),RCT,odds ratio,0.98,0.45,2.16,129,125.0,RRMS,23698130,2013 vitD meta,DISCONFIRMED,VERIFIED null OR 0.98(0.45-2.16),Perplexity sweep8,2026-07-02

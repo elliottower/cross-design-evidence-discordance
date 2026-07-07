@@ -1,0 +1,547 @@
+{
+  "generated": "2026-07-02T22:58:57.472006",
+  "method": "Expanded mechanical Q-based prediction",
+  "dataset": "data/phase3_expanded_dataset.csv",
+  "n_total": 38,
+  "n_predictable": 23,
+  "n_unpredictable": 15,
+  "basic_prediction": {
+    "tp": 14,
+    "fp": 8,
+    "tn": 0,
+    "fn": 1,
+    "accuracy": 0.6086956521739131,
+    "accuracy_ci": [
+      0.4078517960374599,
+      0.7784262201761787
+    ],
+    "sensitivity": 0.9333333333333333,
+    "specificity": 0.0,
+    "ppv": 0.6363636363636364,
+    "npv": 0.0,
+    "odds_ratio": 0.0,
+    "p_fisher": 1.0,
+    "n": 23
+  },
+  "refined_prediction": {
+    "tp": 14,
+    "fp": 2,
+    "tn": 6,
+    "fn": 1,
+    "accuracy": 0.8695652173913043,
+    "accuracy_ci": [
+      0.678721020269818,
+      0.954624234856553
+    ],
+    "sensitivity": 0.9333333333333333,
+    "specificity": 0.75,
+    "ppv": 0.875,
+    "npv": 0.8571428571428571,
+    "odds_ratio": 42.0,
+    "p_fisher": 0.0017458200255346572,
+    "n": 23
+  },
+  "per_drug": [
+    {
+      "drug": "lecanemab",
+      "mechanism": "Anti-amyloid protofibril",
+      "indication": "Early AD",
+      "family": "Amyloid_AD",
+      "actual": "Approved",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "donanemab",
+      "mechanism": "Anti-amyloid N3pG",
+      "indication": "Early AD",
+      "family": "Amyloid_AD",
+      "actual": "Approved",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "aducanumab",
+      "mechanism": "Anti-amyloid aggregate",
+      "indication": "Early AD",
+      "family": "Amyloid_AD",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "solanezumab",
+      "mechanism": "Anti-amyloid soluble monomer",
+      "indication": "Preclinical AD",
+      "family": "Amyloid_AD",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "solanezumab",
+      "mechanism": "Anti-amyloid soluble monomer",
+      "indication": "Mild AD",
+      "family": "Amyloid_AD",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "verubecestat",
+      "mechanism": "BACE1 inhibitor",
+      "indication": "Mild-moderate AD",
+      "family": "Amyloid_AD",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "semagacestat",
+      "mechanism": "Gamma-secretase inhibitor",
+      "indication": "Mild-moderate AD",
+      "family": "Amyloid_AD",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "bapineuzumab",
+      "mechanism": "Anti-amyloid plaque",
+      "indication": "Mild-moderate AD",
+      "family": "Amyloid_AD",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "crenezumab",
+      "mechanism": "Anti-amyloid oligomer",
+      "indication": "Prodromal-mild AD",
+      "family": "Amyloid_AD",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "gantenerumab",
+      "mechanism": "Anti-amyloid plaque",
+      "indication": "Early AD",
+      "family": "Amyloid_AD",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "lanabecestat",
+      "mechanism": "BACE1 inhibitor",
+      "indication": "Early AD",
+      "family": "Amyloid_AD",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "atabecestat",
+      "mechanism": "BACE1 inhibitor",
+      "indication": "Preclinical AD",
+      "family": "Amyloid_AD",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "tarenflurbil",
+      "mechanism": "Gamma-secretase modulator",
+      "indication": "Mild AD",
+      "family": "Amyloid_AD",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "tramiprosate",
+      "mechanism": "Anti-amyloid aggregation",
+      "indication": "Mild-moderate AD",
+      "family": "Amyloid_AD",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "semaglutide",
+      "mechanism": "GLP-1 receptor agonist",
+      "indication": "Early AD",
+      "family": "Metabolic_AD",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "pioglitazone",
+      "mechanism": "PPAR-gamma agonist",
+      "indication": "AD prevention",
+      "family": "Metabolic_AD",
+      "actual": "Failed",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Fail"
+    },
+    {
+      "drug": "ginkgo_biloba",
+      "mechanism": "Antioxidant",
+      "indication": "Dementia prevention",
+      "family": "FailedAD_RCT",
+      "actual": "Failed",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null
+    },
+    {
+      "drug": "CEE_MPA_HRT",
+      "mechanism": "Hormone replacement",
+      "indication": "Dementia prevention",
+      "family": "HRT_AD",
+      "actual": "Failed",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null
+    },
+    {
+      "drug": "simvastatin",
+      "mechanism": "Statin neuroprotection",
+      "indication": "SPMS",
+      "family": "FailedNeuro_MS",
+      "actual": "Failed",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null
+    },
+    {
+      "drug": "high_dose_biotin",
+      "mechanism": "Biotin MD1003",
+      "indication": "Progressive MS",
+      "family": "FailedNeuro_MS",
+      "actual": "Failed",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null
+    },
+    {
+      "drug": "laquinimod",
+      "mechanism": "Quinoline-3-carboxamide",
+      "indication": "RRMS",
+      "family": "FailedNeuro_MS",
+      "actual": "Failed",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null
+    },
+    {
+      "drug": "ibudilast",
+      "mechanism": "PDE inhibitor",
+      "indication": "Progressive MS",
+      "family": "FailedNeuro_MS",
+      "actual": "Failed",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null
+    },
+    {
+      "drug": "ocrelizumab",
+      "mechanism": "Anti-CD20 B-cell depletion",
+      "indication": "PPMS",
+      "family": "AntiCD20_MS",
+      "actual": "Approved",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null
+    },
+    {
+      "drug": "ocrelizumab",
+      "mechanism": "Anti-CD20 B-cell depletion",
+      "indication": "RRMS",
+      "family": "AntiCD20_MS",
+      "actual": "Approved",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null
+    },
+    {
+      "drug": "ofatumumab",
+      "mechanism": "Anti-CD20 B-cell depletion",
+      "indication": "RRMS",
+      "family": "AntiCD20_MS",
+      "actual": "Approved",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null
+    },
+    {
+      "drug": "ublituximab",
+      "mechanism": "Anti-CD20 B-cell depletion",
+      "indication": "RRMS",
+      "family": "AntiCD20_MS",
+      "actual": "Approved",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null
+    },
+    {
+      "drug": "natalizumab",
+      "mechanism": "Anti-VLA-4 integrin",
+      "indication": "RRMS",
+      "family": "OtherDMT_MS",
+      "actual": "Approved",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "quantitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Approve"
+    },
+    {
+      "drug": "cladribine",
+      "mechanism": "Purine analog lymphocyte depletion",
+      "indication": "RRMS",
+      "family": "OtherDMT_MS",
+      "actual": "Approved",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "quantitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Approve"
+    },
+    {
+      "drug": "fingolimod",
+      "mechanism": "S1P receptor modulator",
+      "indication": "RRMS relapse",
+      "family": "Fingolimod_MS",
+      "actual": "Approved",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null
+    },
+    {
+      "drug": "fingolimod",
+      "mechanism": "S1P receptor modulator",
+      "indication": "RRMS disability",
+      "family": "Fingolimod_MS",
+      "actual": "Failed",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null
+    },
+    {
+      "drug": "siponimod",
+      "mechanism": "S1P receptor modulator",
+      "indication": "SPMS",
+      "family": "S1P_MS",
+      "actual": "Approved",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null
+    },
+    {
+      "drug": "ozanimod",
+      "mechanism": "S1P receptor modulator",
+      "indication": "RRMS",
+      "family": "S1P_MS",
+      "actual": "Approved",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null
+    },
+    {
+      "drug": "ponesimod",
+      "mechanism": "S1P receptor modulator",
+      "indication": "RRMS",
+      "family": "S1P_MS",
+      "actual": "Approved",
+      "q_classification": "NOT_IN_Q",
+      "discordance_type": "n/a",
+      "pred_basic": null,
+      "pred_refined": null
+    },
+    {
+      "drug": "dimethyl_fumarate",
+      "mechanism": "Nrf2 pathway activator",
+      "indication": "RRMS",
+      "family": "OtherDMT_MS",
+      "actual": "Approved",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "quantitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Approve"
+    },
+    {
+      "drug": "diroximel_fumarate",
+      "mechanism": "Nrf2 pathway activator",
+      "indication": "RRMS",
+      "family": "OtherDMT_MS",
+      "actual": "Approved",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "quantitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Approve"
+    },
+    {
+      "drug": "teriflunomide",
+      "mechanism": "DHODH inhibitor",
+      "indication": "RRMS",
+      "family": "OtherDMT_MS",
+      "actual": "Approved",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "quantitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Approve"
+    },
+    {
+      "drug": "alemtuzumab",
+      "mechanism": "Anti-CD52 lymphocyte depletion",
+      "indication": "RRMS",
+      "family": "OtherDMT_MS",
+      "actual": "Approved",
+      "q_classification": "NON-TRANSPORT",
+      "discordance_type": "quantitative",
+      "pred_basic": "Fail",
+      "pred_refined": "Approve"
+    },
+    {
+      "drug": "vit_d_supplementation",
+      "mechanism": "Vitamin D3",
+      "indication": "MS disease activity",
+      "family": "VitD_MS",
+      "actual": "Failed",
+      "q_classification": "TRANSPORT",
+      "discordance_type": "concordant",
+      "pred_basic": "Approve",
+      "pred_refined": "Approve"
+    }
+  ],
+  "family_classifications": {
+    "Amyloid_AD": {
+      "classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "Q": 8.717491022391828,
+      "p": 0.0031517148094032388,
+      "evidence_types": [
+        "OBS",
+        "RCT"
+      ]
+    },
+    "EBV_MS": {
+      "classification": "TRANSPORT",
+      "discordance_type": "concordant",
+      "Q": 5.548557476076905,
+      "p": 0.018495924129384167,
+      "evidence_types": [
+        "GEN",
+        "OBS"
+      ]
+    },
+    "Metabolic_AD": {
+      "classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "Q": 109.35360208002768,
+      "p": 0.0,
+      "evidence_types": [
+        "GEN",
+        "OBS",
+        "RCT"
+      ]
+    },
+    "ModRisk_AD": {
+      "classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "Q": 63.96491085076941,
+      "p": 1.2212453270876722e-15,
+      "evidence_types": [
+        "GEN",
+        "OBS"
+      ]
+    },
+    "Obesity_MSAD": {
+      "classification": "NON-TRANSPORT",
+      "discordance_type": "quantitative",
+      "Q": 9.278083612945176,
+      "p": 0.00231911935670448,
+      "evidence_types": [
+        "GEN",
+        "OBS"
+      ]
+    },
+    "OtherDMT_MS": {
+      "classification": "NON-TRANSPORT",
+      "discordance_type": "quantitative",
+      "Q": 27.49908153965415,
+      "p": 1.5716912615815204e-07,
+      "evidence_types": [
+        "OBS",
+        "RCT"
+      ]
+    },
+    "Smoking_MSAD": {
+      "classification": "NON-TRANSPORT",
+      "discordance_type": "qualitative",
+      "Q": 12.956078600873788,
+      "p": 0.00031888441569483117,
+      "evidence_types": [
+        "GEN",
+        "OBS"
+      ]
+    },
+    "VitD_MS": {
+      "classification": "TRANSPORT",
+      "discordance_type": "concordant",
+      "Q": 7.307379272508629,
+      "p": 0.00686720076582803,
+      "evidence_types": [
+        "GEN",
+        "RCT"
+      ]
+    }
+  }
+}

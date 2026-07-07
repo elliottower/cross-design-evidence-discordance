@@ -1,0 +1,128 @@
+{
+  "domain": "neuroepidemiology (MS / AD)",
+  "observed_tau": 0.26761191584640626,
+  "parametric_p": 0.14896313021561336,
+  "empirical_p_twosided": 0.1756,
+  "empirical_p_onesided": 0.0872,
+  "n_families": 22,
+  "n_permutations": 10000,
+  "null_mean": -0.0014076386773520968,
+  "null_std": 0.1864912026364199,
+  "null_range": [
+    -0.5263034344979323,
+    0.5084626401081719
+  ],
+  "z_score": 1.4425321447909494,
+  "families": [
+    {
+      "family": "APOE_AD",
+      "best_tier": 4.0,
+      "delta": 1.8333333333333333
+    },
+    {
+      "family": "Amyloid_AD",
+      "best_tier": 4.0,
+      "delta": 3.95
+    },
+    {
+      "family": "AntiCD20_MS",
+      "best_tier": 4.0,
+      "delta": 1.8333333333333333
+    },
+    {
+      "family": "Biomarker_AD",
+      "best_tier": 4.0,
+      "delta": 3.333333333333333
+    },
+    {
+      "family": "Biomarker_MS",
+      "best_tier": 4.0,
+      "delta": 1.5
+    },
+    {
+      "family": "Demographics_MS",
+      "best_tier": 4.0,
+      "delta": 1.0
+    },
+    {
+      "family": "EBV_MS",
+      "best_tier": 4.0,
+      "delta": 2.5
+    },
+    {
+      "family": "Fingolimod_MS",
+      "best_tier": 4.0,
+      "delta": 1.5
+    },
+    {
+      "family": "HLA_MS",
+      "best_tier": 4.0,
+      "delta": 1.0
+    },
+    {
+      "family": "HRT_AD",
+      "best_tier": 4.0,
+      "delta": 1.5
+    },
+    {
+      "family": "Imaging_MS",
+      "best_tier": 2.0,
+      "delta": 1.5
+    },
+    {
+      "family": "Inflammation_AD",
+      "best_tier": 4.0,
+      "delta": 1.5
+    },
+    {
+      "family": "Metabolic_AD",
+      "best_tier": 4.0,
+      "delta": 4.0
+    },
+    {
+      "family": "ModRisk_AD",
+      "best_tier": 4.0,
+      "delta": 3.95
+    },
+    {
+      "family": "NfL_MS",
+      "best_tier": 4.0,
+      "delta": 1.8333333333333333
+    },
+    {
+      "family": "Obesity_MSAD",
+      "best_tier": 4.0,
+      "delta": 3.0
+    },
+    {
+      "family": "OtherDMT_MS",
+      "best_tier": 4.0,
+      "delta": 3.083333333333333
+    },
+    {
+      "family": "ProgMS",
+      "best_tier": 1.0,
+      "delta": 1.0
+    },
+    {
+      "family": "Smoking_MSAD",
+      "best_tier": 4.0,
+      "delta": 2.0
+    },
+    {
+      "family": "Social_AD",
+      "best_tier": 4.0,
+      "delta": 2.083333333333333
+    },
+    {
+      "family": "Tau_AD",
+      "best_tier": 2.0,
+      "delta": 2.0
+    },
+    {
+      "family": "VitD_MS",
+      "best_tier": 4.0,
+      "delta": 3.0833333333333335
+    }
+  ]
+}

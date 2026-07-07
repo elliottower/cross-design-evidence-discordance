@@ -1,0 +1,116 @@
+{
+  "domain": "neuroepidemiology (MS / AD)",
+  "generated": "2026-07-02T22:25:38.047935",
+  "n_total_rows": 76,
+  "n_regression_rows": 61,
+  "n_etiologic": 35,
+  "n_therapeutic": 26,
+  "ols_models": {
+    "simple": {
+      "R2": 0.16318818320014417,
+      "adj_R2": 0.1490049320679433,
+      "F": 11.505696520429643,
+      "p_F": 0.0012439949935971295,
+      "tier_coef": 0.17912519270943345,
+      "tier_p": 0.0012439949935971269
+    },
+    "additive": {
+      "R2": 0.21548254408831347,
+      "adj_R2": 0.18843021802239324,
+      "F": 7.965398005451829,
+      "p_F": 0.0008779620174604177,
+      "tier_coef": 0.12738306016584544,
+      "tier_p": 0.03179006389803999,
+      "ther_coef": -0.3798172483090906,
+      "ther_p": 0.054061109558977714
+    },
+    "interaction": {
+      "R2": 0.21760641169443173,
+      "adj_R2": 0.1764278017836124,
+      "F": 5.2844525875376185,
+      "p_F": 0.0027631288839410563,
+      "tier_coef": 0.15618643784617295,
+      "tier_p": 0.1007148098289576,
+      "ther_coef": -0.2528483787035258,
+      "ther_p": 0.5050169798160014,
+      "interaction_coef": -0.04707640381503897,
+      "interaction_p": 0.6955222272176461
+    }
+  },
+  "wls_models": {
+    "simple": {
+      "R2": 0.043515542424116926
+    },
+    "additive": {
+      "R2": 0.06869610422423422
+    },
+    "interaction": {
+      "R2": 0.07018099408994294,
+      "interaction_coef": 0.03239135191444155,
+      "interaction_p": 0.763973494983807
+    }
+  },
+  "kendall_tau": {
+    "combined": {
+      "tau": 0.48076516924280793,
+      "p": 1.5949203806105788e-06,
+      "n": 61
+    },
+    "etiologic": {
+      "tau": 0.24605178748922416,
+      "p": 0.0743881585124363,
+      "n": 35
+    },
+    "therapeutic": {
+      "tau": 0.57164210075713,
+      "p": 0.0002517529970537302,
+      "n": 26
+    }
+  },
+  "external_ground_truth": {
+    "tau_ext_score": 0.6631233083569801,
+    "p_ext_score": 1.4796984680671205e-06,
+    "n_ext": 45,
+    "tau_inv_depth": -0.17436655432456366,
+    "p_inv_depth": 0.16679964530491465,
+    "n_depth": 45,
+    "partial_tau_ext_given_depth": 0.5748029764384193,
+    "partial_p_ext_given_depth": 1.2016835059956194e-07,
+    "partial_tau_depth_given_ext": -0.07165940178178028,
+    "partial_p_depth_given_ext": 0.5342804953172002,
+    "combined_ols": {
+      "R2": 0.5980317425673731,
+      "adj_R2": 0.5788903969753433,
+      "ext_score_coef": 1.8395464031766444,
+      "ext_score_p": 1.6620530230807778e-09,
+      "inv_depth_coef": -0.1472712588815555,
+      "inv_depth_p": 0.425259381090477
+    }
+  },
+  "invariance_depth_by_family": {
+    "Metabolic_AD": 4.0,
+    "Amyloid_AD": 3.95,
+    "ModRisk_AD": 3.95,
+    "Biomarker_AD": 3.333333333333333,
+    "VitD_MS": 3.0833333333333335,
+    "OtherDMT_MS": 3.083333333333333,
+    "Obesity_MSAD": 3.0,
+    "EBV_MS": 2.5,
+    "Social_AD": 2.083333333333333,
+    "Smoking_MSAD": 2.0,
+    "Tau_AD": 2.0,
+    "NfL_MS": 1.8333333333333333,
+    "AntiCD20_MS": 1.8333333333333333,
+    "APOE_AD": 1.8333333333333333,
+    "Imaging_MS": 1.5,
+    "Biomarker_MS": 1.5,
+    "Inflammation_AD": 1.5,
+    "Fingolimod_MS": 1.5,
+    "FailedNeuro_MS": 1.5,
+    "HRT_AD": 1.5,
+    "ProgMS": 1.0,
+    "HLA_MS": 1.0,
+    "Demographics_MS": 1.0,
+    "FailedAD_RCT": 1.0
+  }
+}

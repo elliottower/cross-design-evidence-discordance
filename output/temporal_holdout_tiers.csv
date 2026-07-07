@@ -1,0 +1,21 @@
+drug,brand,indication,mechanism,mechanism_class,family,actual_outcome,is_clean,tier_no_context,tier_with_context,response_no_context,response_with_context,discordance_edge
+lecanemab,Leqembi,Alzheimer's disease (early),Anti-amyloid (protofibril clearance),Amyloid immunotherapy,Amyloid_AD,Approved,False,4,3,Triangulated,Mechanistically Supported,OBS↑ RCT_marginal
+donanemab,Kisunla,Alzheimer's disease (early),Anti-amyloid (N3pG pyroglutamate clearance),Amyloid immunotherapy,Amyloid_AD,Approved,False,1,3,Proposed,Mechanistically Supported,OBS↑ RCT_marginal
+aducanumab,Aduhelm,Alzheimer's disease (early),Anti-amyloid (aggregate clearance),Amyloid immunotherapy,Amyloid_AD,Failed,True,4,3,Triangulated,Mechanistically Supported,OBS↑ RCT_null
+solanezumab,,Alzheimer's disease (preclinical),Anti-amyloid (soluble monomer),Amyloid immunotherapy,Amyloid_AD,Failed,False,1,1,Proposed,Proposed,OBS↑ RCT_null
+solanezumab,,Alzheimer's disease (mild),Anti-amyloid (soluble monomer),Amyloid immunotherapy,Amyloid_AD,Failed,False,1,2,Proposed,Causally Suggestive,OBS↑ RCT_null
+verubecestat,,Alzheimer's disease (mild-moderate),BACE1 inhibitor,Amyloid (production),Amyloid_AD,Failed,False,3,3,Mechanistically Supported,Mechanistically Supported,OBS↑ RCT_null
+semagacestat,,Alzheimer's disease (mild-moderate),Gamma-secretase inhibitor,Amyloid (production),Amyloid_AD,Failed,False,1,3,Proposed,Mechanistically Supported,OBS↑ RCT_harmful
+semaglutide,,Alzheimer's disease (early),GLP-1 receptor agonist,Metabolic/GLP-1,Metabolic_AD,Failed,False,1,2,Proposed,Causally Suggestive,OBS↑ MR_null
+ginkgo_biloba,,Dementia prevention,Antioxidant/anti-inflammatory (herbal),Antioxidant,FailedAD_RCT,Failed,False,1,1,Proposed,Proposed,none
+CEE_MPA_HRT,,Dementia prevention in postmenopausal women,Conjugated equine estrogen + medroxyprogesterone (HRT),Hormone,HRT_AD,Failed,True,1,3,Proposed,Mechanistically Supported,OBS↑ RCT_harmful
+ocrelizumab,Ocrevus,PPMS (progressive MS),Anti-CD20 (B-cell depletion),Anti-CD20 immunotherapy,AntiCD20_MS,Approved,False,3,3,Mechanistically Supported,Mechanistically Supported,GEN↑ RCT↑
+ocrelizumab,Ocrevus,RRMS (relapsing MS),Anti-CD20 (B-cell depletion),Anti-CD20 immunotherapy,AntiCD20_MS,Approved,False,4,3,Triangulated,Mechanistically Supported,GEN↑ RCT↑
+natalizumab,Tysabri,RRMS (relapsing MS),Anti-VLA-4 (alpha-4 integrin blockade),Anti-adhesion,OtherDMT_MS,Approved,False,3,3,Mechanistically Supported,Mechanistically Supported,GEN_partial RCT↑
+cladribine,Mavenclad,RRMS (relapsing MS),Purine nucleoside analog (lymphocyte depletion),Immune reconstitution,OtherDMT_MS,Approved,False,3,3,Mechanistically Supported,Mechanistically Supported,RCT↑
+fingolimod,Gilenya,RRMS (relapse reduction),S1P receptor modulator (lymphocyte sequestration),S1P modulation,Fingolimod_MS,Approved,False,3,3,Mechanistically Supported,Mechanistically Supported,RCT↑
+fingolimod,Gilenya,RRMS (disability progression),S1P receptor modulator (lymphocyte sequestration),S1P modulation,Fingolimod_MS,Failed,True,3,3,Mechanistically Supported,Mechanistically Supported,RCT_relapse↑ RCT_disability_null
+dimethyl_fumarate,Tecfidera,RRMS (relapsing MS),Nrf2 pathway activator (antioxidant/anti-inflammatory),Nrf2/antioxidant,OtherDMT_MS,Approved,False,3,3,Mechanistically Supported,Mechanistically Supported,RCT↑
+simvastatin,,SPMS (progressive MS),HMG-CoA reductase inhibitor (statin),Neuroprotection/statin,FailedNeuro_MS,Failed,False,1,3,Proposed,Mechanistically Supported,OBS↑ RCT_null
+high_dose_biotin,,Progressive MS,Pharmacological biotin (MD1003),Neuroprotection/metabolic,FailedNeuro_MS,Failed,True,3,3,Mechanistically Supported,Mechanistically Supported,OBS_pilot↑ RCT_null
+vit_d_supplementation,,MS disease activity (CIS/early RRMS),Vitamin D3 (cholecalciferol),Immunomodulation,VitD_MS,Failed,False,1,2,Proposed,Causally Suggestive,MR↑ RCT_mixed

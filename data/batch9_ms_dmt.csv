@@ -1,0 +1,7 @@
+case_id,claim,design,scale,estimate,ci_low,ci_high,n_cases,n_controls,population,PMID,source_paper,verdict_suggestion,notes,extracted_by,extract_date
+MS-031,"Ocrelizumab -> 12wk CDP (OPERA, vs IFN)",RCT,hazard ratio,0.6,0.45,0.81,827,829,RRMS,28002679,Hauser 2017 NEJM OPERA,SUPPORTED,VERIFIED. anti-CD20 head-to-head vs active comparator,Perplexity sweep9,2026-07-02
+MS-032b,"Ocrelizumab -> 12wk CDP (ORATORIO, PPMS)",RCT,hazard ratio,0.76,0.59,0.98,488,244,PPMS,26981933,Montalban 2017 NEJM ORATORIO,SUPPORTED,VERIFIED; first PPMS-positive DMT — 'significant not dramatic',Perplexity sweep9,2026-07-02
+MS-033,Fingolimod -> ARR (FREEDOMS II),RCT,rate ratio,0.52,0.4,0.66,358,355,RRMS,24685276,Calabresi 2014 FREEDOMS II,SUPPORTED,VERIFIED relapse; 48% ARR reduction,Perplexity sweep9,2026-07-02
+MS-033b,Fingolimod -> disability progression (FREEDOMS II),RCT,hazard ratio,0.83,0.61,1.12,358,355,RRMS,24685276,Calabresi 2014 FREEDOMS II,DISCONFIRMED,VERIFIED NULL for CDP p=0.227 — relapse/progression DISSOCIATION,Perplexity sweep9,2026-07-02
+MS-034,Dimethyl fumarate -> ARR (DEFINE/CONFIRM),RCT,rate ratio,0.55,0.4,0.77,172,169,RRMS,28751099,DMF DEFINE/CONFIRM,SUPPORTED,VERIFIED prior-IFN subgroup rate ratio,Perplexity sweep9,2026-07-02
+MS-013b,Adult BMI -> MS (MR),MR,odds ratio,1.43,,,14802,26703,European,,MR UKB/IMSGC,SUGGESTIVE,CI still unlocated after 4 sweeps — flagged persistent gap,Perplexity sweep9,2026-07-02

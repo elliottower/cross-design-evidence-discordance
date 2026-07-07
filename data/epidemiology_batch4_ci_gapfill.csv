@@ -1,0 +1,5 @@
+case_id,claim,design,scale,estimate,ci_low,ci_high,n_cases,n_controls,population,PMID,source_paper,verdict_suggestion,notes,extracted_by,extract_date
+MS-005b,"sNfL high -> 3mo CDP (SPMS, EXPAND)",observational,hazard ratio,1.32,1.09,1.61,1452,,SPMS,35379762,Kuhle 2022 Neurology,SUPPORTED,VERIFIED. PPMS 6mo 1.48(1.01-2.17); wheelchair PPMS 2.97(1.44-6.10),Perplexity sweep4,2026-07-02
+MS-005c,Rising sNfL FU/BL ratio -> SPMS conversion,observational,odds ratio,1.48,1.08,2.02,196,,RRMS/CIS,34571362,NaloMS 2021,VERIFIED — replaces catalog OR~49 (that was a mis-scaled value); real OR 1.48 per ratio unit,,Perplexity sweep4,2026-07-02
+MS-005a,Baseline sNfL<7.62 -> lower EDSS4 risk,observational,risk ratio,4.3,,,67,37.0,cohort,32591598,SciRep 2020,VERIFIED est (4.3x); p=0.001; CI not given in abstract,,Perplexity sweep4,2026-07-02
+MS-028,Cladribine 3.5mg -> 3mo CDP (CLARITY),RCT,hazard ratio,0.67,0.48,0.93,437,437.0,multi,20089960,Giovannoni 2010 NEJM,VERIFIED. HR 0.67 (0.48-0.93) p=0.02 sustained 3mo EDSS progression,,Perplexity sweep4,2026-07-02
