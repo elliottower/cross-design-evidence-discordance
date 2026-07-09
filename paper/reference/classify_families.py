@@ -383,6 +383,95 @@ EXTENSION_FAMILIES = [
      "gen_OR": 5.00, "gen_CI_lower": 3.50, "gen_CI_upper": 8.00,
      "drug_outcome": "Approved"},
 
+    # --- BLIND BATCH (Amendment 2B) ---
+    # Five families declared under strict blinding (PREREGISTRATION_AMENDMENT_2_BLIND.md)
+
+    # B1: IL-6 signaling -> MDD
+    # OBS = CRP and depression, meta-analysis of 41 community+clinical studies
+    #   (Howren 2009, Psychosom Med, PMID 19592519): CRP d=0.15 (0.10-0.21)
+    # MR = genetically predicted CRP (>500 instruments) and depression
+    #   (bidirectional MR, UK Biobank): OR 1.01 (0.99-1.04) per SD CRP — null
+    #   Khandaker IL6R-specific CRP->depression also null (OR ~0.95, CI incl null)
+    # Drug: sirukumab failed Phase II for treatment-resistant MDD
+    #   (Boyle 2020, Mol Psychiatry) — terminated for futility
+    {"family": "IL6-MDD", "domain": "psychiatry",
+     "obs_d_direct": 0.15, "obs_type": "case_control_SMD",
+     "obs_sourcing": "meta_analysis",
+     "gen_OR": 1.01, "gen_CI_lower": 0.99, "gen_CI_upper": 1.04,
+     "drug_outcome": "Failed"},
+
+    # B2: IL-23 -> Crohn's disease
+    # OBS = CONSTRUCT-LIMITED: no prospective population-level OBS estimate for
+    #   circulating IL-23 predicting incident Crohn's. Case-control cytokine data
+    #   exists (IBD patients IL-23 ~52 vs controls ~24 pg/mL; PMC8621192) but no
+    #   meta-analytic SMD with CI. Cross-sectional, not prospective.
+    # MR = IL23R rs11209026 (R381Q) per allele, meta-analysis of 49 studies
+    #   (Nie 2015, Sci Rep, PMID 26668046): OR 0.407 (0.378-0.439)
+    #   d = |ln(0.407)|*sqrt(3)/pi = 0.496 — massively above threshold
+    # Drug: risankizumab approved for Crohn's (2022)
+    # CONSTRUCT-LIMITED: no adequate OBS estimate locatable
+    {"family": "IL23-Crohns", "domain": "gastroenterology",
+     "obs_d_direct": 0.50, "obs_type": "case_control_SMD",
+     "obs_sourcing": "construct_limited",
+     "gen_OR": 1.00,
+     "drug_outcome": "Construct-limited"},
+
+    # B3: Complement pathway (Factor D) -> geographic atrophy
+    # OBS = complement activation products (C3a, C5a, Ba, C3d) significantly
+    #   elevated in AMD patients vs controls (p<0.001 for Ba, C3d)
+    #   (Reynolds 2009, PLOS ONE, PMID 18628698): n=112 AMD, n=67 controls
+    #   Author-estimated SMD ~0.50 from p<0.001 at those sample sizes
+    # MR = CFH Y402H (rs1061170) per allele, meta-analysis of 8 studies
+    #   (Thakkinstian 2006, Hum Mol Genet, PMID 16905558):
+    #   multiplicative model, per-allele OR ~2.50 (95% CI ~2.20-2.85)
+    #   d = |ln(2.50)|*sqrt(3)/pi = 0.505 — well above threshold
+    # Drug: lampalizumab (anti-Factor D) failed both Phase III trials
+    #   (CHROMA and SPECTRI, 2018)
+    # NOTE: MR instruments complement pathway broadly (CFH, C3, CFB);
+    #   drug targeted Factor D specifically. C3 (pegcetacoplan) and C5
+    #   (avacincaptad) inhibitors succeeded for same disease.
+    #   Translation-gap boundary: pathway-level MR != target-level drug success.
+    {"family": "Complement-GA", "domain": "ophthalmology",
+     "obs_d_direct": 0.50, "obs_type": "case_control_SMD",
+     "obs_sourcing": "author_estimated",
+     "gen_OR": 2.50, "gen_CI_lower": 2.20, "gen_CI_upper": 2.85,
+     "drug_outcome": "Failed"},
+
+    # B4: Sclerostin -> osteoporotic fracture
+    # OBS = MINOS prospective cohort (men, n=725, 10yr follow-up)
+    #   (Szulc 2014, PMID 23165952): HR 0.55 (0.31-0.96) per highest vs
+    #   lowest sclerostin tertile — PROTECTIVE direction (reverse causation)
+    #   NOTE: OFELY study in postmenopausal women found null association;
+    #   Ardawi 2012 in Saudi women found positive association.
+    #   Evidence is bidirectional; MINOS is largest prospective study with CI.
+    # MR = SOST cis-pQTL MR, scaled to romosozumab-equivalent dose
+    #   (Bovijn 2020, Sci Transl Med, PMID 32581134):
+    #   Fracture OR 0.59 (0.54-0.66) per 0.09 g/cm2 BMD increase
+    #   d = |ln(0.59)|*sqrt(3)/pi = 0.291 — above threshold, CI excludes null
+    # Drug: romosozumab (Evenity) approved 2019 for postmenopausal osteoporosis
+    {"family": "Sclerostin-Fracture", "domain": "musculoskeletal",
+     "obs_OR": 0.55, "obs_type": "epidemiological_OR",
+     "gen_OR": 0.59, "gen_CI_lower": 0.54, "gen_CI_upper": 0.66,
+     "drug_outcome": "Approved"},
+
+    # B5: Serotonin transporter -> MDD
+    # OBS = plasma tryptophan (serotonin precursor) in MDD vs controls
+    #   (Ogawa 2014, J Clin Psychiatry, PMID 25295433): Hedges g=0.45
+    #   (0.84 in unmedicated patients). Plasma serotonin meta-analysis null
+    #   (Moncrieff 2022). Tryptophan used as best serotonin-pathway proxy.
+    # MR = 5-HTTLPR (SLC6A4) short allele and unipolar depression
+    #   (Clarke 2010, Psychol Med): OR 1.08 (1.03-1.12) per allele
+    #   d = |ln(1.08)|*sqrt(3)/pi = 0.042 — below threshold despite CI excl null
+    #   Moncrieff 2022 umbrella review: no consistent MR support for serotonin
+    # Drug: SSRIs (fluoxetine, sertraline, escitalopram) — all approved for MDD
+    # NOTE: mechanism-bypass boundary — SSRIs may work through neuroplasticity,
+    #   BDNF, or anti-inflammatory pathways rather than serotonin reuptake per se
+    {"family": "Serotonin-MDD", "domain": "psychiatry",
+     "obs_d_direct": 0.45, "obs_type": "case_control_SMD",
+     "obs_sourcing": "meta_analysis",
+     "gen_OR": 1.08, "gen_CI_lower": 1.03, "gen_CI_upper": 1.12,
+     "drug_outcome": "Approved"},
+
 ]
 
 
@@ -434,7 +523,9 @@ def main():
     prereg_families = NEURO_FAMILIES + CARDIO_FAMILIES + AUTOIMMUNE_FAMILIES
     all_families = prereg_families + EXTENSION_FAMILIES
     prereg_domains = ["neuro", "cardio", "autoimmune"]
-    extension_domains = ["oncology", "respiratory", "metabolic"]
+    extension_domains = ["oncology", "respiratory", "metabolic",
+                         "psychiatry", "gastroenterology", "ophthalmology",
+                         "musculoskeletal"]
     all_domains = prereg_domains + extension_domains
 
     for t in thresholds:
