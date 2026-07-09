@@ -7,7 +7,7 @@
 
 **Integrity protocol:** This amendment, the family pre-specifications, instrument declarations, and hypotheses are committed before any MR or OBS effect sizes are pulled for the nine families below. The same freeze-before-data protocol from the parent pre-registration applies. The commit SHA will be recorded here after freeze.
 
-**Commit SHA:** _(to be recorded after freeze commit)_
+**Commit SHA:** 1f300a9
 
 ---
 
