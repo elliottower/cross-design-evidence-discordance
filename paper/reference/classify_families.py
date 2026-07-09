@@ -319,15 +319,18 @@ EXTENSION_FAMILIES = [
 
     # R2: IL4Ra-Asthma
     # OBS = IL-4/IL-13 pathway elevation in asthma (estimated SMD ~0.50)
-    # MR = proteome-wide MR identifies IL-4Ra as causal for asthma
-    #   with colocalization, but no specific OR with CI available
+    # MR = cis-pQTL MR for soluble IL4R protein on asthma
+    #   (Bretherick 2020, PMID 32628676, PLOS Genetics): OR ~0.87 (0.82-0.93)
+    #   Direction: higher soluble IL4R (decoy receptor) = less asthma
+    #   CAVEAT: pQTL measures soluble IL4R, not membrane-bound (drug target).
+    #   Soluble acts as decoy sequestering IL-4; dupilumab blocks membrane IL4R.
+    #   Sensitivity: Nie 2013 coding variant Q551R OR=1.46 (1.22-1.75) gives concordance
     # Drug: dupilumab approved (Busse 2019)
-    # CONSTRUCT-LIMITED: no MR OR meeting two-criterion rule
     {"family": "IL4Ra-Asthma", "domain": "respiratory",
      "obs_d_direct": 0.50, "obs_type": "case_control_SMD",
-     "obs_sourcing": "construct_limited",
-     "gen_OR": 1.02,
-     "drug_outcome": "Construct-limited"},
+     "obs_sourcing": "author_estimated",
+     "gen_OR": 0.87, "gen_CI_lower": 0.82, "gen_CI_upper": 0.93,
+     "drug_outcome": "Approved"},
 
     # R3: TSLP-Asthma
     # OBS = TSLP elevated in severe asthma (estimated SMD ~0.40)
@@ -376,6 +379,34 @@ EXTENSION_FAMILIES = [
     {"family": "Urate-Gout", "domain": "metabolic",
      "obs_OR": 3.20, "obs_type": "epidemiological_OR",
      "gen_OR": 5.00, "gen_CI_lower": 3.50, "gen_CI_upper": 8.00,
+     "drug_outcome": "Approved"},
+
+    # --- ADDITIONAL EXTENSION FAMILIES (second amendment) ---
+
+    # X1: Uric acid -> CKD
+    # OBS = serum urate and incident CKD, meta-analysis of 30 prospective cohorts
+    #   (Wu 2021, PMID 34666784, Nutrition & Metabolism): highest vs lowest SUA
+    #   category RR 1.22 (1.14-1.30); per mg/dL RR 1.15 (1.10-1.21)
+    # MR = genetically predicted serum urate and CKD, 7 MR methods all null
+    #   (Jordan/Li 2019, PMID 30645594, PLOS Med): OR 1.05 (0.89-1.23), P=0.59
+    #   Same paper as Urate-Gout (gout was positive control)
+    # Drug: CKD-FIX (Badve 2020 NEJM) allopurinol no benefit P=0.85;
+    #   FEATHER (Kimura 2018) febuxostat failed primary endpoint P=0.10
+    {"family": "Urate-CKD", "domain": "renal",
+     "obs_OR": 1.22, "obs_type": "epidemiological_OR",
+     "gen_OR": 1.05, "gen_CI_lower": 0.89, "gen_CI_upper": 1.23,
+     "drug_outcome": "Failed"},
+
+    # X2: Alcohol -> liver disease (cirrhosis)
+    # OBS = alcohol consumption and liver cirrhosis, prospective CKB cohort
+    #   (Im 2021, PMID 34530818, BMC Med): per 280g/wk HR 1.83 (1.60-2.09)
+    # MR = genotype-predicted alcohol and cirrhosis, ALDH2+ADH1B instruments
+    #   (Im 2023, PMID 37291211, Nat Med): per 280g/wk HR 2.30 (1.58-3.35)
+    # Drug: naltrexone (1994) + acamprosate (2004) FDA-approved for AUD;
+    #   reduce causal exposure (alcohol consumption)
+    {"family": "Alcohol-Liver", "domain": "hepatic",
+     "obs_OR": 1.83, "obs_type": "epidemiological_OR",
+     "gen_OR": 2.30, "gen_CI_lower": 1.58, "gen_CI_upper": 3.35,
      "drug_outcome": "Approved"},
 ]
 
@@ -428,7 +459,7 @@ def main():
     prereg_families = NEURO_FAMILIES + CARDIO_FAMILIES + AUTOIMMUNE_FAMILIES
     all_families = prereg_families + EXTENSION_FAMILIES
     prereg_domains = ["neuro", "cardio", "autoimmune"]
-    extension_domains = ["oncology", "respiratory", "metabolic"]
+    extension_domains = ["oncology", "respiratory", "metabolic", "renal", "hepatic"]
     all_domains = prereg_domains + extension_domains
 
     for t in thresholds:
