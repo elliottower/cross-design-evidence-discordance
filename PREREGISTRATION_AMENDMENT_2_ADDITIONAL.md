@@ -3,7 +3,7 @@
 **Status:** FROZEN (pending commit SHA)
 **Date:** 2026-07-09
 **Parent documents:** PREREGISTRATION.md (SHA: b96d10a), PREREGISTRATION_AMENDMENT_EXPLORATORY.md (SHA: 1f300a9)
-**Scope:** Two additional mechanism families added to the exploratory extension, expanding from 9 to 11 families across 7 disease domains.
+**Scope:** Two additional mechanism families added to the exploratory extension, expanding from 9 to 11 families across 7 disease domains. Of these 11, 3 are construct-limited and 8 are scoreable.
 
 **Integrity protocol:** Same freeze-before-data protocol. Family declarations and hypotheses committed before effect sizes are pulled.
 
@@ -15,9 +15,11 @@
 
 This amendment adds two families to the exploratory extension declared in Amendment 1. These families expand the domain coverage (adding renal and hepatic) and were selected to include one expected discordance case (uric acid/CKD) and one expected concordance case (alcohol/liver disease). Both are well-characterized in the MR literature.
 
+The two new families (X1 and X2) were selected after preliminary review of the literature and are reported as a clearly-labeled second exploratory batch. They are not blind additions.
+
 The exploratory status, scoring rules, and separation from the primary pre-registered accuracy carry forward from Amendment 1 without modification. The two new families are added to the exploratory denominator.
 
-Additionally, Family R2 (IL4Ra-Asthma) is reclassified from "construct-limited" to "scoreable" based on identification of a published cis-pQTL MR study (Bretherick 2020, PMID 32628676). The soluble-vs-membrane receptor construct concern is retained as a pre-specified boundary condition.
+Family R2 (IL4Ra-Asthma) remains construct-limited. Although a cis-pQTL MR study exists (Bretherick 2020, PMID 32628676, OR 0.87), the pQTL instruments soluble IL4R (a decoy receptor that sequesters IL-4), not the membrane-bound IL4R that dupilumab targets. Because the genetic instrument measures a different molecular entity than the drug modulates, R2 does not meet the construct-matching requirement for scoring.
 
 ---
 
@@ -53,18 +55,13 @@ Additionally, Family R2 (IL4Ra-Asthma) is reclassified from "construct-limited" 
 
 ---
 
-## Updated R2 (IL4Ra-Asthma): reclassification from construct-limited to scoreable
+## Transparency: families considered and excluded
 
-A published cis-pQTL MR study was identified:
+Two additional families were considered during literature review and excluded before scoring:
 
-- **Bretherick et al. 2020** (PLOS Genetics, PMID 32628676): IL4R protein on asthma, OR ≈ 0.87 (0.82-0.93), P = 1.37E-05, FDR significant.
-- Direction: higher soluble IL4R protein reduces asthma risk.
+1. **PCSK9 -> Type 2 diabetes.** PCSK9 inhibitors have a small diabetogenic signal in trials, but the framework predicts drug success or failure for treating a disease, and diabetes is a side effect of PCSK9 inhibitors, not the therapeutic indication (which is cardiovascular disease, already covered by Family LDL/PCSK9). The observational effect size was also trivial (d = 0.047), below any plausible threshold.
 
-**Construct concern (retained):** The pQTL measures *soluble* IL4R (a decoy receptor that sequesters IL-4/IL-13 without signaling), not membrane-bound IL4R (the drug target for dupilumab). Higher soluble IL4R = less IL-4 signaling = less asthma, which is mechanistically consistent with dupilumab's action but instruments a different molecular entity than the drug modulates.
-
-**Sensitivity instrument:** Nie et al. 2013 (PLOS ONE, PMID 23922637) meta-analysis of IL4RA coding variants: Q551R OR = 1.46 (1.22-1.75) for asthma. This instruments receptor function directly (gain-of-function = more asthma), but is a candidate gene meta-analysis rather than a formal MR study.
-
-R2 is now scored with the Bretherick pQTL as the primary MR estimate and Nie coding variant as a sensitivity analysis. The soluble-vs-membrane construct issue is added to the boundary condition table.
+2. **IL-6 -> coronary heart disease.** An IL-6R family already exists in the pre-registered cardio families (IL-6R, cardio domain). Including a second IL-6 pathway family for the same cardiovascular outcome would double-count the same mechanism.
 
 ---
 
@@ -77,21 +74,20 @@ R2 is now scored with the Bretherick pQTL as the primary MR estimate and Nie cod
 | Instrument sensitivity | M1 (SGLT2-HF) | Unchanged from Amendment 1 |
 | Multi-construct divergence | M2 (GLP1R) | Unchanged from Amendment 1 |
 | Construct definition | R3 (TSLP-Asthma) | Unchanged from Amendment 1 |
-| **Soluble-vs-membrane receptor** | **R2 (IL4Ra-Asthma)** | **NEW: pQTL instruments soluble decoy receptor, not the membrane-bound drug target** |
 
 ---
 
 ## Updated hypotheses
 
-H_ext1 through H_ext4 from Amendment 1 are updated to reflect the expanded denominator (11 families, ~9 scoreable):
+H_ext1 through H_ext4 from Amendment 1 are updated to reflect the expanded denominator (11 families total, 3 construct-limited, 8 scoreable):
 
-- **H_ext1**: ≥5/9 scored families correctly classified (56%). Unchanged threshold, larger denominator.
+- **H_ext1**: ≥5/8 scored families correctly classified (63%). Unchanged threshold, smaller denominator (R2 remains construct-limited).
 - **H_ext2**: ≥1 boundary condition observed. Unchanged.
 - **H_ext3**: Positive controls (M3 Urate-Gout, R1 Eos-Asthma, **X2 Alcohol-Liver**) classify correctly. X2 added as third positive control.
-- **H_ext4**: Combined six-domain accuracy exceeds chance (binomial p < 0.05). Now 7 domains.
+- **H_ext4**: Combined accuracy across all scored extension families exceeds chance (binomial p < 0.05). Now 7 domains.
 
 ---
 
 ## Updated power considerations
 
-With 11 extension families and ~9 scoreable, the binomial test at α=0.05 against H0: accuracy=0.50 achieves significance at ≥7/9 (one-sided p=0.090, marginal) or ≥8/9 (p=0.020, significant). This is slightly more powered than the 6-scoreable denominator in Amendment 1.
+With 11 extension families and 8 scoreable (R2, R3, M2 remain construct-limited), the binomial test at alpha=0.05 against H0: accuracy=0.50 achieves significance at >=7/8 (one-sided p=0.035, significant) or 8/8 (p=0.004). This is comparable to Amendment 1's power with 6 scoreable families.

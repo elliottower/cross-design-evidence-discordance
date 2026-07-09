@@ -326,11 +326,13 @@ EXTENSION_FAMILIES = [
     #   Soluble acts as decoy sequestering IL-4; dupilumab blocks membrane IL4R.
     #   Sensitivity: Nie 2013 coding variant Q551R OR=1.46 (1.22-1.75) gives concordance
     # Drug: dupilumab approved (Busse 2019)
+    # CONSTRUCT-LIMITED: pQTL instruments soluble decoy receptor, not the
+    #   membrane-bound IL4R that dupilumab targets. Wrong molecular entity.
     {"family": "IL4Ra-Asthma", "domain": "respiratory",
      "obs_d_direct": 0.50, "obs_type": "case_control_SMD",
-     "obs_sourcing": "author_estimated",
+     "obs_sourcing": "construct_limited",
      "gen_OR": 0.87, "gen_CI_lower": 0.82, "gen_CI_upper": 0.93,
-     "drug_outcome": "Approved"},
+     "drug_outcome": "Construct-limited"},
 
     # R3: TSLP-Asthma
     # OBS = TSLP elevated in severe asthma (estimated SMD ~0.40)
