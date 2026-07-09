@@ -7,7 +7,7 @@
 
 **Integrity protocol:** Same freeze-before-data protocol. Family declarations and hypotheses committed before effect sizes are pulled.
 
-**Commit SHA:** _(to be recorded after freeze commit)_
+**Commit SHA:** 5117419
 
 ---
 
