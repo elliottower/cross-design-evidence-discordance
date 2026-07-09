@@ -506,6 +506,154 @@ def r5_generate_csv():
     print(f"  {len(results)} rows, {len(fieldnames)} columns")
 
 
+# ============================================================
+# R6: MR contrast-scale sensitivity
+# ============================================================
+# Reviewer M2: The d=0.10 threshold is applied uniformly across MR
+# effect sizes on different contrasts (per-SD, per-allele, per-unit,
+# per-genotype). This analysis documents:
+#   1. What contrast each scored family's MR d is expressed in
+#   2. Which families are within 0.03 of the threshold (threshold-sensitive)
+#   3. Whether per-SD rescaling is feasible and what it would change
+#
+# Pre-registration: This analysis committed before execution.
+# The key question: does the contrast type systematically affect
+# which side of d=0.10 a family falls on?
+
+# MR contrast type for each family, derived from the source papers.
+# "per_sd" = MR OR expressed per 1 SD of the exposure
+# "per_allele" = MR OR per copy of a specific allele
+# "per_unit" = MR OR per fixed-unit change (e.g., per 5 umol/L, per 10 mmHg)
+# "per_genotype" = MR OR comparing homozygous genotypes (e.g., MTHFR TT vs CC)
+# "null_signal" = MR OR effectively 1.00, contrast type irrelevant
+MR_CONTRAST_TYPES = {
+    # Neuro
+    "Metabolic-AD": "per_sd",
+    "ModRisk-AD": "per_sd",
+    "Anti-CD20-MS": "per_sd",        # per-SD circulating FCRL3
+    "Smoking-MS/AD": "per_sd",
+    "HRT-AD": "per_sd",             # per-SD estradiol
+    "BMI-MS": "per_sd",             # per-SD BMI
+    "BMI-AD": "per_sd",             # per-SD BMI
+    "VitaminD-MS": "per_sd",        # per-SD 25(OH)D
+    "EBV-MS": "per_allele",         # HLA-DRB1*15:01 carrier status
+    # Cardio
+    "HDL/CETP": "per_sd",           # per-SD HDL-C
+    "Niacin/HDL": "per_sd",
+    "Homocysteine": "per_genotype", # MTHFR TT vs CC
+    "CRP": "per_unit",              # per 20% lower CRP
+    "Uric acid": "per_sd",
+    "LDL/PCSK9": "per_unit",        # per 1 mmol/L LDL
+    "Blood pressure": "per_unit",   # per 10 mmHg SBP
+    "Triglycerides": "per_unit",    # per 1 mmol/L TG
+    "Lp(a)": "per_unit",            # per 10 mg/dL Lp(a)
+    "IL-6R": "per_sd",              # rescaled from per-allele to per-SD
+    # Autoimmune
+    "IL-23-psoriasis": "per_allele",
+    "CTLA-4-RA": "per_allele",
+    "TNF-a-RA": "null_signal",      # OR = 1.00
+    "IL-17-psoriasis": "null_signal",
+    "JAK-STAT-RA": "per_allele",
+    "CD20-RA": "per_allele",
+    "IL-4Ra-AD": "null_signal",
+    "IL-1b-CVD": "null_signal",
+    # Extension
+    "VitD-Cancer": "per_sd",
+    "IGF1-CRC": "per_sd",           # per-SD circulating IGF-1
+    "Estrogen-BC": "per_sd",        # per-SD estradiol
+    "Eos/IL5-Asthma": "per_sd",     # per-SD eosinophil count
+    "IL4Ra-Asthma": "unknown",
+    "TSLP-Asthma": "unknown",
+    "SGLT2-HF": "per_sd",           # drug-target MR cis-eQTL
+    "Urate-Gout": "per_sd",
+    "GLP1R-T2D/Obesity": "unknown",
+    "IL6-MDD": "per_unit",          # per 20% lower CRP
+    "Serotonin-MDD": "per_allele",  # 5-HTTLPR
+    "IL23-Crohns": "per_allele",
+    "Complement-GA": "per_allele",  # CFH Y402H
+    "Sclerostin-Frac": "per_sd",    # SOST cis-MR
+}
+
+
+def r6_scale_sensitivity():
+    """Analyze how MR contrast type affects threshold classifications."""
+    print("\n" + "=" * 70)
+    print("R6: MR CONTRAST-SCALE SENSITIVITY")
+    print("=" * 70)
+
+    results = run_classification(ALL_FAMILIES, threshold=0.10)
+    scored = [r for r in results
+              if r["correct"] is not None and r["prediction"] != "ambiguous"]
+
+    print(f"\n  Scored families by MR contrast type:")
+    print(f"  {'Family':<25} {'MR d':>8} {'MR class':>10} {'Contrast':>15} "
+          f"{'Thresh-sens':>12} {'Correct':>8}")
+    print("  " + "-" * 82)
+
+    contrast_counts = {}
+    threshold_sensitive = []
+
+    for r in scored:
+        family = r["family"]
+        contrast = MR_CONTRAST_TYPES.get(family, "unknown")
+        d = r["gen_d"]
+        sensitive = abs(d - 0.10) < 0.03 and d > 0  # within 0.03 of threshold
+        ok = "✓" if r["correct"] else "✗"
+
+        if contrast not in contrast_counts:
+            contrast_counts[contrast] = {"total": 0, "correct": 0, "families": []}
+        contrast_counts[contrast]["total"] += 1
+        if r["correct"]:
+            contrast_counts[contrast]["correct"] += 1
+        contrast_counts[contrast]["families"].append(family)
+
+        if sensitive:
+            threshold_sensitive.append((family, d, contrast, r["correct"]))
+
+        print(f"  {family:<25} {d:>8.3f} {r['mr_class']:>10} {contrast:>15} "
+              f"{'YES' if sensitive else '':>12} {ok:>8}")
+
+    print(f"\n  Summary by contrast type:")
+    print(f"  {'Contrast':<15} {'Correct':>8} {'Total':>6} {'Accuracy':>10}")
+    print("  " + "-" * 42)
+    for ctype in ["per_sd", "per_allele", "per_unit", "per_genotype", "null_signal"]:
+        if ctype not in contrast_counts:
+            continue
+        cc = contrast_counts[ctype]
+        acc = cc["correct"] / cc["total"] if cc["total"] else 0
+        print(f"  {ctype:<15} {cc['correct']:>8} {cc['total']:>6} {acc:>10.1%}")
+
+    print(f"\n  Threshold-sensitive families (MR d within 0.03 of 0.10):")
+    if threshold_sensitive:
+        for fam, d, contrast, correct in threshold_sensitive:
+            ok = "✓" if correct else "✗"
+            # What rescaling factor would flip this family?
+            if d > 0.10:
+                flip_factor = 0.10 / d
+                print(f"  {ok} {fam}: d={d:.3f} ({contrast}), "
+                      f"would flip to null if rescaled by {flip_factor:.2f}x")
+            elif d > 0:
+                flip_factor = 0.10 / d
+                print(f"  {ok} {fam}: d={d:.3f} ({contrast}), "
+                      f"would flip to causal if rescaled by {flip_factor:.2f}x")
+    else:
+        print("  (none)")
+
+    # Key finding: can we rescale all to per-SD?
+    print(f"\n  Rescaling feasibility:")
+    n_per_sd = sum(1 for r in scored
+                   if MR_CONTRAST_TYPES.get(r["family"]) == "per_sd")
+    n_other = len(scored) - n_per_sd
+    n_null = sum(1 for r in scored
+                 if MR_CONTRAST_TYPES.get(r["family"]) == "null_signal")
+    print(f"  Per-SD MR effects: {n_per_sd}/{len(scored)} scored families")
+    print(f"  Null signals (contrast irrelevant): {n_null}/{len(scored)}")
+    print(f"  Non-per-SD, non-null: {n_other - n_null}/{len(scored)}")
+    print(f"  Universal per-SD rescaling is NOT feasible: conversion factors")
+    print(f"  (SD of exposure per allele/unit) are not available for most")
+    print(f"  non-per-SD families. Only IL-6R is explicitly rescaled in the paper.")
+
+
 def main():
     r1_minikel_cross_tab()
     r1_instrument_type_summary()
@@ -513,6 +661,7 @@ def main():
     r3_power_calculation()
     r4_ascertainment_estimate()
     r5_generate_csv()
+    r6_scale_sensitivity()
 
 
 if __name__ == "__main__":
