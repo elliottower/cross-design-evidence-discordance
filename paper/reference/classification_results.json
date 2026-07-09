@@ -1,333 +1,101 @@
-[
-  {
-    "family": "Metabolic-AD",
-    "domain": "neuro",
-    "obs_OR": 1.53,
-    "obs_d": 0.234,
-    "obs_type": "epidemiological_OR",
-    "obs_class": "non-trivial",
-    "gen_OR_raw": 1.01,
-    "gen_OR_rescaled": null,
-    "gen_d": 0.005,
-    "gen_CI": null,
-    "mr_class": "null",
-    "classification": "qualitative discordance",
-    "prediction": "failure",
-    "drug_outcome": "Failed",
-    "correct": true
-  },
-  {
-    "family": "ModRisk-AD",
-    "domain": "neuro",
-    "obs_OR": 1.46,
-    "obs_d": 0.209,
-    "obs_type": "epidemiological_OR",
-    "obs_class": "non-trivial",
-    "gen_OR_raw": 1.1,
-    "gen_OR_rescaled": null,
-    "gen_d": 0.053,
-    "gen_CI": null,
-    "mr_class": "null",
-    "classification": "qualitative discordance",
-    "prediction": "failure",
-    "drug_outcome": "Failed",
-    "correct": true
-  },
-  {
-    "family": "Anti-CD20-MS",
-    "domain": "neuro",
-    "obs_OR": 2.23,
-    "obs_d": 0.442,
-    "obs_type": "epidemiological_OR",
-    "obs_class": "non-trivial",
-    "gen_OR_raw": 0.83,
-    "gen_OR_rescaled": null,
-    "gen_d": 0.103,
-    "gen_CI": "(0.79-0.89)",
-    "mr_class": "causal",
-    "classification": "concordance",
-    "prediction": "success",
-    "drug_outcome": "Approved",
-    "correct": true
-  },
-  {
-    "family": "Smoking-MS/AD",
-    "domain": "neuro",
-    "obs_OR": 1.46,
-    "obs_d": 0.209,
-    "obs_type": "epidemiological_OR",
-    "obs_class": "non-trivial",
-    "gen_OR_raw": 1.03,
-    "gen_OR_rescaled": null,
-    "gen_d": 0.016,
-    "gen_CI": null,
-    "mr_class": "null",
-    "classification": "qualitative discordance",
-    "prediction": "failure",
-    "drug_outcome": "Failed",
-    "correct": true
-  },
-  {
-    "family": "HRT-AD",
-    "domain": "neuro",
-    "obs_OR": 0.67,
-    "obs_d": 0.221,
-    "obs_type": "epidemiological_OR",
-    "obs_class": "non-trivial",
-    "gen_OR_raw": 1.0,
-    "gen_OR_rescaled": null,
-    "gen_d": 0.0,
-    "gen_CI": "(0.85-1.18)",
-    "mr_class": "null",
-    "classification": "qualitative discordance",
-    "prediction": "failure",
-    "drug_outcome": "Failed",
-    "correct": true
-  },
-  {
-    "family": "BMI-MS",
-    "domain": "neuro",
-    "obs_OR": 1.92,
-    "obs_d": 0.36,
-    "obs_type": "epidemiological_OR",
-    "obs_class": "non-trivial",
-    "gen_OR_raw": 1.41,
-    "gen_OR_rescaled": null,
-    "gen_d": 0.189,
-    "gen_CI": "(1.2-1.66)",
-    "mr_class": "causal",
-    "classification": "concordance",
-    "prediction": "success",
-    "drug_outcome": "Pending",
-    "correct": null
-  },
-  {
-    "family": "BMI-AD",
-    "domain": "neuro",
-    "obs_OR": 2.04,
-    "obs_d": 0.393,
-    "obs_type": "epidemiological_OR",
-    "obs_class": "non-trivial",
-    "gen_OR_raw": 1.03,
-    "gen_OR_rescaled": null,
-    "gen_d": 0.016,
-    "gen_CI": "(1.01-1.05)",
-    "mr_class": "null",
-    "classification": "qualitative discordance",
-    "prediction": "failure",
-    "drug_outcome": "Failed",
-    "correct": true
-  },
-  {
-    "family": "VitaminD-MS",
-    "domain": "neuro",
-    "obs_OR": 1.4,
-    "obs_d": 0.186,
-    "obs_type": "epidemiological_OR",
-    "obs_class": "non-trivial",
-    "gen_OR_raw": 2.0,
-    "gen_OR_rescaled": null,
-    "gen_d": 0.382,
-    "gen_CI": "(1.7-2.5)",
-    "mr_class": "causal",
-    "classification": "concordance",
-    "prediction": "success",
-    "drug_outcome": "Failed",
-    "correct": false
-  },
-  {
-    "family": "EBV-MS",
-    "domain": "neuro",
-    "obs_OR": 1.7,
-    "obs_d": 0.293,
-    "obs_type": "epidemiological_OR",
-    "obs_class": "non-trivial",
-    "gen_OR_raw": 5.0,
-    "gen_OR_rescaled": null,
-    "gen_d": 0.887,
-    "gen_CI": "(2.0-20.0)",
-    "mr_class": "causal",
-    "classification": "concordance",
-    "prediction": "success",
-    "drug_outcome": "Approved",
-    "correct": true
-  },
-  {
-    "family": "HDL/CETP",
-    "domain": "cardio",
-    "obs_OR": 0.62,
-    "obs_d": 0.264,
-    "obs_type": "epidemiological_OR",
-    "obs_class": "non-trivial",
-    "gen_OR_raw": 0.93,
-    "gen_OR_rescaled": null,
-    "gen_d": 0.04,
-    "gen_CI": "(0.68-1.26)",
-    "mr_class": "null",
-    "classification": "qualitative discordance",
-    "prediction": "failure",
-    "drug_outcome": "Failed",
-    "correct": true
-  },
-  {
-    "family": "Niacin/HDL",
-    "domain": "cardio",
-    "obs_OR": 0.62,
-    "obs_d": 0.264,
-    "obs_type": "epidemiological_OR",
-    "obs_class": "non-trivial",
-    "gen_OR_raw": 0.93,
-    "gen_OR_rescaled": null,
-    "gen_d": 0.04,
-    "gen_CI": "(0.68-1.26)",
-    "mr_class": "null",
-    "classification": "qualitative discordance",
-    "prediction": "failure",
-    "drug_outcome": "Failed",
-    "correct": true
-  },
-  {
-    "family": "Homocysteine",
-    "domain": "cardio",
-    "obs_OR": 1.32,
-    "obs_d": 0.153,
-    "obs_type": "epidemiological_OR",
-    "obs_class": "non-trivial",
-    "gen_OR_raw": 1.02,
-    "gen_OR_rescaled": null,
-    "gen_d": 0.011,
-    "gen_CI": "(0.98-1.07)",
-    "mr_class": "null",
-    "classification": "qualitative discordance",
-    "prediction": "failure",
-    "drug_outcome": "Failed",
-    "correct": true
-  },
-  {
-    "family": "CRP",
-    "domain": "cardio",
-    "obs_OR": 1.37,
-    "obs_d": 0.174,
-    "obs_type": "epidemiological_OR",
-    "obs_class": "non-trivial",
-    "gen_OR_raw": 1.0,
-    "gen_OR_rescaled": null,
-    "gen_d": 0.0,
-    "gen_CI": "(0.97-1.02)",
-    "mr_class": "null",
-    "classification": "qualitative discordance",
-    "prediction": "failure",
-    "drug_outcome": "No benefit",
-    "correct": true
-  },
-  {
-    "family": "Uric acid",
-    "domain": "cardio",
-    "obs_OR": 1.07,
-    "obs_d": 0.037,
-    "obs_type": "epidemiological_OR",
-    "obs_class": "trivial",
-    "gen_OR_raw": 1.05,
-    "gen_OR_rescaled": null,
-    "gen_d": 0.027,
-    "gen_CI": "(0.92-1.2)",
-    "mr_class": "null",
-    "classification": "null concordance",
-    "prediction": "ambiguous",
-    "drug_outcome": "Failed",
-    "correct": false
-  },
-  {
-    "family": "LDL/PCSK9",
-    "domain": "cardio",
-    "obs_OR": 1.52,
-    "obs_d": 0.231,
-    "obs_type": "epidemiological_OR",
-    "obs_class": "non-trivial",
-    "gen_OR_raw": 1.78,
-    "gen_OR_rescaled": null,
-    "gen_d": 0.318,
-    "gen_CI": "(1.58-2.01)",
-    "mr_class": "causal",
-    "classification": "concordance",
-    "prediction": "success",
-    "drug_outcome": "Approved",
-    "correct": true
-  },
-  {
-    "family": "Blood pressure",
-    "domain": "cardio",
-    "obs_OR": 1.41,
-    "obs_d": 0.189,
-    "obs_type": "epidemiological_OR",
-    "obs_class": "non-trivial",
-    "gen_OR_raw": 1.44,
-    "gen_OR_rescaled": null,
-    "gen_d": 0.201,
-    "gen_CI": "(1.35-1.55)",
-    "mr_class": "causal",
-    "classification": "concordance",
-    "prediction": "success",
-    "drug_outcome": "Approved",
-    "correct": true
-  },
-  {
-    "family": "Triglycerides",
-    "domain": "cardio",
-    "obs_OR": 1.72,
-    "obs_d": 0.299,
-    "obs_type": "epidemiological_OR",
-    "obs_class": "non-trivial",
-    "gen_OR_raw": 1.62,
-    "gen_OR_rescaled": null,
-    "gen_d": 0.266,
-    "gen_CI": "(1.24-2.11)",
-    "mr_class": "causal",
-    "classification": "concordance",
-    "prediction": "success",
-    "drug_outcome": "Approved",
-    "correct": true
-  },
-  {
-    "family": "Lp(a)",
-    "domain": "cardio",
-    "obs_OR": 1.13,
-    "obs_d": 0.067,
-    "obs_type": "epidemiological_OR",
-    "obs_class": "trivial",
-    "gen_OR_raw": 0.94,
-    "gen_OR_rescaled": null,
-    "gen_d": 0.034,
-    "gen_CI": "(0.93-0.95)",
-    "mr_class": "null",
-    "classification": "null concordance",
-    "prediction": "ambiguous",
-    "drug_outcome": "Pending",
-    "correct": null
-  },
-  {
-    "family": "IL-6R",
-    "domain": "cardio",
-    "obs_OR": 1.25,
-    "obs_d": 0.123,
-    "obs_type": "epidemiological_OR",
-    "obs_class": "non-trivial",
-    "gen_OR_raw": 0.95,
-    "gen_OR_rescaled": 0.86,
-    "gen_d": 0.083,
-    "gen_CI": "(0.93-0.97)",
-    "mr_class": "null",
-    "classification": "qualitative discordance",
-    "prediction": "failure",
-    "drug_outcome": "Pending",
-    "correct": null
-  },
-  {
-    "family": "IL-23-psoriasis",
-    "domain": "autoimmune",
-    "obs_OR": null,
-    "obs_d": 0.66,
-    "obs_type": "tissue_expression",
+
+================================================================================
+THRESHOLD d = 0.10
+================================================================================
+
+--- Neuro ---
+Family                 OBS d  Src          OBS   GEN d       MR Class                         Pred           Actual   OK?
+=========================================================================================================================
+Metabolic-AD           0.234   OR  non-trivial   0.005     null qualitative discordance    failure           Failed     ✓
+ModRisk-AD             0.209   OR  non-trivial   0.053     null qualitative discordance    failure           Failed     ✓
+Anti-CD20-MS           0.442   OR  non-trivial   0.103   causal concordance                success         Approved     ✓
+Smoking-MS/AD          0.209   OR  non-trivial   0.016     null qualitative discordance    failure           Failed     ✓
+HRT-AD                 0.221   OR  non-trivial   0.000     null qualitative discordance    failure           Failed     ✓
+BMI-MS                 0.360   OR  non-trivial   0.189   causal concordance                success          Pending     —
+BMI-AD                 0.393   OR  non-trivial   0.016     null qualitative discordance    failure           Failed     ✓
+VitaminD-MS            0.186   OR  non-trivial   0.382   causal concordance                success           Failed     ✗
+EBV-MS                 0.293   OR  non-trivial   0.887   causal concordance                success         Approved     ✓
+
+--- Cardio ---
+Family                 OBS d  Src          OBS   GEN d       MR Class                         Pred           Actual   OK?
+=========================================================================================================================
+HDL/CETP               0.264   OR  non-trivial   0.040     null qualitative discordance    failure           Failed     ✓
+Niacin/HDL             0.264   OR  non-trivial   0.040     null qualitative discordance    failure           Failed     ✓
+Homocysteine           0.153   OR  non-trivial   0.011     null qualitative discordance    failure           Failed     ✓
+CRP                    0.174   OR  non-trivial   0.000     null qualitative discordance    failure       No benefit     ✓
+Uric acid              0.037   OR      trivial   0.027     null null concordance          ambiguous           Failed     ✗
+LDL/PCSK9              0.231   OR  non-trivial   0.318   causal concordance                success         Approved     ✓
+Blood pressure         0.189   OR  non-trivial   0.201   causal concordance                success         Approved     ✓
+Triglycerides          0.299   OR  non-trivial   0.266   causal concordance                success         Approved     ✓
+Lp(a)                  0.067   OR      trivial   0.034     null null concordance          ambiguous          Pending     —
+IL-6R                  0.123   OR  non-trivial   0.083     null qualitative discordance    failure          Pending     —
+
+--- Autoimmune ---
+Family                 OBS d  Src          OBS   GEN d       MR Class                         Pred           Actual   OK?
+=========================================================================================================================
+IL-23-psoriasis        0.660  tis  non-trivial   0.267   causal concordance                success         Approved     ✓
+CTLA-4-RA              0.500  SMD  non-trivial   0.083     null qualitative discordance    failure         Approved     ✗
+TNF-a-RA               1.930  SMD  non-trivial   0.000     null qualitative discordance    failure         Approved     ✗
+IL-17-psoriasis        0.470  SMD  non-trivial   0.001     null qualitative discordance    failure         Approved     ✗
+JAK-STAT-RA            0.500  SMD  non-trivial   0.132   causal concordance                success         Approved     ✓
+CD20-RA                0.500  SMD  non-trivial   0.141   causal concordance                success         Approved     ✓
+IL-4Ra-AD              0.150  SMD  non-trivial   0.011     null qualitative discordance    failure Construct-limited     —
+IL-1b-CVD              0.174   OR  non-trivial   0.000     null qualitative discordance    failure           Failed     ✓
+
+--- Oncology [EXPLORATORY] ---
+Family                 OBS d  Src          OBS   GEN d       MR Class                         Pred           Actual   OK?
+=========================================================================================================================
+VitD-Cancer            0.137   OR  non-trivial   0.017     null qualitative discordance    failure           Failed     ✓
+IGF1-CRC               0.062   OR      trivial   0.110   causal genetic-only signal        success           Failed     ✗
+Estrogen-BC            0.145   OR  non-trivial   0.016     null qualitative discordance    failure         Approved     ✗
+
+--- Respiratory [EXPLORATORY] ---
+Family                 OBS d  Src          OBS   GEN d       MR Class                         Pred           Actual   OK?
+=========================================================================================================================
+Eos/IL5-Asthma         0.800  SMD  non-trivial   0.224   causal concordance                success         Approved     ✓
+IL4Ra-Asthma           0.500  SMD  non-trivial   0.077     null qualitative discordance    failure         Approved     ✗
+TSLP-Asthma            0.400  SMD  non-trivial   0.011     null qualitative discordance    failure Construct-limited     —
+
+--- Metabolic [EXPLORATORY] ---
+Family                 OBS d  Src          OBS   GEN d       MR Class                         Pred           Actual   OK?
+=========================================================================================================================
+SGLT2-HF               0.309   OR  non-trivial   0.453   causal concordance                success         Approved     ✓
+GLP1R-T2D/Obesity      0.000   OR      trivial   0.000     null null concordance          ambiguous Construct-limited     —
+Urate-Gout             0.641   OR  non-trivial   0.887   causal concordance                success         Approved     ✓
+
+--- Renal [EXPLORATORY] ---
+Family                 OBS d  Src          OBS   GEN d       MR Class                         Pred           Actual   OK?
+=========================================================================================================================
+Urate-CKD              0.110   OR  non-trivial   0.027     null qualitative discordance    failure           Failed     ✓
+
+--- Hepatic [EXPLORATORY] ---
+Family                 OBS d  Src          OBS   GEN d       MR Class                         Pred           Actual   OK?
+=========================================================================================================================
+Alcohol-Liver          0.333   OR  non-trivial   0.459   causal concordance                success         Approved     ✓
+
+--- Pre-registered domain tallies ---
+         neuro: 7/8 scored, 1 pending [OBS: epidemiological_OR]
+        cardio: 7/7 scored, 1 ambig, 2 pending [OBS: epidemiological_OR]
+    autoimmune: 4/7 scored, 1 construct-limited [OBS: tissue_expression, epidemiological_OR, case_control_SMD]
+
+  PRE-REGISTERED TOTAL: 18/22 (81.8%)
+
+--- Extension domain tallies [EXPLORATORY] ---
+      oncology: 1/3 scored [OBS: epidemiological_OR]
+   respiratory: 1/2 scored, 1 construct-limited [OBS: case_control_SMD]
+     metabolic: 2/2 scored, 1 construct-limited [OBS: epidemiological_OR]
+         renal: 1/1 scored [OBS: epidemiological_OR]
+       hepatic: 1/1 scored [OBS: epidemiological_OR]
+
+  EXPLORATORY TOTAL: 6/9 (66.7%)
+
+  COMBINED (pre-reg + exploratory): 24/31 (77.4%)
+
+  NOTE: 5 families have author-estimated OBS d.
+  Do NOT pool domains with different OBS constructs for inference.
+
+Saved to /Users/elliottower/Documents/GitHub/cross-design-evidence-discordance/paper/reference/classification_results.json
+sion",
     "obs_class": "non-trivial",
     "gen_OR_raw": 0.616,
     "gen_OR_rescaled": null,
@@ -461,8 +229,8 @@
   {
     "family": "VitD-Cancer",
     "domain": "oncology",
-    "obs_OR": 0.8,
-    "obs_d": 0.123,
+    "obs_OR": 0.78,
+    "obs_d": 0.137,
     "obs_type": "epidemiological_OR",
     "obs_class": "non-trivial",
     "gen_OR_raw": 0.97,
@@ -533,15 +301,15 @@
     "obs_d": 0.5,
     "obs_type": "case_control_SMD",
     "obs_class": "non-trivial",
-    "gen_OR_raw": 1.02,
+    "gen_OR_raw": 0.87,
     "gen_OR_rescaled": null,
-    "gen_d": 0.011,
-    "gen_CI": null,
+    "gen_d": 0.077,
+    "gen_CI": "(0.82-0.93)",
     "mr_class": "null",
     "classification": "qualitative discordance",
     "prediction": "failure",
-    "drug_outcome": "Construct-limited",
-    "correct": null
+    "drug_outcome": "Approved",
+    "correct": false
   },
   {
     "family": "TSLP-Asthma",
@@ -605,6 +373,40 @@
     "gen_OR_rescaled": null,
     "gen_d": 0.887,
     "gen_CI": "(3.5-8.0)",
+    "mr_class": "causal",
+    "classification": "concordance",
+    "prediction": "success",
+    "drug_outcome": "Approved",
+    "correct": true
+  },
+  {
+    "family": "Urate-CKD",
+    "domain": "renal",
+    "obs_OR": 1.22,
+    "obs_d": 0.11,
+    "obs_type": "epidemiological_OR",
+    "obs_class": "non-trivial",
+    "gen_OR_raw": 1.05,
+    "gen_OR_rescaled": null,
+    "gen_d": 0.027,
+    "gen_CI": "(0.89-1.23)",
+    "mr_class": "null",
+    "classification": "qualitative discordance",
+    "prediction": "failure",
+    "drug_outcome": "Failed",
+    "correct": true
+  },
+  {
+    "family": "Alcohol-Liver",
+    "domain": "hepatic",
+    "obs_OR": 1.83,
+    "obs_d": 0.333,
+    "obs_type": "epidemiological_OR",
+    "obs_class": "non-trivial",
+    "gen_OR_raw": 2.3,
+    "gen_OR_rescaled": null,
+    "gen_d": 0.459,
+    "gen_CI": "(1.58-3.35)",
     "mr_class": "causal",
     "classification": "concordance",
     "prediction": "success",
