@@ -383,33 +383,6 @@ EXTENSION_FAMILIES = [
      "gen_OR": 5.00, "gen_CI_lower": 3.50, "gen_CI_upper": 8.00,
      "drug_outcome": "Approved"},
 
-    # --- ADDITIONAL EXTENSION FAMILIES (second amendment) ---
-
-    # X1: Uric acid -> CKD
-    # OBS = serum urate and incident CKD, meta-analysis of 30 prospective cohorts
-    #   (Wu 2021, PMID 34666784, Nutrition & Metabolism): highest vs lowest SUA
-    #   category RR 1.22 (1.14-1.30); per mg/dL RR 1.15 (1.10-1.21)
-    # MR = genetically predicted serum urate and CKD, 7 MR methods all null
-    #   (Jordan/Li 2019, PMID 30645594, PLOS Med): OR 1.05 (0.89-1.23), P=0.59
-    #   Same paper as Urate-Gout (gout was positive control)
-    # Drug: CKD-FIX (Badve 2020 NEJM) allopurinol no benefit P=0.85;
-    #   FEATHER (Kimura 2018) febuxostat failed primary endpoint P=0.10
-    {"family": "Urate-CKD", "domain": "renal",
-     "obs_OR": 1.22, "obs_type": "epidemiological_OR",
-     "gen_OR": 1.05, "gen_CI_lower": 0.89, "gen_CI_upper": 1.23,
-     "drug_outcome": "Failed"},
-
-    # X2: Alcohol -> liver disease (cirrhosis)
-    # OBS = alcohol consumption and liver cirrhosis, prospective CKB cohort
-    #   (Im 2021, PMID 34530818, BMC Med): per 280g/wk HR 1.83 (1.60-2.09)
-    # MR = genotype-predicted alcohol and cirrhosis, ALDH2+ADH1B instruments
-    #   (Im 2023, PMID 37291211, Nat Med): per 280g/wk HR 2.30 (1.58-3.35)
-    # Drug: naltrexone (1994) + acamprosate (2004) FDA-approved for AUD;
-    #   reduce causal exposure (alcohol consumption)
-    {"family": "Alcohol-Liver", "domain": "hepatic",
-     "obs_OR": 1.83, "obs_type": "epidemiological_OR",
-     "gen_OR": 2.30, "gen_CI_lower": 1.58, "gen_CI_upper": 3.35,
-     "drug_outcome": "Approved"},
 ]
 
 
@@ -461,7 +434,7 @@ def main():
     prereg_families = NEURO_FAMILIES + CARDIO_FAMILIES + AUTOIMMUNE_FAMILIES
     all_families = prereg_families + EXTENSION_FAMILIES
     prereg_domains = ["neuro", "cardio", "autoimmune"]
-    extension_domains = ["oncology", "respiratory", "metabolic", "renal", "hepatic"]
+    extension_domains = ["oncology", "respiratory", "metabolic"]
     all_domains = prereg_domains + extension_domains
 
     for t in thresholds:
