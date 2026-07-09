@@ -1,0 +1,26 @@
+{
+  "title": "Neuroepidemiology Validity Audit",
+  "upload_type": "software",
+  "description": "Claim-level validity audit of mechanism claims in MS and AD neuroepidemiology, scoring each against a four-tier evidence scale with causal decomposition.",
+  "creators": [
+    {
+      "name": "Tower, Elliot",
+      "orcid": "0000-0001-7004-8884"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "neuroepidemiology",
+    "validity audit",
+    "multiple sclerosis",
+    "Alzheimer's disease",
+    "causal inference"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/elliottower/cross-design-evidence-discordance",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
