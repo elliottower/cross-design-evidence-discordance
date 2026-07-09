@@ -263,6 +263,123 @@ AUTOIMMUNE_FAMILIES = [
 ]
 
 
+# Extension domains (exploratory — pre-registration amendment filed separately)
+EXTENSION_FAMILIES = [
+    # --- ONCOLOGY ---
+    # O1: VitD-Cancer
+    # OBS = JNCI pooled 17 cohorts, Q5 vs Q3 (mid-quintile ref) 25(OH)D and CRC
+    #   (McCullough 2019, PMID 29912394): RR 0.78 (0.65-0.94)
+    # MR = systematic review of MR studies, per-SD 25(OH)D and CRC
+    #   (Lawler 2023, PMID 36678292): OR 0.97 (0.88-1.07), 80+ instruments
+    # Drug: VITAL trial — vitamin D supplementation, no CRC benefit (Manson 2019)
+    {"family": "VitD-Cancer", "domain": "oncology",
+     "obs_OR": 0.78, "obs_type": "epidemiological_OR",
+     "gen_OR": 0.97, "gen_CI_lower": 0.88, "gen_CI_upper": 1.07,
+     "drug_outcome": "Failed"},
+
+    # O2: IGF1-CRC
+    # OBS = serologic analysis, per-quintile IGF-1 and CRC
+    #   (Rinaldi 2019, PMID 31884076, Gastroenterology): OR ~1.12
+    # MR = genetically predicted IGF-1 per SD and CRC, 416 SNPs
+    #   (Larsson 2020, PMID 32717139, Cancer Medicine): OR 1.22 (1.09-1.36) [BioBank Japan]
+    #   UK Biobank estimate is 1.11 (1.01-1.22); Japan chosen as larger sample for CRC
+    # Drugs: figitumumab (Langer 2014), ganitumab (Juergens 2023) — both failed
+    # NOTE: drug targets IGF-1R (receptor), MR instruments circulating IGF-1 (ligand)
+    {"family": "IGF1-CRC", "domain": "oncology",
+     "obs_OR": 1.12, "obs_type": "epidemiological_OR",
+     "gen_OR": 1.22, "gen_CI_lower": 1.09, "gen_CI_upper": 1.36,
+     "drug_outcome": "Failed"},
+
+    # O3: Estrogen-BC
+    # OBS = estrogen-only HRT and breast cancer
+    #   (Million Women Study, Beral 2003, PMID 12927427, Lancet): RR 1.30
+    # MR = estradiol per SD and overall breast cancer, 2 SNPs (CYP19A1-based)
+    #   (Nounu 2022, PMID 36209141, Breast Cancer Research): OR 1.03 (1.01-1.06)
+    # Drug: tamoxifen approved for chemoprevention (Cuzick 2015)
+    # NOTE: MR CI excludes null but d=0.016 < 0.10 — pharmacological amplification
+    #   boundary. Germline variants produce tiny per-SD estradiol perturbation;
+    #   drug produces near-complete pathway blockade.
+    {"family": "Estrogen-BC", "domain": "oncology",
+     "obs_OR": 1.30, "obs_type": "epidemiological_OR",
+     "gen_OR": 1.03, "gen_CI_lower": 1.01, "gen_CI_upper": 1.06,
+     "drug_outcome": "Approved"},
+
+    # --- RESPIRATORY ---
+    # R1: Eos/IL5-Asthma
+    # OBS = eosinophil count in severe vs mild asthma
+    #   (Wagener 2022, estimated SMD ~0.80)
+    # MR = eosinophil count per SD and moderate-severe asthma, 151 variants
+    #   (Guyatt 2023, Thorax; preprint 2020): weighted median OR 1.50 (1.23-1.83)
+    # Drugs: mepolizumab (Pavord 2012), benralizumab — both approved
+    {"family": "Eos/IL5-Asthma", "domain": "respiratory",
+     "obs_d_direct": 0.80, "obs_type": "case_control_SMD",
+     "obs_sourcing": "author_estimated",
+     "gen_OR": 1.50, "gen_CI_lower": 1.23, "gen_CI_upper": 1.83,
+     "drug_outcome": "Approved"},
+
+    # R2: IL4Ra-Asthma
+    # OBS = IL-4/IL-13 pathway elevation in asthma (estimated SMD ~0.50)
+    # MR = proteome-wide MR identifies IL-4Ra as causal for asthma
+    #   with colocalization, but no specific OR with CI available
+    # Drug: dupilumab approved (Busse 2019)
+    # CONSTRUCT-LIMITED: no MR OR meeting two-criterion rule
+    {"family": "IL4Ra-Asthma", "domain": "respiratory",
+     "obs_d_direct": 0.50, "obs_type": "case_control_SMD",
+     "obs_sourcing": "construct_limited",
+     "gen_OR": 1.02,
+     "drug_outcome": "Construct-limited"},
+
+    # R3: TSLP-Asthma
+    # OBS = TSLP elevated in severe asthma (estimated SMD ~0.40)
+    # MR = no specific pQTL MR with OR and CI for TSLP and asthma
+    # Drug: tezepelumab approved (Menzies 2022)
+    # CONSTRUCT-LIMITED: no drug-target MR with specific effect size
+    {"family": "TSLP-Asthma", "domain": "respiratory",
+     "obs_d_direct": 0.40, "obs_type": "case_control_SMD",
+     "obs_sourcing": "construct_limited",
+     "gen_OR": 1.02,
+     "drug_outcome": "Construct-limited"},
+
+    # --- METABOLIC/ENDOCRINE ---
+    # M1: SGLT2-HF
+    # OBS = T2D and HF risk, meta-analysis of 47 cohorts, 12M individuals
+    #   (Ohkuma 2019, PMID 31317230, Diabetologia): RR 1.74 (men) to 1.95 (women)
+    # MR = drug-target MR, SLC5A2 cis-eQTL, proteome-wide MR
+    #   (PMC11079590, 2024 Frontiers): OR 0.44 (0.26-0.76), P=0.003
+    # Drug: empagliflozin, dapagliflozin approved for HF
+    {"family": "SGLT2-HF", "domain": "metabolic",
+     "obs_OR": 1.75, "obs_type": "epidemiological_OR",
+     "gen_OR": 0.44, "gen_CI_lower": 0.26, "gen_CI_upper": 0.76,
+     "drug_outcome": "Approved"},
+
+    # M2: GLP1R-T2D/Obesity (combined per pre-registration amendment)
+    # OBS = no natural observational exposure (GLP-1R is a drug receptor,
+    #   not a naturally varying biomarker like LDL or urate)
+    # MR = drug-target cis-MR exists (OR 0.79, 0.75-0.85 for T2D from
+    #   cis-eQTL studies), but OBS counterpart undefined
+    # Drug: semaglutide, liraglutide approved for T2D and obesity
+    # CONSTRUCT-LIMITED: no OBS-MR pair meeting two-criterion rule
+    {"family": "GLP1R-T2D/Obesity", "domain": "metabolic",
+     "obs_d_direct": 0.0, "obs_type": "epidemiological_OR",
+     "obs_sourcing": "construct_limited",
+     "gen_OR": 1.00,
+     "drug_outcome": "Construct-limited"},
+
+    # M3: Urate-Gout
+    # OBS = serum urate and incident gout, longitudinal cohort
+    #   (Robinson 2021, PMC8399746): HR 18.62 for >=7 vs <4 mg/dL;
+    #   per-SD (SD ~1.2 mg/dL) HR ~3.2 derived from dose-response curve (not directly reported)
+    # MR = genetically predicted serum urate and gout, 26 SNPs
+    #   (Li 2019, PMC6333326, PLOS Med): OR 3.41-6.04 per 1 mg/dL across
+    #   7 MR methods; rescaled to per-SD (1.2 mg/dL): ~5.0 (range 4.4-8.7)
+    # Drug: allopurinol, febuxostat approved for gout/hyperuricemia
+    {"family": "Urate-Gout", "domain": "metabolic",
+     "obs_OR": 3.20, "obs_type": "epidemiological_OR",
+     "gen_OR": 5.00, "gen_CI_lower": 3.50, "gen_CI_upper": 8.00,
+     "drug_outcome": "Approved"},
+]
+
+
 def print_results(results: list[dict]) -> None:
     header = (f"{'Family':<20} {'OBS d':>7} {'Src':>4} {'OBS':>12} "
               f"{'GEN d':>7} {'MR':>8} {'Class':<25} "
@@ -283,9 +400,36 @@ def print_results(results: list[dict]) -> None:
               f"{r['prediction']:>8} {r['drug_outcome']:>16} {ok:>5}")
 
 
+def _domain_tally(results: list[dict], domain: str, all_fams: list[dict]) -> str:
+    dom_results = [r for r in results if r["domain"] == domain]
+    if not dom_results:
+        return ""
+    dom_known = [r for r in dom_results if r["correct"] is not None]
+    dom_unambig = [r for r in dom_known if r["prediction"] != "ambiguous"]
+    dom_correct = sum(1 for r in dom_unambig if r["correct"])
+    dom_pending = sum(1 for r in dom_results if r["drug_outcome"] == "Pending")
+    dom_ambig = sum(1 for r in dom_known if r["prediction"] == "ambiguous")
+    dom_construct = sum(1 for r in dom_results
+                        if r["drug_outcome"] == "Construct-limited")
+    obs_types = set(r.get("obs_type", "epidemiological_OR") for r in dom_results)
+    extra = ""
+    if dom_construct:
+        extra += f", {dom_construct} construct-limited"
+    if dom_ambig:
+        extra += f", {dom_ambig} ambig"
+    if dom_pending:
+        extra += f", {dom_pending} pending"
+    return (f"  {domain:>12}: {dom_correct}/{len(dom_unambig)} scored"
+            f"{extra} [OBS: {', '.join(obs_types)}]")
+
+
 def main():
     thresholds = [0.08, 0.10, 0.12, 0.15] if "--sensitivity" in sys.argv else [0.10]
-    all_families = NEURO_FAMILIES + CARDIO_FAMILIES + AUTOIMMUNE_FAMILIES
+    prereg_families = NEURO_FAMILIES + CARDIO_FAMILIES + AUTOIMMUNE_FAMILIES
+    all_families = prereg_families + EXTENSION_FAMILIES
+    prereg_domains = ["neuro", "cardio", "autoimmune"]
+    extension_domains = ["oncology", "respiratory", "metabolic"]
+    all_domains = prereg_domains + extension_domains
 
     for t in thresholds:
         print(f"\n{'='*80}")
@@ -293,41 +437,51 @@ def main():
         print(f"{'='*80}")
         results = run_classification(all_families, threshold=t)
 
-        print(f"\n--- Neuro ---")
-        print_results([r for r in results if r["domain"] == "neuro"])
-        print(f"\n--- Cardio ---")
-        print_results([r for r in results if r["domain"] == "cardio"])
-        print(f"\n--- Autoimmune ---")
-        print_results([r for r in results if r["domain"] == "autoimmune"])
-
-        print(f"\n--- Domain tallies (NOT pooled — different OBS constructs) ---")
-        for domain in ["neuro", "cardio", "autoimmune"]:
+        for domain in all_domains:
             dom_results = [r for r in results if r["domain"] == domain]
-            dom_known = [r for r in dom_results if r["correct"] is not None]
-            dom_unambig = [r for r in dom_known if r["prediction"] != "ambiguous"]
-            dom_correct = sum(1 for r in dom_unambig if r["correct"])
-            dom_pending = sum(1 for r in dom_results if r["drug_outcome"] == "Pending")
-            dom_ambig = sum(1 for r in dom_known if r["prediction"] == "ambiguous")
-            dom_construct = sum(1 for r in dom_results
-                                if r["drug_outcome"] == "Construct-limited")
-            obs_types = set(r.get("obs_type", "epidemiological_OR") for r in dom_results)
-            extra = ""
-            if dom_construct:
-                extra += f", {dom_construct} construct-limited"
-            if dom_ambig:
-                extra += f", {dom_ambig} ambig"
-            if dom_pending:
-                extra += f", {dom_pending} pending"
-            print(f"  {domain:>10}: {dom_correct}/{len(dom_unambig)} scored"
-                  f"{extra} [OBS: {', '.join(obs_types)}]")
+            if not dom_results:
+                continue
+            tag = " [EXPLORATORY]" if domain in extension_domains else ""
+            print(f"\n--- {domain.capitalize()}{tag} ---")
+            print_results(dom_results)
 
-        ai_fams = [f for f in all_families if f.get("domain") == "autoimmune"]
-        n_estimated = sum(1 for f in ai_fams
-                         if f.get("obs_sourcing") == "author_estimated")
+        print(f"\n--- Pre-registered domain tallies ---")
+        for domain in prereg_domains:
+            line = _domain_tally(results, domain, all_families)
+            if line:
+                print(line)
+
+        prereg_results = [r for r in results if r["domain"] in prereg_domains]
+        prereg_scored = [r for r in prereg_results
+                         if r["correct"] is not None and r["prediction"] != "ambiguous"]
+        prereg_correct = sum(1 for r in prereg_scored if r["correct"])
+        print(f"\n  PRE-REGISTERED TOTAL: {prereg_correct}/{len(prereg_scored)}"
+              f" ({prereg_correct/len(prereg_scored)*100:.1f}%)")
+
+        print(f"\n--- Extension domain tallies [EXPLORATORY] ---")
+        for domain in extension_domains:
+            line = _domain_tally(results, domain, all_families)
+            if line:
+                print(line)
+
+        ext_results = [r for r in results if r["domain"] in extension_domains]
+        ext_scored = [r for r in ext_results
+                      if r["correct"] is not None and r["prediction"] != "ambiguous"]
+        ext_correct = sum(1 for r in ext_scored if r["correct"])
+        if ext_scored:
+            print(f"\n  EXPLORATORY TOTAL: {ext_correct}/{len(ext_scored)}"
+                  f" ({ext_correct/len(ext_scored)*100:.1f}%)")
+
+        all_scored = prereg_scored + ext_scored
+        all_correct = prereg_correct + ext_correct
+        print(f"\n  COMBINED (pre-reg + exploratory): {all_correct}/{len(all_scored)}"
+              f" ({all_correct/len(all_scored)*100:.1f}%)")
+
+        n_estimated = sum(1 for f in all_families
+                          if f.get("obs_sourcing") == "author_estimated")
         if n_estimated:
-            print(f"\n  NOTE: {n_estimated} autoimmune families have "
-                  f"author-estimated OBS d (not meta-analysis sourced).")
-        print(f"  Do NOT pool autoimmune with neuro/cardio into one accuracy figure.")
+            print(f"\n  NOTE: {n_estimated} families have author-estimated OBS d.")
+        print(f"  Do NOT pool domains with different OBS constructs for inference.")
 
     if "--json" in sys.argv:
         results = run_classification(all_families, threshold=0.10)
