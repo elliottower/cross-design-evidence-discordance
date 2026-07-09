@@ -7,7 +7,7 @@
 
 **Integrity protocol:** Same freeze-before-data protocol as all prior amendments. This amendment is written under **strict blinding**: the declaring agent has not seen, requested, or accessed any classification results, accuracy numbers, classifier code, or data files from the study. Family selection is based entirely on domain knowledge of the MR, observational, and drug-development literatures. Every family declared below will be scored; none may be dropped post hoc.
 
-**Commit SHA:** _(to be filled after commit)_
+**Commit SHA:** 12ea0ed
 
 ---
 
