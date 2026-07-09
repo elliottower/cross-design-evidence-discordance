@@ -1,0 +1,42 @@
+family,domain,gene_target,instrument_type,obs_d,obs_type,obs_class,mr_or_raw,mr_d,mr_ci,mr_class,classification,prediction,drug_outcome,correct,status
+Metabolic-AD,neuro,multiple,polygenic,0.234,epidemiological_OR,non-trivial,1.01,0.005,,null,qualitative discordance,failure,Failed,True,pre-registered
+ModRisk-AD,neuro,multiple,polygenic,0.209,epidemiological_OR,non-trivial,1.1,0.053,,null,qualitative discordance,failure,Failed,True,pre-registered
+Anti-CD20-MS,neuro,FCRL3,cis_pqtl,0.442,epidemiological_OR,non-trivial,0.83,0.103,(0.79-0.89),causal,concordance,success,Approved,True,pre-registered
+Smoking-MS/AD,neuro,multiple,polygenic,0.209,epidemiological_OR,non-trivial,1.03,0.016,,null,qualitative discordance,failure,Failed,True,pre-registered
+HRT-AD,neuro,ESR1,biomarker_gwas,0.221,epidemiological_OR,non-trivial,1.0,0.0,(0.85-1.18),null,qualitative discordance,failure,Failed,True,pre-registered
+BMI-MS,neuro,multiple,polygenic,0.36,epidemiological_OR,non-trivial,1.41,0.189,(1.2-1.66),causal,concordance,success,Pending,,pending
+BMI-AD,neuro,multiple,polygenic,0.393,epidemiological_OR,non-trivial,1.03,0.016,(1.01-1.05),null,qualitative discordance,failure,Failed,True,pre-registered
+VitaminD-MS,neuro,CYP2R1,biomarker_gwas,0.186,epidemiological_OR,non-trivial,2.0,0.382,(1.7-2.5),causal,concordance,success,Failed,False,pre-registered
+EBV-MS,neuro,HLA,coding_variant,0.293,epidemiological_OR,non-trivial,5.0,0.887,(2.0-20.0),causal,concordance,success,Approved,True,pre-registered
+HDL/CETP,cardio,CETP,cis_pqtl,0.264,epidemiological_OR,non-trivial,0.93,0.04,(0.68-1.26),null,qualitative discordance,failure,Failed,True,pre-registered
+Niacin/HDL,cardio,CETP,cis_pqtl,0.264,epidemiological_OR,non-trivial,0.93,0.04,(0.68-1.26),null,qualitative discordance,failure,Failed,True,pre-registered
+Homocysteine,cardio,MTHFR,coding_variant,0.153,epidemiological_OR,non-trivial,1.02,0.011,(0.98-1.07),null,qualitative discordance,failure,Failed,True,pre-registered
+CRP,cardio,CRP,cis_pqtl,0.174,epidemiological_OR,non-trivial,1.0,0.0,(0.97-1.02),null,qualitative discordance,failure,No benefit,True,pre-registered
+Uric acid,cardio,SLC2A9,biomarker_gwas,0.037,epidemiological_OR,trivial,1.05,0.027,(0.92-1.2),null,null concordance,ambiguous,Failed,False,pre-registered
+LDL/PCSK9,cardio,PCSK9,cis_pqtl,0.231,epidemiological_OR,non-trivial,1.78,0.318,(1.58-2.01),causal,concordance,success,Approved,True,pre-registered
+Blood pressure,cardio,multiple,polygenic,0.189,epidemiological_OR,non-trivial,1.44,0.201,(1.35-1.55),causal,concordance,success,Approved,True,pre-registered
+Triglycerides,cardio,LPL,biomarker_gwas,0.299,epidemiological_OR,non-trivial,1.62,0.266,(1.24-2.11),causal,concordance,success,Approved,True,pre-registered
+Lp(a),cardio,LPA,cis_pqtl,0.067,epidemiological_OR,trivial,0.94,0.034,(0.93-0.95),null,null concordance,ambiguous,Pending,,pending
+IL-6R,cardio,IL6R,cis_pqtl,0.123,epidemiological_OR,non-trivial,0.95,0.083,(0.93-0.97),null,qualitative discordance,failure,Pending,,pending
+IL-23-psoriasis,autoimmune,IL23R,coding_variant,0.66,tissue_expression,non-trivial,0.616,0.267,(0.563-0.674),causal,concordance,success,Approved,True,pre-registered
+CTLA-4-RA,autoimmune,CTLA4,coding_variant,0.5,case_control_SMD,non-trivial,0.86,0.083,(0.78-0.95),null,qualitative discordance,failure,Approved,False,pre-registered
+TNF-a-RA,autoimmune,TNF,biomarker_gwas,1.93,case_control_SMD,non-trivial,1.0,0.0,,null,qualitative discordance,failure,Approved,False,pre-registered
+IL-17-psoriasis,autoimmune,IL17A,biomarker_gwas,0.47,case_control_SMD,non-trivial,0.998,0.001,,null,qualitative discordance,failure,Approved,False,pre-registered
+JAK-STAT-RA,autoimmune,STAT4,coding_variant,0.5,case_control_SMD,non-trivial,1.27,0.132,(1.2-1.34),causal,concordance,success,Approved,True,pre-registered
+CD20-RA,autoimmune,FCRL3,coding_variant,0.5,case_control_SMD,non-trivial,1.291,0.141,(1.19-1.391),causal,concordance,success,Approved,True,pre-registered
+IL-4Ra-AD,autoimmune,IL4R,cis_pqtl,0.15,case_control_SMD,non-trivial,1.02,0.011,,null,qualitative discordance,failure,Construct-limited,,construct-limited
+IL-1b-CVD,autoimmune,IL1B,biomarker_gwas,0.174,epidemiological_OR,non-trivial,1.0,0.0,,null,qualitative discordance,failure,Failed,True,pre-registered
+VitD-Cancer,oncology,CYP2R1,biomarker_gwas,0.137,epidemiological_OR,non-trivial,0.97,0.017,(0.88-1.07),null,qualitative discordance,failure,Failed,True,extension
+IGF1-CRC,oncology,IGF1,biomarker_gwas,0.062,epidemiological_OR,trivial,1.22,0.11,(1.09-1.36),causal,genetic-only signal,success,Failed,False,extension
+Estrogen-BC,oncology,CYP19A1,biomarker_gwas,0.145,epidemiological_OR,non-trivial,1.03,0.016,(1.01-1.06),null,qualitative discordance,failure,Approved,False,extension
+Eos/IL5-Asthma,respiratory,IL5,biomarker_gwas,0.8,case_control_SMD,non-trivial,1.5,0.224,(1.23-1.83),causal,concordance,success,Approved,True,extension
+IL4Ra-Asthma,respiratory,IL4R,cis_pqtl,0.5,case_control_SMD,non-trivial,0.87,0.077,(0.82-0.93),null,qualitative discordance,failure,Construct-limited,,construct-limited
+TSLP-Asthma,respiratory,TSLP,cis_pqtl,0.4,case_control_SMD,non-trivial,1.02,0.011,,null,qualitative discordance,failure,Construct-limited,,construct-limited
+SGLT2-HF,metabolic,SLC5A2,cis_pqtl,0.309,epidemiological_OR,non-trivial,0.44,0.453,(0.26-0.76),causal,concordance,success,Approved,True,extension
+GLP1R-T2D/Obesity,metabolic,GLP1R,cis_pqtl,0.0,epidemiological_OR,trivial,1.0,0.0,,null,null concordance,ambiguous,Construct-limited,,construct-limited
+Urate-Gout,metabolic,SLC2A9,biomarker_gwas,0.641,epidemiological_OR,non-trivial,5.0,0.887,(3.5-8.0),causal,concordance,success,Approved,True,extension
+IL6-MDD,psychiatry,IL6R,cis_pqtl,0.15,case_control_SMD,non-trivial,1.01,0.005,(0.99-1.04),null,qualitative discordance,failure,Failed,True,extension
+IL23-Crohns,gastroenterology,IL23R,coding_variant,0.5,case_control_SMD,non-trivial,1.0,0.0,,null,qualitative discordance,failure,Construct-limited,,construct-limited
+Complement-GA,ophthalmology,CFH,coding_variant,0.5,case_control_SMD,non-trivial,2.5,0.505,(2.2-2.85),causal,concordance,success,Failed,False,extension
+Sclerostin-Fracture,musculoskeletal,SOST,cis_pqtl,0.33,epidemiological_OR,non-trivial,0.59,0.291,(0.54-0.66),causal,concordance,success,Approved,True,extension
+Serotonin-MDD,psychiatry,SLC6A4,coding_variant,0.45,case_control_SMD,non-trivial,1.08,0.042,(1.03-1.12),null,qualitative discordance,failure,Approved,False,extension

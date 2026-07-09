@@ -1,0 +1,45 @@
+\documentclass[11pt]{letter}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+
+\signature{Elliot Tower \\ Independent researcher \\ elliot@elliottower.ai}
+\address{}
+\date{\today}
+
+\begin{document}
+
+\begin{letter}{Editorial Office \\ Frontiers in Pharmacology \\ Translational Pharmacology Section}
+
+\opening{Dear Editors,}
+
+We submit ``Drug Failures Partition into Two Kinds: Cross-Design Evidence Diagnosis Across Ten Disease Domains'' for consideration as an Original Research article in Frontiers in Pharmacology.
+
+Nelson et al.\ (2015, Nature Genetics) and Minikel et al.\ (2024, Nature) established that drug targets with genetic support are 2--2.6 times more likely to reach approval. A practical question follows: when MR-based screening misclassifies---predicting failure for an approved drug, or success for a failed one---can the type of error be diagnosed before a pipeline decision is made?
+
+We assembled 41 mechanism families across ten disease domains and applied a deterministic cross-design classification rule comparing observational, Mendelian randomization, and RCT evidence. Three findings address the translational gap between genetic target validation and clinical trial outcomes:
+
+\begin{enumerate}
+\item \textbf{Invariance result.} MR-only and the cross-design rule produce identical classifications with zero McNemar disagreements at every threshold tested ($d = 0.05$ to $0.20$). The observational leg carries no predictive information---a structural consequence of the fact that mechanisms reaching Phase~III have non-trivial observational support by construction.
+
+\item \textbf{Two-way failure partition.} The eight misclassified families split by MR effect size into two structurally distinct groups: five with null MR (drug succeeded despite null signal---effector-neutralization and mechanism-bypass) and three with causal MR (drug failed despite a real mechanism---translation gaps and exposure mismatches). Each group implies a different pipeline response.
+
+\item \textbf{Pre-registered design with honest provenance.} Twenty-two families were pre-registered; fourteen were added in two blind amendments (SHAs provided). A provenance table records which boundary classes were pre-specified vs.\ post-hoc. Extension accuracy (6/10, 60\%) is reported separately from pre-registered accuracy (18/22, 82\%) and does not reach significance in isolation.
+\end{enumerate}
+
+The paper extends the genetic-support-predicts-approval literature by diagnosing \emph{why} unsupported targets fail and \emph{why} supported targets sometimes fail too---questions that binary genetic-support classification cannot address. The five named boundary classes (effector-neutralization, small-effect, translation-gap, exposure-mismatch, mechanism-bypass) identify where MR screening is expected to produce systematic errors, enabling developers to flag these cases before committing to Phase~III.
+
+\textbf{Suggested reviewers:}
+\begin{itemize}
+\item Dipender Gill (Imperial College London) --- drug-target MR methodology
+\item Iyas Daghlas (University of California, San Francisco) --- MR applications in clinical development
+\item Michael V.\ Holmes (University of Oxford) --- MR for drug target validation, pharmacoepidemiology
+\end{itemize}
+
+\textbf{Data availability:} The deterministic classifier and all robustness analysis code are provided as supplementary material. All effect sizes derive from published meta-analyses and MR studies cited in the manuscript.
+
+\textbf{Conflict of interest:} The author declares no conflicts of interest.
+
+\closing{Sincerely,}
+
+\end{letter}
+\end{document}
