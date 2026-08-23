@@ -255,7 +255,7 @@ Family & MR $d$ & MR CI excl.\ null? & OBS $d$ & OBS class & MR class & Classifi
 \midrule
 Metabolic-AD & 0.006 & --- & 0.234 & Non-triv. & Null & Qual.\ disc. \\
 ModRisk-AD & 0.053 & --- & 0.209 & Non-triv. & Null & Qual.\ disc. \\
-Anti-CD20-MS & 0.103 & Yes & 0.442 & Non-triv. & Causal & Concordance \\
+Anti-CD20-MS & 0.103 & Yes & 1.084 & Non-triv. & Causal & Concordance \\
 Smoking-MS/AD & 0.016 & --- & 0.209 & Non-triv. & Null & Qual.\ disc. \\
 HRT-AD & 0.000 & No & 0.221 & Non-triv. & Null & Qual.\ disc. \\
 BMI-AD & 0.016 & Yes$^*$ & 0.393 & Non-triv. & Null & Qual.\ disc. \\
@@ -305,7 +305,7 @@ By contrast, BMI~$\to$~AD enters as a scored family: MR evidence shows a near-nu
 
 \paragraph{HRT-AD (zombie mechanism).} A meta-analysis of 16 observational studies shows HRT is protective against AD (OR~0.67, $d = 0.22$; \cite{song2020}). MR for estradiol finds no causal effect (OR~1.00; \cite{barth2025}). The WHIMS trial found HRT \emph{increased} dementia risk (HR~1.76; \cite{shumaker2003}). The observational protective signal reflects healthy-user bias---the same mechanism identified by \citet{hernan2008} in the HRT-cardiovascular discrepancy, where target trial emulation of the Nurses' Health Study data brought the observational estimate in line with the WHI trial result. The concordance rule identifies this discordance from etiologic evidence alone, before any RCT data enters the classification, via the orthogonal MR evidence stream.
 
-\paragraph{Anti-CD20-MS (concordance, real mechanism).} MR evidence shows that per-SD higher circulating FCRL3 protein is protective against MS (OR~0.83, $d = 0.103$; \cite{lin2023}). Observational B-cell depletion efficacy data shows a large effect ($d = 0.44$; \cite{hu2019}). Both types exceed the 0.10 threshold---the mechanism is supported across evidence types. GWAS evidence (CD40, OR~1.16; \cite{sokolova2013}) corroborates B-cell involvement. All four Anti-CD20 drugs in the holdout were approved. A caveat on instrument-target alignment: the MR instrument captures circulating FCRL3-mediated B-cell biology, while ocrelizumab depletes CD20$^+$ B cells via antibody-dependent cellular cytotoxicity---a related but distinct mechanism. This family's MR $d = 0.103$ clears the threshold by 0.003; at $d = 0.099$ the classification would flip to discordance and predict failure for all four approved drugs. This threshold sensitivity is discussed in the Limitations (\S\ref{sec:limitations}).
+\paragraph{Anti-CD20-MS (concordance, real mechanism).} MR evidence shows that per-SD higher circulating FCRL3 protein is protective against MS (OR~0.83, $d = 0.103$; \cite{lin2023}). Observational B-cell depletion efficacy data shows a large effect: pooled non-randomized studies give a relapse hazard ratio of 0.14 (95\% CI 0.05--0.39) for rituximab against interferon beta or glatiramer acetate, $d = 1.084$ \cite{hu2019}. The comparator lies outside the anti-CD20 class, so the estimate reflects the mechanism rather than a contrast between two anti-CD20 agents. Several contributing cohorts are natalizumab-switch populations enriched for JC-virus positivity, which plausibly inflates this estimate relative to a general-population initiator design. Both types exceed the 0.10 threshold---the mechanism is supported across evidence types. GWAS evidence (CD40, OR~1.16; \cite{sokolova2013}) corroborates B-cell involvement. All four Anti-CD20 drugs in the holdout were approved. A caveat on instrument-target alignment: the MR instrument captures circulating FCRL3-mediated B-cell biology, while ocrelizumab depletes CD20$^+$ B cells via antibody-dependent cellular cytotoxicity---a related but distinct mechanism. This family's MR $d = 0.103$ clears the threshold by 0.003; at $d = 0.099$ the classification would flip to discordance and predict failure for all four approved drugs. This threshold sensitivity is discussed in the Limitations (\S\ref{sec:limitations}).
 
 \subsection{The case etiologic evidence cannot diagnose: amyloid}
 \label{sec:amyloid}
@@ -330,7 +330,7 @@ Family & OBS $d$ & GEN $d$ & RCT $d$ & Failure mode \\
 Metabolic-AD & 0.24 & 0.006 & 0.00 & Zombie \\
 ModRisk-AD & 0.20 & 0.053 & --- & Zombie \\
 HRT-AD & 0.22 & 0.000 & 0.34$^*$ & Zombie \\
-Anti-CD20-MS & 0.44 & 0.103 & 0.20 & --- (success) \\
+Anti-CD20-MS & 1.08 & 0.103 & 0.20 & --- (success) \\
 Smoking-MS/AD & 0.21 & 0.016 & --- & Zombie \\
 BMI-AD & 0.39 & 0.016 & --- & Zombie \\
 VitD-MS & 0.19 & 0.382 & 0.19 & Exposure mismatch \\

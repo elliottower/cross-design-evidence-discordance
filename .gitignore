@@ -15,3 +15,19 @@ paper/*.pdf
 paper/*.zip
 experiments/ms/
 SUBMISSION_STATUS.md
+
+# results-cli ledger: hashes stay local, not committed
+.results/
+
+# Private correspondence with the journal: cover letters, reviewer reports,
+# response letters, and anything built from them. Public repo.
+paper/submission/cover_letter/
+reviews/RESPONSE_TO_REVIEWERS*
+reviews/REVIEWER*_AUDIT*
+reviews/patches/patch_letter_*
+reviews/patches/build_audit_*
+reviews/mobile/
+SUBMISSIONS/
+
+# Derived: audit caches and verifier output, regenerable from the scripts
+reviews/verification/output/

@@ -12,7 +12,7 @@ HDL/CETP,cardio,CETP,cis_pqtl,0.264,epidemiological_OR,non-trivial,0.93,0.04,(0.
 Niacin/HDL,cardio,CETP,cis_pqtl,0.264,epidemiological_OR,non-trivial,0.93,0.04,(0.68-1.26),null,qualitative discordance,failure,Failed,True,pre-registered
 Homocysteine,cardio,MTHFR,coding_variant,0.153,epidemiological_OR,non-trivial,1.02,0.011,(0.98-1.07),null,qualitative discordance,failure,Failed,True,pre-registered
 CRP,cardio,CRP,cis_pqtl,0.174,epidemiological_OR,non-trivial,1.0,0.0,(0.97-1.02),null,qualitative discordance,failure,No benefit,True,pre-registered
-Uric acid,cardio,SLC2A9,biomarker_gwas,0.037,epidemiological_OR,trivial,1.05,0.027,(0.92-1.2),null,null concordance,ambiguous,Failed,False,pre-registered
+Uric acid,cardio,SLC2A9,biomarker_gwas,0.037,epidemiological_OR,trivial,1.05,0.027,(0.92-1.2),null,null concordance,ambiguous,Failed,,ambiguous
 LDL/PCSK9,cardio,PCSK9,cis_pqtl,0.231,epidemiological_OR,non-trivial,1.78,0.318,(1.58-2.01),causal,concordance,success,Approved,True,pre-registered
 Blood pressure,cardio,multiple,polygenic,0.189,epidemiological_OR,non-trivial,1.44,0.201,(1.35-1.55),causal,concordance,success,Approved,True,pre-registered
 Triglycerides,cardio,LPL,biomarker_gwas,0.299,epidemiological_OR,non-trivial,1.62,0.266,(1.24-2.11),causal,concordance,success,Approved,True,pre-registered

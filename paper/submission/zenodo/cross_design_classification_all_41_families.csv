@@ -1,7 +1,7 @@
 family,domain,gene_target,instrument_type,obs_d,obs_type,obs_class,mr_or_raw,mr_d,mr_ci,mr_class,classification,prediction,drug_outcome,correct,status
 Metabolic-AD,neuro,multiple,polygenic,0.234,epidemiological_OR,non-trivial,1.01,0.005,,null,qualitative discordance,failure,Failed,True,pre-registered
 ModRisk-AD,neuro,multiple,polygenic,0.209,epidemiological_OR,non-trivial,1.1,0.053,,null,qualitative discordance,failure,Failed,True,pre-registered
-Anti-CD20-MS,neuro,FCRL3,cis_pqtl,0.442,epidemiological_OR,non-trivial,0.83,0.103,(0.79-0.89),causal,concordance,success,Approved,True,pre-registered
+Anti-CD20-MS,neuro,FCRL3,cis_pqtl,1.084,pooled_NRSI_HR,non-trivial,0.83,0.103,(0.79-0.89),causal,concordance,success,Approved,True,pre-registered
 Smoking-MS/AD,neuro,multiple,polygenic,0.209,epidemiological_OR,non-trivial,1.03,0.016,,null,qualitative discordance,failure,Failed,True,pre-registered
 HRT-AD,neuro,ESR1,biomarker_gwas,0.221,epidemiological_OR,non-trivial,1.0,0.0,(0.85-1.18),null,qualitative discordance,failure,Failed,True,pre-registered
 BMI-MS,neuro,multiple,polygenic,0.36,epidemiological_OR,non-trivial,1.41,0.189,(1.2-1.66),causal,concordance,success,Pending,,pending
