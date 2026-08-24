@@ -31,3 +31,7 @@ SUBMISSIONS/
 
 # Derived: audit caches and verifier output, regenerable from the scripts
 reviews/verification/output/
+
+# The packet README is correspondence: it summarizes the revision for the
+# reviewers. The builder script beside it is tooling and stays tracked.
+reviews/packet/README.md
