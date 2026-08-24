@@ -20,11 +20,32 @@ import sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
-CSV = Path(sys.argv[1]) if len(sys.argv) > 1 else (
+
+
+def newest_manuscript() -> Path:
+    """The highest-numbered paper_vN.
+
+    A pinned default goes stale at the next version bump, and a stale default
+    here is worse than no default: the script reconciles a current table against
+    a superseded one and reports disagreements that are its own.
+    """
+    versions = sorted(
+        ((int(re.match(r"paper_v(\d+)", path.stem).group(1)), path)
+         for path in (REPO / "paper").glob("paper_v*.tex")
+         if re.match(r"paper_v\d+", path.stem)),
+        key=lambda pair: pair[0])
+    if not versions:
+        raise FileNotFoundError(f"no paper_v*.tex under {REPO / 'paper'}")
+    return versions[-1][1]
+
+
+# The v2 copy is the corrected one: it carries Uric acid as ambiguous with a
+# blank verdict. The original is kept beside it as provenance and disagrees with
+# the accounting table by construction.
+CSV = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else (
     REPO / "paper" / "submission" / "supplementary"
-    / "cross_design_classification_all_41_families.csv")
-TEX = Path(sys.argv[2]) if len(sys.argv) > 2 else (
-    REPO / "paper" / "paper_v19_checked_bibliography.tex")
+    / "cross_design_classification_all_41_families_v2.csv")
+TEX = Path(sys.argv[2]).resolve() if len(sys.argv) > 2 else newest_manuscript()
 
 # The CSV's domain column against the accounting table's row labels.
 DOMAIN = {

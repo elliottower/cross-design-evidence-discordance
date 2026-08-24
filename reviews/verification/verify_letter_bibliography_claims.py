@@ -3,7 +3,7 @@
 Run:  uv run python reviews/verification/verify_letter_bibliography_claims.py
 
 The letter's reference-list section states counts (75 entries, 74 identified, 66
-cited, 14 originally unidentified, 11 publisher-deposit flags) and four specific
+cited, 14 originally unidentified, 9 publisher-deposit flags) and six specific
 metadata corrections. Each is checked here against the .bib files, the audit
 report, and the compiled .aux -- not against the letter's own prose. A letter
 that miscounts the bibliography it ships is worse than one that says nothing,
@@ -18,13 +18,30 @@ import sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
-LETTER = Path(sys.argv[1]) if len(sys.argv) > 1 else (
-    REPO / "reviews" / "RESPONSE_TO_REVIEWERS_v3.md")
+def newest_letter() -> Path:
+    """The highest-numbered RESPONSE_TO_REVIEWERS_vN.md.
+
+    A pinned default goes stale at the next version bump, and then this script
+    checks a superseded letter's counts against the current artifacts and
+    reports failures that belong to a file nobody is sending.
+    """
+    versions = sorted(
+        ((int(re.match(r"RESPONSE_TO_REVIEWERS_v(\d+)", path.stem).group(1)), path)
+         for path in (REPO / "reviews").glob("RESPONSE_TO_REVIEWERS_v*.md")
+         if re.match(r"RESPONSE_TO_REVIEWERS_v\d+", path.stem)),
+        key=lambda pair: pair[0])
+    if not versions:
+        raise FileNotFoundError(f"no RESPONSE_TO_REVIEWERS_v*.md under {REPO / 'reviews'}")
+    return versions[-1][1]
+
+
+LETTER = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else newest_letter()
 BIB_OLD = REPO / "paper" / "references_v3_zeus.bib"
-BIB_NEW = REPO / "paper" / "references_v6_checked.bib"
-AUX = REPO / "paper" / "paper_v19_checked_bibliography.aux"
+BIB_NEW = REPO / "paper" / "references_v7_audited.bib"
+MANUSCRIPT = REPO / "paper" / "paper_v22_audited_refs.tex"
+AUX = MANUSCRIPT.with_suffix(".aux")
 AUDIT = REPO / "reviews" / "verification" / "output" / \
-    "bibliography_audit__references_v6_checked.json"
+    "bibliography_audit__references_v7_audited.json"
 
 ENTRY = re.compile(r"@(\w+)\s*\{\s*([^,\s]+)\s*,(.*?)\n\}", re.DOTALL)
 
@@ -36,13 +53,21 @@ CORRECTIONS = {
     "gill2021": {"journal": "Wellcome Open Research", "volume": "6", "pages": "16"},
     "han2020eosinophilasthma": {"author": "Han, Yi and Jia, Qiong and Jahani, Pedram Shafiei"},
     "munger2006": {"author": "Levin, Lynn I."},
+    # The two the second audit pass found. juergens carried an issue number
+    # neither registry gives; hu2019 carried no issue and no article identifier.
+    "juergens2023ganitumab": {"volume": "41", "number": "11", "pages": "2098--2107"},
+    "hu2019": {"volume": "11", "number": "11", "pages": "CD013874"},
 }
 SUPERSEDED = {
     "ference2019": ["European Heart Journal", "1927--1935", "10.1056/nejmc1908496"],
     "gill2021": ["JAMA Network Open", "e2124540"],
     "han2020eosinophilasthma": ["Yunhui", "Qifeng", "Parisa"],
     "munger2006": ["Lindsey"],
+    "juergens2023ganitumab": ["number  = {12}"],
+    "hu2019": [],
 }
+# The subtitle both registries give and the entry had dropped.
+SUBTITLE = "A Report From the {Children's Oncology Group}"
 
 
 def entries(path: Path) -> dict[str, str]:
@@ -59,6 +84,19 @@ def field(body: str, name: str) -> str:
 
 
 def main() -> int:
+    # A letter checked against a superseded artifact passes every count below
+    # while measuring a file nobody is sending. The manuscript must be the one
+    # that cites the bibliography being checked, and the .aux must be its own.
+    cites = re.search(r"\\bibliography\{([^}]+)\}", MANUSCRIPT.read_text())
+    if cites is None or cites.group(1) != BIB_NEW.stem:
+        named = cites.group(1) if cites else "no bibliography"
+        print(f"ABORT -- {MANUSCRIPT.name} cites {named}, not {BIB_NEW.stem}", file=sys.stderr)
+        return 1
+    if not AUX.exists():
+        print(f"ABORT -- {AUX.name} does not exist (.aux is gitignored). Build it with:\n"
+              f"    cd paper && latexmk -pdf {MANUSCRIPT.name}", file=sys.stderr)
+        return 1
+
     failures: list[str] = []
 
     def check(label: str, got, want) -> None:
@@ -79,7 +117,7 @@ def main() -> int:
     check("entries the manuscript cites", len(cited), 66)
     check("entries with no identifier before this pass",
           sum(not has_identifier(b) for b in old.values()), 14)
-    check("audit flags remaining", sum(1 for r in audit.values() if r.get("problems")), 11)
+    check("audit flags remaining", sum(1 for r in audit.values() if r.get("problems")), 9)
 
     print("\nRemoved entry")
     check("liu2024tg was in the previous bibliography", "liu2024tg" in old, True)
@@ -104,11 +142,16 @@ def main() -> int:
         for stale in SUPERSEDED[key]:
             check(f"{key} no longer carries {stale!r}", stale in body, False)
 
+    print("\nThe dropped subtitle")
+    check("juergens2023ganitumab carries the reporting group",
+          SUBTITLE in new["juergens2023ganitumab"], True)
+
     print("\nThe letter states the same figures")
     text = LETTER.read_text()
     for phrase in ("75 entries", "74 of which carry an identifier", "Of the 66 entries the manuscript cites, 65 resolve",
-                   "Fourteen entries carried no identifier", "Eleven entries carry an audit flag",
-                   "Twelve of the thirteen articles"):
+                   "Fourteen entries carried no identifier", "Nine entries carry an audit flag",
+                   "Twelve of the thirteen articles", "Two further entries are corrected",
+                   "issue 11", "11(11):CD013874", "references_v7_audited.bib"):
         check(f"letter says {phrase!r}", phrase in text, True)
 
     print()

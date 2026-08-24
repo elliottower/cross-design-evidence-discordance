@@ -19,6 +19,7 @@ are offline and the audit is reproducible from the cached payloads.
 Exits non-zero if any entry mismatches or fails to resolve.
 """
 
+import html
 import json
 import re
 import sys
@@ -50,6 +51,11 @@ def parse_bib(text: str) -> dict[str, dict[str, str]]:
 
 def fold(text: str) -> str:
     """Lowercase, strip accents, LaTeX and XML markup, and punctuation, for comparison only."""
+    # Crossref deposits titles with the entities double-escaped, so a Greek letter
+    # arrives as `&amp;alpha;` and needs two passes to become the character the
+    # journal printed. Left encoded, every such title reads as a mismatch.
+    for _ in range(2):
+        text = html.unescape(text)
     text = re.sub(r"<[^>]+>", " ", text)
     text = re.sub(r"\\[a-zA-Z]+\s*", "", text)
     text = text.replace("{", "").replace("}", "").replace("\\", "")
