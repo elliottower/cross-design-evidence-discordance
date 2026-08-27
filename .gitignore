@@ -35,3 +35,16 @@ reviews/verification/output/
 # The packet README is correspondence: it summarizes the revision for the
 # reviewers. The builder script beside it is tooling and stays tracked.
 reviews/packet/README.md
+
+# Submission materials — never tracked (private journal correspondence)
+SUBMISSION_STATUS.md
+SUBMISSION.md
+SUBMISSION_TODO.md
+submission/
+submissions/
+cover_letter*
+cover-letter*
+COVER_LETTER*
+fee_waiver*
+fee-waiver*
+*_submission.zip
