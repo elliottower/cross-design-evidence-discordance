@@ -1,0 +1,8 @@
+# Dependencies for the analysis scripts named in the Data Availability
+# Statement. Versions are those the reported numbers were reproduced under.
+#
+# classify_families.py   and run_sensitivity.py use the standard library only.
+# robustness_analyses.py needs scipy.
+
+scipy==1.18.1
+numpy==2.5.2

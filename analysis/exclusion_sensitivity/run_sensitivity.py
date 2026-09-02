@@ -14,9 +14,12 @@ import csv, json, io, os
 from math import comb
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
-DATA = os.path.join(ROOT, "paper", "submission", "supplementary",
-                    "cross_design_classification_all_41_families_v2.csv")
+CSV = "cross_design_classification_all_41_families_v2.csv"
+# Beside this script (as distributed in the supplement), else in the repository.
+_candidates = [os.path.join(HERE, CSV),
+               os.path.join(HERE, "..", "..", "data", CSV),
+               os.path.join(HERE, "..", "..", "paper", "submission", "supplementary", CSV)]
+DATA = next((p for p in _candidates if os.path.exists(p)), _candidates[0])
 OUT = os.path.join(HERE, "sensitivity_results.json")
 
 
