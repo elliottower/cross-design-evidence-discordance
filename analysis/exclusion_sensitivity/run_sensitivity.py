@@ -1,9 +1,9 @@
-"""Round-2 sensitivity analyses for Frontiers 1933481.
+"""Exclusion sensitivity analyses for Frontiers 1933481.
 
 Reviewer 1 asked for two exclusions to be tested:
-  R2.1  IGF1-CRC, on indication mismatch (MR is colorectal cancer risk; the
+  IGF1-CRC, on indication mismatch (MR is colorectal cancer risk; the
         Phase III programmes were NSCLC, Ewing sarcoma and pancreatic cancer).
-  R2.4  Complement-GA and Serotonin-MDD, whose genetic leg is a conventional
+  Complement-GA and Serotonin-MDD, whose genetic leg is a conventional
         association rather than a Mendelian randomization estimate.
 
 The registered analysis is primary. Each exclusion is reported beside it.
