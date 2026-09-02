@@ -1,0 +1,62 @@
+{
+  "registered": {
+    "n": 32,
+    "correct": 24,
+    "accuracy": 0.75,
+    "p_one_sided_exact_binomial": 0.0035
+  },
+  "excluding_IGF1-CRC": {
+    "n": 31,
+    "correct": 24,
+    "accuracy": 0.7742,
+    "p_one_sided_exact_binomial": 0.00166
+  },
+  "excluding_non_MR_genetic": {
+    "n": 30,
+    "correct": 24,
+    "accuracy": 0.8,
+    "p_one_sided_exact_binomial": 0.00072
+  },
+  "excluding_both": {
+    "n": 29,
+    "correct": 24,
+    "accuracy": 0.8276,
+    "p_one_sided_exact_binomial": 0.00027
+  },
+  "misses_registered": [
+    "CTLA-4-RA",
+    "Complement-GA",
+    "Estrogen-BC",
+    "IGF1-CRC",
+    "IL-17-psoriasis",
+    "Serotonin-MDD",
+    "TNF-a-RA",
+    "VitaminD-MS"
+  ],
+  "by_instrument_type": {
+    "biomarker_gwas": {
+      "n": 11,
+      "correct": 6,
+      "accuracy": 0.5455,
+      "p_one_sided_exact_binomial": 0.5
+    },
+    "cis_pqtl": {
+      "n": 8,
+      "correct": 8,
+      "accuracy": 1.0,
+      "p_one_sided_exact_binomial": 0.00391
+    },
+    "coding_variant": {
+      "n": 8,
+      "correct": 5,
+      "accuracy": 0.625,
+      "p_one_sided_exact_binomial": 0.36328
+    },
+    "polygenic": {
+      "n": 5,
+      "correct": 5,
+      "accuracy": 1.0,
+      "p_one_sided_exact_binomial": 0.03125
+    }
+  }
+}
