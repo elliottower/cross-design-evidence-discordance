@@ -48,3 +48,6 @@ COVER_LETTER*
 fee_waiver*
 fee-waiver*
 *_submission.zip
+
+# Round-3 Perplexity review packet: carries reviewer reports verbatim
+reviews/round3_packet/

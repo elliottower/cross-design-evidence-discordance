@@ -1,0 +1,232 @@
+{
+  "registered": {
+    "n": 32,
+    "correct": 24,
+    "accuracy": 0.75,
+    "p_one_sided_exact_binomial_50pct": 0.0035,
+    "p_permutation_exact": 0.00544,
+    "p_permutation_monte_carlo": 0.00532,
+    "always_approve_accuracy": 0.5312,
+    "always_fail_accuracy": 0.4688,
+    "p_permutation_cluster_level": 0.00498,
+    "n_instrument_clusters": 28,
+    "by_mr_contrast": {
+      "per_sd": {
+        "n": 16,
+        "correct": 13,
+        "families": [
+          "Metabolic-AD",
+          "ModRisk-AD",
+          "Anti-CD20-MS",
+          "Smoking-MS/AD",
+          "HRT-AD",
+          "BMI-AD",
+          "VitaminD-MS",
+          "HDL/CETP",
+          "Niacin/HDL",
+          "VitD-Cancer",
+          "IGF1-CRC",
+          "Estrogen-BC",
+          "Eos/IL5-Asthma",
+          "SGLT2-HF",
+          "Urate-Gout",
+          "Sclerostin-Fracture"
+        ]
+      },
+      "per_allele": {
+        "n": 7,
+        "correct": 4,
+        "families": [
+          "EBV-MS",
+          "IL-23-psoriasis",
+          "CTLA-4-RA",
+          "JAK-STAT-RA",
+          "CD20-RA",
+          "Complement-GA",
+          "Serotonin-MDD"
+        ]
+      },
+      "per_unit": {
+        "n": 5,
+        "correct": 5,
+        "families": [
+          "CRP",
+          "LDL/PCSK9",
+          "Blood pressure",
+          "Triglycerides",
+          "IL6-MDD"
+        ]
+      },
+      "per_genotype": {
+        "n": 1,
+        "correct": 1,
+        "families": [
+          "Homocysteine"
+        ]
+      },
+      "null_signal": {
+        "n": 3,
+        "correct": 1,
+        "families": [
+          "TNF-a-RA",
+          "IL-17-psoriasis",
+          "IL-1b-CVD"
+        ]
+      }
+    }
+  },
+  "reviewer_specified": {
+    "n": 28,
+    "correct": 23,
+    "accuracy": 0.8214,
+    "p_one_sided_exact_binomial_50pct": 0.00046,
+    "p_permutation_exact": 0.0006,
+    "p_permutation_monte_carlo": 0.00052,
+    "always_approve_accuracy": 0.5714,
+    "always_fail_accuracy": 0.4286,
+    "p_permutation_cluster_level": 0.00023,
+    "n_instrument_clusters": 25,
+    "by_mr_contrast": {
+      "per_sd": {
+        "n": 15,
+        "correct": 13,
+        "families": [
+          "Metabolic-AD",
+          "ModRisk-AD",
+          "Anti-CD20-MS",
+          "Smoking-MS/AD",
+          "HRT-AD",
+          "BMI-AD",
+          "VitaminD-MS",
+          "HDL/CETP",
+          "Niacin/HDL",
+          "VitD-Cancer",
+          "Estrogen-BC",
+          "Eos/IL5-Asthma",
+          "SGLT2-HF",
+          "Urate-Gout",
+          "Sclerostin-Fracture"
+        ]
+      },
+      "per_allele": {
+        "n": 5,
+        "correct": 4,
+        "families": [
+          "EBV-MS",
+          "IL-23-psoriasis",
+          "CTLA-4-RA",
+          "JAK-STAT-RA",
+          "CD20-RA"
+        ]
+      },
+      "per_unit": {
+        "n": 5,
+        "correct": 5,
+        "families": [
+          "CRP",
+          "LDL/PCSK9",
+          "Blood pressure",
+          "Triglycerides",
+          "IL6-MDD"
+        ]
+      },
+      "per_genotype": {
+        "n": 1,
+        "correct": 1,
+        "families": [
+          "Homocysteine"
+        ]
+      },
+      "null_signal": {
+        "n": 2,
+        "correct": 0,
+        "families": [
+          "TNF-a-RA",
+          "IL-17-psoriasis"
+        ]
+      }
+    }
+  },
+  "reviewer_specified_definition": {
+    "excluded_indication_mismatch": [
+      "IGF1-CRC"
+    ],
+    "excluded_association_only": [
+      "Complement-GA",
+      "Serotonin-MDD"
+    ],
+    "merged_identical_evidence": [
+      "CRP",
+      "IL-1b-CVD"
+    ]
+  },
+  "by_tier": {
+    "registered": {
+      "pre-registered": {
+        "n": 22,
+        "correct": 18,
+        "accuracy": 0.8182,
+        "p_one_sided_exact_binomial_50pct": 0.00217,
+        "p_permutation_exact": 0.00376,
+        "p_permutation_monte_carlo": 0.00346,
+        "always_approve_accuracy": 0.5,
+        "always_fail_accuracy": 0.5
+      },
+      "extension": {
+        "n": 10,
+        "correct": 6,
+        "accuracy": 0.6,
+        "p_one_sided_exact_binomial_50pct": 0.37695,
+        "p_permutation_exact": 0.54762,
+        "p_permutation_monte_carlo": 0.54937,
+        "always_approve_accuracy": 0.6,
+        "always_fail_accuracy": 0.4
+      }
+    },
+    "reviewer_specified": {
+      "pre-registered": {
+        "n": 21,
+        "correct": 17,
+        "accuracy": 0.8095,
+        "p_one_sided_exact_binomial_50pct": 0.0036,
+        "p_permutation_exact": 0.0058,
+        "p_permutation_monte_carlo": 0.00543,
+        "always_approve_accuracy": 0.5238,
+        "always_fail_accuracy": 0.4762
+      },
+      "extension": {
+        "n": 7,
+        "correct": 6,
+        "accuracy": 0.8571,
+        "p_one_sided_exact_binomial_50pct": 0.0625,
+        "p_permutation_exact": 0.14286,
+        "p_permutation_monte_carlo": 0.14321,
+        "always_approve_accuracy": 0.7143,
+        "always_fail_accuracy": 0.2857
+      }
+    }
+  },
+  "misses": {
+    "registered": [
+      "CTLA-4-RA",
+      "Complement-GA",
+      "Estrogen-BC",
+      "IGF1-CRC",
+      "IL-17-psoriasis",
+      "Serotonin-MDD",
+      "TNF-a-RA",
+      "VitaminD-MS"
+    ],
+    "reviewer_specified": [
+      "CTLA-4-RA",
+      "Estrogen-BC",
+      "IL-17-psoriasis",
+      "TNF-a-RA",
+      "VitaminD-MS"
+    ]
+  },
+  "n_permutations": 100000,
+  "seed": 20260913,
+  "data": "cross_design_classification_all_41_families_v2.csv",
+  "supplement_v3": "cross_design_classification_all_41_families_v3.csv"
+}
