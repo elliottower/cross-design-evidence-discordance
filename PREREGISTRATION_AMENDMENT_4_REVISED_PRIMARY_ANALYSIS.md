@@ -5,7 +5,7 @@
 **Parent documents:** PREREGISTRATION.md (SHA: b96d10a), PREREGISTRATION_AMENDMENT_EXPLORATORY.md (SHA: 1f300a9), PREREGISTRATION_AMENDMENT_2_BLIND.md (SHA: 12ea0ed), PREREGISTRATION_AMENDMENT_3_REFERENCE_CORRECTION.md
 **Scope:** Records a change to the scored set and to the primary test statistic made at the request of a peer reviewer, after every drug outcome in the scored set was known. The registered analysis is unchanged and is reported beside the revised one.
 
-**Commit SHA:** _pending_
+**Commit SHA:** 38b8f33
 
 ---
 
