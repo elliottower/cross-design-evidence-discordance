@@ -5,7 +5,7 @@
 **Parent documents:** PREREGISTRATION.md (SHA: b96d10a), PREREGISTRATION_AMENDMENT_EXPLORATORY.md (SHA: 1f300a9), PREREGISTRATION_AMENDMENT_2_BLIND.md (SHA: 12ea0ed), PREREGISTRATION_AMENDMENT_3_REFERENCE_CORRECTION.md, PREREGISTRATION_AMENDMENT_4_REVISED_PRIMARY_ANALYSIS.md (SHA: 38b8f33)
 **Scope:** Four procedures fixed before they are run, and one deviation from Amendment 2 disclosed. None changes the registered classification rule, the registered scored set, or the registered accuracy figure. Each procedure produces descriptive quantities the manuscript will report.
 
-**Commit SHA:** _pending_
+**Commit SHA:** fbc7d33
 
 ---
 
@@ -113,4 +113,5 @@ Append only.
 2026-09-22  redrafted after external review: signed bounds in Procedure 2, alignment flag, seven-field codebook for all 41 families, Procedure 4 analysis-set table, IL6-MDD instrument deviation disclosed   nothing run
 2026-09-22  source-extracted-OBS analysis set added to Procedure 4 (seven author-estimated families removed)   nothing run
 2026-09-22  second external review: |d| in the supportive state, bound-wise rescaling with scale-unresolved handling, deterministic selection rule and fixed roles for the two IL6-MDD instruments, ligand/receptor/CRP alignment and Phase II stated in the deviation, drug_outcome described as a composite, Procedure 4 sets defined algorithmically and split (strict Phase III, Amyloid-AD, MR-instrumented, registration-consistent instrument, unique-evidence), exact and expanded coverage, covered-versus-uncovered outcome comparison and p-values on new sets dropped   nothing run
+2026-09-22  frozen at fbc7d33                                                    nothing run
 ```
