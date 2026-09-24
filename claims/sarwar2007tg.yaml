@@ -1,0 +1,14 @@
+source:
+  citation: sarwar2007tg
+  local: ../citations-library/pdfs/doi-10-1161-circulationaha-106-637793.abstract.txt
+  sha256: 57e74e42b946063ac66f1d7f8686b61105ce3f8fb889753c131d505cce3f5830
+  doi: 10.1161/CIRCULATIONAHA.106.637793
+  note: ABSTRACT ONLY. Full text paywalled; the artifact is the PubMed abstract (PMID 17190864) saved
+    as plain text in the shared citations library. Quotations resolve against the abstract, not the article.
+claims:
+  triglycerides-obs:
+    quotes:
+    - exact: Similar overall findings (adjusted odds ratio, 1.72; 95% CI, 1.56 to 1.90) were observed
+        in an updated meta-analysis involving a total of 10,158 incident coronary heart disease cases
+        from 262,525 participants in 29 studies
+      section: Abstract (abstract-only artifact)

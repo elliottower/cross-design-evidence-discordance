@@ -1,0 +1,14 @@
+source:
+  citation: clarke2012
+  local: ../citations-library/pdfs/doi-10-1371-journal-pmed-1001177.abstract.txt
+  sha256: f0a8cef7edd505165214571ad8ad6efe86ab4ed0b9562beca9a0733bde600777
+  doi: 10.1371/journal.pmed.1001177
+  note: ABSTRACT ONLY. Full text not held (status paywalled/failed); the artifact is the PubMed abstract
+    saved as plain text in the shared citations library. Every quotation in this file resolves against
+    the abstract, not the article.
+claims:
+  homocysteine-gen:
+    quotes:
+    - exact: the case-control CHD odds ratio (OR) and 95% CI comparing TT versus CC homozygotes was 1.02
+        (0.98-1.07; p = 0.28) overall
+      section: Abstract (abstract-only artifact)

@@ -1,0 +1,33 @@
+source:
+  citation: hernan2008
+  local: ../citations-library/pdfs/doi-10-1097-ede-0b013e3181875e61.pdf
+  sha256: 7fd830227c65d90f6ce3ce5d51b016073ed71b7760556b4d174957eaad00ce8f
+  doi: 10.1097/EDE.0b013e3181875e61
+  note: Publisher PDF obtained by hand (2026-09-23) and held in the shared citations library ($CITATIONS_HOME/pdfs),
+    path relative to the repository root. Quotations copied from pdftotext output; verify reads the default
+    extractor chain.
+claims:
+  nhs-emulated-whi:
+    quotes:
+    - exact: Using data from the observational Nurses’ Health Study, we emulated the design and intention-to-treat
+        (ITT) analysis of the randomized trial.
+      section: 'Abstract: Methods'
+      page: 1
+  itt-similar-to-whi:
+    quotes:
+    - exact: These ITT estimates are similar to those from the Women’s Health Initiative.
+      section: 'Abstract: Results'
+      page: 1
+  discrepancy-explanation:
+    quotes:
+    - exact: Our findings suggest that the discrepancies between the Women’s Health Initiative and Nurses’
+        Health Study ITT estimates could be largely explained by differences in the distribution of time
+        since menopause and length of follow-up.
+      section: 'Abstract: Conclusions'
+      page: 1
+  new-users-design:
+    quotes:
+    - exact: The approach we present here and elsewhere10,25 generalizes Ray’s “new-users design” to the
+        case of time-varying treatments.
+      section: Discussion
+      page: 9

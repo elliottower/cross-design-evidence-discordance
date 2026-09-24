@@ -1,0 +1,14 @@
+source:
+  citation: lawler2023vitd
+  local: ../citations-library/pdfs/doi-10-3390-nu15020422.abstract.txt
+  sha256: 70ad31e15ee953b2195519a7e572156f0c1502b49bbb11614f04d3b74b0a43f2
+  doi: 10.3390/nu15020422
+  note: ABSTRACT ONLY. Full text paywalled; the artifact is the PubMed abstract (PMID 36678292) saved
+    as plain text in the shared citations library. Quotations resolve against the abstract, not the article.
+claims:
+  vitd-crc-gen:
+    quotes:
+    - exact: 'In recent studies including ≥80 genetic IVs for 25-hydroxyvitamin D, null associations were
+        reported for total cancer (odds ratio [95% confidence interval] per 1-standard deviation increase:
+        0.98 [0.93-1.04]), breast (1.00 [0.98-1.02]), colorectal (0.97 [0.88-1.07])'
+      section: Abstract (abstract-only artifact)

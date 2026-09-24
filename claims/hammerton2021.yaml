@@ -1,0 +1,30 @@
+source:
+  citation: hammerton2021
+  local: ../citations-library/pdfs/doi-10-1017-s0033291720005127.pdf
+  sha256: 8cef562502c010b2527cc98ba0e4145af1951ad0faeadf1618effc45b1377765
+  doi: 10.1017/S0033291720005127
+  url: https://www.cambridge.org/core/services/aop-cambridge-core/content/view/AF5F7918753DF50F26B1D49561F0DF83/S0033291720005127a.pdf/div-class-title-causal-inference-with-observational-data-the-need-for-triangulation-of-evidence-div.pdf
+  note: Publisher PDF held in the shared citations library ($CITATIONS_HOME/pdfs), path relative to the
+    repository root. Quotations copied from pdftotext output; verify reads the default extractor chain.
+claims:
+  triangulation-unrelated-bias:
+    quotes:
+    - exact: 'That is, ‘The practice of strengthening causal
+
+        inferences by integrating results from several different approaches,
+
+        where each approach has different (and assumed to be largely unrelated) key sources of potential
+        bias’ (Munafo & Davey Smith, 2018).'
+      section: Introduction (quoting Munafo & Davey Smith, 2018)
+      page: 2
+  triangulation-design-based-different-bias:
+    quotes:
+    - exact: 'Approaches
+
+        that rely on statistical adjustment are likely to have similar (or at least
+
+        related) sources of bias, whereas those that rely on design-based
+
+        methods are more likely to have different sources of bias.'
+      section: Introduction
+      page: 2

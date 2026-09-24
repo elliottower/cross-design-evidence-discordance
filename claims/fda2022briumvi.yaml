@@ -1,0 +1,23 @@
+source:
+  citation: fda2022briumvi
+  local: ../citations-library/pdfs/fda-bla761238-briumvi-label.pdf
+  sha256: 5294b3e343f8442d9e05bf04af2c4cc78ea22fe3c309469c382334fe1f8d7b17
+  url: https://dailymed.nlm.nih.gov/dailymed/downloadpdffile.cfm?setId=3a77cd8c-811b-407c-9140-d0c5c26435c2
+  note: BRIUMVI (ublituximab-xiiy) prescribing information, BLA 761238, as posted on DailyMed (SPL version
+    21, revised 2/2026; Initial U.S. Approval 2022). The accessdata.fda.gov label PDFs (label/2022/761238s000lbl.pdf
+    and later) refuse non-browser requests, so the artifact is the current DailyMed label PDF, not the
+    December 2022 original. Quotations copied from pdftotext output.
+claims:
+  ublituximab-rms-indication:
+    quotes:
+    - exact: BRIUMVI is indicated for the treatment of relapsing forms of multiple sclerosis (MS), to
+        include clinically isolated syndrome, relapsing-remitting disease, and active secondary progressive
+        disease, in adults.
+      section: 'Full Prescribing Information: 1 Indications and Usage'
+      page: 3
+  ublituximab-rms-indication-highlights:
+    quotes:
+    - exact: BRIUMVI is a CD20-directed cytolytic antibody indicated for the treatment of relapsing forms
+        of multiple sclerosis (MS)
+      section: 'Highlights: Indications and Usage'
+      page: 1

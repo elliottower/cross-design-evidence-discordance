@@ -1,0 +1,35 @@
+source:
+  citation: munafo2018
+  local: ../citations-library/pdfs/doi-10-1038-d41586-018-01023-3.pdf
+  sha256: 5112e712c6a53f566071112996950d06122690136e663285b5543429ca5aca45
+  doi: 10.1038/d41586-018-01023-3
+  url: https://www.nature.com/magazine-assets/d41586-018-01023-3/d41586-018-01023-3.pdf
+  note: Publisher PDF held in the shared citations library ($CITATIONS_HOME/pdfs), path relative to the
+    repository root. Quotations copied from pdftotext output; verify reads the default extractor chain.
+claims:
+  triangulation-definition:
+    quotes:
+    - exact: 'We believe that an essential protection
+
+        against flawed ideas is triangulation3. This
+
+        is the strategic use of multiple approaches to
+
+        address one question. Each approach has its
+
+        own unrelated assumptions, strengths and
+
+        weaknesses. Results that agree across different
+
+        methodologies are less likely to be artefacts.'
+      section: Main text
+      page: 2
+  triangulation-checklist-unrelated-bias:
+    quotes:
+    - exact: 'approaches — which have different
+
+        and unrelated key sources of potential
+
+        biases — are compared.'
+      section: 'Triangulation: a checklist'
+      page: 2

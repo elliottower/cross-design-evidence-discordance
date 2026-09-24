@@ -1,0 +1,42 @@
+source:
+  citation: brancati2021rituximab
+  local: ../citations-library/pdfs/doi-10-3389-fimmu-2021-661882.pdf
+  sha256: 0e3779a435af454d1382e7626619bf110610138d647ca4abc0ffa6191d86c526
+  doi: 10.3389/fimmu.2021.661882
+  url: https://www.frontiersin.org/articles/10.3389/fimmu.2021.661882/pdf
+  note: Publisher PDF held in the shared citations library ($CITATIONS_HOME/pdfs), path relative to the
+    repository root. Quotations copied from pdftotext output; verify reads the default extractor chain.
+claims:
+  rituximab-off-label-ms:
+    quotes:
+    - exact: 'To date, the use of rituximab in patients with multiple sclerosis is
+
+        not in accordance with the authorized product information (off-label use). However, the
+
+        use of this medicine is widespread in several countries, and in some cases, it is the most
+
+        commonly used disease-modifying drug for MS subtypes.'
+      section: Abstract
+      page: 1
+  rituximab-not-approved-ocrelizumab-approved:
+    quotes:
+    - exact: 'However, it is not approved for use
+
+        in MS, but is commonly prescribed as off-label treatment.
+
+        On the contrary, its humanized surrogate ocrelizumab
+
+        received EMA and FDA approval for the treatment of patients
+
+        with relapsing forms of MS or with early PPMS.'
+      section: The Role of Anti-CD20 in MS
+      page: 6
+  ofatumumab-approved:
+    quotes:
+    - exact: 'Another antiCD20 agent, ofatumumab, that can be self-administered once
+
+        monthly at home subcutaneously, has been approved in August
+
+        2020 by FDA for the treatment of relapsing form of MS'
+      section: Introduction
+      page: 2

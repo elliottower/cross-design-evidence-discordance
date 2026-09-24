@@ -1,0 +1,72 @@
+key,slug,doi,pmid,has_record,status,url_tried,path
+anstey2011,doi-10-1111-j-1467-789x-2010-00825-x,10.1111/j.1467-789X.2010.00825.x,21348917,True,paywalled,,
+barth2025,doi-10-1038-s41467-025-65878-7,10.1038/s41467-025-65878-7,41350255,True,fetched,https://www.nature.com/articles/s41467-025-65878-7.pdf,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1038-s41467-025-65878-7.pdf
+belloy2023apoe,doi-10-1001-jamaneurol-2023-3599,10.1001/jamaneurol.2023.3599,37930705,False,have (manual),downloaded by hand 2026-09-23,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1001-jamaneurol-2023-3599.pdf
+beral2003mws,doi-10-1016-s0140-6736-03-14065-2,10.1016/S0140-6736(03)14065-2,,True,paywalled,,
+bovijn2020,doi-10-1126-scitranslmed-aay6570,10.1126/scitranslmed.aay6570,,True,paywalled,,
+brancati2021rituximab,doi-10-3389-fimmu-2021-661882,10.3389/fimmu.2021.661882,,True,fetched,https://www.frontiersin.org/articles/10.3389/fimmu.2021.661882/pdf,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-3389-fimmu-2021-661882.pdf
+bruce2023modems,doi-10-1177-13524585231213241,10.1177/13524585231213241,38018409,True,paywalled,,
+burgess2018lpa,doi-10-1001-jamacardio-2018-1470,10.1001/jamacardio.2018.1470,,True,have (manual),downloaded by hand 2026-09-23,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1001-jamacardio-2018-1470.pdf
+busse2019dupilumab,doi-10-1007-s12325-018-0702-4,10.1007/s12325-018-0702-4,,True,fetched,https://link.springer.com/content/pdf/10.1007/s12325-018-0702-4.pdf,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1007-s12325-018-0702-4.pdf
+cheng2014,doi-10-2147-cia-s65921,10.2147/cia.s65921,25061285,True,have (manual),downloaded by hand 2026-09-23,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-2147-cia-s65921.pdf
+chinn2000,doi-10-1002-1097-0258-20001130-19-22-3127-aid-sim784-3-0-co-2-m,,11113947,True,paywalled,,
+clarke2010serotonin,doi-10-1017-s0033291710000516,10.1017/S0033291710000516,,True,paywalled,,
+clarke2012,doi-10-1371-journal-pmed-1001177,10.1371/journal.pmed.1001177,,True,paywalled,,
+cummings2014,doi-10-1186-alzrt269,10.1186/alzrt269,,True,fetched,https://alzres.biomedcentral.com/counter/pdf/10.1186/alzrt269,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1186-alzrt269.pdf
+cummings_zhong2014,doi-10-1586-17512433-2014-884923,10.1586/17512433.2014.884923,,True,paywalled,,
+cuzick2015tamoxifen,doi-10-1016-s0140-6736-13-60140-3,10.1016/S0140-6736(13)60140-3,,True,failed,http://www.thelancet.com/article/S0140673613601403/pdf,
+daveysmith2014,doi-10-1093-hmg-ddu328,10.1093/hmg/ddu328,,True,have,,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1093-hmg-ddu328.pdf
+elliott2009,doi-10-1001-jama-2009-954,10.1001/jama.2009.954,,True,paywalled,,
+ference2019,doi-10-1056-nejmoa1806747,10.1056/NEJMoa1806747,,True,failed,https://www.nejm.org/doi/pdf/10.1056/NEJMoa1806747?articleTools=true,
+ference2019ldl,doi-10-1093-eurheartj-ehx144,10.1093/eurheartj/ehx144,,True,have (manual),downloaded by hand 2026-09-23,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1093-eurheartj-ehx144.pdf
+galan2022crpdepression,doi-10-1038-s41598-022-19214-4,10.1038/s41598-022-19214-4,36057695,False,fetched,https://www.nature.com/articles/s41598-022-19214-4.pdf,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1038-s41598-022-19214-4.pdf
+georgakis2020,doi-10-1212-wnl-0000000000009814,10.1212/WNL.0000000000009814,,True,have (manual),downloaded by hand 2026-09-23,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1212-wnl-0000000000009814.pdf
+ghezzi2025icr,doi-10-1136-jnnp-2024-333465,10.1136/jnnp-2024-333465,39137977,True,paywalled,,
+gill2021,doi-10-12688-wellcomeopenres-16544-1,10.12688/wellcomeopenres.16544.1,,True,have (manual),downloaded by hand 2026-09-23,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-12688-wellcomeopenres-16544-1.pdf
+gill2024pitfalls,doi-10-1186-s12916-024-03700-9,10.1186/s12916-024-03700-9,,True,fetched,https://bmcmedicine.biomedcentral.com/counter/pdf/10.1186/s12916-024-03700-9,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1186-s12916-024-03700-9.pdf
+gozzo2023htams,doi-10-3389-fphar-2023-1169400,10.3389/fphar.2023.1169400,,True,fetched,https://www.frontiersin.org/articles/10.3389/fphar.2023.1169400/pdf?isPublishedV2=False,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-3389-fphar-2023-1169400.pdf
+hammerton2021,doi-10-1017-s0033291720005127,10.1017/S0033291720005127,,True,fetched,https://www.cambridge.org/core/services/aop-cambridge-core/content/view/AF5F7918753DF50F26B1D49561F0DF83/S0033291720005127a.pdf/div-class-title-causal-inference-with-observational-data-the-need-for-triangulation-of-evidence-div.pdf,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1017-s0033291720005127.pdf
+han2020eosinophilasthma,doi-10-1038-s41467-020-15649-3,10.1038/s41467-020-15649-3,,True,fetched,https://www.nature.com/articles/s41467-020-15649-3.pdf,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1038-s41467-020-15649-3.pdf
+hernan2008,doi-10-1097-ede-0b013e3181875e61,10.1097/EDE.0b013e3181875e61,,True,have (manual),downloaded by hand 2026-09-23,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1097-ede-0b013e3181875e61.pdf
+hernan2016,doi-10-1093-aje-kwv254,10.1093/aje/kwv254,,True,have (manual),downloaded by hand 2026-09-23,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1093-aje-kwv254.pdf
+holmes2015,doi-10-1093-eurheartj-eht571,10.1093/eurheartj/eht571,,True,have (manual),downloaded by hand 2026-09-23,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1093-eurheartj-eht571.pdf
+howren2009,doi-10-1097-psy-0b013e3181907c1b,10.1097/PSY.0b013e3181907c1b,19188531,True,paywalled,,
+hu2019,doi-10-1002-14651858-cd013874-pub2,10.1002/14651858.CD013874.pub2,34748215,True,have (manual),downloaded by hand 2026-09-23,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1002-14651858-cd013874-pub2.pdf
+interleukin2012,doi-10-1016-s0140-6736-12-60110-x,10.1016/S0140-6736(12)60110-X,,True,have (manual),downloaded by hand 2026-09-23,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1016-s0140-6736-12-60110-x.pdf
+jordan2019urate,doi-10-1371-journal-pmed-1002725,10.1371/journal.pmed.1002725,30645594,False,fetched,https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1002725&type=printable,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1371-journal-pmed-1002725.pdf
+juergens2023ganitumab,doi-10-1200-jco-22-01815,10.1200/JCO.22.01815,36669140,True,failed,https://escholarship.org/content/qt4s53h4cd/qt4s53h4cd.pdf?t=sbz54m,
+kelly2021il6r,doi-10-1016-j-bbi-2021-02-019,10.1016/j.bbi.2021.02.019,33631287,False,have (manual),downloaded by hand 2026-09-23,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1016-j-bbi-2021-02-019.pdf
+keum2014vitdobscancer,doi-10-1038-bjc-2014-294,10.1038/bjc.2014.294,,True,fetched,https://www.nature.com/articles/bjc2014294.pdf,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1038-bjc-2014-294.pdf
+langer2014figitumumab,doi-10-1200-jco-2013-54-4932,10.1200/JCO.2013.54.4932,,True,paywalled,,
+larsson2020igfcancer,doi-10-1002-cam4-3345,10.1002/cam4.3345,,True,have (manual),downloaded by hand 2026-09-23,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1002-cam4-3345.pdf
+lawlor2016,doi-10-1093-ije-dyw314,10.1093/ije/dyw314,,True,have (manual),downloaded by hand 2026-09-23,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1093-ije-dyw314.pdf
+lin2023,doi-10-1093-brain-awad070,10.1093/brain/awad070,36864689,True,have (manual),downloaded by hand 2026-09-23,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1093-brain-awad070.pdf
+manson2019vital,doi-10-1056-nejmoa1809944,10.1056/NEJMoa1809944,,True,have (manual),downloaded by hand 2026-09-23,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1056-nejmoa1809944.pdf
+menzies2022tezepelumab,doi-10-1056-nejmoa2034975,10.1056/NEJMoa2034975,,True,have (manual),downloaded by hand 2026-09-23,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1056-nejmoa2034975.pdf
+minikel2024,doi-10-1038-s41586-024-07316-0,10.1038/s41586-024-07316-0,,True,fetched,https://www.nature.com/articles/s41586-024-07316-0.pdf,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1038-s41586-024-07316-0.pdf
+mokry2016obesity,doi-10-1371-journal-pmed-1002053,10.1371/journal.pmed.1002053,27351487,True,fetched,https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1002053&type=printable,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1371-journal-pmed-1002053.pdf
+moncrieff2022,doi-10-1038-s41380-022-01661-0,10.1038/s41380-022-01661-0,,True,fetched,https://www.nature.com/articles/s41380-022-01661-0.pdf,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1038-s41380-022-01661-0.pdf
+munafo2018,doi-10-1038-d41586-018-01023-3,10.1038/d41586-018-01023-3,,True,fetched,https://www.nature.com/magazine-assets/d41586-018-01023-3/d41586-018-01023-3.pdf,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1038-d41586-018-01023-3.pdf
+munger2006,doi-10-1001-jama-296-23-2832,10.1001/jama.296.23.2832,,True,paywalled,,
+nelson2015,doi-10-1038-ng-3314,10.1038/ng.3314,,True,paywalled,,
+nie2015il23r,doi-10-1155-2010-480458,10.1155/2010/480458,20485703,True,paywalled,,
+novonordisk2026zeus,t-b4f6e0f61ab05edf,,,True,paywalled,,
+ogawa2014,doi-10-4088-jcp-13r08908,10.4088/JCP.13r08908,25295433,True,paywalled,,
+ong2021vitdcancer,doi-10-1038-s41467-020-20368-w,10.1038/s41467-020-20368-w,,True,fetched,https://www.nature.com/articles/s41467-020-20368-w.pdf,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1038-s41467-020-20368-w.pdf
+ortega2014mensa,doi-10-1056-nejmoa1403290,10.1056/NEJMoa1403290,25199059,False,have (manual),downloaded by hand 2026-09-23,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1056-nejmoa1403290.pdf
+pavord2012dream,doi-10-1016-s0140-6736-12-60988-x,10.1016/S0140-6736(12)60988-X,,True,paywalled,,
+reynolds2009,doi-10-1167-iovs-09-3928,10.1167/iovs.09-3928,18628698,True,paywalled,,
+rinaldi2019igfobs,doi-10-1002-ijc-24927,10.1002/ijc.24927,,True,paywalled,,
+robinson2021urate,doi-10-1186-s41927-021-00204-4,10.1186/s41927-021-00204-4,34452645,True,fetched,https://bmcrheumatol.biomedcentral.com/track/pdf/10.1186/s41927-021-00204-4,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1186-s41927-021-00204-4.pdf
+sglt2paradox2025,doi-10-1016-j-ejphar-2025-177957,10.1016/j.ejphar.2025.177957,40680977,True,paywalled,,
+shi2023estradiolBC,doi-10-1186-s13058-022-01553-9,10.1186/s13058-022-01553-9,,True,fetched,https://breast-cancer-research.biomedcentral.com/counter/pdf/10.1186/s13058-022-01553-9,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1186-s13058-022-01553-9.pdf
+shumaker2003,doi-10-1001-jama-289-20-2651,10.1001/jama.289.20.2651,,True,paywalled,,
+sokolova2013,doi-10-1371-journal-pone-0061032,10.1371/journal.pone.0061032,23613777,True,fetched,https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0061032&type=printable,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1371-journal-pone-0061032.pdf
+song2020,doi-10-3389-fnins-2020-00157,10.3389/fnins.2020.00157,32210745,True,have,,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-3389-fnins-2020-00157.pdf
+szulc2014,doi-10-1002-jbmr-1823,10.1002/jbmr.1823,23165952,True,paywalled,,
+thakkinstian2006,doi-10-1093-hmg-ddl220,10.1093/hmg/ddl220,16905558,True,paywalled,,
+voight2012,doi-10-1016-s0140-6736-12-60312-2,10.1016/S0140-6736(12)60312-2,,True,have (manual),downloaded by hand 2026-09-23,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1016-s0140-6736-12-60312-2.pdf
+wagener2022eosinophils,doi-10-1183-13993003-04590-2020,10.1183/13993003.04590-2020,,True,have (manual),downloaded by hand 2026-09-23,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1183-13993003-04590-2020.pdf
+walter2016t2dad,doi-10-1097-wad-0000000000000128,10.1097/WAD.0000000000000128,26650880,False,paywalled,,
+white2016,doi-10-1016-s2213-8587-15-00386-1,10.1016/S2213-8587(15)00386-1,,True,have (manual),downloaded by hand 2026-09-23,/Users/elliottower/Documents/GitHub/citations-library/pdfs/doi-10-1016-s2213-8587-15-00386-1.pdf
+zheng2020sglt2mr,doi-10-3389-fcvm-2024-1371513,10.3389/fcvm.2024.1371513,,True,paywalled,,

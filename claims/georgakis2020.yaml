@@ -1,0 +1,22 @@
+source:
+  citation: georgakis2020
+  local: ../citations-library/pdfs/doi-10-1212-wnl-0000000000009814.pdf
+  sha256: 5c8a8fdf2616983d0519073f5831ea6d2fd024d3a4b33c496e2e52fce4fc9394
+  doi: 10.1212/WNL.0000000000009814
+  note: Publisher PDF obtained by hand (2026-09-23) and held in the shared citations library ($CITATIONS_HOME/pdfs),
+    path relative to the repository root. Quotations copied from pdftotext output; verify reads the default
+    extractor chain.
+claims:
+  bp-gen-scaling:
+    quotes:
+    - exact: All Mendelian randomization associations between SBP, DBP, and stroke were scaled to 10 mm
+        Hg increment in SBP and 5 mm Hg in DBP.
+      section: 'Methods: Statistical analysis'
+      page: 3
+  bp-gen-any-stroke:
+    quotes:
+    - exact: Mendelian randomization analyses showed statistically signiﬁcant associations of both SBP
+        and DBP with risk of any stroke, ischemic stroke, and all of its major subtypes (LAS, CES, SVS),
+        ICH, and deep ICH, but not lobar ICH (ﬁgure 2).
+      section: 'Results: Genetically determined BP and risk of stroke subtypes'
+      page: 4

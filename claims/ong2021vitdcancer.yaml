@@ -1,0 +1,27 @@
+source:
+  citation: ong2021vitdcancer
+  local: ../citations-library/pdfs/doi-10-1038-s41467-020-20368-w.pdf
+  sha256: 76dfb7e1166fc0f9e2f644b2b261eacbf9f7d20b7bfdf5a99032ab9ac69d8391
+  doi: 10.1038/s41467-020-20368-w
+  url: https://www.nature.com/articles/s41467-020-20368-w.pdf
+  note: Publisher PDF held in the shared citations library ($CITATIONS_HOME/pdfs), path relative to the
+    repository root. Quotations copied from pdftotext output; verify reads the default extractor chain.
+claims:
+  vitd-cancer-gen-null-most-cancers:
+    quotes:
+    - exact: 'Here we
+
+        report that lower 25(OH)D is unlikely to be a causal risk factor for most cancers, with our study
+
+        providing more precise conﬁdence intervals than previously possible.'
+      section: Abstract
+      page: 1
+  vitd-cancer-gen-74-instruments:
+    quotes:
+    - exact: 'In the UKB 25(OH)D GWAS, we identiﬁed 74 independent genetic
+
+        instruments for 25(OH)D which together explained close to 4.0% of
+
+        the phenotypic variation in serum 25(OH)D.'
+      section: Results
+      page: 2

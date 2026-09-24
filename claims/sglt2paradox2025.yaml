@@ -1,0 +1,19 @@
+source:
+  citation: sglt2paradox2025
+  local: ../citations-library/pdfs/doi-10-1016-j-ejphar-2025-177957.abstract.txt
+  sha256: 666dbcbeef24b6a54bf799b1aa8d573bf1c042b01f3ac73dfda9dc6468f16e90
+  doi: 10.1016/j.ejphar.2025.177957
+  note: ABSTRACT ONLY. Full text not held (status paywalled/failed); the artifact is the PubMed abstract
+    saved as plain text in the shared citations library. Every quotation in this file resolves against
+    the abstract, not the article.
+claims:
+  sglt2-hf-gen-inconsistent:
+    quotes:
+    - exact: 'The association with HF was not statistically significant (odds ratio [OR]: 1.30, p = 0.107).'
+      section: Abstract (abstract-only artifact)
+  sglt2-hf-gen-caution:
+    quotes:
+    - exact: we advocate for researchers conducting MR analysis of drug targets to report their instrumental
+        variables, comprehend the pharmacological mechanisms involved, present positive control results
+        and cautiously interpret their conclusions.
+      section: Abstract (abstract-only artifact)

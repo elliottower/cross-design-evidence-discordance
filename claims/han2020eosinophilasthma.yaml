@@ -1,0 +1,8 @@
+source:
+  citation: han2020eosinophilasthma
+  local: ../citations-library/pdfs/doi-10-1038-s41467-020-15649-3.pdf
+  sha256: 2c99b0ee8189546912534eca74b27c87d60037959fe70e214bc892f6b88fc91d
+  doi: 10.1038/s41467-020-15649-3
+  url: 'https://www.nature.com/articles/s41467-020-15649-3.pdf'
+  note: Publisher PDF held in the shared citations library ($CITATIONS_HOME/pdfs), path relative to the repository root. Quotations copied from pdftotext output; verify reads the default extractor chain. No claim is pinned, because the manuscript attributes an MR estimate (eosinophil count per SD on moderate-severe asthma, OR 1.50) to this source, and the paper is a GWAS of asthma that reports no Mendelian randomization analysis.
+claims: {}

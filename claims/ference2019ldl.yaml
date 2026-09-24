@@ -1,0 +1,16 @@
+source:
+  citation: ference2019ldl
+  local: ../citations-library/pdfs/doi-10-1093-eurheartj-ehx144.pdf
+  sha256: 2d2ca88b3ce29f2dba77be4ae1f312a5b4026a392d3204c1dce853141e3046b4
+  doi: 10.1093/eurheartj/ehx144
+  note: Publisher PDF obtained by hand (2026-09-23) and held in the shared citations library ($CITATIONS_HOME/pdfs),
+    path relative to the repository root. Quotations copied from pdftotext output; verify reads the default
+    extractor chain.
+claims:
+  ldl-obs-log-linear:
+    quotes:
+    - exact: Together, these meta-analyses of prospective epidemiologic cohort studies provide coherent
+        and consistent evidence that plasma LDL-C concentration is strongly and log-linearly associated
+        with a dosedependent increase in the risk of incident ASCVD events (Figure 2).
+      section: Evidence from prospective epidemiologic studies
+      page: 4

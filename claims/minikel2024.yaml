@@ -1,0 +1,29 @@
+source:
+  citation: minikel2024
+  local: ../citations-library/pdfs/doi-10-1038-s41586-024-07316-0.pdf
+  sha256: 33614f4ee2fb06c6c5001e8fb62bd0007937ed03407e301ee0b4c69bf9a55b0c
+  doi: 10.1038/s41586-024-07316-0
+  url: https://www.nature.com/articles/s41586-024-07316-0.pdf
+  note: Publisher PDF held in the shared citations library ($CITATIONS_HOME/pdfs), path relative to the
+    repository root. Quotations copied from pdftotext output; verify reads the default extractor chain.
+claims:
+  genetic-support-2p6-fold:
+    quotes:
+    - exact: 'genetic support is 2.6 times greater than those without. This relative success varies
+
+        among therapy areas and development phases, and improves with increasing
+
+        confidence in the causal gene, but is largely unaffected by genetic effect size, minor
+
+        allele frequency or year of discovery.'
+      section: Abstract
+      page: 1
+  genetic-support-prior-doubling:
+    quotes:
+    - exact: 'We previously
+
+        estimated that human genetic evidence doubles the success rate from clinical
+
+        development to approval5.'
+      section: Abstract
+      page: 1

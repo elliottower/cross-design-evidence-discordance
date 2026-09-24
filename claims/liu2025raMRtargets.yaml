@@ -1,0 +1,7 @@
+source:
+  citation: liu2025raMRtargets
+  local: ../citations-library/pdfs/doi-10-1093-postmj-qgaf100.abstract.txt
+  sha256: 1aebb859168b9e1b8d95648d3c9e3b8829cbc46de7e9200a966162a9a5fbb267
+  doi: 10.1093/postmj/qgaf100
+  note: 'ABSTRACT ONLY. Full text paywalled; the artifact is the PubMed abstract (PMID 40618325) saved as plain text in the shared citations library. Quotations resolve against the abstract, not the article. No claim is pinned, because the registered TNF-a-RA GEN value OR 1.00 is not reported: the abstract names five causal genes (CCR6, CTLA4, EDN3, FCRL3, STAT4) and gives no TNF estimate. The supplementary tables were not obtained.'
+claims: {}

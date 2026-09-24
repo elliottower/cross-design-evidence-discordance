@@ -1,0 +1,12 @@
+source:
+  citation: guyatt2023eos
+  local: ../citations-library/pdfs/doi-10-1136-thoraxjnl-2021-217993.abstract.txt
+  sha256: 764f0ec429eabe217da28cd142403439064d1e3d31bd7ab738a3592c6bffebba
+  doi: 10.1136/thoraxjnl-2021-217993
+  note: ABSTRACT ONLY. Full text paywalled; the artifact is the PubMed abstract (PMID 35537820) saved
+    as plain text in the shared citations library. Quotations resolve against the abstract, not the article.
+claims:
+  eos-asthma-gen:
+    quotes:
+    - exact: and moderate-severe asthma (weighted median OR 1.50 (95%CI 1.23 to 1.83))
+      section: Abstract (abstract-only artifact)

@@ -1,0 +1,14 @@
+source:
+  citation: pavord2012dream
+  local: ../citations-library/pdfs/doi-10-1016-s0140-6736-12-60988-x.abstract.txt
+  sha256: 1123e14b0388a72d5b97b809b649235cd77cb9eebd13eae5985f0e22e6e6d901
+  doi: 10.1016/S0140-6736(12)60988-X
+  note: ABSTRACT ONLY. Full text not held (status paywalled/failed); the artifact is the PubMed abstract
+    saved as plain text in the shared citations library. Every quotation in this file resolves against
+    the abstract, not the article.
+claims:
+  eos-asthma-outcome-mepolizumab:
+    quotes:
+    - exact: Mepolizumab is an effective and well tolerated treatment that reduces the risk of asthma
+        exacerbations in patients with severe eosinophilic asthma.
+      section: Abstract (abstract-only artifact)

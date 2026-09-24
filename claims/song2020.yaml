@@ -1,0 +1,29 @@
+source:
+  citation: song2020
+  local: ../citations-library/pdfs/doi-10-3389-fnins-2020-00157.pdf
+  sha256: 1fff933e5a6abb832788715dce8f3784aab4fdf8fdc42ebb3b82f7651d75102f
+  doi: 10.3389/fnins.2020.00157
+  note: Publisher PDF held in the shared citations library ($CITATIONS_HOME/pdfs), path relative to the
+    repository root. Quotations copied from pdftotext output; verify reads the default extractor chain.
+claims:
+  hrt-ad-obs:
+    quotes:
+    - exact: 'ERT decreased risks of developing AD (OR: 0.672; 95% CI: 0.581–
+
+        0.779; P < 0.001)'
+      section: 'Results: Association of AD and PD With ERT'
+      page: 3
+  hrt-ad-obs-abstract:
+    quotes:
+    - exact: 'ERT significantly decreased the risk of onset and/or
+
+        development of AD [odds ratio (OR): 0.672; 95% CI: 0.581–0.779; P < 0.001]'
+      section: 'Abstract: Results'
+      page: 1
+  hrt-ad-obs-16-studies:
+    quotes:
+    - exact: 'five cases evaluated the impact of
+
+        ERT on PD and 16 cases on AD'
+      section: 'Results: Characteristics of Included Studies'
+      page: 3

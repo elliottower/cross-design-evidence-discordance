@@ -1,0 +1,14 @@
+source:
+  citation: walter2016t2dad
+  local: ../citations-library/pdfs/doi-10-1097-wad-0000000000000128.abstract.txt
+  sha256: bcc7f9383ec58039e359311f25dc64862e0b722c06a9fbdb72a5b6a27bf0c862
+  doi: 10.1097/WAD.0000000000000128
+  note: ABSTRACT ONLY. Full text not held (status paywalled/failed); the artifact is the PubMed abstract
+    saved as plain text in the shared citations library. Every quotation in this file resolves against
+    the abstract, not the article.
+claims:
+  metabolic-ad-gen:
+    quotes:
+    - exact: the overall T2D polygenic score did not predict AD [odds ratio (OR) for the T2D polygenic
+        score=1.01; 95% confidence interval (CI), 0.96, 1.06]
+      section: Abstract (abstract-only artifact)

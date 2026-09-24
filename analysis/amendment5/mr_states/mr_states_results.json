@@ -1,0 +1,140 @@
+{
+  "registration": "Amendment 5, commit fbc7d33",
+  "threshold": 0.1,
+  "all_41_by_state": {
+    "inconclusive": 17,
+    "supportive": 16,
+    "negligible_range": 8
+  },
+  "scored_32_by_state": {
+    "supportive": {
+      "n": 15,
+      "correct": 12,
+      "families": [
+        "Anti-CD20-MS",
+        "VitaminD-MS",
+        "EBV-MS",
+        "LDL/PCSK9",
+        "Blood pressure",
+        "Triglycerides",
+        "IL-23-psoriasis",
+        "JAK-STAT-RA",
+        "CD20-RA",
+        "IGF1-CRC",
+        "Eos/IL5-Asthma",
+        "SGLT2-HF",
+        "Urate-Gout",
+        "Complement-GA",
+        "Sclerostin-Fracture"
+      ]
+    },
+    "negligible_range": {
+      "n": 7,
+      "correct": 6,
+      "families": [
+        "HRT-AD",
+        "BMI-AD",
+        "Homocysteine",
+        "CRP",
+        "VitD-Cancer",
+        "Estrogen-BC",
+        "IL6-MDD"
+      ]
+    },
+    "inconclusive": {
+      "n": 10,
+      "correct": 6,
+      "families": [
+        "Metabolic-AD",
+        "ModRisk-AD",
+        "Smoking-MS/AD",
+        "HDL/CETP",
+        "Niacin/HDL",
+        "CTLA-4-RA",
+        "TNF-a-RA",
+        "IL-17-psoriasis",
+        "IL-1b-CVD",
+        "Serotonin-MDD"
+      ]
+    }
+  },
+  "registered_null_families_split": {
+    "inconclusive": 10,
+    "negligible_range": 7
+  },
+  "scale_unresolved_families": [
+    "EBV-MS",
+    "IL-23-psoriasis",
+    "CTLA-4-RA",
+    "JAK-STAT-RA",
+    "CD20-RA",
+    "IL23-Crohns",
+    "Complement-GA",
+    "Serotonin-MDD"
+  ],
+  "scored_32_by_alignment_flag": {
+    "aligned": {
+      "n": 28,
+      "correct": 22,
+      "families": [
+        "Metabolic-AD",
+        "ModRisk-AD",
+        "Smoking-MS/AD",
+        "HRT-AD",
+        "BMI-AD",
+        "VitaminD-MS",
+        "EBV-MS",
+        "HDL/CETP",
+        "Niacin/HDL",
+        "Homocysteine",
+        "CRP",
+        "LDL/PCSK9",
+        "Blood pressure",
+        "Triglycerides",
+        "IL-23-psoriasis",
+        "CTLA-4-RA",
+        "TNF-a-RA",
+        "IL-17-psoriasis",
+        "JAK-STAT-RA",
+        "CD20-RA",
+        "IL-1b-CVD",
+        "VitD-Cancer",
+        "Estrogen-BC",
+        "Eos/IL5-Asthma",
+        "SGLT2-HF",
+        "Urate-Gout",
+        "Sclerostin-Fracture",
+        "Serotonin-MDD"
+      ]
+    },
+    "indication mismatch": {
+      "n": 1,
+      "correct": 0,
+      "families": [
+        "IGF1-CRC"
+      ]
+    },
+    "instrument-target mismatch": {
+      "n": 3,
+      "correct": 2,
+      "families": [
+        "Anti-CD20-MS",
+        "IL6-MDD",
+        "Complement-GA"
+      ]
+    }
+  },
+  "no_ci_families": [
+    "Metabolic-AD",
+    "ModRisk-AD",
+    "Smoking-MS/AD",
+    "TNF-a-RA",
+    "IL-17-psoriasis",
+    "IL-4Ra-AD",
+    "IL-1b-CVD",
+    "TSLP-Asthma",
+    "GLP1R-T2D/Obesity",
+    "IL23-Crohns"
+  ],
+  "registered_classifications_changed": 0
+}

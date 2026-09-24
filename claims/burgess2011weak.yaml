@@ -1,0 +1,23 @@
+source:
+  citation: burgess2011weak
+  local: ../citations-library/pdfs/doi-10-1093-ije-dyr036.abstract.txt
+  sha256: 2cc61e62d1d7c073a14e532571778a29512b5b27ff56f07faa844e7ce01326b3
+  doi: 10.1093/ije/dyr036
+  note: ABSTRACT ONLY. Full text paywalled (no open-access location in OpenAlex or Europe PMC; the OUP
+    PDF link returns an HTML page); the artifact is the PubMed abstract (PMID 21414999) saved as plain
+    text in the shared citations library. Quotations resolve against the abstract, not the article.
+claims:
+  weak-instrument-bias-direction:
+    quotes:
+    - exact: "Estimates of association from IV analysis are \nbiased in the direction of the confounded,\
+        \ observational association between \nphenotype and outcome. The magnitude of the bias depends\
+        \ on the F-statistic for \nthe strength of relationship between IVs and phenotype."
+      section: 'Abstract: Background'
+  weak-instrument-bias-f-statistic:
+    quotes:
+    - exact: Bias is shown to increase as the expected F-statistic decreases
+      section: 'Abstract: Results'
+  weak-instrument-f10-misleading:
+    quotes:
+    - exact: "the commonly cited rule of thumb that F > 10 avoids bias in IV \nanalysis is misleading."
+      section: 'Abstract: Conclusions'

@@ -1,0 +1,220 @@
+ti_uid,target,indication_mesh_term,combined_max_phase,succ_3_a,year_launch,areas,assoc_source
+ABCC8-D003920,ABCC8,Diabetes Mellitus,Launched,TRUE,2019,"metabolic, endocrine",OMIM
+ABCC8-D003924,ABCC8,"Diabetes Mellitus, Type 2",Launched,TRUE,,"metabolic, endocrine",OMIM
+ABCD1-D000326,ABCD1,Adrenoleukodystrophy,Launched,TRUE,,"neurology, congenital, metabolic, endocrine",OMIM
+ACE-D006973,ACE,Hypertension,Launched,TRUE,2013,cardiovascular,OTG
+ADA-D016511,ADA,Severe Combined Immunodeficiency,Launched,TRUE,2019,"congenital, metabolic, immune",OMIM
+ADRA1A-D006973,ADRA1A,Hypertension,Phase III,FALSE,,cardiovascular,OTG
+ADRA2C-D006973,ADRA2C,Hypertension,Launched,TRUE,,cardiovascular,OTG
+ADRB1-D006973,ADRB1,Hypertension,Launched,TRUE,,cardiovascular,OTG
+ADRB2-D001249,ADRB2,Asthma,Launched,TRUE,2004,"respiratory, immune",OTG
+ADRB2-D006973,ADRB2,Hypertension,Launched,TRUE,2007,cardiovascular,OTG
+ADRB2-D029424,ADRB2,"Pulmonary Disease, Chronic Obstructive",Launched,TRUE,2009,respiratory,OTG
+AGT-D006973,AGT,Hypertension,Launched,TRUE,,cardiovascular,OTG
+ALPL-D007014,ALPL,Hypophosphatasia,Launched,TRUE,,"congenital, metabolic",OMIM
+ANGPTL3-D006938,ANGPTL3,Hyperlipoproteinemia Type II,Launched,TRUE,2021,"congenital, metabolic",Genebass
+APOB-D006937,APOB,Hypercholesterolemia,Phase III,FALSE,,metabolic,Genebass
+APOB-D006938,APOB,Hyperlipoproteinemia Type II,Launched,TRUE,,"congenital, metabolic",OMIM
+APOC3-D008072,APOC3,Hyperlipoproteinemia Type I,Launched,TRUE,,"congenital, metabolic",OMIM
+APOC3-D015228,APOC3,Hypertriglyceridemia,Launched,TRUE,,metabolic,Genebass
+APP-D000544,APP,Alzheimer Disease,Launched,TRUE,2021,"neurology, psychiatry",OMIM
+AR-D011471,AR,Prostatic Neoplasms,Launched,TRUE,2022,oncology,OTG
+AVPR1A-D018805,AVPR1A,Sepsis,Phase III,FALSE,,"infection, signs/symptoms",OTG
+BCL2-D015451,BCL2,"Leukemia, Lymphocytic, Chronic, B-Cell",Launched,TRUE,2018,oncology,OTG
+CACNA2D1-D001008,CACNA2D1,Anxiety Disorders,Phase III,FALSE,,psychiatry,OTG
+CALCB-D008881,CALCB,Migraine Disorders,Launched,TRUE,,neurology,OTG
+CASR-D006934,CASR,Hypercalcemia,Launched,TRUE,2019,metabolic,OMIM
+CETP-D006937,CETP,Hypercholesterolemia,Phase III,FALSE,,metabolic,OTG
+CETP-D006938,CETP,Hyperlipoproteinemia Type II,Phase III,FALSE,,"congenital, metabolic",OTG
+CETP-D050197,CETP,Atherosclerosis,Phase III,FALSE,,cardiovascular,OTG
+CFTR-D003550,CFTR,Cystic Fibrosis,Launched,TRUE,,"digestive, respiratory, congenital",OMIM
+CHRM3-D029424,CHRM3,"Pulmonary Disease, Chronic Obstructive",Launched,TRUE,2012,respiratory,OTG
+CHRM3-D029481,CHRM3,"Bronchitis, Chronic",Launched,TRUE,2012,"infection, respiratory",OTG
+CHRM3-D065631,CHRM3,"Rhinitis, Allergic",Launched,TRUE,2021,"respiratory, immune",OTG
+CHRNA4-D014029,CHRNA4,Tobacco Use Disorder,Launched,TRUE,,psychiatry,OTG
+COL7A1-D004820,COL7A1,Epidermolysis Bullosa,Launched,TRUE,,"congenital, dermatology",OMIM
+CSF3-D009503,CSF3,Neutropenia,Launched,TRUE,2021,hematology,OTG
+CSF3R-D007970,CSF3R,Leukopenia,Launched,TRUE,,hematology,OTG
+CSF3R-D009503,CSF3R,Neutropenia,Launched,TRUE,2016,hematology,OMIM
+DDC-D000592,DDC,"Amino Acid Metabolism, Inborn Errors",Launched,TRUE,,"congenital, metabolic",OMIM
+DMD-D020388,DMD,"Muscular Dystrophy, Duchenne",Launched,TRUE,,"musculoskeletal, neurology, congenital",OMIM
+DRD2-D001008,DRD2,Anxiety Disorders,Launched,TRUE,,psychiatry,OTG
+DRD2-D001714,DRD2,Bipolar Disorder,Launched,TRUE,,psychiatry,OTG
+DRD2-D003863,DRD2,Depression,Launched,TRUE,,psychiatry,OTG
+DRD2-D003865,DRD2,"Depressive Disorder, Major",Launched,TRUE,,psychiatry,OTG
+DRD2-D011618,DRD2,Psychotic Disorders,Launched,TRUE,2010,psychiatry,OTG
+DRD2-D012148,DRD2,Restless Legs Syndrome,Launched,TRUE,,"neurology, psychiatry",OTG
+DRD2-D012559,DRD2,Schizophrenia,Launched,TRUE,2020,psychiatry,OTG
+EGLN1-D000740,EGLN1,Anemia,Launched,TRUE,,hematology,OTG
+EGLN2-D000740,EGLN2,Anemia,Launched,TRUE,,hematology,OTG
+EGLN3-D000740,EGLN3,Anemia,Launched,TRUE,,hematology,OTG
+EPAS1-D007680,EPAS1,Kidney Neoplasms,Launched,TRUE,2021,oncology,OTG
+EPOR-D000740,EPOR,Anemia,Launched,TRUE,,hematology,OTG
+ERBB4-D001943,ERBB4,Breast Neoplasms,Launched,TRUE,2019,oncology,OTG
+ESR1-D001943,ESR1,Breast Neoplasms,Launched,TRUE,,oncology,OTG
+ESR1-D010024,ESR1,Osteoporosis,Launched,TRUE,,"musculoskeletal, metabolic",OTG
+F10-D002836,F10,Hemophilia B,Launched,TRUE,,"hematology, congenital",OMIM
+F10-D006467,F10,Hemophilia A,Launched,TRUE,2020,"hematology, congenital",OMIM
+F11-D005173,F11,Factor XI Deficiency,Launched,TRUE,,"hematology, congenital",OMIM
+F2-D013927,F2,Thrombosis,Launched,TRUE,,cardiovascular,OTG
+F2-D020246,F2,Venous Thrombosis,Launched,TRUE,,cardiovascular,OTG
+F7-D005168,F7,Factor VII Deficiency,Phase III,FALSE,,"hematology, congenital",OMIM
+F7-D006467,F7,Hemophilia A,Launched,TRUE,2010,"hematology, congenital",OMIM
+F8-D006467,F8,Hemophilia A,Launched,TRUE,,"hematology, congenital",OMIM
+F9-D002836,F9,Hemophilia B,Launched,TRUE,2018,"hematology, congenital",OMIM
+F9-D006467,F9,Hemophilia A,Launched,TRUE,2020,"hematology, congenital",OMIM
+FCGRT-D013921,FCGRT,Thrombocytopenia,Phase III,FALSE,,hematology,OTG
+FDFT1-D006949,FDFT1,Hyperlipidemias,Phase III,FALSE,,metabolic,Genebass
+FGA-D000347,FGA,Afibrinogenemia,Launched,TRUE,,"hematology, congenital",OMIM
+FGB-D000347,FGB,Afibrinogenemia,Launched,TRUE,,"hematology, congenital",OMIM
+FGFR2-D009369,FGFR2,Neoplasms,Launched,TRUE,,oncology,OTG
+FGFR3-D001749,FGFR3,Urinary Bladder Neoplasms,Launched,TRUE,2019,oncology,PICCOLO
+FGFR3-D007680,FGFR3,Kidney Neoplasms,Launched,TRUE,,oncology,PICCOLO
+FGG-D000347,FGG,Afibrinogenemia,Launched,TRUE,,"hematology, congenital",OMIM
+FLT1-D009216,FLT1,Myopia,Launched,TRUE,,ophthalmology,OTG
+FLT3-D013921,FLT3,Thrombocytopenia,Launched,TRUE,,hematology,OTG
+FLT3-D013922,FLT3,Thrombocytosis,Launched,TRUE,,hematology,OTG
+GAA-D006009,GAA,Glycogen Storage Disease Type II,Launched,TRUE,,"neurology, congenital, metabolic",OMIM
+GABRA1-D004831,GABRA1,"Epilepsies, Myoclonic",Phase III,FALSE,,neurology,OMIM
+GABRA2-D004827,GABRA2,Epilepsy,Launched,TRUE,,neurology,OMIM
+GABRA2-D004829,GABRA2,"Epilepsy, Generalized",Launched,TRUE,2019,neurology,OTG
+GABRA3-D004827,GABRA3,Epilepsy,Launched,TRUE,,neurology,OMIM
+GABRA3-D004829,GABRA3,"Epilepsy, Generalized",Launched,TRUE,2019,neurology,OMIM
+GABRA5-D004827,GABRA5,Epilepsy,Launched,TRUE,,neurology,OMIM
+GABRA5-D004829,GABRA5,"Epilepsy, Generalized",Launched,TRUE,2019,neurology,OMIM
+GALNS-D009085,GALNS,Mucopolysaccharidosis IV,Launched,TRUE,,"congenital, dermatology, metabolic",OMIM
+GBA-D005776,GBA,Gaucher Disease,Launched,TRUE,,"neurology, congenital, metabolic",OMIM
+GCK-D003924,GCK,"Diabetes Mellitus, Type 2",Launched,TRUE,,"metabolic, endocrine",OMIM
+GIPR-D003924,GIPR,"Diabetes Mellitus, Type 2",Launched,TRUE,,"metabolic, endocrine",OTG
+GLA-D000795,GLA,Fabry Disease,Launched,TRUE,2018,"neurology, cardiovascular, congenital, metabolic",OMIM
+GLP1R-D003924,GLP1R,"Diabetes Mellitus, Type 2",Launched,TRUE,,"metabolic, endocrine",OTG
+GLP1R-D009765,GLP1R,Obesity,Launched,TRUE,,"metabolic, signs/symptoms",OTG
+GNRH1-D007889,GNRH1,Leiomyoma,Launched,TRUE,,oncology,OTG
+GRIN2B-D000544,GRIN2B,Alzheimer Disease,Phase III,FALSE,,"neurology, psychiatry",OTG
+GRM3-D001008,GRM3,Anxiety Disorders,Phase III,FALSE,,psychiatry,OTG
+GUSB-D016538,GUSB,Mucopolysaccharidosis VII,Launched,TRUE,,"congenital, dermatology, metabolic",OMIM
+HBB-D013789,HBB,Thalassemia,Launched,TRUE,,"hematology, congenital",OMIM
+HCRTR1-D007319,HCRTR1,Sleep Initiation and Maintenance Disorders,Launched,TRUE,,"neurology, psychiatry",OTG
+HCRTR2-D007319,HCRTR2,Sleep Initiation and Maintenance Disorders,Launched,TRUE,,"neurology, psychiatry",OTG
+HMGCR-D006937,HMGCR,Hypercholesterolemia,Launched,TRUE,,metabolic,OTG
+HMGCR-D006949,HMGCR,Hyperlipidemias,Launched,TRUE,,metabolic,OTG
+HMGCR-D050171,HMGCR,Dyslipidemias,Launched,TRUE,,metabolic,OTG
+HPD-D020176,HPD,Tyrosinemias,Launched,TRUE,,"neurology, congenital, metabolic",OMIM
+IDS-D016532,IDS,Mucopolysaccharidosis II,Launched,TRUE,2012,"neurology, congenital, dermatology, metabolic",OMIM
+IFNAR2-D000086382,IFNAR2,COVID-19,Launched,TRUE,2021,"infection, respiratory",OTG
+IL12B-D003093,IL12B,"Colitis, Ulcerative",Launched,TRUE,,digestive,OTG
+IL12B-D003424,IL12B,Crohn Disease,Launched,TRUE,2020,digestive,OTG
+IL12B-D011565,IL12B,Psoriasis,Launched,TRUE,2009,dermatology,OTG
+IL12B-D013167,IL12B,"Spondylitis, Ankylosing",Phase III,FALSE,,musculoskeletal,OTG
+IL12B-D015535,IL12B,"Arthritis, Psoriatic",Launched,TRUE,,"musculoskeletal, dermatology",OTG
+IL13-D003876,IL13,"Dermatitis, Atopic",Launched,TRUE,,"congenital, dermatology, immune",OTG
+IL1B-D006967,IL1B,Hypersensitivity,Phase III,FALSE,,immune,OTG
+IL2RA-D001172,IL2RA,"Arthritis, Rheumatoid",Launched,TRUE,,"musculoskeletal, dermatology, immune",OTG
+IL2RA-D012859,IL2RA,Sjogren's Syndrome,Launched,TRUE,,"musculoskeletal, ophthalmology, dermatology, immune",OTG
+IL4R-D001249,IL4R,Asthma,Launched,TRUE,2021,"respiratory, immune",OTG
+IL4R-D003876,IL4R,"Dermatitis, Atopic",Launched,TRUE,,"congenital, dermatology, immune",OTG
+IL4R-D006967,IL4R,Hypersensitivity,Phase III,FALSE,,immune,OTG
+IL4R-D057765,IL4R,Eosinophilic Esophagitis,Launched,TRUE,2022,"digestive, hematology, immune",OTG
+IL6R-D001172,IL6R,"Arthritis, Rheumatoid",Launched,TRUE,,"musculoskeletal, dermatology, immune",OTG
+IL6R-D013167,IL6R,"Spondylitis, Ankylosing",Phase III,FALSE,,musculoskeletal,OTG
+INPP5D-D003876,INPP5D,"Dermatitis, Atopic",Phase III,FALSE,,"congenital, dermatology, immune",OTG
+INS-D003924,INS,"Diabetes Mellitus, Type 2",Launched,TRUE,,"metabolic, endocrine",OMIM
+INSR-D003920,INSR,Diabetes Mellitus,Launched,TRUE,,"metabolic, endocrine",OMIM
+INSR-D003924,INSR,"Diabetes Mellitus, Type 2",Launched,TRUE,2008,"metabolic, endocrine",OTG
+ITGA4-D003093,ITGA4,"Colitis, Ulcerative",Launched,TRUE,,digestive,OTG
+JAK2-D003093,JAK2,"Colitis, Ulcerative",Phase III,FALSE,,digestive,OTG
+JAK2-D008180,JAK2,"Lupus Erythematosus, Systemic",Phase III,FALSE,,"dermatology, immune",OTG
+JAK2-D011087,JAK2,Polycythemia Vera,Launched,TRUE,,oncology,OTG
+JAK2-D013921,JAK2,Thrombocytopenia,Launched,TRUE,,hematology,OTG
+JAK2-D013922,JAK2,Thrombocytosis,Launched,TRUE,,hematology,OMIM
+JAK2-D015535,JAK2,"Arthritis, Psoriatic",Phase III,FALSE,,"musculoskeletal, dermatology",OTG
+JAK2-D055728,JAK2,Primary Myelofibrosis,Launched,TRUE,2017,hematology,OTG
+KCNH2-D001281,KCNH2,Atrial Fibrillation,Launched,TRUE,2021,"cardiovascular, signs/symptoms",OTG
+KCNJ11-D003920,KCNJ11,Diabetes Mellitus,Launched,TRUE,2019,"metabolic, endocrine",OMIM
+KCNJ11-D003924,KCNJ11,"Diabetes Mellitus, Type 2",Launched,TRUE,,"metabolic, endocrine",OTG
+KIT-D008415,KIT,Mastocytosis,Launched,TRUE,2021,oncology,OMIM
+KIT-D013921,KIT,Thrombocytopenia,Launched,TRUE,,hematology,OTG
+KIT-D046152,KIT,Gastrointestinal Stromal Tumors,Launched,TRUE,,oncology,OMIM
+LHCGR-D011085,LHCGR,Polycystic Ovary Syndrome,Launched,TRUE,,oncology,OTG
+LIPA-D015223,LIPA,Wolman Disease,Launched,TRUE,2016,"congenital, metabolic",OMIM
+LPL-D008072,LPL,Hyperlipoproteinemia Type I,Launched,TRUE,2015,"congenital, metabolic",OMIM
+MAN2B1-D008363,MAN2B1,alpha-Mannosidosis,Launched,TRUE,,"congenital, metabolic",OMIM
+MC1R-D010787,MC1R,Photosensitivity Disorders,Phase III,FALSE,,dermatology,OTG
+MC4R-D009765,MC4R,Obesity,Launched,TRUE,2022,"metabolic, signs/symptoms",Genebass
+MMP9-D003093,MMP9,"Colitis, Ulcerative",Phase III,FALSE,,digestive,OTG
+MMP9-D003424,MMP9,Crohn Disease,Phase III,FALSE,,digestive,OTG
+MPL-D013921,MPL,Thrombocytopenia,Launched,TRUE,2018,hematology,OMIM
+MPL-D016553,MPL,"Purpura, Thrombocytopenic, Idiopathic",Launched,TRUE,2008,"hematology, immune, signs/symptoms",OMIM
+MTM1-D020914,MTM1,"Myopathies, Structural, Congenital",Phase III,FALSE,,"musculoskeletal, neurology",OMIM
+MTNR1B-D007319,MTNR1B,Sleep Initiation and Maintenance Disorders,Launched,TRUE,2015,"neurology, psychiatry",OTG
+MTNR1B-D012893,MTNR1B,Sleep Wake Disorders,Launched,TRUE,2020,"neurology, signs/symptoms, psychiatry",OTG
+MTNR1B-D020178,MTNR1B,"Sleep Disorders, Circadian Rhythm",Launched,TRUE,,"neurology, psychiatry",OTG
+MTNR1B-D058496,MTNR1B,Smith-Magenis Syndrome,Launched,TRUE,2020,"neurology, congenital",OTG
+NFKB1-D003876,NFKB1,"Dermatitis, Atopic",Phase III,FALSE,,"congenital, dermatology, immune",OTG
+NPC1L1-D050171,NPC1L1,Dyslipidemias,Launched,TRUE,,metabolic,OTG
+NR1H4-D008105,NR1H4,"Liver Cirrhosis, Biliary",Launched,TRUE,,"digestive, signs/symptoms",OMIM
+NR3C1-D001249,NR3C1,Asthma,Launched,TRUE,2001,"respiratory, immune",OTG
+NR3C1-D029424,NR3C1,"Pulmonary Disease, Chronic Obstructive",Launched,TRUE,2012,respiratory,OTG
+NR3C1-D057765,NR3C1,Eosinophilic Esophagitis,Launched,TRUE,,"digestive, hematology, immune",OTG
+OPRM1-D009293,OPRM1,Opioid-Related Disorders,Launched,TRUE,,psychiatry,OTG
+PCSK9-D006937,PCSK9,Hypercholesterolemia,Launched,TRUE,2018,metabolic,Genebass
+PCSK9-D006938,PCSK9,Hyperlipoproteinemia Type II,Launched,TRUE,,"congenital, metabolic",OTG
+PCSK9-D006949,PCSK9,Hyperlipidemias,Launched,TRUE,2019,metabolic,OTG
+PCSK9-D050197,PCSK9,Atherosclerosis,Launched,TRUE,,cardiovascular,OTG
+PDE3A-D020521,PDE3A,Stroke,Phase III,FALSE,,"neurology, cardiovascular",OTG
+PGR-D008593,PGR,Menopause,Launched,TRUE,,other,OTG
+PIK3CD-D000081207,PIK3CD,Primary Immunodeficiency Diseases,Launched,TRUE,,"congenital, immune",OMIM
+PKLR-D000746,PKLR,"Anemia, Hemolytic, Congenital Nonspherocytic",Launched,TRUE,,"hematology, congenital",OMIM
+PLA2G7-D001249,PLA2G7,Asthma,Phase III,FALSE,,"respiratory, immune",OMIM
+PLG-D009203,PLG,Myocardial Infarction,Launched,TRUE,2003,"cardiovascular, signs/symptoms",OTG
+PLG-D013927,PLG,Thrombosis,Launched,TRUE,,cardiovascular,PICCOLO
+PPARA-D006937,PPARA,Hypercholesterolemia,Launched,TRUE,,metabolic,PICCOLO
+PPARA-D006949,PPARA,Hyperlipidemias,Launched,TRUE,2008,metabolic,PICCOLO
+PPARA-D009765,PPARA,Obesity,Launched,TRUE,,"metabolic, signs/symptoms",OTG
+PPARA-D015228,PPARA,Hypertriglyceridemia,Launched,TRUE,,metabolic,OTG
+PPARA-D050171,PPARA,Dyslipidemias,Launched,TRUE,,metabolic,PICCOLO
+PPARG-D003924,PPARG,"Diabetes Mellitus, Type 2",Launched,TRUE,,"metabolic, endocrine",OTG
+PPARG-D006949,PPARG,Hyperlipidemias,Launched,TRUE,2013,metabolic,OTG
+PPARG-D009765,PPARG,Obesity,Launched,TRUE,,"metabolic, signs/symptoms",Genebass
+PPARG-D015228,PPARG,Hypertriglyceridemia,Launched,TRUE,2013,metabolic,Genebass
+PPARG-D024821,PPARG,Metabolic Syndrome,Phase III,FALSE,,metabolic,OTG
+PPARG-D065626,PPARG,Non-alcoholic Fatty Liver Disease,Launched,TRUE,2020,digestive,OTG
+PTGS2-D003093,PTGS2,"Colitis, Ulcerative",Launched,TRUE,2019,digestive,PICCOLO
+REN-D006973,REN,Hypertension,Launched,TRUE,,cardiovascular,OTG
+RET-D013964,RET,Thyroid Neoplasms,Launched,TRUE,,oncology,OMIM
+RET-D018358,RET,Neuroendocrine Tumors,Launched,TRUE,,oncology,OMIM
+ROS1-D002289,ROS1,"Carcinoma, Non-Small-Cell Lung",Launched,TRUE,2019,oncology,PICCOLO
+RPE65-D012174,RPE65,Retinitis Pigmentosa,Launched,TRUE,2018,"ophthalmology, congenital",OMIM
+RPE65-D057130,RPE65,Leber Congenital Amaurosis,Launched,TRUE,,ophthalmology,OMIM
+RYR1-D008305,RYR1,Malignant Hyperthermia,Launched,TRUE,2014,signs/symptoms,OMIM
+SCN1A-D004827,SCN1A,Epilepsy,Launched,TRUE,,neurology,OMIM
+SCN1A-D004828,SCN1A,"Epilepsies, Partial",Launched,TRUE,2019,neurology,OTG
+SCN1A-D004829,SCN1A,"Epilepsy, Generalized",Launched,TRUE,2019,neurology,OMIM
+SCN1A-D008881,SCN1A,Migraine Disorders,Launched,TRUE,,neurology,OMIM
+SCN2A-D001714,SCN2A,Bipolar Disorder,Launched,TRUE,,psychiatry,OTG
+SCN2A-D004829,SCN2A,"Epilepsy, Generalized",Launched,TRUE,2019,neurology,OMIM
+SCN3A-D004827,SCN3A,Epilepsy,Launched,TRUE,,neurology,OMIM
+SCN3A-D004829,SCN3A,"Epilepsy, Generalized",Launched,TRUE,2019,neurology,OMIM
+SCN5A-D001281,SCN5A,Atrial Fibrillation,Launched,TRUE,2010,"cardiovascular, signs/symptoms",OMIM
+SCN5A-D014693,SCN5A,Ventricular Fibrillation,Launched,TRUE,2009,"cardiovascular, signs/symptoms",OMIM
+SCN5A-D017180,SCN5A,"Tachycardia, Ventricular",Launched,TRUE,2009,"cardiovascular, signs/symptoms",OTG
+SERPINA1-D019896,SERPINA1,alpha 1-Antitrypsin Deficiency,Launched,TRUE,2010,"digestive, respiratory, congenital, signs/symptoms",OMIM
+SERPINC1-D020152,SERPINC1,Antithrombin III Deficiency,Launched,TRUE,2011,"hematology, congenital",OMIM
+SERPING1-D054179,SERPING1,"Angioedemas, Hereditary",Launched,TRUE,,"cardiovascular, congenital, dermatology, immune",OMIM
+SLC22A12-D006073,SLC22A12,Gout,Launched,TRUE,,"musculoskeletal, congenital, metabolic",OTG
+SLC6A3-D009290,SLC6A3,Narcolepsy,Launched,TRUE,2021,"neurology, psychiatry",OTG
+SLC6A4-D009765,SLC6A4,Obesity,Phase III,FALSE,,"metabolic, signs/symptoms",OTG
+SMN1-D009134,SMN1,"Muscular Atrophy, Spinal",Launched,TRUE,2020,neurology,OMIM
+SOD1-D000690,SOD1,Amyotrophic Lateral Sclerosis,Launched,TRUE,,"neurology, metabolic",OMIM
+SYK-D016553,SYK,"Purpura, Thrombocytopenic, Idiopathic",Launched,TRUE,,"hematology, immune, signs/symptoms",OTG
+TGFB1-D010003,TGFB1,Osteoarthritis,Launched,TRUE,,musculoskeletal,OTG
+TPP1-D009472,TPP1,Neuronal Ceroid-Lipofuscinoses,Launched,TRUE,2017,"neurology, congenital, metabolic",OMIM
+TSHR-D007037,TSHR,Hypothyroidism,Launched,TRUE,2021,endocrine,OMIM
+TSLP-D001249,TSLP,Asthma,Launched,TRUE,,"respiratory, immune",OTG
+TTR-D028227,TTR,"Amyloid Neuropathies, Familial",Launched,TRUE,2020,"neurology, congenital, metabolic",OMIM
+TYK2-D011565,TYK2,Psoriasis,Launched,TRUE,,dermatology,OTG
+VDR-D014808,VDR,Vitamin D Deficiency,Launched,TRUE,,metabolic,OMIM
+VEGFA-D008269,VEGFA,Macular Edema,Launched,TRUE,,ophthalmology,OTG
+VEGFA-D009216,VEGFA,Myopia,Launched,TRUE,2022,ophthalmology,OTG
+VWF-D006467,VWF,Hemophilia A,Launched,TRUE,,"hematology, congenital",OTG
+VWF-D014842,VWF,von Willebrand Diseases,Launched,TRUE,,"hematology, congenital",OTG

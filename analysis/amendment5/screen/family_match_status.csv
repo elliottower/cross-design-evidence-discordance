@@ -1,0 +1,33 @@
+family,gene,indication,minikel_mesh_term,match_status,pathway_proxy,universe_rows_reached,minikel_indications_for_gene,registered_correct
+Metabolic-AD,multiple,Alzheimer's disease,Alzheimer Disease,polygenic,yes,0,,True
+ModRisk-AD,multiple,Alzheimer's disease,Alzheimer Disease,polygenic,yes,0,,True
+Anti-CD20-MS,FCRL3,Multiple sclerosis,Multiple Sclerosis,no record,no,0,,True
+Smoking-MS/AD,multiple,Multiple sclerosis,Multiple Sclerosis,polygenic,yes,0,,True
+HRT-AD,ESR1,Alzheimer's disease,Alzheimer Disease,broader indication,yes,2,Breast Neoplasms; Osteoporosis,True
+BMI-AD,multiple,Alzheimer's disease,Alzheimer Disease,polygenic,no,0,,True
+VitaminD-MS,CYP2R1,Multiple sclerosis,Multiple Sclerosis,no record,yes,0,,False
+EBV-MS,HLA,Multiple sclerosis,Multiple Sclerosis,no record,yes,0,,True
+HDL/CETP,CETP,Coronary heart disease,Cardiovascular Diseases,broader indication,no,4,Atherosclerosis; Hypercholesterolemia; Hyperlipidemias; Hyperlipoproteinemia Type II,True
+Niacin/HDL,CETP,Coronary heart disease,Cardiovascular Diseases,broader indication,yes,4,Atherosclerosis; Hypercholesterolemia; Hyperlipidemias; Hyperlipoproteinemia Type II,True
+Homocysteine,MTHFR,Coronary heart disease,Cardiovascular Diseases,no record,yes,0,,True
+CRP,CRP,Coronary heart disease,Cardiovascular Diseases,no record,no,0,,True
+LDL/PCSK9,PCSK9,Coronary heart disease,Cardiovascular Diseases,broader indication,no,4,Atherosclerosis; Hypercholesterolemia; Hyperlipidemias; Hyperlipoproteinemia Type II,True
+Blood pressure,multiple,Coronary heart disease,Cardiovascular Diseases,polygenic,no,0,,True
+Triglycerides,LPL,Coronary heart disease,Cardiovascular Diseases,broader indication,yes,1,Hyperlipoproteinemia Type I,True
+IL-23-psoriasis,IL23R,Psoriasis,Psoriasis,exact,no,1,Psoriasis,True
+CTLA-4-RA,CTLA4,Rheumatoid arthritis,"Arthritis, Rheumatoid",no record,no,0,,False
+TNF-a-RA,TNF,Rheumatoid arthritis,"Arthritis, Rheumatoid",no record,yes,0,,False
+IL-17-psoriasis,IL17A,Psoriasis,Psoriasis,no record,yes,0,,False
+JAK-STAT-RA,STAT4,Rheumatoid arthritis,"Arthritis, Rheumatoid",no record,no,0,,True
+CD20-RA,FCRL3,Rheumatoid arthritis,"Arthritis, Rheumatoid",no record,no,0,,True
+IL-1b-CVD,IL1B,Coronary heart disease,Cardiovascular Diseases,broader indication,yes,2,Acne Vulgaris; Hypersensitivity,True
+VitD-Cancer,CYP2R1,Colorectal cancer,Colorectal Neoplasms,no record,yes,0,,True
+IGF1-CRC,IGF1,Colorectal cancer,Colorectal Neoplasms,no record,yes,0,,False
+Estrogen-BC,CYP19A1,Breast cancer,Breast Neoplasms,no record,yes,0,,False
+Eos/IL5-Asthma,IL5,Asthma,Asthma,no record,yes,0,,True
+SGLT2-HF,SLC5A2,Heart failure,Heart Failure,no record,no,0,,True
+Urate-Gout,SLC2A9,Gout,Gout,no record,yes,0,,True
+IL6-MDD,IL6R,Major depressive disorder,"Depressive Disorder, Major",broader indication,no,2,"Arthritis, Rheumatoid; Spondylitis, Ankylosing",True
+Complement-GA,CFH,Age-related macular degeneration,Macular Degeneration,no record,no,0,,False
+Sclerostin-Fracture,SOST,Osteoporotic fracture,Osteoporotic Fractures,no record,no,0,,True
+Serotonin-MDD,SLC6A4,Major depressive disorder,"Depressive Disorder, Major",broader indication,no,1,Obesity,False

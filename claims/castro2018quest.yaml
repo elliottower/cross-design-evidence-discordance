@@ -1,0 +1,16 @@
+source:
+  citation: castro2018quest
+  local: ../citations-library/pdfs/doi-10-1056-nejmoa1804092.abstract.txt
+  sha256: 18542e227d19cdfc754717e4927eb274e7cfb1a3cbf9899c8daea644b66e0a07
+  doi: 10.1056/NEJMoa1804092
+  note: ABSTRACT ONLY. Full text paywalled (the NEJM PDF link returns an HTML page; no PMC copy); the
+    artifact is the PubMed abstract (PMID 29782217) saved as plain text in the shared citations library.
+    Quotations resolve against the abstract, not the article.
+claims:
+  dupilumab-exacerbation-rct:
+    quotes:
+    - exact: The annualized rate of severe asthma exacerbations was 0.46 (95% confidence interval [CI],
+        0.39 to 0.53) among patients assigned to 200 mg of dupilumab every 2 weeks and 0.87 (95% CI, 0.72
+        to 1.05) among those assigned to a matched placebo, for a 47.7% lower rate with dupilumab than
+        with placebo (P<0.001)
+      section: 'Abstract: Results'

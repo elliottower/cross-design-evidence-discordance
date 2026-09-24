@@ -1,0 +1,12 @@
+source:
+  citation: daha2009ctla4
+  local: ../citations-library/pdfs/doi-10-1002-art-24503.pdf
+  sha256: e6c25852a7ec0243edab257316d3568dedd40e0a3e0690724894817ebf4b5eb0
+  doi: 10.1002/art.24503
+  note: Publisher PDF obtained by hand (2026-09-23); quotations copied from pdftotext output.
+claims:
+  ctla4-ra-gen-pooled:
+    quotes:
+    - exact: Pooled Caucasian                                                                                   0.86
+        (0.78–0.96) 0.0047
+      section: Table 2, CTLA4 rs3087243

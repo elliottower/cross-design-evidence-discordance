@@ -1,0 +1,13 @@
+source:
+  citation: ghezzi2025icr
+  local: ../citations-library/pdfs/doi-10-1136-jnnp-2024-333465.abstract.txt
+  sha256: 2aad8b39ecd5ffb19a91fd052ed18841c109ed67ab75feffb009e10d5a612d25
+  doi: 10.1136/jnnp-2024-333465
+  note: ABSTRACT ONLY. Full text not held (status paywalled/failed); the artifact is the PubMed abstract
+    saved as plain text in the shared citations library. Every quotation in this file resolves against
+    the abstract, not the article.
+claims:
+  bmi-ms-trial-leptin-endpoint:
+    quotes:
+    - exact: The primary outcome was reduction in serum leptin levels at 12 weeks.
+      section: Abstract (abstract-only artifact)

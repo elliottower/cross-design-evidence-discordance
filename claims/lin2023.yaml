@@ -1,0 +1,16 @@
+source:
+  citation: lin2023
+  local: ../citations-library/pdfs/doi-10-1093-brain-awad070.pdf
+  sha256: a8889560b2a59857430e1d56d7454c14145a5afb0328e7621366b30207bdd6fa
+  doi: 10.1093/brain/awad070
+  note: Publisher PDF obtained by hand (2026-09-23) and held in the shared citations library ($CITATIONS_HOME/pdfs),
+    path relative to the repository root. Quotations copied from pdftotext output; verify reads the default
+    extractor chain.
+claims:
+  anti-cd20-ms-gen:
+    quotes:
+    - exact: In plasma, per standard deviation increase in FCRL3, TYMP and AHSG had a protective effect.
+        Odds ratios for the proteins above were 0.83 (95% CI, 0.79–0.89), 0.59 (95% CI, 0.48–0.71) and
+        0.88 (95% CI, 0.83–0.94), respectively.
+      section: Abstract
+      page: 1

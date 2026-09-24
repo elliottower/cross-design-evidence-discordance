@@ -1,0 +1,26 @@
+source:
+  citation: jordan2019urate
+  local: ../citations-library/pdfs/doi-10-1371-journal-pmed-1002725.pdf
+  sha256: d3dd36623406f28d4773860aec8cf497b776e292b95e99b33286f2821d9cbbea
+  doi: 10.1371/journal.pmed.1002725
+  url: https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1002725&type=printable
+  note: Publisher PDF held in the shared citations library ($CITATIONS_HOME/pdfs), path relative to the
+    repository root. Quotations copied from pdftotext output; verify reads the default extractor chain.
+claims:
+  urate-gout-gen-positive-control:
+    quotes:
+    - exact: 'In contrast, the same MR approaches showed that SU has a
+
+        causal effect on the risk of gout (OR estimates ranging from 3.41 to 6.04 per 1-mg/dl
+
+        increase in SU, all P < 10−3)'
+      section: 'Abstract: Methods and findings'
+      page: 1
+  urate-gout-gen-26-snvs:
+    quotes:
+    - exact: 'As a positive control, we repeated the same procedure using the same 26 SNVs associated
+        with
+
+        SU to test for a causal effect of SU on gout.'
+      section: 'Results: MR analysis for gout endpoint'
+      page: 6

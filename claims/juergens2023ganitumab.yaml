@@ -1,0 +1,19 @@
+source:
+  citation: juergens2023ganitumab
+  local: ../citations-library/pdfs/doi-10-1200-jco-22-01815.abstract.txt
+  sha256: cace484b399ddaf3e928890fcadfd9436fde8ea631de1f6952a7fbfbdebd6d04
+  doi: 10.1200/JCO.22.01815
+  note: ABSTRACT ONLY. Full text not held (status paywalled/failed); the artifact is the PubMed abstract
+    saved as plain text in the shared citations library. Every quotation in this file resolves against
+    the abstract, not the article.
+claims:
+  igf1-crc-outcome-ganitumab:
+    quotes:
+    - exact: stratified EFS-event hazard ratio for experimental arm 1.00; 95% CI, 0.76 to 1.33; 1-sided,
+        P = .50
+      section: Abstract (abstract-only artifact)
+  igf1-crc-outcome-ganitumab-conclusion:
+    quotes:
+    - exact: Ganitumab added to interval-compressed chemotherapy did not significantly reduce the risk
+        of EFS event in patients with newly diagnosed metastatic Ewing sarcoma
+      section: Abstract (abstract-only artifact)

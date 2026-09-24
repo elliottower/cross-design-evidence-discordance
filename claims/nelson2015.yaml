@@ -1,0 +1,14 @@
+source:
+  citation: nelson2015
+  local: ../citations-library/pdfs/doi-10-1038-ng-3314.abstract.txt
+  sha256: 0b810a1acea30866d25ec2f441cefd7f21e09c6264e94e3e0068981bd7cb21dc
+  doi: 10.1038/ng.3314
+  note: ABSTRACT ONLY. Full text not held (status paywalled/failed); the artifact is the PubMed abstract
+    saved as plain text in the shared citations library. Every quotation in this file resolves against
+    the abstract, not the article.
+claims:
+  genetic-support-doubles-success:
+    quotes:
+    - exact: We estimate that selecting genetically supported targets could double the success rate in
+        clinical development.
+      section: Abstract (abstract-only artifact)

@@ -1,0 +1,18 @@
+source:
+  citation: ogawa2014
+  local: ../citations-library/pdfs/doi-10-4088-jcp-13r08908.abstract.txt
+  sha256: 4289a00c6055c6ef599aa9b7fba468cbcdc59ba54b1ae224b09b3edf91aa826b
+  doi: 10.4088/JCP.13r08908
+  note: ABSTRACT ONLY. Full text not held (status paywalled/failed); the artifact is the PubMed abstract
+    saved as plain text in the shared citations library. Every quotation in this file resolves against
+    the abstract, not the article.
+claims:
+  serotonin-mdd-obs:
+    quotes:
+    - exact: The meta-analysis after adjusting for publication bias showed a significant decrease in patients
+        with MDD with a modest effect size (Hedges g, -0.45).
+      section: Abstract (abstract-only artifact)
+  serotonin-mdd-obs-unmedicated:
+    quotes:
+    - exact: However, analysis on unmedicated subjects yielded a large effect (Hedges g, -0.84; P = .00015).
+      section: Abstract (abstract-only artifact)

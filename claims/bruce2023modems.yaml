@@ -1,0 +1,19 @@
+source:
+  citation: bruce2023modems
+  local: ../citations-library/pdfs/doi-10-1177-13524585231213241.abstract.txt
+  sha256: fa9342639c5b4710d1cd5e294a063df957e3317f8d3215bece08e56a0991cee2
+  doi: 10.1177/13524585231213241
+  note: ABSTRACT ONLY. Full text not held (status paywalled/failed); the artifact is the PubMed abstract
+    saved as plain text in the shared citations library. Every quotation in this file resolves against
+    the abstract, not the article.
+claims:
+  bmi-ms-trial-weight-loss:
+    quotes:
+    - exact: Mean percent weight loss in the treatment group was 8.6% compared to 0.7% in the TAU group
+        (p < .001).
+      section: Abstract (abstract-only artifact)
+  bmi-ms-trial-endpoints:
+    quotes:
+    - exact: Anthropometric measurements, mobility tasks, self-report questionnaires, and accelerometry
+        were used to assess changes at follow-up.
+      section: Abstract (abstract-only artifact)

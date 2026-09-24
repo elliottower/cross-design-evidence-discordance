@@ -1,0 +1,37 @@
+source:
+  citation: hernan2016
+  local: ../citations-library/pdfs/doi-10-1093-aje-kwv254.pdf
+  sha256: d48f8206249b57fa32881ea12fa7d3c285027baeab1eeb257b9523da98b212bb
+  doi: 10.1093/aje/kwv254
+  note: Publisher PDF obtained by hand (2026-09-23) and held in the shared citations library ($CITATIONS_HOME/pdfs),
+    path relative to the repository root. Quotations copied from pdftotext output; verify reads the default
+    extractor chain.
+claims:
+  target-trial-emulation:
+    quotes:
+    - exact: Causal inference from large observational databases (big data) can be viewed as an attempt
+        to emulate a randomized experiment—the target experiment or target trial—that would answer the
+        question of interest.
+      section: Abstract
+      page: 1
+  protocol-components:
+    quotes:
+    - exact: 'Table 1 lists 7 key components of the target trial protocol: the eligibility criteria, treatment
+        strategies being compared (including their start and end times), assignment procedures, follow-up
+        period, outcome of interest, causal contrast(s) of interest, and analysis plan.'
+      section: Introduction
+      page: 1
+  prevalent-user-hrt-chd:
+    quotes:
+    - exact: the comparison of current ( prevalent) users, who had initiated therapy months or years before
+        baseline, with never users may have contributed to the failure to identify the early effect of
+        estrogen plus progestin therapy on the risk of coronary heart disease in observational studies
+        (12, 13).
+      section: Eligibility criteria
+      page: 3
+  time-zero:
+    quotes:
+    - exact: Successful emulation of a target trial requires a proper definition of time zero of follow-up
+        in the observational data, also referred to as baseline.
+      section: Defining time zero
+      page: 4

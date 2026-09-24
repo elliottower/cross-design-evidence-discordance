@@ -1,0 +1,13 @@
+source:
+  citation: zhu2012il23r
+  local: ../citations-library/pdfs/doi-10-1007-s00011-012-0509-8.abstract.txt
+  sha256: 14b946f30fdaa92fa8283e7945571bb5b7c3710c01b81306faa6bf9d93074285
+  doi: 10.1007/s00011-012-0509-8
+  note: ABSTRACT ONLY. Full text paywalled; the artifact is the PubMed abstract (PMID 22706445) saved
+    as plain text in the shared citations library. Quotations resolve against the abstract, not the article.
+claims:
+  il23-psoriasis-gen:
+    quotes:
+    - exact: For rs11209026, the odds ratios (ORs) of minor alleles for psoriasis and PsA were 0.616 [95
+        % confidence interval (CI) 0.563-0.674] and 0.630 (95 % CI 0.524-0.757), respectively
+      section: Abstract (abstract-only artifact)

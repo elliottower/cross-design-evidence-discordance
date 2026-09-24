@@ -1,0 +1,14 @@
+source:
+  citation: elliott2009
+  local: ../citations-library/pdfs/doi-10-1001-jama-2009-954.abstract.txt
+  sha256: 7c614c99ea2d1dbcae7b610cf1d58897cb3b0b70693acac3a5a754d19935c9c6
+  doi: 10.1001/jama.2009.954
+  note: ABSTRACT ONLY. Full text not held (status paywalled/failed); the artifact is the PubMed abstract
+    saved as plain text in the shared citations library. Every quotation in this file resolves against
+    the abstract, not the article.
+claims:
+  crp-gen:
+    quotes:
+    - exact: 'Our mendelian randomization study of variants in the CRP locus showed no association with
+        coronary heart disease: OR, 1.00; 95% CI, 0.97 to 1.02; per 20% lower CRP level'
+      section: Abstract (abstract-only artifact)

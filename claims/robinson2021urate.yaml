@@ -1,0 +1,20 @@
+source:
+  citation: robinson2021urate
+  local: ../citations-library/pdfs/doi-10-1186-s41927-021-00204-4.pdf
+  sha256: d5dd744af4729207b4982f08b7c257b312467b187ad8180a3bf2a76af91c5e05
+  doi: 10.1186/s41927-021-00204-4
+  url: https://bmcrheumatol.biomedcentral.com/track/pdf/10.1186/s41927-021-00204-4
+  note: Publisher PDF held in the shared citations library ($CITATIONS_HOME/pdfs), path relative to the
+    repository root. Quotations copied from pdftotext output; verify reads the default extractor chain.
+claims:
+  urate-gout-obs-band-hrs:
+    quotes:
+    - exact: 'Incident gout risk was significantly increased in those
+
+        with baseline serum urate 5.50–5.99 mg/dL (HR 2.60),
+
+        6.00–6.50 mg/dL (HR 3.70), 6.50–6.99 mg/dL (HR 5.24)
+
+        and > 7.00 mg/dL (HR 18.62) (Table 3).'
+      section: 'Results: Cox proportional hazards models'
+      page: 4

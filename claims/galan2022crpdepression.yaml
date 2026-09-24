@@ -1,0 +1,36 @@
+source:
+  citation: galan2022crpdepression
+  local: ../citations-library/pdfs/doi-10-1038-s41598-022-19214-4.pdf
+  sha256: d2da114a280adec1ba032bad7b66ea54fea2f24726812cd44b23a17493e16591
+  doi: 10.1038/s41598-022-19214-4
+  url: https://www.nature.com/articles/s41598-022-19214-4.pdf
+  note: Publisher PDF held in the shared citations library ($CITATIONS_HOME/pdfs), path relative to the
+    repository root. Quotations copied from pdftotext output; verify reads the default extractor chain.
+claims:
+  il6-mdd-gen:
+    quotes:
+    - exact: 'We did not find evidence for a reciprocal relationship between CRP levels (using > 500
+
+        genetic instruments for CRP) and depression ­(ORCRP–Dep = 1.01, 95% CI 0.99–1.04'
+      section: Abstract
+      page: 1
+  il6-mdd-gen-table3-512snps:
+    quotes:
+    - exact: 'CRP
+
+
+        Depression
+
+
+        512
+
+
+        1.01
+
+
+        0.99
+
+
+        1.04'
+      section: Table 3
+      page: 5

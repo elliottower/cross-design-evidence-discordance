@@ -1,0 +1,18 @@
+source:
+  citation: cuzick2015tamoxifen
+  local: ../citations-library/pdfs/doi-10-1016-s0140-6736-13-60140-3.abstract.txt
+  sha256: e4eb0ce04c35f220897375a773ff8b4266827355c6008fe042638b973bbde090
+  doi: 10.1016/S0140-6736(13)60140-3
+  note: ABSTRACT ONLY. Full text not held (status paywalled/failed); the artifact is the PubMed abstract
+    saved as plain text in the shared citations library. Every quotation in this file resolves against
+    the abstract, not the article.
+claims:
+  estrogen-bc-outcome:
+    quotes:
+    - exact: Tamoxifen and raloxifene reduce the risk of breast cancer in women at elevated risk of disease
+      section: Abstract (abstract-only artifact)
+  estrogen-bc-outcome-hr:
+    quotes:
+    - exact: Overall, we noted a 38% reduction (hazard ratio [HR] 0·62, 95% CI 0·56-0·69) in breast cancer
+        incidence
+      section: Abstract (abstract-only artifact)

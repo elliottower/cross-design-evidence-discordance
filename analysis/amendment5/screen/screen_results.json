@@ -1,0 +1,62 @@
+{
+  "registration": "PREREGISTRATION_AMENDMENT_5_SCREEN_MR_STATES_OUTCOME_CODING.md, commit fbc7d33",
+  "universe_definition": "combined_max_phase in {Phase III, Launched} and target_status == 'genetically supported target'",
+  "universe_n": 279,
+  "universe_outcome_split": {
+    "TRUE": 189,
+    "pending": 60,
+    "FALSE": 30
+  },
+  "resolved_universe_n": 219,
+  "resolved_outcome_split": {
+    "TRUE": 189,
+    "FALSE": 30
+  },
+  "scored_families_n": 32,
+  "families_by_match_status": {
+    "polygenic": 5,
+    "no record": 18,
+    "broader indication": 8,
+    "exact": 1
+  },
+  "families_pathway_proxy": [
+    "EBV-MS",
+    "Eos/IL5-Asthma",
+    "Estrogen-BC",
+    "HRT-AD",
+    "Homocysteine",
+    "IGF1-CRC",
+    "IL-17-psoriasis",
+    "IL-1b-CVD",
+    "Metabolic-AD",
+    "ModRisk-AD",
+    "Niacin/HDL",
+    "Smoking-MS/AD",
+    "TNF-a-RA",
+    "Triglycerides",
+    "Urate-Gout",
+    "VitD-Cancer",
+    "VitaminD-MS"
+  ],
+  "exact_coverage": {
+    "resolved_rows_covered": 0,
+    "of": 219,
+    "fraction": 0.0,
+    "universe_rows_covered_incl_pending": 1
+  },
+  "expanded_coverage": {
+    "resolved_rows_covered": 14,
+    "of": 219,
+    "fraction": 0.0639,
+    "universe_rows_covered_incl_pending": 17
+  },
+  "uncovered_resolved_rows_exact_definition": 219,
+  "uncovered_resolved_rows_expanded_definition": 205,
+  "mr_availability_sample": {
+    "n": 25,
+    "seed": 20260922,
+    "drawn_from": "resolved rows not covered under the exact definition, sorted by ti_uid"
+  },
+  "maps_source": "paper/reference/reviewer_analyses.py (GENE_TARGET_MAP, MINIKEL_INDICATION_MAP), frozen at 4b0a652",
+  "minikel_file": "paper/reference/minikel_data/table_s01.tsv"
+}

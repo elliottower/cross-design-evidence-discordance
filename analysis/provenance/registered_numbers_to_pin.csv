@@ -1,0 +1,97 @@
+family,leg,number,source_hint,ids
+Metabolic-AD,OBS,1.53,,
+Metabolic-AD,GEN,1.01,PMID 32326995,PMID 32326995
+Metabolic-AD,OUTCOME,Failed,"semaglutide, oral (evoke / evoke+); pioglitazone (TOMMORROW)",PMID:41865758;DOI:10.1016/S0140-6736(26)00459-9;NCT:NCT04777396;NCT:NCT04777409;PMID:34146512;DOI:10.1016/S1474-4422(21)00043-0;NCT:NCT01931566
+ModRisk-AD,OBS,1.46,,
+ModRisk-AD,GEN,1.1,PMID 29212772,PMID 29212772
+ModRisk-AD,OUTCOME,Failed,not reported,
+Anti-CD20-MS,OBS,2.23,,
+Anti-CD20-MS,GEN,0.83 (0.79-0.89),PMID 36864689,PMID 36864689
+Anti-CD20-MS,OUTCOME,Approved,ocrelizumab (OPERA I/II; ORATORIO); ofatumumab (ASCLEPIOS I/II); ublituximab (ULTIMATE I/II),PMID:28002679;DOI:10.1056/NEJMoa1601277;NCT:NCT01247324;NCT:NCT01412333;PMID:28002688;DOI:10.1056/NEJMoa1606468;NCT:NCT01194570;PMID:32757523;DOI:10.1056/NEJMoa1917246;NCT:NCT02792218;NCT:NCT02792231;
+Smoking-MS/AD,OBS,1.46,,
+Smoking-MS/AD,GEN,1.03,PMID 33253141,PMID 33253141
+Smoking-MS/AD,OUTCOME,Failed,not reported,
+HRT-AD,OBS,0.67,,
+HRT-AD,GEN,1.0 (0.85-1.18),PMID 41350255,PMID 41350255
+HRT-AD,OUTCOME,Failed,"conjugated equine estrogen 0.625 mg + medroxyprogesterone acetate 2.5 mg (WHIMS, ancillary to the WHI estrogen-plus-prog",PMID:12771112;DOI:10.1001/jama.289.20.2651;NCT:NCT00000611
+BMI-AD,OBS,2.04,,
+BMI-AD,GEN,1.03 (1.01-1.05),"PMID:34057091 (Li 2021, J Alzheimers Dis)","PMID:34057091 (Li 2021, J Alzheimers Dis)"
+BMI-AD,OUTCOME,Failed,not reported,
+VitaminD-MS,OBS,1.4,,
+VitaminD-MS,GEN,2.0 (1.7-2.5),PMID 26305103,PMID 26305103
+VitaminD-MS,OUTCOME,Failed,vitamin D3 (cholecalciferol) supplementation: VIDAMS; D-Lay MS; SOLAR; CHOLINE; PrevANZ,PMID:37125397;DOI:10.1016/j.eclinm.2023.101957;NCT:NCT01490502;PMID:40063041;DOI:10.1001/jama.2025.1604;NCT:NCT01817166;PMID:31594857;DOI:10.1212/WNL.0000000000008445;NCT:NCT01285401;PMID:31454777;DOI
+EBV-MS,OBS,1.7,,
+EBV-MS,GEN,5.0 (2.0-20.0),UNRESOLVED,UNRESOLVED
+EBV-MS,OUTCOME,Approved,not reported,NCT:NCT03283826;PMID:38104476;DOI:10.1016/j.msard.2023.105364
+HDL/CETP,OBS,0.62,,
+HDL/CETP,GEN,0.93 (0.68-1.26),PMID 22607825,PMID 22607825
+HDL/CETP,OUTCOME,Failed,torcetrapib (ILLUMINATE); dalcetrapib (dal-OUTCOMES); evacetrapib (ACCELERATE); class also includes anacetrapib (REVEAL),PMID:17984165;DOI:10.1056/NEJMoa0706628;NCT:NCT00134264;PMID:23126252;DOI:10.1056/NEJMoa1206797;NCT:NCT00658515;PMID:28514624;DOI:10.1056/NEJMoa1609581;NCT:NCT01687998;PMID:28847206;DOI:10.1056/NEJMoa
+Niacin/HDL,OBS,0.62,,
+Niacin/HDL,GEN,0.93 (0.68-1.26),PMID 22607825,PMID 22607825
+Niacin/HDL,OUTCOME,Failed,extended-release niacin (AIM-HIGH); extended-release niacin/laropiprant (HPS2-THRIVE),PMID:22085343;DOI:10.1056/NEJMoa1107579;NCT:NCT00120289;PMID:25014686;DOI:10.1056/NEJMoa1300955;NCT:NCT00461630;PMID:24622598;DOI:10.1016/S2213-8587(13)70129-3;PMID:25178730
+Homocysteine,OBS,1.32,,
+Homocysteine,GEN,1.02 (0.98-1.07),PMID 22363213,PMID 22363213
+Homocysteine,OUTCOME,Failed,folic acid / vitamin B6 / vitamin B12 supplementation (HOPE-2; NORVIT; 8-trial meta-analysis of the B-Vitamin Treatment ,PMID:20937919;DOI:10.1001/archinternmed.2010.348;PMID:16531613;DOI:10.1056/NEJMoa060900;NCT:NCT00106886;PMID:16531614;DOI:10.1056/NEJMoa055227;NCT:NCT00266487
+CRP,OBS,1.37,,
+CRP,GEN,1.0 (0.97-1.02),PMID 19567438,PMID 19567438
+CRP,OUTCOME,No benefit,canakinumab (CANTOS),PMID:28845751;DOI:10.1056/NEJMoa1707914;NCT:NCT01327846;PMID:31882264;DOI:10.1016/j.tcm.2019.11.013;PMID:29265905
+LDL/PCSK9,OBS,1.52,,
+LDL/PCSK9,GEN,1.78 (1.58-2.01),PMID 24474739,PMID 24474739
+LDL/PCSK9,OUTCOME,Approved,evolocumab (FOURIER); alirocumab (ODYSSEY OUTCOMES),PMID:28304224;DOI:10.1056/NEJMoa1615664;NCT:NCT01764633;PMID:30403574;DOI:10.1056/NEJMoa1801174;NCT:NCT01663402;PMID:26323342;PMID:26370210;PMID:31882264
+Blood pressure,OBS,1.41,,
+Blood pressure,GEN,1.44 (1.35-1.55),PMID 32611631,PMID 32611631
+Blood pressure,OUTCOME,Approved,antihypertensive drug classes (mixed class); PROGRESS (perindopril with or without indapamide) as the stroke-specific ex,PMID:33933205;DOI:10.1016/S0140-6736(21)00590-0;PMID:11589932;DOI:10.1016/S0140-6736(01)06178-5
+Triglycerides,OBS,1.72,,
+Triglycerides,GEN,1.62 (1.24-2.11),PMID 24474739,PMID 24474739
+Triglycerides,OUTCOME,Approved,triglyceride-lowering classes (mixed class): icosapent ethyl (REDUCE-IT); pemafibrate (PROMINENT); omega-3 carboxylic ac,PMID:30415628;DOI:10.1056/NEJMoa1812792;NCT:NCT01492361;PMID:36342113;DOI:10.1056/NEJMoa2210645;NCT:NCT03071692;PMID:33190147;DOI:10.1001/jama.2020.22258;NCT:NCT02104817;PMID:20228404;DOI:10.1056/NEJM
+IL-23-psoriasis,OBS,d 0.66,"IL-23: serum SMD=0.66 (Dowlatshahi 2013, CI -0.25 to 1.58, NON-SIGNIFICANT); but tissue p19 22x elevated (Lee 2004 PMID 14707118). NOTE: OBS rests on tissue expression, not serum. Serum-vs-tissue swit",14707118
+IL-23-psoriasis,GEN,0.616 (0.563-0.674),PMID 22706445,PMID 22706445
+IL-23-psoriasis,OUTCOME,Approved,"guselkumab (Tremfya; anti-IL-23 p19), first-approved selective IL-23 inhibitor for the indication; ustekinumab (Stelara;",PMID:28057360;PMID:28057361;NCT:NCT02207231;NCT:NCT02207244;PMID:24679469;PMID:39114670;FDA:BLA761061;FDA:BLA125261;PMID:18486739;PMID:18486740;NCT:NCT00267969;NCT:NCT00307437
+CTLA-4-RA,OBS,d 0.5,CTLA-4: sCTLA-4 elevated in RA p=0.005 (Liu 2012 PMID 22917707) 6.8 ng/mL vs controls; exact SMD not reported,22917707
+CTLA-4-RA,GEN,0.86 (0.78-0.95),PMID 19404967,PMID 19404967
+CTLA-4-RA,OUTCOME,Approved,"abatacept (Orencia; CTLA-4-Ig costimulation modulator), first-in-class",PMID:16785475;PMID:16162882;NCT:NCT00048568;NCT:NCT00048581;PMID:17014006;FDA:BLA125118;PMID:17565924
+TNF-a-RA,OBS,d 1.93,"TNF-a: meta-analysis of 14 studies, SMD=1.93 (CI 1.23-2.64) Wang 2015 PMC4694713; 890 RA vs 441 controls",PMC4694713
+TNF-a-RA,GEN,1.0,PMID 40618325,PMID 40618325
+TNF-a-RA,OUTCOME,Approved,"anti-TNF class in RA: etanercept (Enbrel; TNFR2:Fc), first approved for RA; infliximab (Remicade; anti-TNF mAb) RA suppl",PMID:10075615;PMID:9219699;PMID:10622295;PMID:10415055;FDA:BLA103795;FDA:BLA103772;PMID:10375846
+IL-17-psoriasis,OBS,d 0.47,"IL-17: meta-analysis of 8 studies, SMD=0.47 (CI 0.07-0.86) Zhou 2017 PMID 27925680",27925680
+IL-17-psoriasis,GEN,0.998,PMID 33188428,PMID 33188428
+IL-17-psoriasis,OUTCOME,Approved,"secukinumab (Cosentyx; anti-IL-17A), first-approved IL-17A antagonist",PMID:25007392;NCT:NCT01365455;NCT:NCT01358578;PMID:31129129;PMID:20926833;FDA:BLA125504
+JAK-STAT-RA,OBS,d 0.5,STAT4/JAK: serum STAT4 elevated in RA p=0.01 (Osman 2025 PMC12520596); STAT1/STAT4/Jak3 elevated in synovium (Walker 2006),PMC12520596
+JAK-STAT-RA,GEN,1.27 (1.2-1.34),PMID 19479340,PMID 19479340
+JAK-STAT-RA,OUTCOME,Approved,"tofacitinib (Xeljanz; JAK1/JAK3 inhibitor), first-approved JAK inhibitor for RA",PMID:22873530;PMID:22873531;NCT:NCT00814307;NCT:NCT00853385;PMID:25398374;FDA:NDA203214
+CD20-RA,OBS,d 0.5,"CD20/B-cell: RF positivity 60-80% in RA; B-cell infiltration in synovium FCRL3 GWAS OR 2.15 (Kochi 2005, Nature Genetics)",
+CD20-RA,GEN,1.291 (1.19-1.391),"SSRN 4709115 (preprint, 2024)","SSRN 4709115 (preprint, 2024)"
+CD20-RA,OUTCOME,Approved,"rituximab (Rituxan/MabThera; anti-CD20), first-approved B-cell-depleting agent for RA",PMID:16947627;NCT:NCT00468546;PMID:15201414;PMID:16649186;FDA:BLA103705
+IL-1b-CVD,OBS,1.37,IL-1b/CVD: CRP/IL-1 inflammatory axis observational OR 1.37 (ERFC 2010) Same construct as cardio CRP family,
+IL-1b-CVD,GEN,1.0,PMID 32223966,PMID 32223966
+IL-1b-CVD,OUTCOME,Failed,"canakinumab (Ilaris; anti-IL-1 beta), CANTOS",PMID:28845751;NCT:NCT01327846;PMID:29146124;PMID:31882264;PMID:30649147;FDA:BLA125319
+VitD-Cancer,OBS,0.78,"--- ONCOLOGY --- O1: VitD-Cancer OBS = JNCI pooled 17 cohorts, Q5 vs Q3 (mid-quintile ref) 25(OH)D and CRC (McCullough 2019, PMID 29912394): RR 0.78 (0.65-0.94) MR = systematic review of MR studies, p",29912394;36678292
+VitD-Cancer,GEN,0.97 (0.88-1.07),PMID 36678292,PMID 36678292
+VitD-Cancer,OUTCOME,Failed,"vitamin D3 2000 IU/day (VITAL; academic prevention trial, sponsor Brigham and Women's Hospital)",PMID:30415629; DOI:10.1056/NEJMoa1809944; NCT:NCT01169259
+IGF1-CRC,OBS,1.12,"O2: IGF1-CRC OBS = serologic analysis, per-quintile IGF-1 and CRC (Rinaldi 2019, PMID 31884076, Gastroenterology): OR ~1.12 MR = genetically predicted IGF-1 per SD and CRC, 416 SNPs (Larsson 2020, PMI",31884076;32717139
+IGF1-CRC,GEN,1.22 (1.09-1.36),PMID 32717139,PMID 32717139
+IGF1-CRC,OUTCOME,Failed,"figitumumab (Pfizer; Phase III NSCLC) and ganitumab (COG AEWS1221 Ewing sarcoma; QUILT-2.014 pancreatic), as the manuscr",PMID:24888810; DOI:10.1200/JCO.2013.54.4932; NCT:NCT00596830; PMID:36669140; DOI:10.1200/JCO.22.01815; NCT:NCT02306161; NCT:NCT01231347
+Estrogen-BC,OBS,1.3,"O3: Estrogen-BC OBS = estrogen-only HRT and breast cancer (Million Women Study, Beral 2003, PMID 12927427, Lancet): RR 1.30 MR = estradiol per SD and overall breast cancer, 2 SNPs (CYP19A1-based) (Nou",12927427;36209141
+Estrogen-BC,GEN,1.03 (1.01-1.06),PMID 36209141,PMID 36209141
+Estrogen-BC,OUTCOME,Approved,"tamoxifen (NSABP P-1 Breast Cancer Prevention Trial; Nolvadex NDA 017970), as the manuscript names; aromatase inhibitors",PMID:9747868; DOI:10.1093/jnci/90.18.1371; PMID:23639488; DOI:10.1016/S0140-6736(13)60140-3; FDA:NDA017970; FDA:NDA021807
+Eos/IL5-Asthma,OBS,d 0.8,"--- RESPIRATORY --- R1: Eos/IL5-Asthma OBS = eosinophil count in severe vs mild asthma (Wagener 2022, estimated SMD ~0.80) MR = eosinophil count per SD and moderate-severe asthma, 151 variants (Guyatt",
+Eos/IL5-Asthma,GEN,1.5 (1.23-1.83),PMID 35537820,PMID 35537820
+Eos/IL5-Asthma,OUTCOME,Approved,mepolizumab (Nucala BLA 125526; MENSA pivotal Phase III; DREAM Phase IIb dose-ranging); benralizumab named in manuscript,PMID:25199059; DOI:10.1056/NEJMoa1403290; NCT:NCT01691521; PMID:22901886; DOI:10.1016/S0140-6736(12)60988-X; NCT:NCT01000506; FDA:BLA125526
+SGLT2-HF,OBS,1.75,"--- METABOLIC/ENDOCRINE --- M1: SGLT2-HF OBS = T2D and HF risk, meta-analysis of 47 cohorts, 12M individuals (Ohkuma 2019, PMID 31317230, Diabetologia): RR 1.74 (men) to 1.95 (women) MR = drug-target ",31317230;PMC11079590
+SGLT2-HF,GEN,0.44 (0.26-0.76),PMID 38725835,PMID 38725835
+SGLT2-HF,OUTCOME,Approved,"dapagliflozin (Farxiga NDA 202293; DAPA-HF) and empagliflozin (Jardiance NDA 204629; EMPEROR-Reduced), as the manuscript",PMID:31535829; DOI:10.1056/NEJMoa1911303; NCT:NCT03036124; PMID:32865377; DOI:10.1056/NEJMoa2022190; NCT:NCT03057977; FDA:NDA202293; FDA:NDA204629
+Urate-Gout,OBS,3.2,"M3: Urate-Gout OBS = serum urate and incident gout, longitudinal cohort (Robinson 2021, PMC8399746): HR 18.62 for >=7 vs <4 mg/dL; per-SD (SD ~1.2 mg/dL) HR ~3.2 derived from dose-response curve (not ",PMC8399746;PMC6333326
+Urate-Gout,GEN,5.0 (3.5-8.0),PMID 30645594,PMID 30645594
+Urate-Gout,OUTCOME,Approved,"febuxostat (Uloric NDA 021856; FACT, CONFIRMS, CARES) coded as the program with a modern trial record; allopurinol (Zylo",PMID:16339094; DOI:10.1056/NEJMoa050373; PMID:20370912; DOI:10.1186/ar2978; NCT:NCT00430248; PMID:29527974; DOI:10.1056/NEJMoa1710895; NCT:NCT01101035; FDA:NDA021856; FDA:NDA016084
+IL6-MDD,OBS,d 0.15,"B1: IL-6 signaling -> MDD OBS = CRP and depression, meta-analysis of 41 community+clinical studies (Howren 2009, Psychosom Med, PMID 19592519): CRP d=0.15 (0.10-0.21) MR = genetically predicted CRP (>",19592519
+IL6-MDD,GEN,1.01 (0.99-1.04),"PMID:36057695 (Galan 2022, Sci Rep)","PMID:36057695 (Galan 2022, Sci Rep)"
+IL6-MDD,OUTCOME,Failed,sirukumab 50 mg SC adjunctive to a monoaminergic antidepressant (Janssen; NCT02473289),NCT:NCT02473289
+Complement-GA,OBS,d 0.5,"B3: Complement pathway (Factor D) -> geographic atrophy OBS = complement activation products (C3a, C5a, Ba, C3d) significantly elevated in AMD patients vs controls (p<0.001 for Ba, C3d) (Reynolds 2009",18628698;16905558
+Complement-GA,GEN,2.5 (2.2-2.85),PMID 16905558,PMID 16905558
+Complement-GA,OUTCOME,Failed,"lampalizumab, anti-complement factor D Fab (Roche; CHROMA and SPECTRI), the registered program; later same-indication ap",PMID:29801123; DOI:10.1001/jamaophthalmol.2018.1544; NCT:NCT02247479; NCT:NCT02247531; PMID:37865470; DOI:10.1016/S0140-6736(23)01520-9; NCT:NCT03525613; NCT:NCT03525600; PMID:37696275; DOI:10.1016/S0
+Sclerostin-Fracture,OBS,0.55,"B4: Sclerostin -> osteoporotic fracture OBS = MINOS prospective cohort (men, n=725, 10yr follow-up) (Szulc 2014, PMID 23165952): HR 0.55 (0.31-0.96) per highest vs lowest sclerostin tertile — PROTECTI",23165952;32581134
+Sclerostin-Fracture,GEN,0.59 (0.54-0.66),PMID 32581134,PMID 32581134
+Sclerostin-Fracture,OUTCOME,Approved,romosozumab (Evenity BLA 761062; FRAME and ARCH),PMID:27641143; DOI:10.1056/NEJMoa1607948; NCT:NCT01575834; PMID:28892457; DOI:10.1056/NEJMoa1708322; NCT:NCT01631214; FDA:BLA761062
+Serotonin-MDD,OBS,d 0.45,"B5: Serotonin transporter -> MDD OBS = plasma tryptophan (serotonin precursor) in MDD vs controls (Ogawa 2014, J Clin Psychiatry, PMID 25295433): Hedges g=0.45 (0.84 in unmedicated patients). Plasma s",25295433
+Serotonin-MDD,GEN,1.08 (1.03-1.12),PMID 20380781,PMID 20380781
+Serotonin-MDD,OUTCOME,Approved,"fluoxetine (Prozac NDA 018936) coded as the first SSRI approved for MDD; the manuscript names fluoxetine, sertraline and",FDA:NDA018936; PMID:29477251; DOI:10.1016/S0140-6736(17)32802-7; PMID:15121647; DOI:10.1176/appi.ajp.161.5.826

@@ -1,0 +1,19 @@
+source:
+  citation: langer2014figitumumab
+  local: ../citations-library/pdfs/doi-10-1200-jco-2013-54-4932.abstract.txt
+  sha256: a653b5889f994db5dbcf6bc2f974f2e093f36f8697a697a5a298226fd429279e
+  doi: 10.1200/JCO.2013.54.4932
+  note: ABSTRACT ONLY. Full text not held (status paywalled/failed); the artifact is the PubMed abstract
+    saved as plain text in the shared citations library. Every quotation in this file resolves against
+    the abstract, not the article.
+claims:
+  igf1-crc-outcome-figitumumab:
+    quotes:
+    - exact: Adding figitumumab to standard chemotherapy failed to increase OS in patients with advanced
+        nonadenocarcinoma NSCLC.
+      section: Abstract (abstract-only artifact)
+  igf1-crc-outcome-figitumumab-hr:
+    quotes:
+    - exact: Median OS was 8.6 months for figitumumab plus chemotherapy and 9.8 months for chemotherapy
+        alone (hazard ratio [HR], 1.18; 95% CI, 0.99 to 1.40; P = .06)
+      section: Abstract (abstract-only artifact)

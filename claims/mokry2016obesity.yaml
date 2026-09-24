@@ -1,0 +1,26 @@
+source:
+  citation: mokry2016obesity
+  local: ../citations-library/pdfs/doi-10-1371-journal-pmed-1002053.pdf
+  sha256: 0edd9808715b5a5e981edee4dfcbecaecc8aa34af163a42733dd2e67ecf727b4
+  doi: 10.1371/journal.pmed.1002053
+  url: https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1002053&type=printable
+  note: Publisher PDF held in the shared citations library ($CITATIONS_HOME/pdfs), path relative to the
+    repository root. Quotations copied from pdftotext output; verify reads the default extractor chain.
+claims:
+  bmi-ms-gen:
+    quotes:
+    - exact: 'Using MR analyses, a 1 standard deviation (SD) increase in BMI (kg/m2) was associated with
+        a
+
+        41% increase in odds of MS (OR: 1.41, 95% CI 1.20–1.66, p = 2.72 x 10−5)'
+      section: 'Results: MR Estimates'
+      page: 6
+  bmi-ms-gen-weighted-median:
+    quotes:
+    - exact: 'The results obtained using the weighted median
+
+        approach further replicated this direction and magnitude of effect (OR: 1.26, 95% CI 0.98–1.62,
+
+        p = 0.08)'
+      section: 'Results: MR Estimates'
+      page: 6

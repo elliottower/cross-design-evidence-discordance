@@ -1,0 +1,24 @@
+source:
+  citation: novonordisk2026zeus
+  local: ../citations-library/pdfs/t-b4f6e0f61ab05edf.htm
+  sha256: 588b764fe3f8f9d2bf5b9d9b3dd52bcdbec4a51f471beb98a981056a72a3746c
+  note: Company announcement (Novo Nordisk Form 6-K, 31 July 2026) saved as HTML in the shared citations
+    library. Quotations resolve against the extracted page text.
+claims:
+  il6r-zeus-outcome:
+    quotes:
+    - exact: this did not translate into major adverse cardiovascular events (MACE) risk reduction versus
+        placebo in people with atherosclerotic cardiovascular disease (ASCVD), chronic kidney disease
+        (CKD) and inflammation (hazard ratio, 0.99; 95% confidence interval, 0.88 to 1.11)
+      section: Press release (6-K), page 1
+  il6r-zeus-target-engagement:
+    quotes:
+    - exact: While ziltivekimab demonstrated target engagement and inhibition of the IL-6 pathway, as
+        reflected by expected reductions in free IL-6 and high-sensitivity C-reactive protein (hsCRP)
+        respectively
+      section: Press release (6-K), page 1
+  il6r-zeus-ligand:
+    quotes:
+    - exact: Ziltivekimab is an investigational, fully human monoclonal antibody that targets the IL-6
+        ligand
+      section: Press release (6-K), About ziltivekimab

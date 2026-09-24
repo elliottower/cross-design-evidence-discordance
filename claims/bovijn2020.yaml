@@ -1,0 +1,22 @@
+source:
+  citation: bovijn2020
+  local: ../citations-library/pdfs/doi-10-1126-scitranslmed-aay6570.pdf
+  sha256: 9a8cf3f3dbef6191b1963c727bcb903f19c26a265ee4c366ac94adc210448142
+  doi: 10.1126/scitranslmed.aay6570
+  url: https://research-information.bris.ac.uk/ws/portalfiles/portal/240105915/SOST_main_non_tracked_1_.pdf
+  note: Author accepted manuscript (University of Bristol repository) held in the shared citations library
+    ($CITATIONS_HOME/pdfs), path relative to the repository root; the version of record is paywalled.
+    Quotations copied from pdftotext output; verify reads the default extractor chain.
+claims:
+  sclerostin-gen-direction:
+    quotes:
+    - exact: the SOST genetic variants were associated with lower risk of fracture and osteoporosis (commensurate
+        with the therapeutic effect of romosozumab)
+      section: Abstract
+  sclerostin-gen:
+    quotes:
+    - exact: Scaled estimates from meta-analysis of rs7209826 and rs188810925 yielded a 57% lower risk of
+        osteoporosis (OR, 0.43; 95% CI, 0.36-0.52; P = 2.4×10-18) and a 41% lower risk of sustaining a bone
+      section: Results
+    - exact: fracture (OR, 0.59; 95% CI, 0.54-0.66; P = 1.4×10-24; Fig. 2 and fig. S7)
+      section: Results

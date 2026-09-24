@@ -1,0 +1,25 @@
+source:
+  citation: kaptoge2010crp
+  local: ../citations-library/pdfs/doi-10-1016-s0140-6736-09-61717-7.htm
+  sha256: d56d8f9c4ba008af4ac4d68c851127b14ca356798601d52108e9879426650541
+  doi: 10.1016/S0140-6736(09)61717-7
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3162187/
+  note: Full text (PMC PMC3162187, JATS XML from NCBI efetch db=pmc) saved as .htm in the shared citations
+    library. verify reads the file as text with the markup in place, so each quotation is a span containing
+    no tag. Emerging Risk Factors Collaboration (Kaptoge et al. 2010).
+claims:
+  crp-obs:
+    quotes:
+    - exact: Adjusted RRs for coronary heart disease per 1-SD higher levels of each risk factor were 1·37
+        (95% CI 1·27–1·48) with CRP concentration
+      section: Results
+  il1b-cvd-obs:
+    quotes:
+    - exact: Adjusted RRs for coronary heart disease per 1-SD higher levels of each risk factor were 1·37
+        (95% CI 1·27–1·48) with CRP concentration
+      section: Results
+  crp-obs-abstract:
+    quotes:
+    - exact: when initially adjusted for age and sex only, and 1·37 (1·27–1·48) when adjusted further
+        for conventional risk factors
+      section: 'Abstract: Findings'

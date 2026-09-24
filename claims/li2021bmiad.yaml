@@ -1,0 +1,13 @@
+source:
+  citation: li2021bmiad
+  local: ../citations-library/pdfs/doi-10-3233-jad-210345.abstract.txt
+  sha256: 345e19044c64c9d08fe0e272a31218690f138dd834cdbbd1bc37495a40086ef0
+  doi: 10.3233/JAD-210345
+  note: ABSTRACT ONLY. Full text paywalled; the artifact is the PubMed abstract (PMID 34057091) saved
+    as plain text in the shared citations library. Quotations resolve against the abstract, not the article.
+claims:
+  bmi-ad-gen:
+    quotes:
+    - exact: 'Genetically predicted 1-SD increase in adult BMI was significantly associated with higher
+        risk of AD (IVW: OR = 1.03, 95% confidence interval [CI] = 1.01-1.05, p = 2.7×10-3)'
+      section: Abstract (abstract-only artifact)

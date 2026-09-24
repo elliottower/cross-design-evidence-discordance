@@ -1,0 +1,13 @@
+source:
+  citation: zhang2017t2dad
+  local: ../citations-library/pdfs/doi-10-1016-j-diabres-2016-10-024.abstract.txt
+  sha256: 411f38354853ffb8ceed6a98f5d4241cd05e1814adaae79af2ccbb65cdb63022
+  doi: 10.1016/j.diabres.2016.10.024
+  note: ABSTRACT ONLY. Full text paywalled; the artifact is the PubMed abstract (PMID 28088029) saved
+    as plain text in the shared citations library. Quotations resolve against the abstract, not the article.
+claims:
+  metabolic-ad-obs:
+    quotes:
+    - exact: 'subjects with diabetes had significant higher incidence of AD than those without diabetes
+        (RR: 1.53, 95% CI: 1.42-1.63)'
+      section: Abstract (abstract-only artifact)

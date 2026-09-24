@@ -1,0 +1,16 @@
+source:
+  citation: cheng2014
+  local: ../citations-library/pdfs/doi-10-2147-cia-s65921.pdf
+  sha256: fca803de6e8edd92d7efcc854da68a1e1eccdc9c5dd6ae27c307155dafb7c7ac
+  doi: 10.2147/cia.s65921
+  note: Publisher PDF obtained by hand (2026-09-23) and held in the shared citations library ($CITATIONS_HOME/pdfs),
+    path relative to the repository root. Quotations copied from pdftotext output; verify reads the default
+    extractor chain.
+claims:
+  hrt-ad-esr1-assoc:
+    quotes:
+    - exact: a significant association was found between the ESR1 PvuII polymorphism and AD risk in Caucasian
+        populations (CC + CT versus TT, odds ratio [OR] 1.14, 95% confidence interval [CI] 1.02–1.28,
+        P=0.03
+      section: 'Abstract: Results'
+      page: 1

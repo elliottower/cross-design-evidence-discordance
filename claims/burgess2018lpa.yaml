@@ -1,0 +1,15 @@
+source:
+  citation: burgess2018lpa
+  local: ../citations-library/pdfs/doi-10-1001-jamacardio-2018-1470.pdf
+  sha256: bbad36f563bf1db611c5bb0d2607f4c28fd1cec7e01af3d271e77a074b01d416
+  doi: 10.1001/jamacardio.2018.1470
+  note: Publisher PDF obtained by hand (2026-09-23) and held in the shared citations library ($CITATIONS_HOME/pdfs),
+    path relative to the repository root. Quotations copied from pdftotext output; verify reads the default
+    extractor chain.
+claims:
+  lpa-gen:
+    quotes:
+    - exact: A 10-mg/dL lower genetically predicted Lp(a) concentration was associated with a 5.8% lower
+        CHD risk (odds ratio [OR], 0.942; 95% CI, 0.933-0.951; P = 3 × 10−37)
+      section: 'Abstract: Results'
+      page: 1

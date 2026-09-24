@@ -1,0 +1,59 @@
+source:
+  citation: gill2024pitfalls
+  local: ../citations-library/pdfs/doi-10-1186-s12916-024-03700-9.pdf
+  sha256: 509c93bee1ef961a9f3dc2672922f7c194c5b23a861ae4789e420b77d02e99fa
+  doi: 10.1186/s12916-024-03700-9
+  url: https://bmcmedicine.biomedcentral.com/counter/pdf/10.1186/s12916-024-03700-9
+  note: Publisher PDF held in the shared citations library ($CITATIONS_HOME/pdfs), path relative to the
+    repository root. Quotations copied from pdftotext output; verify reads the default extractor chain.
+claims:
+  pitfall-exposure-misspecification:
+    quotes:
+    - exact: 'Misspecification of the exposure relevant to the research
+
+        question is perhaps the most fundamental cause of a drug
+
+        target Mendelian randomization analysis giving misleading results.'
+      section: Selecting exposures specific to the research question
+      page: 3
+  pitfall-proxy-instruments:
+    quotes:
+    - exact: 'There are few genetic association
+
+        data sets available that directly measure drug target perturbation, so it is necessary to use
+        surrogates or ‘proxies’
+
+        for this.'
+      section: Acknowledging the limitations of expression and protein quantitative trait loci
+      page: 4
+  pitfall-eqtl-pleiotropy:
+    quotes:
+    - exact: 'Firstly, genetic variants predicting gene expression typically relate to transcription of
+        a gene region and affect
+
+        expression levels of several genes simultaneously [45],
+
+        thereby introducing inherent pleiotropy that risks biasing
+
+        Mendelian randomization analyses.'
+      section: Acknowledging the limitations of expression and protein quantitative trait loci
+      page: 4
+  mr-lifelong-vs-intervention:
+    quotes:
+    - exact: 'Mendelian randomization analyses typically consider the lifelong effects of small changes
+        arising from genetic variation, which is rarely the same
+
+        thing as a discrete clinical intervention observed at a
+
+        specific timepoint in the life course [6].'
+      section: Future directions
+      page: 8
+  mr-lifelong-drug-target-changes:
+    quotes:
+    - exact: 'Genetic variants typically predict lifelong changes in drug
+
+        targets, and so tend to resemble the effect of long-term
+
+        pharmacological perturbations.'
+      section: Long versus short-acting pharmacological perturbation
+      page: 4

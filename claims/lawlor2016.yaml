@@ -1,0 +1,43 @@
+source:
+  citation: lawlor2016
+  local: ../citations-library/pdfs/doi-10-1093-ije-dyw314.pdf
+  sha256: fd06ad00120bd98e4c1a4ec7141cc90ae665396980680e5f776789648e5106c3
+  doi: 10.1093/ije/dyw314
+  note: Publisher PDF obtained by hand (2026-09-23) and held in the shared citations library ($CITATIONS_HOME/pdfs),
+    path relative to the repository root. Quotations copied from pdftotext output; verify reads the default
+    extractor chain.
+claims:
+  triangulation-definition:
+    quotes:
+    - exact: Triangulation is the practice of obtaining more reliable answers to research questions through
+        integrating results from several different approaches, where each approach has different key sources
+        of potential bias that are unrelated to each other.
+      section: Abstract
+      page: 1
+  triangulation-convergence:
+    quotes:
+    - exact: if the results of different approaches all point to the same conclusion, this strengthens
+        confidence in the finding.
+      section: Abstract
+      page: 1
+  triangulation-qualitative:
+    quotes:
+    - exact: currently triangulation will mostly provide a qualitative assessment of the strength of evidence
+        regarding causality.
+      section: Key messages
+      page: 2
+  triangulation-definition-body:
+    quotes:
+    - exact: The practice of strengthening causal inferences by integrating results from several different
+        approaches, where
+      section: 'Triangulation: definition'
+      page: 2
+    - exact: each approach has different (and assumed to be largely unrelated) key sources of potential bias.
+      section: 'Triangulation: definition'
+      page: 3
+  triangulation-criterion-unrelated-bias:
+    quotes:
+    - exact: Results from at least two, but ideally more, different approaches, with differing and unrelated
+        key sources of potential biases, are compared.
+      section: Criteria for triangulation in aetiological epidemiology
+      page: 3

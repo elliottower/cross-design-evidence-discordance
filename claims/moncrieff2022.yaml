@@ -1,0 +1,37 @@
+source:
+  citation: moncrieff2022
+  local: ../citations-library/pdfs/doi-10-1038-s41380-022-01661-0.pdf
+  sha256: a30b330367cac191cd1520bd7006a950a492569d3bc41010063426b40bd8ef41
+  doi: 10.1038/s41380-022-01661-0
+  url: https://www.nature.com/articles/s41380-022-01661-0.pdf
+  note: Publisher PDF held in the shared citations library ($CITATIONS_HOME/pdfs), path relative to the
+    repository root. Quotations copied from pdftotext output; verify reads the default extractor chain.
+claims:
+  serotonin-hypothesis-no-consistent-support:
+    quotes:
+    - exact: 'The main areas of serotonin research
+
+        provide no consistent evidence of there being an association between serotonin and depression,
+        and no support for the hypothesis
+
+        that depression is caused by lowered serotonin activity or concentrations.'
+      section: Abstract
+      page: 1
+  serotonin-plasma-null:
+    quotes:
+    - exact: 'One meta-analysis of cohort studies of plasma serotonin showed no relationship with depression,
+
+        and evidence that lowered serotonin concentration was associated with antidepressant use (n =
+        1869).'
+      section: Abstract
+      page: 1
+  serotonin-sert-gene-null:
+    quotes:
+    - exact: 'The two largest and highest quality studies of the SERT
+
+        gene, one genetic association study (n = 115,257) and one collaborative meta-analysis (n = 43,165),
+        revealed no evidence of an
+
+        association with depression, or of an interaction between genotype, stress and depression.'
+      section: Abstract
+      page: 1

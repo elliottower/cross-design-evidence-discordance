@@ -1,0 +1,27 @@
+source:
+  citation: larsson2020igfcancer
+  local: ../citations-library/pdfs/doi-10-1002-cam4-3345.pdf
+  sha256: 9635690d3702f250170683a837b806b0ddfa4c0a66d1c901aa2c01000d43049f
+  doi: 10.1002/cam4.3345
+  note: Publisher PDF obtained by hand (2026-09-23) and held in the shared citations library ($CITATIONS_HOME/pdfs),
+    path relative to the repository root. Quotations copied from pdftotext output; verify reads the default
+    extractor chain.
+claims:
+  igf1-crc-gen-abstract:
+    quotes:
+    - exact: The odds ratio (OR) per standard deviation increase of IGF-1 levels was 1.11 (95% confidence
+        interval [CI] 1.01-1.22; P = .03) in UK Biobank and 1.22 (95% CI 1.09-1.36; P = 3.9 × 10−4) in
+        the BioBank Japan Project.
+      section: Abstract
+      page: 1
+  igf1-crc-gen-japan:
+    quotes:
+    - exact: The OR of colorectal cancer per SD increase of genetically predicted IGF-1 levels was 1.22
+        (95% CI 1.09-1.36; P = 3.9 × 10−4) when using the full set of SNPs (Figure 2)
+      section: 'Results 3.3: IGF-1 and cancer in Japanese individuals'
+      page: 4
+  igf1-crc-gen-416-snps:
+    quotes:
+    - exact: We used 416 single-nucleotide polymorphisms robustly associated with serum IGF-1 levels
+      section: Abstract
+      page: 1

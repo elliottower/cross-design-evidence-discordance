@@ -1,0 +1,24 @@
+source:
+  citation: mccullough2019vitd
+  local: ../citations-library/pdfs/doi-10-1093-jnci-djy087.htm
+  sha256: c350fef9484dbd4164bbfea0da54bd56c2c4ec6314c0c4a015a6407c765ab0a0
+  doi: 10.1093/jnci/djy087
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6376911/
+  note: Full text (PMC author manuscript, PMC6376911) saved as HTML in the shared citations library. The
+    Europe PMC render and PMC PDF endpoints return challenge pages, and the Imperial repository copy is
+    a .docx, so the artifact is the PMC article page. Quotations resolve against the extracted page text.
+claims:
+  vitd-crc-obs-q5-model1:
+    quotes:
+    - exact: those in the highest quintile had a 21% lower risk (RR = 0.79, 95% CI = 0.68 to 0.92)
+      section: Results
+  vitd-crc-obs-q5-vs-q3:
+    quotes:
+    - exact: Participants in quintiles 1 and 5 had 15% higher (RR = 1.15, 95% CI = 0.97 to 1.38) and 22%
+        lower risks (RR = 0.78, 95% CI = 0.65 to 0.94), respectively, than quintile 3
+      section: Results (Model 3; Table 2)
+  vitd-crc-obs-q3-referent:
+    quotes:
+    - exact: We used the third quintile as the referent to avoid excluding the one study with no case
+        participants in the lowest quintile in the pooled analyses
+      section: Results

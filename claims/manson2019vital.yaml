@@ -1,0 +1,22 @@
+source:
+  citation: manson2019vital
+  local: ../citations-library/pdfs/doi-10-1056-nejmoa1809944.pdf
+  sha256: dc98bfb7299c6f83a4f905f029d3c869266505ecd8e64126859541ad16389a29
+  doi: 10.1056/NEJMoa1809944
+  note: Publisher PDF obtained by hand (2026-09-23) and held in the shared citations library ($CITATIONS_HOME/pdfs),
+    path relative to the repository root. Quotations copied from pdftotext output; verify reads the default
+    extractor chain.
+claims:
+  vitd-cancer-dose:
+    quotes:
+    - exact: vitamin D3 (cholecalciferol) at a dose of 2000 IU per day
+      section: 'Abstract: Methods'
+      page: 1
+  vitd-cancer-outcome:
+    quotes:
+    - exact: Supplementation with vitamin D was not associated with a lower risk of either of the primary
+        end points. During a median follow-up of 5.3 years, cancer was diagnosed in 1617 participants
+        (793 in the vitamin D group and 824 in the placebo group; hazard ratio, 0.96; 95% confidence interval
+        [CI], 0.88 to 1.06; P = 0.47).
+      section: 'Abstract: Results'
+      page: 1

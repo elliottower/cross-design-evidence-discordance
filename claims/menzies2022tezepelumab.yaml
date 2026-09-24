@@ -1,0 +1,23 @@
+source:
+  citation: menzies2022tezepelumab
+  local: ../citations-library/pdfs/doi-10-1056-nejmoa2034975.pdf
+  sha256: 90b43010afbe34c503456403435beadc341df9500c3b737d11cbca4b64410fea
+  doi: 10.1056/NEJMoa2034975
+  note: Publisher PDF obtained by hand (2026-09-23) and held in the shared citations library ($CITATIONS_HOME/pdfs),
+    path relative to the repository root. Quotations copied from pdftotext output; verify reads the default
+    extractor chain.
+claims:
+  tslp-asthma-outcome:
+    quotes:
+    - exact: The annualized rate of asthma exacerbations was 0.93 (95% confidence interval [CI], 0.80
+        to 1.07) with tezepelumab and 2.10 (95% CI, 1.84 to 2.39) with placebo (rate ratio, 0.44; 95%
+        CI, 0.37 to 0.53; P<0.001).
+      section: 'Abstract: Results'
+      page: 1
+  tslp-asthma-conclusion:
+    quotes:
+    - exact: Patients with severe, uncontrolled asthma who received tezepelumab had fewer exacerbations
+        and better lung function, asthma control, and health-related quality of life than those who received
+        placebo.
+      section: 'Abstract: Conclusions'
+      page: 1

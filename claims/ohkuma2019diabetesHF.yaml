@@ -1,0 +1,8 @@
+source:
+  citation: ohkuma2019diabetesHF
+  local: ../citations-library/pdfs/doi-10-1007-s00125-019-4926-x.pdf
+  sha256: bddb838cf56a167834b772874c542dbd86499ecf2ef312853aa6b9c42942df51
+  doi: 10.1007/s00125-019-4926-x
+  url: 'https://link.springer.com/content/pdf/10.1007/s00125-019-4926-x.pdf'
+  note: 'Publisher PDF held in the shared citations library ($CITATIONS_HOME/pdfs), path relative to the repository root. Quotations copied from pdftotext output; verify reads the default extractor chain. No claim is pinned, because the registered SGLT2-HF OBS value RR 1.75 is not reported: the paper gives sex-specific pooled RRs for type 2 diabetes and heart failure only, 1.95 (1.70, 2.22) in women and 1.74 (1.55, 1.95) in men, with no pooled both-sexes RR.'
+claims: {}

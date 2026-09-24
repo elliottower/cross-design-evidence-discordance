@@ -1,0 +1,13 @@
+source:
+  citation: zhou2017il17
+  local: ../citations-library/pdfs/doi-10-1111-ced-13033.abstract.txt
+  sha256: 9af463e6229089082cfda91cfb08627b18bad318f80e018ba4fe7b015a5947d4
+  doi: 10.1111/ced.13033
+  note: ABSTRACT ONLY. Full text paywalled; the artifact is the PubMed abstract (PMID 27925680) saved
+    as plain text in the shared citations library. Quotations resolve against the abstract, not the article.
+claims:
+  il17-psoriasis-obs:
+    quotes:
+    - exact: The mean plasma levels of IL-17 were higher in patients with psoriasis than in healthy controls
+        (SMD = 0.47, 95% CI = 0.07-0.86, P < 0.001)
+      section: Abstract (abstract-only artifact)

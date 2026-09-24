@@ -1,0 +1,25 @@
+source:
+  citation: wei2015tnfra
+  local: ../citations-library/pdfs/doi-10-12659-msm-895116.htm
+  sha256: 46c6126f6e0f54f0f2ff96da75754e0e824d6f897f1e92ef77d812d0d48e9f30
+  doi: 10.12659/MSM.895116
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4694713/
+  note: Full text (PMC PMC4694713, JATS XML from NCBI efetch db=pmc) saved as .htm in the shared citations
+    library. verify reads the file as text with the markup in place, so each quotation is a span containing
+    no tag. First author is Wei ST; the classifier cites the paper as 'Wang 2015'.
+claims:
+  tnf-ra-obs-14-studies:
+    quotes:
+    - exact: Fourteen studies were enrolled in our meta-analysis, with a total of 890 patients with RA
+        and 441 healthy people as the controls
+      section: 'Abstract: Results'
+  tnf-ra-obs:
+    quotes:
+    - exact: the serum TNF-α level of patients with RA was clearly higher than in the controls, and there
+        was a statistically significant difference between the case and control groups (SMD=1.93, 95%
+        CI=1.23~2.64
+      section: Results
+  tnf-ra-obs-abstract:
+    quotes:
+    - exact: 'TNF-α: SMD=1.93, 95% CI=1.23~2.64,'
+      section: 'Abstract: Results'

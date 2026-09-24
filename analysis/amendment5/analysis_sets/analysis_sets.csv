@@ -1,0 +1,13 @@
+set,definition,n,correct,accuracy,removed,added,reclassified,p_permutation_exact,p_permutation_cluster_level,p_binomial
+registered,"the 32 scored families, as registered",32,24,0.75,,,,0.00544,0.00498,0.0035
+strict Phase III,registered families whose Procedure 3 trial_phase is III or post-marketing,25,17,0.68,BMI-AD; Blood pressure; EBV-MS; IL6-MDD; ModRisk-AD; Smoking-MS/AD; Triglycerides,,,,,
+Amyloid-AD scored,registered set plus Amyloid-AD classified under the registered rule,33,24,0.7273,,Amyloid-AD,,,,
+strict Phase III + Amyloid-AD,both changes,26,17,0.6538,BMI-AD; Blood pressure; EBV-MS; IL6-MDD; ModRisk-AD; Smoking-MS/AD; Triglycerides,Amyloid-AD,,,,
+MR-instrumented,registered set without the families whose genetic leg the audit finds to be a variant-disease association,27,22,0.8148,CTLA-4-RA; Complement-GA; IL-23-psoriasis; JAK-STAT-RA; Serotonin-MDD,,,,,
+MR-instrumented (unresolved also removed),registered families the audit confirms as instrumental-variable estimates with a CI,26,21,0.8077,CTLA-4-RA; Complement-GA; EBV-MS; IL-23-psoriasis; JAK-STAT-RA; Serotonin-MDD,,,,,
+registration-consistent instrument,registered set with IL6-MDD classified on the estimate the selection rule returns,32,24,0.75,,,,,,
+unique-evidence,"families identical on obs_d, mr_or_raw, mr_ci, instrument_set, drug_outcome counted once",31,23,0.7419,Niacin/HDL,,,,,
+source-extracted OBS,registered set without the seven families Amendment 5 names as author-estimated,25,20,0.8,CD20-RA; CTLA-4-RA; Complement-GA; Eos/IL5-Asthma; IL6-MDD; JAK-STAT-RA; Serotonin-MDD,,,,,
+source-extracted OBS (classifier flags),registered set without the five families the frozen classifier flags author_estimated,27,21,0.7778,CD20-RA; CTLA-4-RA; Complement-GA; Eos/IL5-Asthma; JAK-STAT-RA,,,,,
+documented Phase III program,registered families whose outcome traces to a documented drug program (Procedure 3 trial_phase not 'not reported'),28,20,0.7143,BMI-AD; EBV-MS; ModRisk-AD; Smoking-MS/AD,,,,,
+Amendment 4,the set Amendment 4 defines,28,23,0.8214,Complement-GA; IGF1-CRC; IL-1b-CVD; Serotonin-MDD,,,0.0006,0.00023,0.00046

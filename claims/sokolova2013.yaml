@@ -1,0 +1,29 @@
+source:
+  citation: sokolova2013
+  local: ../citations-library/pdfs/doi-10-1371-journal-pone-0061032.pdf
+  sha256: 7ffeae0ca1c399cea713b581996972c20ea2e0b4640967f1621927f9f1b35624
+  doi: 10.1371/journal.pone.0061032
+  url: https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0061032&type=printable
+  note: Publisher PDF held in the shared citations library ($CITATIONS_HOME/pdfs), path relative to the
+    repository root. Quotations copied from pdftotext output; verify reads the default extractor chain.
+claims:
+  anti-cd20-ms-cd40-table3-summary:
+    quotes:
+    - exact: 'Summary
+
+
+        1.16
+
+
+        [1.12–1.23]'
+      section: Table 3. Meta-analysis of association between rs6074022 C allele and MS
+      page: 5
+  anti-cd20-ms-cd40-meta-text:
+    quotes:
+    - exact: 'In the meta-analysis (Figure 2), the total OR for all studies
+
+        was 1.17 (95% CI = 1.10–1.23) with a statistical significance of
+
+        p = 2.24610212.'
+      section: Results
+      page: 5

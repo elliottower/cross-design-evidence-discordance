@@ -1,0 +1,14 @@
+source:
+  citation: zheng2020sglt2mr
+  local: ../citations-library/pdfs/doi-10-3389-fcvm-2024-1371513.abstract.txt
+  sha256: 7f092e8baaf81f35579e4b77c5aeb08a7b633e6df62c92fa0e0d94503d10f836
+  doi: 10.3389/fcvm.2024.1371513
+  note: ABSTRACT ONLY. Full text not held (status paywalled/failed); the artifact is the PubMed abstract
+    saved as plain text in the shared citations library. Every quotation in this file resolves against
+    the abstract, not the article.
+claims:
+  sglt2-hf-gen:
+    quotes:
+    - exact: SGLT2 inhibition demonstrated a lower risk of HF (odds ratio [OR] = 0.44, 95% CI [0.26, 0.76],
+        P = 0.003).
+      section: Abstract (abstract-only artifact)

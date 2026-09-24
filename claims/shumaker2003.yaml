@@ -1,0 +1,14 @@
+source:
+  citation: shumaker2003
+  local: ../citations-library/pdfs/doi-10-1001-jama-289-20-2651.abstract.txt
+  sha256: af8a3b2220b33e21065989c8b18c8f9c43da4473c1c541b12e5cbda617be9e99
+  doi: 10.1001/jama.289.20.2651
+  note: ABSTRACT ONLY. Full text not held (status paywalled/failed); the artifact is the PubMed abstract
+    saved as plain text in the shared citations library. Every quotation in this file resolves against
+    the abstract, not the article.
+claims:
+  hrt-ad-outcome-direction:
+    quotes:
+    - exact: Estrogen plus progestin therapy increased the risk for probable dementia in postmenopausal
+        women aged 65 years or older.
+      section: Abstract (abstract-only artifact)

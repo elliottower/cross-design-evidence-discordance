@@ -1,0 +1,13 @@
+source:
+  citation: howren2009
+  local: ../citations-library/pdfs/doi-10-1097-psy-0b013e3181907c1b.abstract.txt
+  sha256: 448ea8e1780dc4d5e93711324349718d5df9e79f645dd439a046fe2582395803
+  doi: 10.1097/PSY.0b013e3181907c1b
+  note: ABSTRACT ONLY. Full text not held (status paywalled/failed); the artifact is the PubMed abstract
+    saved as plain text in the shared citations library. Every quotation in this file resolves against
+    the abstract, not the article.
+claims:
+  il6-mdd-obs:
+    quotes:
+    - exact: CRP, d = 0.15 (95% CI = 0.10, 0.21), p < .001
+      section: Abstract (abstract-only artifact)

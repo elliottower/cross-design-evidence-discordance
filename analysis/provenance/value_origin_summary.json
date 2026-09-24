@@ -1,0 +1,46 @@
+{
+  "counts": {
+    "quoted": 34,
+    "outcome_documented": 28,
+    "not_checked": 2,
+    "coding_error": 14,
+    "outcome_no_program": 4,
+    "replacement_citation": 5,
+    "derived": 4,
+    "author_estimated": 5
+  },
+  "numeric": {
+    "quoted": 34,
+    "not_checked": 2,
+    "coding_error": 14,
+    "replacement_citation": 5,
+    "derived": 4,
+    "author_estimated": 5
+  },
+  "numeric_checked": 62,
+  "numeric_agree": 43,
+  "agreement_rate_numeric": 0.6935,
+  "not_checked": [
+    "ModRisk-AD OBS",
+    "EBV-MS OBS"
+  ],
+  "coding_errors": [
+    "ModRisk-AD GEN",
+    "Anti-CD20-MS OBS",
+    "HRT-AD GEN",
+    "VitaminD-MS OBS",
+    "EBV-MS GEN",
+    "LDL/PCSK9 OBS",
+    "Blood pressure GEN",
+    "IL-23-psoriasis OBS",
+    "CTLA-4-RA GEN",
+    "TNF-a-RA GEN",
+    "IL-1b-CVD GEN",
+    "IGF1-CRC OBS",
+    "SGLT2-HF OBS",
+    "Complement-GA GEN"
+  ],
+  "classification_changes": [
+    "IGF1-CRC OBS"
+  ]
+}

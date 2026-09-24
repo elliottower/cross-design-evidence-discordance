@@ -1,0 +1,23 @@
+source:
+  citation: cummings2014
+  local: ../citations-library/pdfs/doi-10-1186-alzrt269.pdf
+  sha256: b335789976ce0a91f14dbc764c2b6debedac55b23d16e547142aba85e5d74a3a
+  doi: 10.1186/alzrt269
+  url: https://alzres.biomedcentral.com/counter/pdf/10.1186/alzrt269
+  note: Publisher PDF held in the shared citations library ($CITATIONS_HOME/pdfs), path relative to the
+    repository root. Quotations copied from pdftotext output; verify reads the default extractor chain.
+claims:
+  ad-failure-rate:
+    quotes:
+    - exact: 'A very high attrition rate was found, with an overall success rate
+
+        during the 2002 to 2012 period of 0.4% (99.6% failure).'
+      section: 'Abstract: Results'
+      page: 1
+  ad-failure-rate-conclusion:
+    quotes:
+    - exact: 'The failure rate since 2002
+
+        (excluding agents currently in Phase 3) is 99.6%.'
+      section: Conclusions
+      page: 6

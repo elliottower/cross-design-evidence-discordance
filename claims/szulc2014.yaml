@@ -1,0 +1,14 @@
+source:
+  citation: szulc2014
+  local: ../citations-library/pdfs/doi-10-1002-jbmr-1823.abstract.txt
+  sha256: 8c778e52e6120a3403f62ca07faf14cb6a4be931e1453881a0fdbc6626e317fb
+  doi: 10.1002/jbmr.1823
+  note: ABSTRACT ONLY. Full text not held (status paywalled/failed); the artifact is the PubMed abstract
+    saved as plain text in the shared citations library. Every quotation in this file resolves against
+    the abstract, not the article.
+claims:
+  sclerostin-obs:
+    quotes:
+    - exact: Men with higher sclerostin concentration had lower fracture risk (adjusted for hip BMD, hazard
+        ratio [HR] = 0.55, 95% confidence interval [CI] 0.31 to 0.96, p < 0.05).
+      section: Abstract (abstract-only artifact)

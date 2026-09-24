@@ -1,0 +1,22 @@
+source:
+  citation: mitchell2020smokingms
+  local: ../citations-library/pdfs/doi-10-1371-journal-pbio-3000973.pdf
+  sha256: 18fc9e28084131779e40e54ba4d915e8433d20e53629a16ddc86c37e627361ca
+  doi: 10.1371/journal.pbio.3000973
+  url: https://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.3000973&type=printable
+  note: Publisher PDF held in the shared citations library ($CITATIONS_HOME/pdfs), path relative to the
+    repository root. Quotations copied from pdftotext output; verify reads the default extractor chain.
+claims:
+  smoking-ms-gen:
+    quotes:
+    - exact: 'The inverse-variance weighted (IVW) MR estimate (odds ratio [OR] 1.03, 95% confidence
+
+        interval [CI] 0.92 to 1.16) revealed no strong evidence for a causal effect of the genetic risk
+        of'
+      section: Results
+  smoking-ms-gen-abstract:
+    quotes:
+    - exact: 'of smoking on the risk of developing MS (smoking initiation: odds ratio [OR] 1.03, 95% confidence
+        interval [CI] 0.92–1.61; lifetime smoking: OR 1.10, 95% CI 0.87–1.40)'
+      section: Abstract
+      page: 1

@@ -1,0 +1,22 @@
+source:
+  citation: gill2022drugmr
+  local: ../citations-library/pdfs/doi-10-1371-journal-pmed-1003898.pdf
+  sha256: d4a1b23edd187e6af39b8483bfc493e908b46facb98f378556882cb2d209b68f
+  doi: 10.1371/journal.pmed.1003898
+  url: https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1003898&type=printable
+  note: Publisher open-access PDF (PLOS Med 2022, Perspective; PMID 35113864) held in the shared citations
+    library ($CITATIONS_HOME/pdfs), path relative to the repository root. Quotations copied from pdftotext
+    output; verify reads the default extractor chain.
+claims:
+  drug-proxy-lifelong-small-perturbation:
+    quotes:
+    - exact: 'genetic variants
+
+        proxying drug effects represent the cumulative lifelong impact of a small degree of drug target
+
+        perturbation, which contrasts a pharmacological intervention in later life that typically has
+        a
+
+        greater magnitude of effect for a shorter period of time'
+      section: Main text
+      page: 2

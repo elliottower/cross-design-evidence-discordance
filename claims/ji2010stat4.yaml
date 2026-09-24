@@ -1,0 +1,14 @@
+source:
+  citation: ji2010stat4
+  local: ../citations-library/pdfs/doi-10-1007-s11033-009-9553-z.abstract.txt
+  sha256: 349df09c1f1b459cf13771d0ecb7cee276d71aef662e0c62663430839eb95ab1
+  doi: 10.1007/s11033-009-9553-z
+  note: ABSTRACT ONLY. Full text paywalled; the artifact is the PubMed abstract (PMID 19479340) saved
+    as plain text in the shared citations library. Quotations resolve against the abstract, not the article.
+    First author is Ji JD; the repository cites the paper as 'Lee 2010'.
+claims:
+  jakstat-ra-gen:
+    quotes:
+    - exact: The overall ORs for the minor T allele of STAT4 rs7574865 SNP were 1.27 (95% CI 1.20-1.34)
+        in RA
+      section: Abstract (abstract-only artifact)

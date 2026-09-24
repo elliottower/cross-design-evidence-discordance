@@ -1,0 +1,24 @@
+source:
+  citation: keum2014vitdobscancer
+  local: ../citations-library/pdfs/doi-10-1038-bjc-2014-294.pdf
+  sha256: 6274e0a9bf43da1b3631c21a5740f56ee14b3536fbb3c69f3330760dd20562fb
+  doi: 10.1038/bjc.2014.294
+  url: https://www.nature.com/articles/bjc2014294.pdf
+  note: Publisher PDF held in the shared citations library ($CITATIONS_HOME/pdfs), path relative to the
+    repository root. Quotations copied from pdftotext output; verify reads the default extractor chain.
+claims:
+  vitd-cancer-obs-background-inverse:
+    quotes:
+    - exact: 'An inverse association has also been observed
+
+        between pre-diagnostic circulating 25(OH)D and risk for colorectal
+
+        cancer (Lee et al, 2011; Ma et al, 2011; Touvier et al, 2011).'
+      section: Introduction
+      page: 1
+  design-rct-meta-analysis:
+    quotes:
+    - exact: 'Methods: Meta-analyses of RCTs of vitamin D supplementation and total cancer incidence and
+        mortality were conducted.'
+      section: 'Abstract: Methods'
+      page: 1

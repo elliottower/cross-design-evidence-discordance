@@ -1,0 +1,7 @@
+source:
+  citation: wu2021il17mr
+  local: ../citations-library/pdfs/doi-10-1093-rheumatology-keaa629.abstract.txt
+  sha256: e21152fab938c8a4440b4e7d281d440e190ed63c076dbd0a7d23749ab8d96bb2
+  doi: 10.1093/rheumatology/keaa629
+  note: 'ABSTRACT ONLY. Full text paywalled; the artifact is the PubMed abstract (PMID 33188428) saved as plain text in the shared citations library. Quotations resolve against the abstract, not the article. No claim is pinned, because the registered IL-17-psoriasis GEN value OR 0.998 is not reported: the abstract gives IVW beta = -0.00186 per allele (s.e. 0.00043) for IL-17 on psoriatic arthritis, and exp(-0.00186) = 0.998 is a transformation the source does not state.'
+claims: {}

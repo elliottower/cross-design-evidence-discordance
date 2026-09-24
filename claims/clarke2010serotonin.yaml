@@ -1,0 +1,15 @@
+source:
+  citation: clarke2010serotonin
+  local: ../citations-library/pdfs/doi-10-1017-s0033291710000516.abstract.txt
+  sha256: 840b4a2bcdcf597a60bc519a5a472838becb2e25be263bde2ad642c0f24050a0
+  doi: 10.1017/S0033291710000516
+  note: ABSTRACT ONLY. Full text not held (status paywalled/failed); the artifact is the PubMed abstract
+    saved as plain text in the shared citations library. Every quotation in this file resolves against
+    the abstract, not the article.
+claims:
+  serotonin-mdd-gen:
+    quotes:
+    - exact: Meta-analysis indicated evidence of a small but statistically significant association between
+        the 5-HTTLPR polymorphism and unipolar depression [odds ratio (OR) 1.08, 95% confidence interval
+        (CI) 1.03-1.12].
+      section: Abstract (abstract-only artifact)

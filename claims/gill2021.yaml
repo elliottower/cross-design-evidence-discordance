@@ -1,0 +1,22 @@
+source:
+  citation: gill2021
+  local: ../citations-library/pdfs/doi-10-12688-wellcomeopenres-16544-1.pdf
+  sha256: cb23196bc30741ea6aa427b1266dc30a004450de4e4698e8d85b7045dbd4e768
+  doi: 10.12688/wellcomeopenres.16544.1
+  note: Publisher PDF obtained by hand (2026-09-23) and held in the shared citations library ($CITATIONS_HOME/pdfs),
+    path relative to the repository root. Quotations copied from pdftotext output; verify reads the default
+    extractor chain.
+claims:
+  genetic-evidence-approval:
+    quotes:
+    - exact: Drugs whose targets have genetic evidence to support efficacy and safety are more likely
+        to be approved after clinical development.
+      section: Abstract
+      page: 2
+  drug-target-mr-overview:
+    quotes:
+    - exact: we provide an overview of how natural sequence variation in the genes that encode drug targets
+        can be used in Mendelian randomization analyses to offer insight into mechanism-based efficacy
+        and adverse effects
+      section: Abstract
+      page: 2

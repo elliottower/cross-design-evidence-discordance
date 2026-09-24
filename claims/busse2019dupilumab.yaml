@@ -1,0 +1,35 @@
+source:
+  citation: busse2019dupilumab
+  local: ../citations-library/pdfs/doi-10-1007-s12325-018-0702-4.pdf
+  sha256: 96759dad5b0c1714faee34e0f7c88eb3e44267f1f51d62572054cc9be7503943
+  doi: 10.1007/s12325-018-0702-4
+  url: https://link.springer.com/content/pdf/10.1007/s12325-018-0702-4.pdf
+  note: Publisher PDF held in the shared citations library ($CITATIONS_HOME/pdfs), path relative to the
+    repository root. Quotations copied from pdftotext output; verify reads the default extractor chain.
+claims:
+  dupilumab-approved-atopic-dermatitis-only:
+    quotes:
+    - exact: 'Dupilumab, a fully human antiIL-4Ra monoclonal antibody, inhibits signaling
+
+        of both interleukin (IL)-4 and IL-13, which are
+
+        key drivers of type 2-mediated inflammation.
+
+        Dupilumab is approved in the EU, USA, and
+
+        other countries for the treatment of adults with
+
+        inadequately controlled moderate-to-severe
+
+        atopic dermatitis.'
+      section: 'Abstract: Introduction'
+      page: 1
+  quest-phase3-design:
+    quotes:
+    - exact: 'Methods: Liberty Asthma QUEST is a phase 3,
+
+        multinational, multicenter, randomized, double-blind, placebo-controlled, parallel-group
+
+        trial (NCT02414854)'
+      section: 'Abstract: Methods'
+      page: 1

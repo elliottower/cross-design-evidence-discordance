@@ -1,0 +1,44 @@
+source:
+  citation: daveysmith2014
+  local: ../citations-library/pdfs/doi-10-1093-hmg-ddu328.pdf
+  sha256: ef7831506495e0d85bec0be895961060417bd4dcdec3998d8f7a684d17ab477c
+  doi: 10.1093/hmg/ddu328
+  note: Publisher PDF held in the shared citations library ($CITATIONS_HOME/pdfs), path relative to the
+    repository root. Quotations copied from pdftotext output; verify reads the default extractor chain.
+claims:
+  mr-bias-pleiotropy:
+    quotes:
+    - exact: 'There are a number of limitations to MR that should
+
+        be considered when using this approach (Table 2), which
+
+        have been discussed at length elsewhere (8,10– 15). Pleiotropy
+
+        (Box 2) is particularly problematic in this regard.'
+      section: Introduction
+      page: 2
+  mr-bias-population-stratification:
+    quotes:
+    - exact: 'although it is important to take appropriate measures to avoid introducing confounding through
+        population
+
+        stratification.'
+      section: Introduction
+      page: 2
+  mr-bias-weak-instrument:
+    quotes:
+    - exact: 'First, the genetic effect may not be particularly large, resulting
+
+        in a weak instrument and the requirement for very large sample
+
+        sizes.'
+      section: 'Recent extensions: use of multiple variants'
+      page: 3
+  mr-long-term-exposure-ldl:
+    quotes:
+    - exact: 'The line (forced to pass through the origin) represents the increase in proportional risk
+        reduction of CHD per unit lower
+
+        long-term exposure to LDL-C.'
+      section: Figure 2 caption
+      page: 5

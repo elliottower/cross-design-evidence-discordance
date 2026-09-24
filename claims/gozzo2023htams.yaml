@@ -1,0 +1,29 @@
+source:
+  citation: gozzo2023htams
+  local: ../citations-library/pdfs/doi-10-3389-fphar-2023-1169400.pdf
+  sha256: 7636d08d695d48e4781ce8441af948af4eadabe51b0839b5113849d0de80465b
+  doi: 10.3389/fphar.2023.1169400
+  url: https://www.frontiersin.org/articles/10.3389/fphar.2023.1169400/pdf?isPublishedV2=False
+  note: Publisher PDF held in the shared citations library ($CITATIONS_HOME/pdfs), path relative to the
+    repository root. Quotations copied from pdftotext output; verify reads the default extractor chain.
+claims:
+  hta-no-agreement-therapeutic-value:
+    quotes:
+    - exact: 'We found no agreement on the therapeutic value
+
+        (in particular, the “added value” compared to the standard of care) of the selected
+
+        drugs.'
+      section: Abstract
+      page: 1
+  hta-three-countries:
+    quotes:
+    - exact: 'This study aims to provide a
+
+        comparative analysis of HTA recommendations issued by three EU countries
+
+        (France, Germany, and Italy) for new drugs for multiple sclerosis (MS) following
+
+        EMA approval.'
+      section: Abstract
+      page: 1

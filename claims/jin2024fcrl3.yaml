@@ -1,0 +1,13 @@
+source:
+  citation: jin2024fcrl3
+  local: ../citations-library/pdfs/doi-10-1080-08916934-2024-2330392.pdf
+  sha256: a1b75f1efabefc909e65be1d2f2ede4016f9bc83db07efb701a49549fa2892f5
+  doi: 10.1080/08916934.2024.2330392
+  note: Publisher PDF obtained by hand (2026-09-23). Published version of the SSRN 4709115 preprint to
+    which the registered CD20-RA genetic value 1.291 (1.190-1.391) is attributed; the published estimate
+    differs.
+claims:
+  cd20-ra-gen-published:
+    quotes:
+    - exact: (FCRL3) (OR = 1.15; 95%CI, 1.10–1.20; p = 1.10E − 10)
+      section: Results

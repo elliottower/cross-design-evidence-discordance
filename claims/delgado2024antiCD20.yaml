@@ -1,0 +1,41 @@
+source:
+  citation: delgado2024antiCD20
+  local: ../citations-library/pdfs/doi-10-1007-s00415-023-12007-3.pdf
+  sha256: 13163259bd219ee83eb894ab575c11155cbe5e64a100bdbb45788c158b8f483e
+  doi: 10.1007/s00415-023-12007-3
+  url: https://link.springer.com/content/pdf/10.1007/s00415-023-12007-3.pdf
+  note: Publisher open-access PDF (J Neurol 2024;271:1515-1535, published online 31 October 2023) held
+    in the shared citations library ($CITATIONS_HOME/pdfs), path relative to the repository root. Quotations
+    copied from pdftotext output; verify reads the default extractor chain.
+claims:
+  rituximab-off-label-ms:
+    quotes:
+    - exact: 'Rituximab: not currently approved for use in MS but frequently used off-label'
+      section: Introduction
+      page: 2
+  ublituximab-approved-ms:
+    quotes:
+    - exact: 'Ublituximab: EMA approved for RMS and FDA
+
+        approved for RMS (CIS, RRMS and active SPMS)'
+      section: Introduction
+      page: 2
+  ocrelizumab-approved-ms:
+    quotes:
+    - exact: 'Ocrelizumab (Ocrevus®): EMA and FDA approved for a) relapsing forms of MS (RMS) including
+        clinically isolated syndrome (CIS), relapsing-remitting MS (RRMS) and active secondary progressive
+        MS (SPMS) and b) primary progressive MS (PPMS)'
+      section: Introduction
+      page: 2
+  ofatumumab-approved-ms:
+    quotes:
+    - exact: 'Ofatumumab (Kesimpta®): EMA approved for RMS and FDA approved for RMS (CIS, RRMS and active
+        SPMS)'
+      section: Introduction
+      page: 2
+  anti-cd20-five-therapies:
+    quotes:
+    - exact: There are currently five anti-CD20 therapies undergoing clinical development, or that have
+        been approved, for the treatment of MS.
+      section: Introduction
+      page: 2

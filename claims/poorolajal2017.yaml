@@ -1,0 +1,12 @@
+source:
+  citation: poorolajal2017
+  local: ../citations-library/pdfs/doi-10-1093-pubmed-fdw030.abstract.txt
+  sha256: 1380d6c27483d3ec7f74b18ec24f2b6ae1608087a28a5dc5729f6d9e62db7422
+  doi: 10.1093/pubmed/fdw030
+  note: ABSTRACT ONLY. Full text paywalled; the artifact is the PubMed abstract (PMID 27160862) saved
+    as plain text in the shared citations library. Quotations resolve against the abstract, not the article.
+claims:
+  smoking-ms-obs:
+    quotes:
+    - exact: Compared with nonsmokers, the OR estimate of MS was 1.46 (1.33, 1.59) among ever smokers
+      section: Abstract (abstract-only artifact)

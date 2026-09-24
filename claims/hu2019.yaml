@@ -1,0 +1,22 @@
+source:
+  citation: hu2019
+  local: ../citations-library/pdfs/doi-10-1002-14651858-cd013874-pub2.pdf
+  sha256: f10a3211c8e32eb28a1281d09766b65e1661577a409029f96f8ae35e0bfecc1d
+  doi: 10.1002/14651858.CD013874.pub2
+  note: Publisher PDF obtained by hand (2026-09-23) and held in the shared citations library ($CITATIONS_HOME/pdfs),
+    path relative to the repository root. Quotations copied from pdftotext output; verify reads the default
+    extractor chain.
+claims:
+  anti-cd20-ms-obs:
+    quotes:
+    - exact: Rituximab likely results in a large reduction in relapses compared with interferon beta or
+        glatiramer acetate (hazard ratio (HR) 0.14, 95% confidence interval (CI) 0.05 to 0.39; 335 participants;
+        moderate-certainty evidence).
+      section: 'Abstract: Main results'
+      page: 6
+  anti-cd20-ms-obs-single-nrsi:
+    quotes:
+    - exact: 'Rituximab versus other DMTs: one NRSI compared rituximab with interferon beta or glatiramer
+        acetate, dimethyl fumarate, natalizumab, or fingolimod in active relapsing MS at 24 months'' follow-up.'
+      section: 'Abstract: Main results'
+      page: 6

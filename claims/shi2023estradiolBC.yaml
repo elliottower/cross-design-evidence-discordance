@@ -1,0 +1,38 @@
+source:
+  citation: shi2023estradiolBC
+  local: ../citations-library/pdfs/doi-10-1186-s13058-022-01553-9.pdf
+  sha256: 0f0a9b00454801c66165a28ab7321bc1316a8dd4673a1af808c412660deb4998
+  doi: 10.1186/s13058-022-01553-9
+  url: https://breast-cancer-research.biomedcentral.com/counter/pdf/10.1186/s13058-022-01553-9
+  note: Publisher PDF held in the shared citations library ($CITATIONS_HOME/pdfs), path relative to the
+    repository root. Quotations copied from pdftotext output; verify reads the default extractor chain.
+claims:
+  estrogen-bc-gen:
+    quotes:
+    - exact: 'We found that a standard deviation (SD) increase in TT, BT and estradiol increased the risk
+        of overall BC (OR
+
+        1.14, 95% CI 1.09–1.21, OR 1.19, 95% CI 1.07–1.33 and OR 1.03, 95% CI 1.01–1.06, respectively)'
+      section: 'Abstract: Results'
+      page: 1
+  estrogen-bc-gen-results:
+    quotes:
+    - exact: 'We found two SNPs at P ≤ 5 × ­10–7 to proxy for an SD
+
+        increase in estradiol, which explained 0.64% of the variance with an F statistic of 8.40. Although
+        the F statistic
+
+        is low, one of the SNPs (rs2414098) is an intronic variant in the gene CYP19A1 [56] which encodes
+        the enzyme
+
+        involved in the conversion of testosterone to estradiol
+
+        [37]. For this reason, we continued with the MR analysis
+
+        and found an increased risk of both overall BC risk and
+
+        ER + BC (OR 1.03, 95% CI 1.01–1.06 and OR 1.06, 95%
+
+        CI 1.03–1.09, respectively)'
+      section: Results
+      page: 6

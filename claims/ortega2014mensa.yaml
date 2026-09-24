@@ -1,0 +1,22 @@
+source:
+  citation: ortega2014mensa
+  local: ../citations-library/pdfs/doi-10-1056-nejmoa1403290.pdf
+  sha256: 67e5bf950297afcc4df5846e3363e1b7fd79011ceb1481cdf771741df2008bf0
+  doi: 10.1056/NEJMoa1403290
+  note: Publisher PDF obtained by hand (2026-09-23) and held in the shared citations library ($CITATIONS_HOME/pdfs),
+    path relative to the repository root. Quotations copied from pdftotext output; verify reads the default
+    extractor chain.
+claims:
+  eos-asthma-outcome-mensa:
+    quotes:
+    - exact: The rate of exacerbations was reduced by 47% (95% confidence interval [CI], 28 to 60) among
+        patients receiving intravenous mepolizumab and by 53% (95% CI, 36 to 65) among those receiving
+        subcutaneous mepolizumab, as compared with those receiving placebo (P<0.001 for both comparisons).
+      section: 'Abstract: Results'
+      page: 1
+  eos-asthma-outcome-mensa-conclusion:
+    quotes:
+    - exact: Mepolizumab administered either intravenously or subcutaneously significantly reduced asthma
+        exacerbations and was associated with improvements in markers of asthma control.
+      section: 'Abstract: Conclusions'
+      page: 1

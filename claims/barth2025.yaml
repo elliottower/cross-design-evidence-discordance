@@ -1,0 +1,15 @@
+source:
+  citation: barth2025
+  local: ../citations-library/pdfs/doi-10-1038-s41467-025-65878-7.pdf
+  sha256: ff1e6a377f88aff145224874b4f5402b4c2002fbd35d11ba90058f9d422f7848
+  doi: 10.1038/s41467-025-65878-7
+  url: https://www.nature.com/articles/s41467-025-65878-7.pdf
+  note: Publisher PDF held in the shared citations library ($CITATIONS_HOME/pdfs), path relative to the
+    repository root. Quotations copied from pdftotext output; verify reads the default extractor chain.
+claims:
+  hrt-ad-gen-null:
+    quotes:
+    - exact: No signiﬁcant causal relationships were found between estradiol levels, using the continuous
+        measures as the exposure, and brain age gap, Alzheimer’s disease, and depression as outcomes
+      section: 'Results: Mendelian randomization analyses'
+      page: 2

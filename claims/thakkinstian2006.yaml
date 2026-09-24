@@ -1,0 +1,14 @@
+source:
+  citation: thakkinstian2006
+  local: ../citations-library/pdfs/doi-10-1093-hmg-ddl220.abstract.txt
+  sha256: c612e2eccc9a557147beb093d55f7ac7177512a42ac2a2f84a09671af10f0b80
+  doi: 10.1093/hmg/ddl220
+  note: ABSTRACT ONLY. Full text not held (status paywalled/failed); the artifact is the PubMed abstract
+    saved as plain text in the shared citations library. Every quotation in this file resolves against
+    the abstract, not the article.
+claims:
+  complement-ga-gen:
+    quotes:
+    - exact: indicates a multiplicative model with each C allele increasing the odds of AMD by approximately
+        2.5-fold
+      section: Abstract (abstract-only artifact)

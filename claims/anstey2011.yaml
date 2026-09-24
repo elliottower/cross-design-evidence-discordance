@@ -1,0 +1,13 @@
+source:
+  citation: anstey2011
+  local: ../citations-library/pdfs/doi-10-1111-j-1467-789x-2010-00825-x.abstract.txt
+  sha256: 06f8ea3648a6a9fe0f93bf6175d4a7db54314576337e9895cf5361e8d77247f9
+  doi: 10.1111/j.1467-789X.2010.00825.x
+  note: ABSTRACT ONLY. Full text paywalled; the artifact is the PubMed abstract (PMID 21348917) saved
+    as plain text in the shared citations library. Quotations resolve against the abstract, not the article.
+claims:
+  bmi-ad-obs:
+    quotes:
+    - exact: "The pooled relative risks of AD and Any Dementia for obese BMI in \nmidlife compared to\
+        \ normal BMI were 2.04 (95% CI: 1.59, 2.62)"
+      section: Abstract (abstract-only artifact)

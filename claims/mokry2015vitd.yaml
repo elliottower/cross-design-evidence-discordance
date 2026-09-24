@@ -1,0 +1,24 @@
+source:
+  citation: mokry2015vitd
+  local: ../citations-library/pdfs/doi-10-1371-journal-pmed-1001866.pdf
+  sha256: ff195da09a1e192ea4bc71f2fa770a34929f990e6533195e99e11b6bc01ee16c
+  doi: 10.1371/journal.pmed.1001866
+  url: https://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1001866&type=printable
+  note: Publisher PDF held in the shared citations library ($CITATIONS_HOME/pdfs), path relative to the
+    repository root. Quotations copied from pdftotext output; verify reads the default extractor chain.
+claims:
+  vitamind-ms-gen:
+    quotes:
+    - exact: 'each genetically determined one-standard-deviation decrease in logtransformed 25OHD level
+        conferred a 2.0-fold increase in the odds of MS (95% CI: 1.7–2.5;'
+      section: 'Abstract: Methods and Findings'
+      page: 2
+  vitamind-ms-gen-results:
+    quotes:
+    - exact: 'We
+
+        observed that each 1-SD decrease in natural-log-transformed 25OHD level was associated with
+
+        an increased risk of MS (OR = 2.02, 95% CI: 1.65–2.46, p = 7.72 × 10−12)'
+      section: 'Results: Mendelian Randomization Analysis for the Association of 25OHD with Multiple Sclerosis
+        Risk'

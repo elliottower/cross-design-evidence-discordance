@@ -1,0 +1,21 @@
+source:
+  citation: kelly2021il6r
+  local: ../citations-library/pdfs/doi-10-1016-j-bbi-2021-02-019.pdf
+  sha256: c7e17145ffb22817a8c1a74158b5b56daf6a414d67feaceff91fe33a00f4fa52
+  doi: 10.1016/j.bbi.2021.02.019
+  note: Publisher PDF obtained by hand (2026-09-23) and held in the shared citations library ($CITATIONS_HOME/pdfs),
+    path relative to the repository root. Quotations copied from pdftotext output; verify reads the default
+    extractor chain.
+claims:
+  il6-mdd-gen-il6r:
+    quotes:
+    - exact: 'Results are consistent with a causal effect of sIL-6R on depression (PCA-IVW Odds Ratio:
+        1.023 (95% Confidence Interval: 1.006–1.039), p = 0.006).'
+      section: 'Abstract: Results'
+      page: 1
+  il6-mdd-gen-il6r-instrument:
+    quotes:
+    - exact: we selected the biallelic SNP rs2228145, which explains approximately 51% of the variance
+        in sIL-6R levels
+      section: Methods
+      page: 4

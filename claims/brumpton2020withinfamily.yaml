@@ -1,0 +1,41 @@
+source:
+  citation: brumpton2020withinfamily
+  local: ../citations-library/pdfs/doi-10-1038-s41467-020-17117-4.pdf
+  sha256: b75a3c274100ea8947e108cd4e68d09c091757b305e50b88a822e88de5b53f62
+  doi: 10.1038/s41467-020-17117-4
+  url: https://www.nature.com/articles/s41467-020-17117-4.pdf
+  note: Publisher open-access PDF (Nat Commun 2020;11:3519) held in the shared citations library ($CITATIONS_HOME/pdfs),
+    path relative to the repository root. Quotations copied from pdftotext output; verify reads the default
+    extractor chain.
+claims:
+  familial-confounding-abstract:
+    quotes:
+    - exact: 'Estimates from Mendelian randomization studies of unrelated individuals can be biased due
+
+        to uncontrolled confounding from familial effects.'
+      section: Abstract
+      page: 1
+  stratification-dynastic-assortative:
+    quotes:
+    - exact: 'However, environmental and social factors such as assortative
+
+        mating, dynastic effects, and population structure may affect the
+
+        distribution of genetic variants for specific traits within populations'
+      section: Introduction
+      page: 2
+  spurious-association-confounding:
+    quotes:
+    - exact: 'The commonality amongst all three processes is that they
+
+        induce a spurious association between the instrumenting variant
+
+        and the outcome through confounding.'
+      section: Introduction
+      page: 2
+  population-stratification-confounding:
+    quotes:
+    - exact: Confounding by population stratification1, in which ancestry is correlated with both phenotypes
+        and genotypes, was a major concern
+      section: Introduction
+      page: 2

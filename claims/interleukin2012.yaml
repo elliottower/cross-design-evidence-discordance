@@ -1,0 +1,34 @@
+source:
+  citation: interleukin2012
+  local: ../citations-library/pdfs/doi-10-1016-s0140-6736-12-60110-x.pdf
+  sha256: be3ed71c9000b7981ef8da94d2842467c3fdaf0768b66cede6b85062979f983d
+  doi: 10.1016/S0140-6736(12)60110-X
+  note: Publisher PDF obtained by hand (2026-09-23) and held in the shared citations library ($CITATIONS_HOME/pdfs),
+    path relative to the repository root. Quotations copied from pdftotext output; verify reads the default
+    extractor chain.
+claims:
+  il6r-gen-abstract:
+    quotes:
+    - exact: IL6R rs7529229 SNP was associated with a decreased odds of coronary heart disease events
+        (per allele odds ratio 0·95, 95% CI 0·93–0·97, p=1·53×10–⁵).
+      section: 'Summary: Findings'
+      page: 1
+  il6r-gen-results:
+    quotes:
+    - exact: the OR for the primary outcome (all fatal and non-fatal coronary heart disease events; appendix
+        pp 15–16) per minor allele at rs7529229 was 0·95 (95% CI 0·93–0·97, p=1·53×10–⁵).
+      section: Results
+      page: 5
+  il6r-sil6r-shift-table:
+    quotes:
+    - exact: '1454 (3)
+
+
+        14·87 (13·07 to 16·66)'
+      section: 'Table (summary effects), Soluble IL6R (ng/mL) row, genetic studies per-allele effect'
+      page: 3
+  il6r-sil6r-shift-fig2:
+    quotes:
+    - exact: standardised mean diﬀerences were 0·75 (95% CI 0·59–0·91) ng/mL per minor allele for rs7529229
+      section: Figure 2 legend
+      page: 5
