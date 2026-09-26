@@ -14,7 +14,7 @@ from pathlib import Path
 
 src = Path(sys.argv[1]).resolve()
 aux = src.with_suffix(".aux")
-version = re.match(r"paper_(v\d+)", src.stem).group(1)
+version = re.match(r"paper_(v\d+[a-z]?)", src.stem).group(1)
 out = src.parent / f"frontiers_plaintext_{version}_portal"
 if out.exists():
     raise SystemExit(f"{out} exists; exports are not overwritten")

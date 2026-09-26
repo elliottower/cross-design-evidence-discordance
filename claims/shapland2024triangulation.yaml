@@ -1,0 +1,31 @@
+source:
+  citation: shapland2024triangulation
+  local: ../citations-library/pdfs/doi-10-1101-2024-09-20-24314046.pdf
+  sha256: 5524299ef8b9a5d3a7254f317547e39010f29b8e5a7775b8fb0e396d24cb21a0
+  doi: 10.1101/2024.09.20.24314046
+  note: Open-access PDF downloaded 2026-09-25 and held in the shared citations library ($CITATIONS_HOME/pdfs),
+    path relative to the repository root.
+claims:
+  triangulation-mostly-qualitative:
+    quotes:
+    - exact: Most studies using triangulation have qualitatively examined whether different studies agree
+        upon the presence of a causal effect, rather than estimated the effect by quantitatively integrating
+        results.
+      section: Abstract
+      page: 2
+  beta-carotene-mvr:
+    quotes:
+    - exact: 13 MVR studies indicated that high intake of beta-carotene reduces CHD risk (RR=0.83
+      section: Abstract
+      page: 2
+  beta-carotene-rct-mr:
+    quotes:
+    - exact: (relative risk (RR)=1.00 with 95% CI=0.98 to 1.01 and RR=1.02 with 95% CI=0.98 to 1.07
+      section: Abstract
+      page: 2
+  beta-carotene-adjusted:
+    quotes:
+    - exact: the three study designs agreed that there is little evidence of an effect of beta-carotene
+        intake on the risk of CHD (RR=1.01
+      section: Abstract
+      page: 2

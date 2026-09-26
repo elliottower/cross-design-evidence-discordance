@@ -1,0 +1,20 @@
+source:
+  citation: shi2025triangulator
+  local: ../citations-library/pdfs/doi-10-1038-s41467-025-62783-x.pdf
+  sha256: 571d243e89e1a867b78e1c1f49326bbb15ce79690e19aa107c09218083da14d0
+  doi: 10.1038/s41467-025-62783-x
+  note: Open-access PDF downloaded 2026-09-25 and held in the shared citations library ($CITATIONS_HOME/pdfs),
+    path relative to the repository root.
+claims:
+  direction-not-size:
+    quotes:
+    - exact: triangulation synthesizes the direction of effects, rather than the effect size reported
+        in individual studies
+      section: Discussion
+      page: 7
+  participant-weighted-directions:
+    quotes:
+    - exact: we enhanced our triangulation algorithm to better differentiate weight of evidence by incorporating
+        the number of participants from RCT and OS
+      section: Methods
+      page: 9
