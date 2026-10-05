@@ -5,7 +5,7 @@
 **Parent documents:** PREREGISTRATION.md (SHA: b96d10a), PREREGISTRATION_AMENDMENT_EXPLORATORY.md (SHA: 1f300a9), PREREGISTRATION_AMENDMENT_2_BLIND.md (SHA: 12ea0ed)
 **Scope:** Corrects bibliographic errors found in an audit of the reference list. One correction changes an input effect size; no classification changes.
 
-**Commit SHA:** _pending_
+**Commit SHA:** 5d12b37
 
 ---
 
