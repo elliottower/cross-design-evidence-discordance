@@ -1,0 +1,33 @@
+family,value_used,drug_outcome,source_figure,conversion,registered_obs_class,registered_mr_class,registered_classification,registered_prediction,source_obs_d,source_gen_d,source_obs_class,source_mr_class,source_classification,source_prediction,prediction_changed,label_changed,correct_under_source,prediction_changes_in_bound,label_changes_in_bound
+Metabolic-AD,registered,Failed,,,non-trivial,null,qualitative discordance,failure,0.234,0.005,non-trivial,null,qualitative discordance,failure,False,False,True,False,False
+ModRisk-AD,registered_no_source,Failed,,,non-trivial,null,qualitative discordance,failure,0.209,0.053,non-trivial,null,qualitative discordance,failure,False,False,True,False,False
+Anti-CD20-MS,source,Approved,"{""obs_OR"": 0.14}","hazard ratio treated as an odds ratio, magnitude of ln",non-trivial,causal,concordance,success,1.084,0.103,non-trivial,causal,concordance,success,False,False,True,False,False
+Smoking-MS/AD,registered,Failed,,,non-trivial,null,qualitative discordance,failure,0.209,0.016,non-trivial,null,qualitative discordance,failure,False,False,True,False,False
+HRT-AD,source,Failed,"{""gen_OR"": 1.54, ""gen_CI_lower"": 0.98, ""gen_CI_upper"": 2.41}",coefficient read as a log odds ratio,non-trivial,null,qualitative discordance,failure,0.221,0.238,non-trivial,null,qualitative discordance,failure,False,False,True,False,False
+BMI-AD,registered,Failed,,,non-trivial,null,qualitative discordance,failure,0.393,0.016,non-trivial,null,qualitative discordance,failure,False,False,True,False,False
+VitaminD-MS,source,Failed,"{""obs_OR"": 0.59}","odds ratio, magnitude of ln",non-trivial,causal,concordance,success,0.291,0.382,non-trivial,causal,concordance,success,False,False,False,False,False
+EBV-MS,registered_no_source,Approved,,,non-trivial,causal,concordance,success,0.293,0.887,non-trivial,causal,concordance,success,False,False,True,False,False
+HDL/CETP,registered,Failed,,,non-trivial,null,qualitative discordance,failure,0.264,0.04,non-trivial,null,qualitative discordance,failure,False,False,True,False,False
+Niacin/HDL,registered,Failed,,,non-trivial,null,qualitative discordance,failure,0.264,0.04,non-trivial,null,qualitative discordance,failure,False,False,True,False,False
+Homocysteine,registered,Failed,,,non-trivial,null,qualitative discordance,failure,0.153,0.011,non-trivial,null,qualitative discordance,failure,False,False,True,False,False
+CRP,registered,No benefit,,,non-trivial,null,qualitative discordance,failure,0.174,0.0,non-trivial,null,qualitative discordance,failure,False,False,True,False,False
+LDL/PCSK9,source,Approved,"{""obs_OR"": 1.54}",odds ratio per standard deviation,non-trivial,causal,concordance,success,0.238,0.318,non-trivial,causal,concordance,success,False,False,True,False,False
+Blood pressure,source,Approved,"{""gen_OR"": 1.39, ""gen_CI_lower"": 1.33, ""gen_CI_upper"": 1.44}",odds ratio per 10 mmHg systolic,non-trivial,causal,concordance,success,0.189,0.182,non-trivial,causal,concordance,success,False,False,True,False,False
+Triglycerides,registered,Approved,,,non-trivial,causal,concordance,success,0.299,0.266,non-trivial,causal,concordance,success,False,False,True,False,False
+IL-23-psoriasis,registered_no_source,Approved,,,non-trivial,causal,concordance,success,0.66,0.267,non-trivial,causal,concordance,success,False,False,True,False,False
+CTLA-4-RA,source,Approved,"{""gen_OR"": 0.86, ""gen_CI_lower"": 0.78, ""gen_CI_upper"": 0.96}",odds ratio,non-trivial,null,qualitative discordance,failure,0.5,0.083,non-trivial,null,qualitative discordance,failure,False,False,False,False,False
+TNF-a-RA,registered_no_source,Approved,,,non-trivial,null,qualitative discordance,failure,1.93,0.0,non-trivial,null,qualitative discordance,failure,False,False,False,False,False
+IL-17-psoriasis,registered,Approved,,,non-trivial,null,qualitative discordance,failure,0.47,0.001,non-trivial,null,qualitative discordance,failure,False,False,False,False,False
+JAK-STAT-RA,registered,Approved,,,non-trivial,causal,concordance,success,0.5,0.132,non-trivial,causal,concordance,success,False,False,True,False,False
+CD20-RA,registered,Approved,,,non-trivial,causal,concordance,success,0.5,0.141,non-trivial,causal,concordance,success,False,False,True,False,False
+IL-1b-CVD,registered_no_source,Failed,,,non-trivial,null,qualitative discordance,failure,0.174,0.0,non-trivial,null,qualitative discordance,failure,False,False,True,False,False
+VitD-Cancer,registered,Failed,,,non-trivial,null,qualitative discordance,failure,0.137,0.017,non-trivial,null,qualitative discordance,failure,False,False,True,False,False
+IGF1-CRC,source,Failed,"{""obs_OR"": 1.11}","hazard ratio treated as an odds ratio, per standard deviation",trivial,causal,genetic-only signal,success,0.058,0.11,trivial,causal,genetic-only signal,success,False,False,False,False,True
+Estrogen-BC,registered,Approved,,,non-trivial,null,qualitative discordance,failure,0.145,0.016,non-trivial,null,qualitative discordance,failure,False,False,False,False,False
+Eos/IL5-Asthma,registered,Approved,,,non-trivial,causal,concordance,success,0.8,0.224,non-trivial,causal,concordance,success,False,False,True,False,False
+SGLT2-HF,source,Approved,"{""obs_OR"": 1.83}","fixed-effect inverse-variance pool of two risk ratios on the log scale, treated as an odds ratio",non-trivial,causal,concordance,success,0.333,0.453,non-trivial,causal,concordance,success,False,False,True,False,False
+Urate-Gout,registered,Approved,,,non-trivial,causal,concordance,success,0.641,0.887,non-trivial,causal,concordance,success,False,False,True,False,False
+IL6-MDD,registered,Failed,,,non-trivial,null,qualitative discordance,failure,0.15,0.005,non-trivial,null,qualitative discordance,failure,False,False,True,False,False
+Complement-GA,source,Failed,"{""gen_OR"": 2.5, ""gen_CI_lower"": 1.96, ""gen_CI_upper"": 3.3}",pooled odds ratio,non-trivial,causal,concordance,success,0.5,0.505,non-trivial,causal,concordance,success,False,False,False,False,False
+Sclerostin-Fracture,registered,Approved,,,non-trivial,causal,concordance,success,0.33,0.291,non-trivial,causal,concordance,success,False,False,True,False,False
+Serotonin-MDD,registered,Approved,,,non-trivial,null,qualitative discordance,failure,0.45,0.042,non-trivial,null,qualitative discordance,failure,False,False,False,False,False
