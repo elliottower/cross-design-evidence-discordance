@@ -121,6 +121,8 @@ rep(r"""the outcome codebook with its source log, the MR-instrumented audit and 
 rep(r"""and the origin and source of each input value; \texttt{cross\_design\_classification\_all\_41\_families\_v4.csv})""",
     r"""the origin and source of each input value, and the class and score under source-reported values; \texttt{cross\_design\_classification\_all\_41\_families\_v5.csv})""")
 rep(r"""at tag \texttt{frontiers-revision-4}""", r"""at tag \texttt{frontiers-revision-5}""")
+# The concept DOI, which resolves to the newest deposited version.
+rep(r"""10.5281/zenodo.22945779""", r"""10.5281/zenodo.21227353""")
 
 DST.write_text(text, encoding="utf-8")
 print(f"{applied} edits applied; wrote {DST.name}")

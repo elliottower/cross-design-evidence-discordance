@@ -162,6 +162,7 @@ for fam_name, cell in [("HRT-AD", "OR 1.54 (0.98--2.41)"), ("Anti-CD20-MS", "HR 
 v5 = {r["family"]: r for r in csv.DictReader(open(ROOT / "data" / "cross_design_classification_all_41_families_v5.csv", encoding="utf-8"))}
 check("supplement v5 cited; registered inputs give 24/32", has("cross\\_design\\_classification\\_all\\_41\\_families\\_v5.csv") and sum(r["correct"] == "True" for r in v5.values()) == 24 and v5["Anti-CD20-MS"]["obs_d"] == "0.442" and "Anti-CD20-MS & 0.103 & Yes & 0.442" in TEX)
 check("title", has("\\title{Cross-Design Evidence: Mendelian Randomization Status Alone Explains the Classification of Phase~III Drug Outcomes Across Ten Disease Domains}"))
+check("Data Availability cites the Zenodo concept DOI", has("10.5281/zenodo.21227353") and "zenodo.22945779" not in TEX)
 check("keyword swapped", "failure-mode diagnosis" not in TEX and "evidence triangulation, observational evidence, Phase~III trials" in TEX)
 failed = [n for n, ok in checks if not ok]
 for n, ok in checks:
