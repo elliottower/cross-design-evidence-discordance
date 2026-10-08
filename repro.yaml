@@ -1,0 +1,332 @@
+schema_version: repro/1
+project: cross-design evidence and Phase III drug outcomes
+provenance:
+  generated_by: scripts/build_repro_manifest.py
+artifacts:
+- id: registered
+  path: analysis/revised_primary_analysis/revised_primary_results.json
+  media_type: application/json
+  digest:
+    algorithm: sha256
+    value: 0738d1536cafc25ec594bdaaedc9cafff267ee823c6b7b68a9bda902453282ae
+- id: analysis-sets
+  path: analysis/amendment5/analysis_sets/analysis_sets.json
+  media_type: application/json
+  digest:
+    algorithm: sha256
+    value: 4ae6fc3a5cd7d96900fc4a71b904a4fad4936b57ee330a7472564a6fab6f8f64
+- id: amendment6
+  path: analysis/amendment6/source_values_results.json
+  media_type: application/json
+  digest:
+    algorithm: sha256
+    value: b45cdfda61f3c0a61408f00fb96340708de6802c54d38b66c3ecd9de64157aa8
+claims:
+- id: registered-correct
+  registration: confirmatory
+  registration_note: PREREGISTRATION.md, frozen two-criterion rule
+  where: Abstract; Results
+  text: Under the registered analysis, 24/32 families were classified correctly
+  evidence:
+  - kind: metric
+    artifact: registered
+    name: registered-correct
+    reported: '24'
+    pointer: /registered/correct
+- id: registered-n
+  registration: confirmatory
+  registration_note: PREREGISTRATION.md
+  where: Abstract; Results
+  text: 32 scored families
+  evidence:
+  - kind: metric
+    artifact: registered
+    name: registered-n
+    reported: '32'
+    pointer: /registered/n
+- id: registered-accuracy
+  registration: confirmatory
+  registration_note: PREREGISTRATION.md
+  where: Abstract; Results
+  text: 75.0%
+  evidence:
+  - kind: metric
+    artifact: registered
+    name: registered-accuracy
+    reported: '0.75'
+    pointer: /registered/accuracy
+- id: registered-p-permutation
+  registration: exploratory
+  registration_note: permutation test specified in Amendment 4, after the registered binomial test
+  where: Abstract; Results
+  text: outcome-permutation p = 0.005 at family level
+  evidence:
+  - kind: metric
+    artifact: registered
+    name: registered-p-permutation
+    reported: '0.00544'
+    pointer: /registered/p_permutation_exact
+- id: registered-p-cluster
+  registration: exploratory
+  registration_note: Amendment 4
+  where: Abstract; Results
+  text: p = 0.005 at instrument-cluster level
+  evidence:
+  - kind: metric
+    artifact: registered
+    name: registered-p-cluster
+    reported: '0.00498'
+    pointer: /registered/p_permutation_cluster_level
+- id: registered-p-binomial
+  registration: confirmatory
+  registration_note: the registered test
+  where: Results; analysis-set table
+  text: one-sided exact binomial p = 0.004
+  evidence:
+  - kind: metric
+    artifact: registered
+    name: registered-p-binomial
+    reported: '0.0035'
+    pointer: /registered/p_one_sided_exact_binomial_50pct
+- id: original-domains
+  registration: confirmatory
+  registration_note: PREREGISTRATION.md
+  where: Abstract
+  text: 18/22 in the original domains
+  evidence:
+  - kind: metric
+    artifact: registered
+    name: original-domains
+    reported: '18'
+    pointer: /by_tier/registered/pre-registered/correct
+- id: blind-extension
+  registration: confirmatory
+  registration_note: Amendments 1 and 2
+  where: Abstract
+  text: 6/10 in the blind extension
+  evidence:
+  - kind: metric
+    artifact: registered
+    name: blind-extension
+    reported: '6'
+    pointer: /by_tier/registered/extension/correct
+- id: sensitivity-28
+  registration: exploratory
+  registration_note: Amendment 4, specified with outcomes known
+  where: analysis-set table
+  text: '28-family sensitivity set: 23 of 28'
+  evidence:
+  - kind: metric
+    artifact: registered
+    name: sensitivity-28
+    reported: '23'
+    pointer: /reviewer_specified/correct
+- id: strict-phase-iii
+  registration: exploratory
+  registration_note: Amendment 5 (commit fbc7d33), registered analysis-set table
+  where: analysis-set table
+  text: 'Strict Phase III: 17 of 25'
+  evidence:
+  - kind: metric
+    artifact: analysis-sets
+    name: strict-phase-iii
+    reported: '17'
+    pointer: /table/1/correct
+- id: amyloid-scored
+  registration: exploratory
+  registration_note: Amendment 5 (commit fbc7d33), registered analysis-set table
+  where: analysis-set table
+  text: 'Amyloid-AD scored: 24 of 33'
+  evidence:
+  - kind: metric
+    artifact: analysis-sets
+    name: amyloid-scored
+    reported: '24'
+    pointer: /table/2/correct
+- id: mr-instrumented
+  registration: exploratory
+  registration_note: Amendment 5 (commit fbc7d33), registered analysis-set table
+  where: analysis-set table
+  text: 'MR-instrumented: 22 of 27'
+  evidence:
+  - kind: metric
+    artifact: analysis-sets
+    name: mr-instrumented
+    reported: '22'
+    pointer: /table/4/correct
+- id: unique-evidence
+  registration: exploratory
+  registration_note: Amendment 5 (commit fbc7d33), registered analysis-set table
+  where: analysis-set table
+  text: 'Unique evidence: 23 of 31'
+  evidence:
+  - kind: metric
+    artifact: analysis-sets
+    name: unique-evidence
+    reported: '23'
+    pointer: /table/7/correct
+- id: documented-program
+  registration: exploratory
+  registration_note: set defined after the registered sets were scored
+  where: Results; analysis-set table
+  text: 'Documented Phase III program: 20 of 28'
+  evidence:
+  - kind: metric
+    artifact: analysis-sets
+    name: documented-program
+    reported: '20'
+    pointer: /table/10/correct
+- id: source-values-correct
+  registration: exploratory
+  registration_note: Amendment 6 (commit 3aacce6), registered before it was run, with outcomes known
+  where: Abstract; Results; analysis-set table
+  text: With each of the nine replaced by the source's figure, the registered rule classifies 24/32 correctly
+  evidence:
+  - kind: metric
+    artifact: amendment6
+    name: source-values-correct
+    reported: '24'
+    pointer: /procedure_1_source_reported_values/correct
+- id: source-values-n
+  registration: exploratory
+  registration_note: Amendment 6 (commit 3aacce6), registered before it was run, with outcomes known
+  where: Results
+  text: 24/32
+  evidence:
+  - kind: metric
+    artifact: amendment6
+    name: source-values-n
+    reported: '32'
+    pointer: /procedure_1_source_reported_values/n
+- id: source-values-obs
+  registration: exploratory
+  registration_note: Amendment 6 (commit 3aacce6), registered before it was run, with outcomes known
+  where: Results
+  text: 31 of 32 families keep non-trivial observational support
+  evidence:
+  - kind: metric
+    artifact: amendment6
+    name: source-values-obs
+    reported: '31'
+    pointer: /procedure_1_source_reported_values/obs_non_trivial
+- id: published-mr-correct
+  registration: exploratory
+  registration_note: Amendment 6 (commit 3aacce6), registered before it was run, with outcomes known
+  where: Abstract; Results; analysis-set table
+  text: the rule classifies 21/28 correctly
+  evidence:
+  - kind: metric
+    artifact: amendment6
+    name: published-mr-correct
+    reported: '21'
+    pointer: /procedure_2_published_mr_estimate_set/correct
+- id: published-mr-n
+  registration: exploratory
+  registration_note: Amendment 6 (commit 3aacce6), registered before it was run, with outcomes known
+  where: Abstract; Results
+  text: 21/28
+  evidence:
+  - kind: metric
+    artifact: amendment6
+    name: published-mr-n
+    reported: '28'
+    pointer: /procedure_2_published_mr_estimate_set/n
+- id: published-mr-accuracy
+  registration: exploratory
+  registration_note: Amendment 6 (commit 3aacce6), registered before it was run, with outcomes known
+  where: Abstract; Results
+  text: 75.0%
+  evidence:
+  - kind: metric
+    artifact: amendment6
+    name: published-mr-accuracy
+    reported: '0.75'
+    pointer: /procedure_2_published_mr_estimate_set/accuracy
+- id: published-mr-p
+  registration: exploratory
+  registration_note: Amendment 6 (commit 3aacce6), registered before it was run, with outcomes known
+  where: Abstract; Results
+  text: descriptive permutation p = 0.011
+  evidence:
+  - kind: metric
+    artifact: amendment6
+    name: published-mr-p
+    reported: '0.01065'
+    pointer: /procedure_2_published_mr_estimate_set/p_permutation_exact_descriptive
+- id: published-mr-p-cluster
+  registration: exploratory
+  registration_note: Amendment 6 (commit 3aacce6), registered before it was run, with outcomes known
+  where: Results; analysis-set table
+  text: cluster-level p = 0.008
+  evidence:
+  - kind: metric
+    artifact: amendment6
+    name: published-mr-p-cluster
+    reported: '0.00773'
+    pointer: /procedure_2_published_mr_estimate_set/p_permutation_cluster_level_descriptive
+- id: published-mr-clusters
+  registration: exploratory
+  registration_note: Amendment 6 (commit 3aacce6), registered before it was run, with outcomes known
+  where: Results
+  text: over 25 clusters
+  evidence:
+  - kind: metric
+    artifact: amendment6
+    name: published-mr-clusters
+    reported: '25'
+    pointer: /procedure_2_published_mr_estimate_set/n_instrument_clusters
+- id: published-mr-original
+  registration: exploratory
+  registration_note: Amendment 6 (commit 3aacce6), registered before it was run, with outcomes known
+  where: Results
+  text: 15/18 in the original domains
+  evidence:
+  - kind: metric
+    artifact: amendment6
+    name: published-mr-original
+    reported: '15'
+    pointer: /procedure_2_published_mr_estimate_set/by_tier/original domains/correct
+- id: published-mr-extension
+  registration: exploratory
+  registration_note: Amendment 6 (commit 3aacce6), registered before it was run, with outcomes known
+  where: Results
+  text: 6/10 in the blind extension
+  evidence:
+  - kind: metric
+    artifact: amendment6
+    name: published-mr-extension
+    reported: '6'
+    pointer: /procedure_2_published_mr_estimate_set/by_tier/blind extension/correct
+- id: published-mr-obs
+  registration: exploratory
+  registration_note: Amendment 6 (commit 3aacce6), registered before it was run, with outcomes known
+  where: Results
+  text: 27 of 28 families carrying non-trivial observational support
+  evidence:
+  - kind: metric
+    artifact: amendment6
+    name: published-mr-obs
+    reported: '27'
+    pointer: /procedure_2_published_mr_estimate_set/obs_non_trivial
+- id: without-il23-correct
+  registration: exploratory
+  registration_note: Amendment 6 (commit 3aacce6), registered before it was run, with outcomes known
+  where: analysis-set table
+  text: 'Published MR estimate, IL-23-psoriasis removed: 20 of 27'
+  evidence:
+  - kind: metric
+    artifact: amendment6
+    name: without-il23-correct
+    reported: '20'
+    pointer: /descriptive_row_without_il23_psoriasis/correct
+- id: without-il23-n
+  registration: exploratory
+  registration_note: Amendment 6 (commit 3aacce6), registered before it was run, with outcomes known
+  where: analysis-set table
+  text: 27 scored
+  evidence:
+  - kind: metric
+    artifact: amendment6
+    name: without-il23-n
+    reported: '27'
+    pointer: /descriptive_row_without_il23_psoriasis/n
