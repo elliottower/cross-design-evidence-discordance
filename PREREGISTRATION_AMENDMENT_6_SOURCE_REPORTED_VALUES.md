@@ -5,7 +5,7 @@
 **Parent documents:** PREREGISTRATION.md, PREREGISTRATION_AMENDMENT_EXPLORATORY.md, PREREGISTRATION_AMENDMENT_2_BLIND.md, PREREGISTRATION_AMENDMENT_3_REFERENCE_CORRECTION.md, PREREGISTRATION_AMENDMENT_4_REVISED_PRIMARY_ANALYSIS.md, PREREGISTRATION_AMENDMENT_5_SCREEN_MR_STATES_OUTCOME_CODING.md (SHA: fbc7d33)
 **Scope:** Two procedures fixed before they are run. Neither changes the registered classification rule, the registered scored set or the registered accuracy (24/32), which stays the primary result. Procedure 1 repeats the analysis with source-reported values for the ten mismatched inputs that have a published figure. Procedure 2 removes the four families whose MR input has none. These are the two remedies available, and they apply to disjoint sets of values.
 
-**Commit SHA:** (recorded at freeze)
+**Commit SHA:** 3aacce6
 
 ---
 
@@ -92,4 +92,5 @@ Append only.
 2026-10-07  drafted after external review of the plan; nothing run
 2026-10-07  one descriptive table row added (published-MR-estimate set without IL-23-psoriasis, no test); nothing run
 2026-10-07  second external review: scope sentence, conversion formula and its source, candidate figures listed per family, pooled SGLT2-HF figure written in, test sidedness and cluster rule stated, set renamed, maximum claim extended; nothing run
+2026-10-07  frozen at 3aacce6; nothing run
 ```
